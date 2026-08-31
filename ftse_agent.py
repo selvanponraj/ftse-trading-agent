@@ -32,33 +32,41 @@ TAKE_PROFIT_PCT   = 28.0
 TRAILING_CUT_PCT  = -8.0
 
 # ── FTSE 250 Universe ─────────────────────────────────────────────────────────────
+
 FTSE_UNIVERSE = [
     # Financials & Asset Management
-    "ABDN.L", "HL.L",    "INVP.L", "JUST.L", "LRE.L",
-    "QLT.L",  "EMG.L",   "ITRK.L",
+    "ABDN.L", "INVP.L", "LRE.L",  "QLT.L",  "EMG.L",  "ITRK.L", "OSB.L", "TPK.L",
+    
     # Consumer & Retail
-    "JDW.L",  "HFD.L",   "CARD.L", "WMH.L",  "SMWH.L",
-    "WOSG.L", "MKS.L",   "TATE.L", "SBRY.L",
+    "JDW.L",  "HFD.L",  "CARD.L", "SMWH.L", "WOSG.L", "MKS.L",  "TATE.L", "SBRY.L", "BME.L",
+    
     # Industrials & Engineering
-    "SXS.L",  "IMI.L",   "MGAM.L", "VSVS.L", "VCT.L",
-    "MSLH.L", "TPK.L",   "SHI.L",
+    "IMI.L",  "MGAM.L", "VSVS.L", "VCT.L",  "MSLH.L", "SHI.L",  "4IM.L",  "CHG.L",
+    
     # Technology & Software
-    "ALFA.L", "BYIT.L",  "DARK.L", "CTEC.L", "AUTO.L",
-    # Energy & Utilities / Mining
-    "UKW.L",  "NESF.L",  "CEY.L",  "BOY.L",
-    # Real Estate
-    "SAFE.L", "UTG.L",   "WKP.L",  "AGR.L",
+    "ALFA.L", "BYIT.L", "CTEC.L", "AUTO.L", "KIE.L",  "SGE.L",
+    
+    # Energy, Utilities & Mining
+    "UKW.L",  "NESF.L", "BOY.L",  "HBR.L",  "ENOG.L",
+    
+    # Real Estate & REITs
+    "SAFE.L", "UTG.L",  "WKP.L",  "PHP.L", "BBOX.L", "DLN.L",
+    
     # Healthcare & Life Sciences
-    "OXB.L",  "ELM.L",
-    # Travel & Leisure / Media
-    "TUI.L",  "MAB.L",   "RCH.L",
-    # Housebuilders
-    "CRST.L", "BDEV.L",  "PSN.L",  "BKG.L",
-    # Others
-    "TEP.L",  "INCH.L",  "IPO.L",  "RHIM.L", "GAW.L",
-    "TBCG.L", "RWI.L",   "NXT.L",  "JET2.L", "DPLM.L",
-    "ESNT.L", "TIFS.L",  "ITV.L",  "HTWS.L",
+    "OXB.L",  "ELM.L",  "GNS.L",
+    
+    # Travel, Leisure & Media
+    "MAB.L",  "RCH.L",  "ITV.L",  "JET2.L", "WTB.L",
+    
+    # Housebuilders & Construction
+    "CRST.L", "BTRW.L", "PSN.L",  "BKG.L",  "BWY.L",
+    
+    # Diversified & Growth
+    "TEP.L",  "INCH.L", "IPO.L",  "RHIM.L", "GAW.L",
+    "TBCG.L", "NXT.L",  "DPLM.L", "ESNT.L", "HTWS.L",
 ]
+
+
 
 # ── News Sentiment Words ──────────────────────────────────────────────────────────
 POSITIVE_WORDS = [
@@ -187,54 +195,65 @@ def get_stock_data(ticker: str) -> dict | None:
 def score_stock(d: dict) -> float:
     s, w = [], []
 
-    def add(v, wt):
-        if v is not None and not (isinstance(v, float) and np.isnan(v)):
-            s.append(float(v)); w.append(float(wt))
+    def number(v):
+        """Convert yfinance values (including numeric strings) to floats."""
+        if v is None:
+            return None
+        try:
+            value = float(str(v).replace(",", "").strip())
+            return None if np.isnan(value) else value
+        except (TypeError, ValueError):
+            return None
 
-    pe = d.get("pe_ratio")
+    def add(v, wt):
+        value = number(v)
+        if value is not None:
+            s.append(value); w.append(float(wt))
+
+    pe = number(d.get("pe_ratio"))
     if pe and pe > 0:
         add(90 if pe < 10 else 75 if pe < 15 else 60 if pe < 20 else
             45 if pe < 25 else 28 if pe < 35 else 12, 2.0)
 
-    fpe = d.get("forward_pe")
+    fpe = number(d.get("forward_pe"))
     if fpe and 0 < fpe < 100:
         add(90 if fpe < 12 else 70 if fpe < 18 else 50 if fpe < 25 else 22, 1.8)
 
-    peg = d.get("peg_ratio")
+    peg = number(d.get("peg_ratio"))
     if peg and peg > 0:
         add(92 if peg < 0.8 else 75 if peg < 1.2 else 55 if peg < 2 else 25, 1.5)
 
-    rg = d.get("revenue_growth")
+    rg = number(d.get("revenue_growth"))
     if rg is not None:
         add(92 if rg > 0.25 else 78 if rg > 0.15 else 63 if rg > 0.08 else
             52 if rg > 0.02 else 38 if rg > -0.05 else 15, 2.2)
 
-    eg = d.get("earnings_growth")
+    eg = number(d.get("earnings_growth"))
     if eg is not None:
         add(90 if eg > 0.30 else 74 if eg > 0.15 else 58 if eg > 0.05 else
             45 if eg > 0 else 18, 1.8)
 
-    mg = d.get("profit_margin")
+    mg = number(d.get("profit_margin"))
     if mg is not None:
         add(90 if mg > 0.25 else 75 if mg > 0.15 else 60 if mg > 0.08 else
             42 if mg > 0.03 else 28 if mg > 0 else 8, 1.5)
 
-    roe = d.get("return_on_equity")
+    roe = number(d.get("return_on_equity"))
     if roe is not None:
         add(88 if roe > 0.25 else 73 if roe > 0.15 else 58 if roe > 0.08 else
             38 if roe > 0 else 10, 1.2)
 
-    dte = d.get("debt_to_equity")
+    dte = number(d.get("debt_to_equity"))
     if dte is not None:
         add(85 if dte < 0.3 else 70 if dte < 0.7 else 55 if dte < 1.2 else
             38 if dte < 2 else 15, 1.0)
 
-    rsi = d.get("rsi", 50)
+    rsi = number(d.get("rsi", 50)) or 50
     if rsi:
         add(82 if rsi < 25 else 72 if rsi < 40 else 60 if rsi < 55 else
             45 if rsi < 65 else 30 if rsi < 75 else 12, 1.0)
 
-    mom = d.get("mom_1mo", 0)
+    mom = number(d.get("mom_1mo", 0)) or 0
     add(68 if -3 < mom < 8 else 62 if -12 < mom <= -3 else
         42 if mom >= 8 else 22, 0.8)
 
@@ -327,8 +346,13 @@ def run_session(portfolio: dict) -> tuple[dict, list, dict]:
             if data:
                 sc = score_stock(data)
                 scored.append((sc, data))
+                pe = data.get("pe_ratio")
+                try:
+                    pe_text = f"{float(str(pe).replace(',', '').strip()):.1f}" if pe else "N/A"
+                except (TypeError, ValueError):
+                    pe_text = "N/A"
                 log(f"  {ticker:12s} score={sc:5.1f} RSI={data['rsi']:4.1f} "
-                    f"P/E={str(round(data['pe_ratio'],1)) if data['pe_ratio'] else 'N/A':6s} "
+                    f"P/E={pe_text:6s} "
                     f"news={data['news_sentiment']:4.1f} {data['name'][:28]}")
             time.sleep(0.25)
 
