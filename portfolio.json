@@ -1,8 +1,154 @@
 {
-  "cash": 10000.0,
-  "holdings": {},
-  "trades": [],
-  "daily_snapshots": [],
+  "cash": 3777.63,
+  "holdings": {
+    "EMG.L": {
+      "shares": 291,
+      "avg_cost": 3.09,
+      "first_bought": "2026-08-31",
+      "score_at_buy": 71.2,
+      "name": "Man Group Plc"
+    },
+    "TBCG.L": {
+      "shares": 17,
+      "avg_cost": 50.5,
+      "first_bought": "2026-08-31",
+      "score_at_buy": 69.3,
+      "name": "TBC Bank Group PLC"
+    },
+    "INVP.L": {
+      "shares": 135,
+      "avg_cost": 6.63,
+      "first_bought": "2026-08-31",
+      "score_at_buy": 69.1,
+      "name": "Investec Group"
+    },
+    "OSB.L": {
+      "shares": 174,
+      "avg_cost": 5.145,
+      "first_bought": "2026-08-31",
+      "score_at_buy": 65.3,
+      "name": "OSB Group Plc"
+    },
+    "PSN.L": {
+      "shares": 76,
+      "avg_cost": 11.785,
+      "first_bought": "2026-08-31",
+      "score_at_buy": 63.0,
+      "name": "Persimmon Plc"
+    },
+    "TEP.L": {
+      "shares": 102,
+      "avg_cost": 8.75,
+      "first_bought": "2026-08-31",
+      "score_at_buy": 62.9,
+      "name": "Telecom Plus Plc"
+    },
+    "JET2.L": {
+      "shares": 58,
+      "avg_cost": 15.28,
+      "first_bought": "2026-08-31",
+      "score_at_buy": 62.1,
+      "name": "Jet2 plc"
+    }
+  },
+  "trades": [
+    {
+      "date": "2026-08-31",
+      "ticker": "EMG.L",
+      "name": "Man Group Plc",
+      "action": "BUY",
+      "shares": 291,
+      "price": 3.09,
+      "total": 899.19,
+      "score": 71.2,
+      "reason": "Score 71.2 | P/E 14.7 | RevGrow +48%",
+      "news_headlines": []
+    },
+    {
+      "date": "2026-08-31",
+      "ticker": "TBCG.L",
+      "name": "TBC Bank Group PLC",
+      "action": "BUY",
+      "shares": 17,
+      "price": 50.5,
+      "total": 858.5,
+      "score": 69.3,
+      "reason": "Score 69.3 | P/E 6.8 | RevGrow +11%",
+      "news_headlines": []
+    },
+    {
+      "date": "2026-08-31",
+      "ticker": "INVP.L",
+      "name": "Investec Group",
+      "action": "BUY",
+      "shares": 135,
+      "price": 6.63,
+      "total": 895.05,
+      "score": 69.1,
+      "reason": "Score 69.1 | P/E 8.8 | RevGrow +9%",
+      "news_headlines": []
+    },
+    {
+      "date": "2026-08-31",
+      "ticker": "OSB.L",
+      "name": "OSB Group Plc",
+      "action": "BUY",
+      "shares": 174,
+      "price": 5.145,
+      "total": 895.23,
+      "score": 65.3,
+      "reason": "Score 65.3 | P/E 6.9",
+      "news_headlines": []
+    },
+    {
+      "date": "2026-08-31",
+      "ticker": "PSN.L",
+      "name": "Persimmon Plc",
+      "action": "BUY",
+      "shares": 76,
+      "price": 11.785,
+      "total": 895.66,
+      "score": 63.0,
+      "reason": "Score 63.0 | P/E 12.5 | RevGrow +15%",
+      "news_headlines": []
+    },
+    {
+      "date": "2026-08-31",
+      "ticker": "TEP.L",
+      "name": "Telecom Plus Plc",
+      "action": "BUY",
+      "shares": 102,
+      "price": 8.75,
+      "total": 892.5,
+      "score": 62.9,
+      "reason": "Score 62.9 | P/E 8.8",
+      "news_headlines": []
+    },
+    {
+      "date": "2026-08-31",
+      "ticker": "JET2.L",
+      "name": "Jet2 plc",
+      "action": "BUY",
+      "shares": 58,
+      "price": 15.28,
+      "total": 886.24,
+      "score": 62.1,
+      "reason": "Score 62.1 | P/E 7.3 | RSI 34 oversold",
+      "news_headlines": []
+    }
+  ],
+  "daily_snapshots": [
+    {
+      "date": "2026-08-31",
+      "timestamp": "2026-08-31 22:46",
+      "cash": 3777.63,
+      "equity_value": 6222.37,
+      "total_value": 10000.0,
+      "return_pct": 0.0,
+      "positions": 7,
+      "trades_today": 7
+    }
+  ],
   "created": "2026-08-31",
   "starting_value": 10000.0,
   "version": "1.0"
