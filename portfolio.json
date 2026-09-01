@@ -1,5 +1,5 @@
 {
-  "cash": 3777.63,
+  "cash": 1119.7379999999998,
   "holdings": {
     "EMG.L": {
       "shares": 291,
@@ -49,6 +49,27 @@
       "first_bought": "2026-08-31",
       "score_at_buy": 62.1,
       "name": "Jet2 plc"
+    },
+    "AUTO.L": {
+      "shares": 175,
+      "avg_cost": 5.056,
+      "first_bought": "2026-09-01",
+      "score_at_buy": 64.3,
+      "name": "Autotrader Group plc"
+    },
+    "WOSG.L": {
+      "shares": 128,
+      "avg_cost": 6.905,
+      "first_bought": "2026-09-01",
+      "score_at_buy": 63.8,
+      "name": "Watches of Switzerland Group PLC"
+    },
+    "IPO.L": {
+      "shares": 1274,
+      "avg_cost": 0.698,
+      "first_bought": "2026-09-01",
+      "score_at_buy": 63.7,
+      "name": "IP Group Plc"
     }
   },
   "trades": [
@@ -135,6 +156,42 @@
       "score": 62.1,
       "reason": "Score 62.1 | P/E 7.3 | RSI 34 oversold",
       "news_headlines": []
+    },
+    {
+      "date": "2026-09-01",
+      "ticker": "AUTO.L",
+      "name": "Autotrader Group plc",
+      "action": "BUY",
+      "shares": 175,
+      "price": 5.056,
+      "total": 884.8,
+      "score": 64.3,
+      "reason": "Score 64.3 | P/E 14.9 | RSI 40 oversold",
+      "news_headlines": []
+    },
+    {
+      "date": "2026-09-01",
+      "ticker": "WOSG.L",
+      "name": "Watches of Switzerland Group PLC",
+      "action": "BUY",
+      "shares": 128,
+      "price": 6.905,
+      "total": 883.84,
+      "score": 63.8,
+      "reason": "Score 63.8 | P/E 16.1 | RevGrow +13% | RSI 30 oversold",
+      "news_headlines": []
+    },
+    {
+      "date": "2026-09-01",
+      "ticker": "IPO.L",
+      "name": "IP Group Plc",
+      "action": "BUY",
+      "shares": 1274,
+      "price": 0.698,
+      "total": 889.25,
+      "score": 63.7,
+      "reason": "Score 63.7 | P/E 10.0",
+      "news_headlines": []
     }
   ],
   "daily_snapshots": [
@@ -147,6 +204,16 @@
       "return_pct": 0.0,
       "positions": 7,
       "trades_today": 7
+    },
+    {
+      "date": "2026-09-01",
+      "timestamp": "2026-09-01 19:29",
+      "cash": 1119.74,
+      "equity_value": 8766.36,
+      "total_value": 9886.1,
+      "return_pct": -1.14,
+      "positions": 10,
+      "trades_today": 3
     }
   ],
   "created": "2026-08-31",
