@@ -274,6 +274,16 @@
       "return_pct": -2.73,
       "positions": 10,
       "trades_today": 0
+    },
+    {
+      "date": "2026-09-10",
+      "timestamp": "2026-09-10 19:12",
+      "cash": 1119.74,
+      "equity_value": 8530.63,
+      "total_value": 9650.36,
+      "return_pct": -3.5,
+      "positions": 10,
+      "trades_today": 0
     }
   ],
   "created": "2026-08-31",
