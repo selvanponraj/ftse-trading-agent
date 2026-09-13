@@ -1,0 +1,9 @@
+{
+  "cash": 10000.0,
+  "holdings": {},
+  "trades": [],
+  "daily_snapshots": [],
+  "created": "2026-08-31",
+  "starting_value": 10000.0,
+  "version": "1.0"
+}

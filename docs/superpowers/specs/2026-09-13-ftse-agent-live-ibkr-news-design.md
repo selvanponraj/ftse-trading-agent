@@ -105,17 +105,21 @@ Batch size: **8 tickers per request**. Response JSON:
 }
 ```
 
-Clamp each score to `[0, 100]`. On HTTP/parse/timeout: those tickers get 50 and `NEWS_UNAVAILABLE`. Do not retry more than once per batch.
+Clamp each score to `[0, 100]`. On HTTP/parse/timeout: the score is **`None`** (unscored), logged as `LLM_FAIL`. Do not retry more than once per batch.
 
-Tickers with **zero headlines** skip LiteLLM and get 50 immediately.
+Tickers with **zero headlines** skip LiteLLM and are also **`None`**.
+
+**No neutral fallback.** News is the heaviest scoring input, so a missing score must never be substituted with 50. An unscored ticker is not tradeable: it is excluded from the buy ranking, and score-based sells are suppressed for it. Hard risk exits (stop-loss, take-profit, trailing cut) still fire, since they depend on price only.
 
 ### 3. Scoring integration
 
 Replace only the news input inside `get_stock_data` / the live scan:
 
 - Keep yfinance for price, history, RSI, momentum, fundamentals.
-- Set `news_sentiment` from LiteLLM (or 50 if unavailable).
+- Set `news_sentiment` from LiteLLM, or `None` when unavailable.
 - Set `news_headlines` from IBKR titles (plus per-headline scores when present).
+- `score_stock` omits the news term entirely when the score is `None`; it is never weighted as 50.
+- `has_tradeable_news(data)` gates both passes.
 
 Keyword lists `POSITIVE_WORDS` / `NEGATIVE_WORDS` are unused in the live file’s news path. Do not use them as a second sentiment layer.
 
@@ -140,21 +144,22 @@ Do not interleave LiteLLM with the yfinance loop. Collect `(ticker, headlines)` 
 |---|---|
 | No `.env` / missing key | Exit |
 | Gateway not on 7497 | Exit |
-| Empty news subscriptions | Warn; all news 50 |
-| Qualify / historical news error | That ticker: 50, continue |
-| IB pacing error | Sleep 2s, retry once, then 50 |
-| LiteLLM down / timeout | Headlines still logged; scores 50 |
+| Empty news subscriptions | Warn; nothing tradeable, no buys |
+| Qualify / historical news error | That ticker unscored, not tradeable, continue |
+| IB pacing error | Sleep 2s, retry once, then unscored |
+| LiteLLM down / timeout | Headlines still logged; unscored, no new trades |
 | yfinance gap for a ticker | Skip ticker as today |
 
 Never crash the whole session for a single ticker except connect/config failures.
 
 ## Testing
 
-1. Gateway up, news enabled: one LSE name returns at least one headline and `news_sentiment != 50` when headlines exist.
+1. Gateway up, news enabled: one LSE name returns at least one headline and a real `news_sentiment`.
 2. Gateway down: process exits with a connect error; paper files untouched.
-3. LiteLLM down, Gateway up: log shows headlines and `NEWS_UNAVAILABLE` for scores; session completes.
-4. Empty headlines: score 50, no LLM call for that ticker.
-5. Regression: `python ftse_agent.py` still writes only paper artefacts.
+3. LiteLLM down, Gateway up: log shows headlines plus `LLM_FAIL`, **zero buys**, session completes.
+4. Empty headlines: unscored, no LLM call, ticker skipped.
+5. Unscored holding: score-based sell suppressed, but a stop-loss breach still sells.
+6. Regression: `python ftse_agent.py` still writes only paper artefacts.
 
 ## Non-goals
 
