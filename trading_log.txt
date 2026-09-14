@@ -44,3 +44,1111 @@
 [2026-09-14 12:42:55] [INFO] Dashboard saved → dashboard.html
 [2026-09-14 14:09:32] [INFO] Dashboard saved → dashboard.html
 [2026-09-14 14:09:32] [INFO] Dashboard saved → ibkr-dashboard.html
+[2026-09-14 16:11:54] [INFO] Starting FTSE Trading Agent
+[2026-09-14 16:11:54] [INFO] --- Rank scan (Yahoo + news, no broker) ---
+[2026-09-14 16:11:55] [INFO] LLM_CALL BP.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:12:00] [INFO] LLM_SCORE BP.L overall=59.0 headlines=10
+[2026-09-14 16:12:00] [INFO] LLM_HEADLINE BP.L 50 Energy & Utilities Roundup: Market Talk
+[2026-09-14 16:12:00] [INFO] LLM_HEADLINE BP.L 53 Chevron Sees Higher Oil Prices Ahead: Is It Set for More Upside?
+[2026-09-14 16:12:00] [INFO] LLM_HEADLINE BP.L 50 Best Growth Stocks to Buy for September 14th
+[2026-09-14 16:12:00] [INFO] LLM_HEADLINE BP.L 56 The Zacks Analyst Blog Highlights ExxonMobil, BP and Chevron
+[2026-09-14 16:12:00] [INFO] LLM_HEADLINE BP.L 50 ExxonMobil Stock at a Premium: Opportunity or Reason to Stay Cautious?
+[2026-09-14 16:12:00] [INFO] LLM_HEADLINE BP.L 82 Why BP Is One of the Best Oil Stocks to Buy Right Now
+[2026-09-14 16:12:00] [INFO] LLM_HEADLINE BP.L 35 Could Shell (SHEL)’s Superior Cash Flow Make It a Better Bet Than BP (BP)?
+[2026-09-14 16:12:00] [INFO] LLM_HEADLINE BP.L 50 Top Analyst Reports for Eli Lilly, Palo Alto Networks & Texas Instruments
+[2026-09-14 16:12:00] [INFO] LLM_HEADLINE BP.L 66 Sector Update: Energy Stocks Gain Late Afternoon
+[2026-09-14 16:12:00] [INFO] LLM_HEADLINE BP.L 54 ExxonMobil Is Up 40% in 2026: Can Rising Oil Prices and Strong Earnings Boost XO
+[2026-09-14 16:12:00] [INFO]   BP.L         Energy           score= 63.1 RSI=74.3 P/E=22.2   news=59.0 BP p.l.c.
+[2026-09-14 16:12:01] [INFO] LLM_CALL SHEL.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:12:05] [INFO] LLM_SCORE SHEL.L overall=62.0 headlines=10
+[2026-09-14 16:12:05] [INFO] LLM_HEADLINE SHEL.L 50 Energy & Utilities Roundup: Market Talk
+[2026-09-14 16:12:05] [INFO] LLM_HEADLINE SHEL.L 68 Shell Just Sold a $715 Million Stake in a Major New England Asset to Constellati
+[2026-09-14 16:12:05] [INFO] LLM_HEADLINE SHEL.L 15 Shell's Troubled Project Faces Another Major Blow
+[2026-09-14 16:12:05] [INFO] LLM_HEADLINE SHEL.L 50 Can CEG's Expanding Generation Portfolio Drive Long-Term Growth?
+[2026-09-14 16:12:05] [INFO] LLM_HEADLINE SHEL.L 50 Update: Equinor, Shell Adura JV Awaits UK Decision on Jackdaw, Rosebank Projects
+[2026-09-14 16:12:05] [INFO] LLM_HEADLINE SHEL.L 32 Sector Update: Energy Stocks Decline Premarket Friday
+[2026-09-14 16:12:05] [INFO] LLM_HEADLINE SHEL.L 70 Shell Expands PJM Power Exposure With Hunlock Deal, Sells RISEC
+[2026-09-14 16:12:05] [INFO] LLM_HEADLINE SHEL.L 68 Shell signs deals to acquire Hunlock Creek and sell RISEC
+[2026-09-14 16:12:05] [INFO] LLM_HEADLINE SHEL.L 82 Why Did HP, SHEL, ET Stocks Hit 52-Week Highs Today?
+[2026-09-14 16:12:05] [INFO] LLM_HEADLINE SHEL.L 67 Shell Sells U.S. Gas Plant for $715 Million in Power Portfolio Shake-Up
+[2026-09-14 16:12:05] [INFO]   SHEL.L       Energy           score= 65.5 RSI=75.7 P/E=10.8   news=62.0 Shell plc
+[2026-09-14 16:12:06] [INFO] LLM_CALL CNE.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:12:09] [INFO] LLM_SCORE CNE.L overall=82.0 headlines=10
+[2026-09-14 16:12:09] [INFO] LLM_HEADLINE CNE.L 88 Capricorn Board Picks DNO Offer over Genel
+[2026-09-14 16:12:09] [INFO] LLM_HEADLINE CNE.L 72 DNO (OB:DNO) Targets Capricorn Energy, Is The Stock Still Cheap?
+[2026-09-14 16:12:09] [INFO] LLM_HEADLINE CNE.L 84 DNO (OB:DNO) Lands $396 Million Deal That Opens The Door To Egypt
+[2026-09-14 16:12:09] [INFO] LLM_HEADLINE CNE.L 50 BP Names Ian Tyler Permanent Chair After Manifold’s Abrupt Exit
+[2026-09-14 16:12:09] [INFO] LLM_HEADLINE CNE.L 86 DNO agrees to acquire Capricorn Energy for $396m
+[2026-09-14 16:12:09] [INFO] LLM_HEADLINE CNE.L 35 Exclusive: U.K. stock market ’approaching irrelevance’, Webull U.K. CEO says
+[2026-09-14 16:12:09] [INFO] LLM_HEADLINE CNE.L 50 FTSE aerospace supplier sold to US bidder for £1.9bn
+[2026-09-14 16:12:09] [INFO] LLM_HEADLINE CNE.L 88 Capricorn Energy Backs DNO’s $396 Million Bid Over Genel Offer
+[2026-09-14 16:12:09] [INFO] LLM_HEADLINE CNE.L 87 DNO strikes recommended deal for Capricorn after Genel snub
+[2026-09-14 16:12:09] [INFO] LLM_HEADLINE CNE.L 50 Genel Energy H1 Earnings Call Highlights
+[2026-09-14 16:12:09] [INFO]   CNE.L        Energy           score= 56.0 RSI=93.3 P/E=22.5   news=82.0 Capricorn Energy PLC
+[2026-09-14 16:12:10] [INFO] LLM_CALL HTG.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:12:14] [INFO] LLM_SCORE HTG.L overall=74.0 headlines=10
+[2026-09-14 16:12:14] [INFO] LLM_HEADLINE HTG.L 82 Hunting PLC (HNTIF) (H1 2026) Earnings Call Highlights: Strong Segment Growth Of
+[2026-09-14 16:12:14] [INFO] LLM_HEADLINE HTG.L 68 Hunting H1 Earnings Call Highlights
+[2026-09-14 16:12:14] [INFO] LLM_HEADLINE HTG.L 28 BP, Shell and Harbour Energy led falls as oil prices retreat
+[2026-09-14 16:12:14] [INFO] LLM_HEADLINE HTG.L 50 Ramsdens Holdings And 2 Other UK Penny Stocks To Watch
+[2026-09-14 16:12:14] [INFO] LLM_HEADLINE HTG.L 50 UK Penny Stocks To Watch In April 2026
+[2026-09-14 16:12:14] [INFO] LLM_HEADLINE HTG.L 88 Hunting AGM: Q1 EBITDA $23M, order book jumps to $428M as 2030 strategy gains tr
+[2026-09-14 16:12:14] [INFO] LLM_HEADLINE HTG.L 78 Here's What We Like About Hunting's (LON:HTG) Upcoming Dividend
+[2026-09-14 16:12:14] [INFO] LLM_HEADLINE HTG.L 84 Hunting PLC (HNTIF) (Full Year 2025) Earnings Call Highlights: Strong Financial 
+[2026-09-14 16:12:14] [INFO] LLM_HEADLINE HTG.L 68 Hunting H2 Earnings Call Highlights
+[2026-09-14 16:12:14] [INFO] LLM_HEADLINE HTG.L 52 Buccaneer Energy raises £350K to expand East Texas production
+[2026-09-14 16:12:14] [INFO]   HTG.L        Energy           score= 53.2 RSI=46.7 P/E=19.4   news=74.0 Hunting PLC
+[2026-09-14 16:12:15] [INFO] LLM_CALL ENQ.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:12:19] [INFO] LLM_SCORE ENQ.L overall=74.0 headlines=10
+[2026-09-14 16:12:19] [INFO] LLM_HEADLINE ENQ.L 58 European Stocks Tumble in Wednesday Trading as Intensified Middle East Conflict 
+[2026-09-14 16:12:19] [INFO] LLM_HEADLINE ENQ.L 55 Update: Market Chatter: BP North Sea Operations Garner Interest From Potential B
+[2026-09-14 16:12:19] [INFO] LLM_HEADLINE ENQ.L 86 EnQuest PLC (ENQUF) (H1 2026) Earnings Call Highlights: Production Surges 9% and
+[2026-09-14 16:12:19] [INFO] LLM_HEADLINE ENQ.L 68 EnQuest H1 Earnings Call Highlights
+[2026-09-14 16:12:19] [INFO] LLM_HEADLINE ENQ.L 78 What Makes EnQuest (ENQUF) a New Buy Stock
+[2026-09-14 16:12:19] [INFO] LLM_HEADLINE ENQ.L 66 Is EnQuest (ENQUF) Stock Outpacing Its Oils-Energy Peers This Year?
+[2026-09-14 16:12:19] [INFO] LLM_HEADLINE ENQ.L 62 3 International E&P Stocks Offering Bright Spots for Investors
+[2026-09-14 16:12:19] [INFO] LLM_HEADLINE ENQ.L 50 Is Delek Logistics Partners (DKL) Stock Outpacing Its Oils-Energy Peers This Yea
+[2026-09-14 16:12:19] [INFO] LLM_HEADLINE ENQ.L 50 Is Delek Logistics Partners (DKL) Outperforming Other Oils-Energy Stocks This Ye
+[2026-09-14 16:12:19] [INFO] LLM_HEADLINE ENQ.L 75 CB&I wins EnQuest contract extension for Kittiwake duty holder role
+[2026-09-14 16:12:19] [INFO]   ENQ.L        Energy           score= 62.0 RSI=57.3 P/E=5.5    news=74.0 EnQuest PLC
+[2026-09-14 16:12:20] [INFO] LLM_CALL TLW.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:12:23] [INFO] LLM_SCORE TLW.L overall=48.0 headlines=10
+[2026-09-14 16:12:23] [INFO] LLM_HEADLINE TLW.L 62 Loss-Making Tullow Oil plc (LON:TLW) Set To Breakeven
+[2026-09-14 16:12:23] [INFO] LLM_HEADLINE TLW.L 56 How The Tullow Oil (LSE:TLW) Story Is Shifting With New Targets And Ghana Update
+[2026-09-14 16:12:23] [INFO] LLM_HEADLINE TLW.L 72 Tullow Oil PLC (TUWLF) Full Year 2025 Earnings Call Highlights: Strong Q1 2026 P
+[2026-09-14 16:12:23] [INFO] LLM_HEADLINE TLW.L 52 Tullow Oil H2 Earnings Call Highlights
+[2026-09-14 16:12:23] [INFO] LLM_HEADLINE TLW.L 45 Following a 50% decline over last year, recent gains may please Tullow Oil plc (
+[2026-09-14 16:12:23] [INFO] LLM_HEADLINE TLW.L 35 Tullow Oil Insiders US$212k Short Of Breakeven On Stock Purchase
+[2026-09-14 16:12:23] [INFO] LLM_HEADLINE TLW.L 25 Shareholders in Tullow Oil (LON:TLW) are in the red if they invested three years
+[2026-09-14 16:12:23] [INFO] LLM_HEADLINE TLW.L 70 Tullow Oil moves forward on Ghana licence extensions and gas agreement
+[2026-09-14 16:12:23] [INFO] LLM_HEADLINE TLW.L 50 Trending tickers: SoftBank, Babcock International, Asos, Tullow Oil
+[2026-09-14 16:12:23] [INFO] LLM_HEADLINE TLW.L 58 FTSE 100 reaches new high as gold and oil surge
+[2026-09-14 16:12:23] [INFO]   TLW.L        Energy           score= 37.6 RSI=67.3 P/E=N/A    news=48.0 Tullow Oil plc
+[2026-09-14 16:12:24] [INFO] LLM_CALL AAL.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:12:29] [INFO] LLM_SCORE AAL.L overall=57.0 headlines=10
+[2026-09-14 16:12:29] [INFO] LLM_HEADLINE AAL.L 72 Copper Prices Hit Record High. These Stocks Are Jumping.
+[2026-09-14 16:12:29] [INFO] LLM_HEADLINE AAL.L 48 US seeks more access to Venezuela's mineral wealth after tapping its oil, source
+[2026-09-14 16:12:29] [INFO] LLM_HEADLINE AAL.L 50 BP Names Replacement for Chairman Ousted Over Bullying Concerns
+[2026-09-14 16:12:29] [INFO] LLM_HEADLINE AAL.L 47 Teck Resources (TSX:TECK.B) Could Be 7% Overvalued After Merger Terms Emerge
+[2026-09-14 16:12:29] [INFO] LLM_HEADLINE AAL.L 50 Basic Materials Roundup: Market Talk
+[2026-09-14 16:12:29] [INFO] LLM_HEADLINE AAL.L 53 European Indexes Turn Positive as Tech Stocks Steady
+[2026-09-14 16:12:29] [INFO] LLM_HEADLINE AAL.L 65 FTSE 100 Live: Blue-chips open higher as miners gain, UK inflation ticks up
+[2026-09-14 16:12:29] [INFO] LLM_HEADLINE AAL.L 78 Anglo American signs iron ore supply agreement with CMRG
+[2026-09-14 16:12:29] [INFO] LLM_HEADLINE AAL.L 45 European Indexes Mostly Higher; London’s FTSE 100 Hit by Antofagasta Guidance Cu
+[2026-09-14 16:12:29] [INFO] LLM_HEADLINE AAL.L 32 FTSE 100 Live: UK stocks head lower led by mining sector sell-off
+[2026-09-14 16:12:29] [INFO]   AAL.L        Materials        score= 46.1 RSI=37.1 P/E=N/A    news=57.0 Anglo American plc
+[2026-09-14 16:12:29] [INFO] LLM_CALL ANTO.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:12:35] [INFO] LLM_SCORE ANTO.L overall=58.0 headlines=10
+[2026-09-14 16:12:35] [INFO] LLM_HEADLINE ANTO.L 75 Copper Prices Hit Record High. These Stocks Are Jumping.
+[2026-09-14 16:12:35] [INFO] LLM_HEADLINE ANTO.L 42 Antofagasta (LSE:ANTO) Stock Sees Modest Fair Value Cut As Analysts Split On Out
+[2026-09-14 16:12:35] [INFO] LLM_HEADLINE ANTO.L 82 Antofagasta PLC (ANFGF) (H1 2026) Earnings Call Highlights: Record EBITDA Margin
+[2026-09-14 16:12:35] [INFO] LLM_HEADLINE ANTO.L 25 European Indexes Mostly Higher; London’s FTSE 100 Hit by Antofagasta Guidance Cu
+[2026-09-14 16:12:35] [INFO] LLM_HEADLINE ANTO.L 65 Antofagasta H1 Earnings Call Highlights
+[2026-09-14 16:12:35] [INFO] LLM_HEADLINE ANTO.L 68 Antofagasta (LSE:ANTO) Stock Gets Fair Value Bump After Mixed Analyst Target Cha
+[2026-09-14 16:12:35] [INFO] LLM_HEADLINE ANTO.L 70 Gold and copper miners back in fashion
+[2026-09-14 16:12:35] [INFO] LLM_HEADLINE ANTO.L 30 Miners Hochschild and Fresnillo lead FTSE falls as gold pullback deepens
+[2026-09-14 16:12:35] [INFO] LLM_HEADLINE ANTO.L 50 How A Quiet Analyst Update Is Shaping The Story For Antofagasta (LSE:ANTO)
+[2026-09-14 16:12:35] [INFO] LLM_HEADLINE ANTO.L 65 Endeavour, Rio Tinto and Glencore lead rebounding miners as metals prices seesaw
+[2026-09-14 16:12:35] [INFO]   ANTO.L       Materials        score= 62.0 RSI=32.2 P/E=28.7   news=58.0 Antofagasta plc
+[2026-09-14 16:12:36] [INFO] LLM_CALL RIO.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:12:41] [INFO] LLM_SCORE RIO.L overall=56.0 headlines=10
+[2026-09-14 16:12:41] [INFO] LLM_HEADLINE RIO.L 45 Will Heavy Expansion Costs Slow USAR's Growth Momentum?
+[2026-09-14 16:12:41] [INFO] LLM_HEADLINE RIO.L 58 Domestic Metals starts 9,000m Smart Creek drill program – ICYMI
+[2026-09-14 16:12:41] [INFO] LLM_HEADLINE RIO.L 62 Aurukun Deal Gives Rio Tinto (RIO) More Bauxite Upside, But Risks Remain
+[2026-09-14 16:12:41] [INFO] LLM_HEADLINE RIO.L 35 U.S.-Listed Copper Mining Stocks Fall as Copper Retreats From Record High
+[2026-09-14 16:12:41] [INFO] LLM_HEADLINE RIO.L 58 Domestic Metals launches 9,000-metre drill program at Rio Tinto-backed Smart Cre
+[2026-09-14 16:12:41] [INFO] LLM_HEADLINE RIO.L 50 Graphene Manufacturing Group's fast-charging battery cells show no performance l
+[2026-09-14 16:12:41] [INFO] LLM_HEADLINE RIO.L 68 Rio Tinto to take over Queensland’s Aurukun Bauxite Project
+[2026-09-14 16:12:41] [INFO] LLM_HEADLINE RIO.L 58 Domestic Metals commences drilling at Rio Tinto joint venture Smart Creek projec
+[2026-09-14 16:12:41] [INFO] LLM_HEADLINE RIO.L 60 Rio Tinto (LSE:RIO) Stock Looks Rich On Cash Flow Yet Cheap On Earnings
+[2026-09-14 16:12:41] [INFO] LLM_HEADLINE RIO.L 48 Rio Tinto Group (LSE:RIO) Looks Fully Valued On Its Critical Minerals Narrative
+[2026-09-14 16:12:41] [INFO]   RIO.L        Materials        score= 67.7 RSI=24.5 P/E=13.2   news=56.0 Rio Tinto Group
+[2026-09-14 16:12:42] [INFO] LLM_CALL GLEN.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:12:47] [INFO] LLM_SCORE GLEN.L overall=56.0 headlines=10
+[2026-09-14 16:12:47] [INFO] LLM_HEADLINE GLEN.L 50 Aurukun Deal Gives Rio Tinto (RIO) More Bauxite Upside, But Risks Remain
+[2026-09-14 16:12:47] [INFO] LLM_HEADLINE GLEN.L 65 Copper Prices Hit Record High. These Stocks Are Jumping.
+[2026-09-14 16:12:47] [INFO] LLM_HEADLINE GLEN.L 50 Rio Tinto to take over Queensland’s Aurukun Bauxite Project
+[2026-09-14 16:12:47] [INFO] LLM_HEADLINE GLEN.L 62 Abcourt Mines Closes $40 Million Upsized Debenture With Glencore
+[2026-09-14 16:12:47] [INFO] LLM_HEADLINE GLEN.L 50 What Could CME Group (CME) Gain From Its New U.S. Zinc Futures?
+[2026-09-14 16:12:47] [INFO] LLM_HEADLINE GLEN.L 64 FTSE 100 Live: Blue-chips open higher as miners gain, UK inflation ticks up
+[2026-09-14 16:12:47] [INFO] LLM_HEADLINE GLEN.L 55 Update: Market Chatter: Glencore Had Deal for Minority Stake in Radiant World in
+[2026-09-14 16:12:47] [INFO] LLM_HEADLINE GLEN.L 55 Market Chatter: Glencore Had Deal for Minority Stake in Radiant World in Late 20
+[2026-09-14 16:12:47] [INFO] LLM_HEADLINE GLEN.L 38 European Indexes Mixed as Tech Stocks Rise, Miners Fall
+[2026-09-14 16:12:47] [INFO] LLM_HEADLINE GLEN.L 50 Nine Mile Metals eyes second life for Wedge Mine in storied Bathurst camp
+[2026-09-14 16:12:47] [INFO]   GLEN.L       Materials        score= 63.4 RSI=49.3 P/E=17.9   news=56.0 Glencore plc
+[2026-09-14 16:12:48] [INFO] LLM_CALL FRES.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:12:52] [INFO] LLM_SCORE FRES.L overall=61.0 headlines=10
+[2026-09-14 16:12:52] [INFO] LLM_HEADLINE FRES.L 50 Will La Colorada Mine Strengthen PAAS' Long-Term Growth?
+[2026-09-14 16:12:52] [INFO] LLM_HEADLINE FRES.L 50 Basic Materials Roundup: Market Talk
+[2026-09-14 16:12:52] [INFO] LLM_HEADLINE FRES.L 55 European Indexes Largely Higher at Open
+[2026-09-14 16:12:52] [INFO] LLM_HEADLINE FRES.L 40 European Indexes Mixed as Tech Stocks Rise, Miners Fall
+[2026-09-14 16:12:52] [INFO] LLM_HEADLINE FRES.L 43 European Indexes Mostly Higher; London’s FTSE 100 Hit by Antofagasta Guidance Cu
+[2026-09-14 16:12:52] [INFO] LLM_HEADLINE FRES.L 65 Fresnillo (LSE:FRES) Stock Sees Fair Value Lift As Analysts Split On Earnings Ou
+[2026-09-14 16:12:52] [INFO] LLM_HEADLINE FRES.L 35 FTSE 100 Live: UK stocks head lower led by mining sector sell-off
+[2026-09-14 16:12:52] [INFO] LLM_HEADLINE FRES.L 55 European Stocks Extend Record Highs
+[2026-09-14 16:12:52] [INFO] LLM_HEADLINE FRES.L 85 Fresnillo PLC (FNLPF) (Q2 2026) Earnings Call Highlights: Record Financial Perfo
+[2026-09-14 16:12:52] [INFO] LLM_HEADLINE FRES.L 65 Fresnillo H1 Earnings Call Highlights
+[2026-09-14 16:12:52] [INFO]   FRES.L       Materials        score= 72.5 RSI=31.1 P/E=12.7   news=61.0 Fresnillo plc
+[2026-09-14 16:12:53] [INFO] LLM_CALL MNDI.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:12:56] [INFO] LLM_SCORE MNDI.L overall=42.0 headlines=10
+[2026-09-14 16:12:56] [INFO] LLM_HEADLINE MNDI.L 54 Zacks Industry Outlook Highlights Clearwater Paper, Mondi plc and Klabin
+[2026-09-14 16:12:56] [INFO] LLM_HEADLINE MNDI.L 45 3 Paper and Related Products Stocks to Watch Amid Industry Challenges
+[2026-09-14 16:12:56] [INFO] LLM_HEADLINE MNDI.L 72 FIXIT GRUPPE cuts packaging emissions in Europe with Mondi
+[2026-09-14 16:12:56] [INFO] LLM_HEADLINE MNDI.L 68 Mondi introduces laser-marked flexible packaging
+[2026-09-14 16:12:56] [INFO] LLM_HEADLINE MNDI.L 18 Mondi swings to loss in H1 2026 on impairments
+[2026-09-14 16:12:56] [INFO] LLM_HEADLINE MNDI.L 48 Mondi PLC (MNODF) (H1 2026) Earnings Call Highlights: Strategic Resilience Amids
+[2026-09-14 16:12:56] [INFO] LLM_HEADLINE MNDI.L 28 Mondi (LSE:MNDI) Stock Sees Fair Value Cut As Analysts Turn More Cautious
+[2026-09-14 16:12:56] [INFO] LLM_HEADLINE MNDI.L 50 Mondi Q2 Earnings Call Highlights
+[2026-09-14 16:12:56] [INFO] LLM_HEADLINE MNDI.L 70 Mondi unveils wipes wrap with recycled plastic
+[2026-09-14 16:12:56] [INFO] LLM_HEADLINE MNDI.L 50 Is Smurfit Westrock (SW) One of the Best Stocks to Buy from Billionaire George S
+[2026-09-14 16:12:56] [INFO]   MNDI.L       Materials        score= 39.7 RSI=29.8 P/E=N/A    news=42.0 Mondi plc
+[2026-09-14 16:12:57] [INFO] LLM_CALL CRDA.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:13:01] [INFO] LLM_SCORE CRDA.L overall=61.0 headlines=10
+[2026-09-14 16:13:01] [INFO] LLM_HEADLINE CRDA.L 50 Croda International H1 Earnings Call Highlights
+[2026-09-14 16:13:01] [INFO] LLM_HEADLINE CRDA.L 50 How An Unchanged Valuation Is Shaping The Evolving Story At Croda International 
+[2026-09-14 16:13:01] [INFO] LLM_HEADLINE CRDA.L 60 UK Stocks Estimated To Be Trading Below Fair Value In May 2026
+[2026-09-14 16:13:01] [INFO] LLM_HEADLINE CRDA.L 60 3 UK Stocks Possibly Trading Below Fair Value Estimates In April 2026
+[2026-09-14 16:13:01] [INFO] LLM_HEADLINE CRDA.L 50 Croda International Q1 Earnings Call Highlights
+[2026-09-14 16:13:01] [INFO] LLM_HEADLINE CRDA.L 60 3 UK Stocks That May Be Undervalued By The Market
+[2026-09-14 16:13:01] [INFO] LLM_HEADLINE CRDA.L 82 Croda International (COIHY) Upgraded to Buy: Here's Why
+[2026-09-14 16:13:01] [INFO] LLM_HEADLINE CRDA.L 50 Convatec stars as FTSE 100 closes with little change
+[2026-09-14 16:13:01] [INFO] LLM_HEADLINE CRDA.L 45 FTSE 100 Live: Banks lead fallers amidst AI fears, Blue Owl spillover, US tariff
+[2026-09-14 16:13:01] [INFO] LLM_HEADLINE CRDA.L 50 Croda International H2 Earnings Call Highlights
+[2026-09-14 16:13:01] [INFO]   CRDA.L       Materials        score= 54.6 RSI=19.0 P/E=55.0   news=61.0 Croda International Plc
+[2026-09-14 16:13:02] [INFO] LLM_CALL RR.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:13:06] [INFO] LLM_SCORE RR.L overall=68.0 headlines=10
+[2026-09-14 16:13:06] [INFO] LLM_HEADLINE RR.L 50 GE Aerospace’s $11.75B Deal Puts Howmet Aerospace in Focus
+[2026-09-14 16:13:06] [INFO] LLM_HEADLINE RR.L 85 Britain to build turbines for Rolls-Royce mini-nuclear reactors
+[2026-09-14 16:13:06] [INFO] LLM_HEADLINE RR.L 58 NuScale Advances Key Safety Component Toward SMR Commercialization
+[2026-09-14 16:13:06] [INFO] LLM_HEADLINE RR.L 50 SK Hynix, Stellantis, Innio and others announce manufacturing investments
+[2026-09-14 16:13:06] [INFO] LLM_HEADLINE RR.L 48 European Equities Largely Lower Though AI Stocks Gain
+[2026-09-14 16:13:06] [INFO] LLM_HEADLINE RR.L 88 Rolls-Royce expands Indiana manufacturing with $1B investment
+[2026-09-14 16:13:06] [INFO] LLM_HEADLINE RR.L 48 Are Aerospace Stocks Lagging RTX Corporation (RTX) This Year?
+[2026-09-14 16:13:06] [INFO] LLM_HEADLINE RR.L 55 NuScale Power Deploys AI to Accelerate Next-Generation Nuclear SMRs
+[2026-09-14 16:13:06] [INFO] LLM_HEADLINE RR.L 50 Florida real estate mogul says your home is ‘a terrible investment’ — and he’d p
+[2026-09-14 16:13:06] [INFO] LLM_HEADLINE RR.L 50 U.K. ETFs in Spotlight as Andy Burnham Completes First Month as PM
+[2026-09-14 16:13:06] [INFO]   RR.L         Industrials      score= 47.0 RSI=34.3 P/E=39.1   news=68.0 Rolls-Royce Holdings plc
+[2026-09-14 16:13:07] [INFO] LLM_CALL BA.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:13:12] [INFO] LLM_SCORE BA.L overall=51.0 headlines=10
+[2026-09-14 16:13:12] [INFO] LLM_HEADLINE BA.L 35 European Indexes Slide as Higher Oil Weighs on Defense Stocks, Banks
+[2026-09-14 16:13:12] [INFO] LLM_HEADLINE BA.L 50 Griffin Mining And 2 British Defensive Stocks
+[2026-09-14 16:13:12] [INFO] LLM_HEADLINE BA.L 50 BP Names Ian Tyler Permanent Chair After Manifold’s Abrupt Exit
+[2026-09-14 16:13:12] [INFO] LLM_HEADLINE BA.L 70 BAE Systems Stock And 2 Cash Flow Value Shares Worth A Closer Look
+[2026-09-14 16:13:12] [INFO] LLM_HEADLINE BA.L 50 Can Viper Shield Expand L3Harris' Electronic Warfare Growth?
+[2026-09-14 16:13:12] [INFO] LLM_HEADLINE BA.L 55 European Indexes Rise in Strong Open
+[2026-09-14 16:13:12] [INFO] LLM_HEADLINE BA.L 25 U.K. Defense Stocks Fall as Government Likely to Drop Spending Targets
+[2026-09-14 16:13:12] [INFO] LLM_HEADLINE BA.L 50 Can Electronic Warfare Demand Boost L3Harris' Growth Prospects?
+[2026-09-14 16:13:12] [INFO] LLM_HEADLINE BA.L 55 Can HII Benefit From Growing Demand for Submarine Construction?
+[2026-09-14 16:13:12] [INFO] LLM_HEADLINE BA.L 72 BAE Systems (LSE:BA.) THREADS Progress Keeps Its Undervalued Narrative In Play
+[2026-09-14 16:13:12] [INFO]   BA.L         Industrials      score= 46.0 RSI=23.2 P/E=27.7   news=51.0 BAE Systems plc
+[2026-09-14 16:13:13] [INFO] LLM_CALL EXPN.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:13:18] [INFO] LLM_SCORE EXPN.L overall=45.0 headlines=10
+[2026-09-14 16:13:18] [INFO] LLM_HEADLINE EXPN.L 50 ROOT's Partnership Strategy Push Could Unlock Profitable Growth
+[2026-09-14 16:13:18] [INFO] LLM_HEADLINE EXPN.L 50 A bankruptcy attorney explains exactly when creditors can — and can't — garnish 
+[2026-09-14 16:13:18] [INFO] LLM_HEADLINE EXPN.L 50 6 Ways to Save on Your Next Car
+[2026-09-14 16:13:18] [INFO] LLM_HEADLINE EXPN.L 52 Equifax (EFX) Faces Complaint Portal Focus, Is It A Bargain?
+[2026-09-14 16:13:18] [INFO] LLM_HEADLINE EXPN.L 42 Bill Pulte Instructs Fannie and Freddie to Approve VantageScore in Blow to FICO 
+[2026-09-14 16:13:18] [INFO] LLM_HEADLINE EXPN.L 55 FICO Stock Falls 16% After Pulte Ends Its Mortgage Monopoly
+[2026-09-14 16:13:18] [INFO] LLM_HEADLINE EXPN.L 50 Sector Update: Financial
+[2026-09-14 16:13:18] [INFO] LLM_HEADLINE EXPN.L 43 Trump Housing Chief Restarts Battle With the Credit-Score Industry
+[2026-09-14 16:13:18] [INFO] LLM_HEADLINE EXPN.L 50 TransUnion (TRU): Buy, Sell, or Hold Post Q2 Earnings?
+[2026-09-14 16:13:18] [INFO] LLM_HEADLINE EXPN.L 45 The CFPB Has New Rules for You to Make Complaints
+[2026-09-14 16:13:18] [INFO]   EXPN.L       Industrials      score= 59.3 RSI=42.0 P/E=23.6   news=45.0 Experian plc
+[2026-09-14 16:13:19] [INFO] LLM_CALL RS1.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:13:22] [INFO] LLM_SCORE RS1.L overall=78.0 headlines=10
+[2026-09-14 16:13:22] [INFO] LLM_HEADLINE RS1.L 92 RS Group upgraded to buy at Deutsche Bank on strengthening recovery case
+[2026-09-14 16:13:22] [INFO] LLM_HEADLINE RS1.L 78 RS Group PLC (FRA:ECN) Full Year 2026 Earnings Call Highlights: Resilient Perfor
+[2026-09-14 16:13:22] [INFO] LLM_HEADLINE RS1.L 65 RS Group H2 Earnings Call Highlights
+[2026-09-14 16:13:22] [INFO] LLM_HEADLINE RS1.L 62 UK Dividend Stocks To Consider In May 2026
+[2026-09-14 16:13:22] [INFO] LLM_HEADLINE RS1.L 62 Top UK Dividend Stocks For Your Portfolio
+[2026-09-14 16:13:22] [INFO] LLM_HEADLINE RS1.L 65 3 UK Dividend Stocks To Watch With Up To 6.2% Yield
+[2026-09-14 16:13:22] [INFO] LLM_HEADLINE RS1.L 67 3 UK Dividend Stocks Offering Yields Up To 7.7%
+[2026-09-14 16:13:22] [INFO] LLM_HEADLINE RS1.L 62 Top UK Dividend Stocks For May 2026
+[2026-09-14 16:13:22] [INFO] LLM_HEADLINE RS1.L 60 3 UK Dividend Stocks Offering Yields Up To 3.8%
+[2026-09-14 16:13:22] [INFO] LLM_HEADLINE RS1.L 66 3 UK Dividend Stocks To Watch With Up To 7.2% Yield
+[2026-09-14 16:13:22] [INFO]   RS1.L        Industrials      score= 56.8 RSI=47.8 P/E=21.3   news=78.0 RS Group plc
+[2026-09-14 16:13:23] [INFO] LLM_CALL BNZL.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:13:26] [INFO] LLM_SCORE BNZL.L overall=72.0 headlines=10
+[2026-09-14 16:13:26] [INFO] LLM_HEADLINE BNZL.L 58 Is Bunzl (BZLFY) Outperforming Other Consumer Staples Stocks This Year?
+[2026-09-14 16:13:26] [INFO] LLM_HEADLINE BNZL.L 68 Bunzl (LSE:BNZL) Stock Sees Modest Fair Value Lift As Analysts Weigh Margin Outl
+[2026-09-14 16:13:26] [INFO] LLM_HEADLINE BNZL.L 55 Bunzl H1 Earnings Call Highlights
+[2026-09-14 16:13:26] [INFO] LLM_HEADLINE BNZL.L 82 Bunzl (BZLFY) Upgraded to Buy: Here's What You Should Know
+[2026-09-14 16:13:26] [INFO] LLM_HEADLINE BNZL.L 60 Are Consumer Staples Stocks Lagging  Bunzl (BZLFY) This Year?
+[2026-09-14 16:13:26] [INFO] LLM_HEADLINE BNZL.L 50 Can Medifast's New Compensation Plan Accelerate Coach Growth?
+[2026-09-14 16:13:26] [INFO] LLM_HEADLINE BNZL.L 62 Is Bunzl (BZLFY) Stock Outpacing Its Consumer Staples Peers This Year?
+[2026-09-14 16:13:26] [INFO] LLM_HEADLINE BNZL.L 72 Bunzl (LSE:BNZL) Stock Sees Modest Fair Value Lift As Analysts Raise Targets
+[2026-09-14 16:13:26] [INFO] LLM_HEADLINE BNZL.L 72 Bunzl (LSE:BNZL) Stock Gets Fair Value Bump As Analysts Lift Targets
+[2026-09-14 16:13:26] [INFO] LLM_HEADLINE BNZL.L 70 Elliott Takes Nearly 5% Stake In Bunzl, Pushes For 10% Buyback
+[2026-09-14 16:13:26] [INFO]   BNZL.L       Industrials      score= 61.1 RSI=15.8 P/E=17.2   news=72.0 Bunzl plc
+[2026-09-14 16:13:27] [INFO] LLM_CALL RMV.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:13:33] [INFO] LLM_SCORE RMV.L overall=47.0 headlines=10
+[2026-09-14 16:13:33] [INFO] LLM_HEADLINE RMV.L 65 Top 3 British Quality Stocks To Watch In September 2026
+[2026-09-14 16:13:33] [INFO] LLM_HEADLINE RMV.L 35 Desperate developers offer freebies to offload luxury flats
+[2026-09-14 16:13:33] [INFO] LLM_HEADLINE RMV.L 38 Rightmove (LSE:RMV) Stock Gets Fair Value Trim As Analysts Weigh Growth And Exec
+[2026-09-14 16:13:33] [INFO] LLM_HEADLINE RMV.L 52 Rightmove PLC (RTMVF) (H1 2026) Earnings Call Highlights: Revenue Up 7% But New 
+[2026-09-14 16:13:33] [INFO] LLM_HEADLINE RMV.L 35 Taylor Wimpey trims home completion guidance amid ‘challenging’ market
+[2026-09-14 16:13:33] [INFO] LLM_HEADLINE RMV.L 50 Rightmove H1 Earnings Call Highlights
+[2026-09-14 16:13:33] [INFO] LLM_HEADLINE RMV.L 43 London rental supply slumps as Burnham considers rent controls
+[2026-09-14 16:13:33] [INFO] LLM_HEADLINE RMV.L 50 European Airline Stocks Drop After Oil Rises on U.S.-Iran Attacks
+[2026-09-14 16:13:33] [INFO] LLM_HEADLINE RMV.L 58 JP Morgan sees limited upside for REA in a fresh tilt at Rightmove
+[2026-09-14 16:13:33] [INFO] LLM_HEADLINE RMV.L 60 Cities where average price tag on a home has jumped highest in past decade
+[2026-09-14 16:13:33] [INFO]   RMV.L        Industrials      score= 58.6 RSI=44.4 P/E=16.9   news=47.0 Rightmove plc
+[2026-09-14 16:13:34] [INFO] LLM_CALL SMIN.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:13:37] [INFO] LLM_SCORE SMIN.L overall=58.0 headlines=10
+[2026-09-14 16:13:37] [INFO] LLM_HEADLINE SMIN.L 50 Smiths Group (LSE:SMIN) Stock Sees Split Analyst Revisions Before Q3 Trading Upd
+[2026-09-14 16:13:37] [INFO] LLM_HEADLINE SMIN.L 55 How The Smiths Group (LSE:SMIN) Narrative Is Evolving As Fair Value Assumptions 
+[2026-09-14 16:13:37] [INFO] LLM_HEADLINE SMIN.L 50 How The Smiths Group (LSE:SMIN) Investment Story Is Shifting As Price Targets Ar
+[2026-09-14 16:13:37] [INFO] LLM_HEADLINE SMIN.L 55 Smiths Group Q3 Earnings Call Highlights
+[2026-09-14 16:13:37] [INFO] LLM_HEADLINE SMIN.L 78 Smiths Group Details Post-Divestment Strategy, £2.5B Capital Returns and 5%-7% G
+[2026-09-14 16:13:37] [INFO] LLM_HEADLINE SMIN.L 45 Why The Story Around Smiths Group (LSE:SMIN) Is Shifting On Mixed Analyst Signal
+[2026-09-14 16:13:37] [INFO] LLM_HEADLINE SMIN.L 75 Smiths Group PLC (SMGKF) Half Year 2026 Earnings Call Highlights: Strong Profit 
+[2026-09-14 16:13:37] [INFO] LLM_HEADLINE SMIN.L 65 Smiths Group H1 Earnings Call Highlights
+[2026-09-14 16:13:37] [INFO] LLM_HEADLINE SMIN.L 25 Smiths Group shares hit six-week low as continuing operations miss forecasts
+[2026-09-14 16:13:37] [INFO] LLM_HEADLINE SMIN.L 45 How The Smiths Group (LSE:SMIN) Investment Story Is Shifting As Analyst Views Di
+[2026-09-14 16:13:37] [INFO]   SMIN.L       Industrials      score= 45.6 RSI=33.9 P/E=33.9   news=58.0 Smiths Group plc
+[2026-09-14 16:13:38] [INFO] LLM_CALL IMI.L model=gpt-5.6-luna headlines=9 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:13:42] [INFO] LLM_SCORE IMI.L overall=76.0 headlines=9
+[2026-09-14 16:13:42] [INFO] LLM_HEADLINE IMI.L 90 IMI PLC (IMIUY) (H1 2026) Earnings Call Highlights: Strong Cash Flow and Record 
+[2026-09-14 16:13:42] [INFO] LLM_HEADLINE IMI.L 60 IMI Q2 Earnings Call Highlights
+[2026-09-14 16:13:42] [INFO] LLM_HEADLINE IMI.L 60 IMI Q1 Earnings Call Highlights
+[2026-09-14 16:13:42] [INFO] LLM_HEADLINE IMI.L 55 Is Now The Time To Look At Buying IMI plc (LON:IMI)?
+[2026-09-14 16:13:42] [INFO] LLM_HEADLINE IMI.L 60 IMI Q4 Earnings Call Highlights
+[2026-09-14 16:13:42] [INFO] LLM_HEADLINE IMI.L 78 We Like IMI's (LON:IMI) Returns And Here's How They're Trending
+[2026-09-14 16:13:42] [INFO] LLM_HEADLINE IMI.L 55 When Should You Buy IMI plc (LON:IMI)?
+[2026-09-14 16:13:42] [INFO] LLM_HEADLINE IMI.L 52 FTSE 100 nudges higher but weak data dents pound
+[2026-09-14 16:13:42] [INFO] LLM_HEADLINE IMI.L 86 Investing in IMI (LON:IMI) five years ago would have delivered you a 127% gain
+[2026-09-14 16:13:42] [INFO]   IMI.L        Industrials      score= 57.4 RSI=37.7 P/E=21.8   news=76.0 IMI plc
+[2026-09-14 16:13:43] [INFO] LLM_CALL WEIR.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:13:47] [INFO] LLM_SCORE WEIR.L overall=72.0 headlines=10
+[2026-09-14 16:13:47] [INFO] LLM_HEADLINE WEIR.L 80 Weir to supply grinding technology for Zijin’s Akyem Gold Mine
+[2026-09-14 16:13:47] [INFO] LLM_HEADLINE WEIR.L 85 Weir Group PLC (WEGRY) (H1 2026) Earnings Call Highlights: Strong Order Growth a
+[2026-09-14 16:13:47] [INFO] LLM_HEADLINE WEIR.L 70 The Weir Group H1 Earnings Call Highlights
+[2026-09-14 16:13:47] [INFO] LLM_HEADLINE WEIR.L 58 How The Weir Group (LSE:WEIR) Narrative Is Shifting As Analysts Rework Price Tar
+[2026-09-14 16:13:47] [INFO] LLM_HEADLINE WEIR.L 52 How The Weir Group (LSE:WEIR) Story Is Shifting As Analyst Targets Diverge
+[2026-09-14 16:13:47] [INFO] LLM_HEADLINE WEIR.L 68 The Weir Group Q1 Earnings Call Highlights
+[2026-09-14 16:13:47] [INFO] LLM_HEADLINE WEIR.L 50 Jim Cramer Says “Alphabet Has a Mosaic Like None Other”
+[2026-09-14 16:13:47] [INFO] LLM_HEADLINE WEIR.L 52 Why The Narrative Around Weir Group (LSE:WEIR) Is Shifting As Analyst Views Dive
+[2026-09-14 16:13:47] [INFO] LLM_HEADLINE WEIR.L 65 How The Weir Group (LSE:WEIR) Narrative Is Shifting As Analyst Targets Converge 
+[2026-09-14 16:13:47] [INFO] LLM_HEADLINE WEIR.L 58 How The Weir Group (LSE:WEIR) Narrative Is Shifting As Analyst Targets Recalibra
+[2026-09-14 16:13:47] [INFO]   WEIR.L       Industrials      score= 57.7 RSI=31.7 P/E=25.5   news=72.0 Weir PLC
+[2026-09-14 16:13:48] [INFO] LLM_CALL SDR.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:13:53] [INFO] LLM_SCORE SDR.L overall=72.0 headlines=10
+[2026-09-14 16:13:53] [INFO] LLM_HEADLINE SDR.L 50 Wall Street jumps, oil lower ahead of Fed vote next week
+[2026-09-14 16:13:53] [INFO] LLM_HEADLINE SDR.L 42 After a wave of delistings, can London’s stock market reverse the decline?
+[2026-09-14 16:13:53] [INFO] LLM_HEADLINE SDR.L 82 Schroders and ttb wealth securities to build HNW offering in Thailand
+[2026-09-14 16:13:53] [INFO] LLM_HEADLINE SDR.L 50 London-listed Molten Ventures joins race to run Burnham-backed £1bn tech fund
+[2026-09-14 16:13:53] [INFO] LLM_HEADLINE SDR.L 55 British fund management giants vie to run £1bn Scale-Up Fund
+[2026-09-14 16:13:53] [INFO] LLM_HEADLINE SDR.L 50 Analysis-US corporate AI debt surge tests investor limits as fatigue emerges
+[2026-09-14 16:13:53] [INFO] LLM_HEADLINE SDR.L 50 VP Bank Singapore names Vincent Koo as chief risk officer
+[2026-09-14 16:13:53] [INFO] LLM_HEADLINE SDR.L 50 Many Retirees Have More Credit Card Debt Than Savings. Financial Advisors’ Best 
+[2026-09-14 16:13:53] [INFO] LLM_HEADLINE SDR.L 50 JPMorgan Chase (JPM) Wins First Approved Tokenised Money Market Fund Mandate
+[2026-09-14 16:13:53] [INFO] LLM_HEADLINE SDR.L 85 Schroders gets Irish nod for tokenised money market fund
+[2026-09-14 16:13:53] [INFO]   SDR.L        Industrials      score= 66.8 RSI=85.7 P/E=13.3   news=72.0 Schroders plc
+[2026-09-14 16:13:54] [INFO] LLM_CALL NXT.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:13:59] [INFO] LLM_SCORE NXT.L overall=58.0 headlines=10
+[2026-09-14 16:13:59] [INFO] LLM_HEADLINE NXT.L 48 Are Retail-Wholesale Stocks Lagging  Insight Enterprises (NSIT) This Year?
+[2026-09-14 16:13:59] [INFO] LLM_HEADLINE NXT.L 62 Next (LSE:NXT) Stock Sees Modest Fair Value Lift After Analyst Target Changes
+[2026-09-14 16:13:59] [INFO] LLM_HEADLINE NXT.L 85 Next PLC’s Shares Rise After Full-Year Guidance Raise
+[2026-09-14 16:13:59] [INFO] LLM_HEADLINE NXT.L 50 Is Ross Stores (ROST) Outperforming Other Retail-Wholesale Stocks This Year?
+[2026-09-14 16:13:59] [INFO] LLM_HEADLINE NXT.L 48 NEXT (LSE:NXT) Stock Sees Split Analyst Revisions After Diverging Price Target M
+[2026-09-14 16:13:59] [INFO] LLM_HEADLINE NXT.L 50 Is Next (NXGPY) Outperforming Other Retail-Wholesale Stocks This Year?
+[2026-09-14 16:13:59] [INFO] LLM_HEADLINE NXT.L 45 Why The Narrative Around Next (LSE:NXT) Is Shifting On Conflicting Analyst Valua
+[2026-09-14 16:13:59] [INFO] LLM_HEADLINE NXT.L 38 How The Narrative On Next (LSE:NXT) Is Shifting After The Latest Price Target Cu
+[2026-09-14 16:13:59] [INFO] LLM_HEADLINE NXT.L 50 Starmer digs in as Mandelson appointment scandal clouds Labour’s outlook
+[2026-09-14 16:13:59] [INFO] LLM_HEADLINE NXT.L 52 How The NEXT (LSE:NXT) Narrative Is Shifting With Trimmed Valuation And Brand Ac
+[2026-09-14 16:13:59] [INFO]   NXT.L        Consumer Discretionary score= 61.5 RSI=38.2 P/E=19.8   news=58.0 NEXT plc
+[2026-09-14 16:14:00] [INFO] LLM_CALL IHG.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:14:03] [INFO] LLM_SCORE IHG.L overall=67.0 headlines=10
+[2026-09-14 16:14:03] [INFO] LLM_HEADLINE IHG.L 78 IHG and ALAND agree to open Staybridge Suites in Australia
+[2026-09-14 16:14:03] [INFO] LLM_HEADLINE IHG.L 65 How Marriott, Hilton, Accor and IHG are expanding global hotel networks
+[2026-09-14 16:14:03] [INFO] LLM_HEADLINE IHG.L 58 European Equities Traded in the US as American Depositary Receipts Track Higher 
+[2026-09-14 16:14:03] [INFO] LLM_HEADLINE IHG.L 50 Sirius XM upgraded, Toast downgraded: Wall Street's top analyst calls
+[2026-09-14 16:14:03] [INFO] LLM_HEADLINE IHG.L 50 Here Are Wednesday’s Top Wall Street Analyst Research Calls: Ally Financial, Git
+[2026-09-14 16:14:03] [INFO] LLM_HEADLINE IHG.L 78 IHG signs franchise agreement for Garner hotel in Ahmedabad, India
+[2026-09-14 16:14:03] [INFO] LLM_HEADLINE IHG.L 45 Are Consumer Discretionary Stocks Lagging  Intercontinental Hotels Group (IHG) T
+[2026-09-14 16:14:03] [INFO] LLM_HEADLINE IHG.L 48 European Equities Largely Lower Though AI Stocks Gain
+[2026-09-14 16:14:03] [INFO] LLM_HEADLINE IHG.L 70 InterContinental Hotels Group (IHG): AI Search Functions Improve Visibility and 
+[2026-09-14 16:14:03] [INFO] LLM_HEADLINE IHG.L 55 IHG (IHG) Q2 2026 Earnings Call Transcript
+[2026-09-14 16:14:03] [INFO]   IHG.L        Consumer Discretionary score= 50.3 RSI=39.5 P/E=32.6   news=67.0 InterContinental Hotels Grou
+[2026-09-14 16:14:05] [INFO] LLM_CALL WTB.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:14:09] [INFO] LLM_SCORE WTB.L overall=32.0 headlines=10
+[2026-09-14 16:14:09] [INFO] LLM_HEADLINE WTB.L 30 Tourist tax plans will be ‘hugely damaging’, warn holiday firms
+[2026-09-14 16:14:09] [INFO] LLM_HEADLINE WTB.L 25 Global dining leader closing 261 restaurants, steakhouse chain
+[2026-09-14 16:14:09] [INFO] LLM_HEADLINE WTB.L 15 Final orders for Brewers Fayre and Beefeater sites as closing dates confirmed
+[2026-09-14 16:14:09] [INFO] LLM_HEADLINE WTB.L 52 FTSE 100 Live: Shares and pound climb as Starmer resigns, banks on the rise
+[2026-09-14 16:14:09] [INFO] LLM_HEADLINE WTB.L 78 Bookings rise at Premier Inn owner Whitbread amid leisure demand
+[2026-09-14 16:14:09] [INFO] LLM_HEADLINE WTB.L 43 We Think You Can Look Beyond Whitbread's (LON:WTB) Lackluster Earnings
+[2026-09-14 16:14:09] [INFO] LLM_HEADLINE WTB.L 30 Whitbread outlines new strategy with job losses and property sales
+[2026-09-14 16:14:09] [INFO] LLM_HEADLINE WTB.L 50 Whitbread H2 Earnings Call Highlights
+[2026-09-14 16:14:09] [INFO] LLM_HEADLINE WTB.L 12 Premier Inn owner blames Reeves tax raid as it cuts 3,800 jobs
+[2026-09-14 16:14:09] [INFO] LLM_HEADLINE WTB.L 10 Premier Inn and Beefeater owner blames tax rises for cutting nearly 4,000 jobs
+[2026-09-14 16:14:09] [INFO]   WTB.L        Consumer Discretionary score= 49.0 RSI=25.6 P/E=18.9   news=32.0 Whitbread plc
+[2026-09-14 16:14:10] [INFO] LLM_CALL JD.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:14:15] [INFO] LLM_SCORE JD.L overall=18.0 headlines=10
+[2026-09-14 16:14:15] [INFO] LLM_HEADLINE JD.L 35 Genesco CEO Explains Why Journeys Has Avoided the Same Plight as Foot Locker, JD
+[2026-09-14 16:14:15] [INFO] LLM_HEADLINE JD.L 40 Academy’s Insulated — But Not Immune — From Athletic Lifestyle Softness
+[2026-09-14 16:14:15] [INFO] LLM_HEADLINE JD.L 30 Deutsche Bank keeps JD Sports at hold as US weakness weighs on outlook
+[2026-09-14 16:14:15] [INFO] LLM_HEADLINE JD.L 25 RBC warns on German consumer weakness, cuts H&M and JD Sports forecasts
+[2026-09-14 16:14:15] [INFO] LLM_HEADLINE JD.L 45 Why Caleres (CAL) Stock Is Trading Lower Today
+[2026-09-14 16:14:15] [INFO] LLM_HEADLINE JD.L 10 JD Sports Shares Tumble on ‘Weak Consumer Sentiment’ and Shoe Sales Slowdown
+[2026-09-14 16:14:15] [INFO] LLM_HEADLINE JD.L 15 JD Sports Trips Over the Sneaker Cycle
+[2026-09-14 16:14:15] [INFO] LLM_HEADLINE JD.L 15 JD Sports Fashion draws broker caution after profit guidance cut
+[2026-09-14 16:14:15] [INFO] LLM_HEADLINE JD.L 18 JD Sports says cost-of-living squeeze hitting sales despite football kit boost
+[2026-09-14 16:14:15] [INFO] LLM_HEADLINE JD.L 8 JD Sports Shares Tumble After Profit Guidance Cut
+[2026-09-14 16:14:15] [INFO]   JD.L         Consumer Discretionary score= 51.1 RSI=24.5 P/E=8.6    news=18.0 JD Sports Fashion Plc
+[2026-09-14 16:14:16] [INFO] LLM_CALL FRAS.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:14:20] [INFO] LLM_SCORE FRAS.L overall=64.0 headlines=10
+[2026-09-14 16:14:20] [INFO] LLM_HEADLINE FRAS.L 78 Stephan Sturm Steps Down as Hugo Boss Chairman as Frasers Tightens Its Grip on t
+[2026-09-14 16:14:20] [INFO] LLM_HEADLINE FRAS.L 70 Hugo Boss chairman quits amid Mike Ashley power struggle
+[2026-09-14 16:14:20] [INFO] LLM_HEADLINE FRAS.L 76 Hugo Boss chairman to step down after pressure from Mike Ashley’s Frasers
+[2026-09-14 16:14:20] [INFO] LLM_HEADLINE FRAS.L 72 Hugo Boss Chairman to Step Down After Frasers Talks
+[2026-09-14 16:14:20] [INFO] LLM_HEADLINE FRAS.L 35 Chloé, Canada Goose, Ralph Lauren and Others Set to Lose Millions in Harvey Nich
+[2026-09-14 16:14:20] [INFO] LLM_HEADLINE FRAS.L 30 Harvey Nichols’ former owner faces £100m loss from sale
+[2026-09-14 16:14:20] [INFO] LLM_HEADLINE FRAS.L 40 Nearly 200-year-old retailer exits an entire market
+[2026-09-14 16:14:20] [INFO] LLM_HEADLINE FRAS.L 85 Frasers Group signals plan to push Hugo Boss stake past 50%
+[2026-09-14 16:14:20] [INFO] LLM_HEADLINE FRAS.L 35 Sports Direct in row with advertising watchdog over ‘false’ discounts
+[2026-09-14 16:14:20] [INFO] LLM_HEADLINE FRAS.L 82 Frasers Targets Majority Ownership in Hugo Boss, Weighs Support for Chair
+[2026-09-14 16:14:20] [INFO]   FRAS.L       Consumer Discretionary score= 60.6 RSI=39.2 P/E=10.1   news=64.0 Frasers Group Plc
+[2026-09-14 16:14:21] [INFO] LLM_CALL ENT.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:14:24] [INFO] LLM_SCORE ENT.L overall=38.0 headlines=10
+[2026-09-14 16:14:24] [INFO] LLM_HEADLINE ENT.L 50 EasyJet returns to FTSE 100 ahead of private equity takeover
+[2026-09-14 16:14:24] [INFO] LLM_HEADLINE ENT.L 65 Entain PLC (GMVHF) (H1 2026) Earnings Call Highlights: Online Growth and Strateg
+[2026-09-14 16:14:24] [INFO] LLM_HEADLINE ENT.L 55 Entain H1 Earnings Call Highlights
+[2026-09-14 16:14:24] [INFO] LLM_HEADLINE ENT.L 15 Ladbrokes owner Entain says new gambling taxes to have ‘massive impact’
+[2026-09-14 16:14:24] [INFO] LLM_HEADLINE ENT.L 75 Ladbrokes owner Entain beats expectations after World Cup boost
+[2026-09-14 16:14:24] [INFO] LLM_HEADLINE ENT.L 25 Betfred to cut 600 jobs as 132 shops close amid industry tax raid
+[2026-09-14 16:14:24] [INFO] LLM_HEADLINE ENT.L 42 Entain’s BetMGM Sees iGaming Growth, but Guides Toward Low End After Soft Q2
+[2026-09-14 16:14:24] [INFO] LLM_HEADLINE ENT.L 25 BetMGM cuts outlook as prediction market competition grows
+[2026-09-14 16:14:24] [INFO] LLM_HEADLINE ENT.L 40 Bookies threaten legal challenge to Labour’s gambling affordability checks
+[2026-09-14 16:14:24] [INFO] LLM_HEADLINE ENT.L 45 World Cup Stock Baskets May Mislead Investors
+[2026-09-14 16:14:24] [INFO]   ENT.L        Consumer Discretionary score= 45.0 RSI=23.4 P/E=N/A    news=38.0 Entain Plc
+[2026-09-14 16:14:25] [INFO] LLM_CALL TW.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:14:29] [INFO] LLM_SCORE TW.L overall=29.0 headlines=10
+[2026-09-14 16:14:29] [INFO] LLM_HEADLINE TW.L 40 Taylor Wimpey PLC (TWODF) (H1 2026) Earnings Call Highlights: Navigating Market 
+[2026-09-14 16:14:29] [INFO] LLM_HEADLINE TW.L 20 Taylor Wimpey trims home completion guidance amid ‘challenging’ market
+[2026-09-14 16:14:29] [INFO] LLM_HEADLINE TW.L 15 Housebuilders face £4bn lawsuit over price conduct claims
+[2026-09-14 16:14:29] [INFO] LLM_HEADLINE TW.L 15 Housebuilders face potential £4.5 billion class action legal case
+[2026-09-14 16:14:29] [INFO] LLM_HEADLINE TW.L 15 Housebuilders have crumbled in value. Can they ever rebuild?
+[2026-09-14 16:14:29] [INFO] LLM_HEADLINE TW.L 25 Taylor Wimpey says house building costs rising amid higher energy prices
+[2026-09-14 16:14:29] [INFO] LLM_HEADLINE TW.L 65 UK Stocks Possibly Trading Below Their Estimated Value In April 2026
+[2026-09-14 16:14:29] [INFO] LLM_HEADLINE TW.L 65 3 UK Stocks That May Be Undervalued By Up To 49.5%
+[2026-09-14 16:14:29] [INFO] LLM_HEADLINE TW.L 35 HSBC, NatWest, Nationwide and Halifax hike mortgage rates as Bank of England war
+[2026-09-14 16:14:29] [INFO] LLM_HEADLINE TW.L 50 Discover Mitie Group And Two Other UK Stocks Priced Below Estimated Value
+[2026-09-14 16:14:29] [INFO]   TW.L         Consumer Discretionary score= 50.1 RSI=25.1 P/E=10.8   news=29.0 Taylor Wimpey plc
+[2026-09-14 16:14:30] [INFO] LLM_CALL DGE.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:14:34] [INFO] LLM_SCORE DGE.L overall=42.0 headlines=10
+[2026-09-14 16:14:34] [INFO] LLM_HEADLINE DGE.L 45 Whisky war breaks out after English malts given protected status
+[2026-09-14 16:14:34] [INFO] LLM_HEADLINE DGE.L 58 Kenya clears EABL sale to Asahi, Diageo confirms
+[2026-09-14 16:14:34] [INFO] LLM_HEADLINE DGE.L 45 The Winners and Losers of Trump’s Canada Import Ban—For Now
+[2026-09-14 16:14:34] [INFO] LLM_HEADLINE DGE.L 62 Diageo (LSE:DGE) Stock May Be 47% Undervalued As Job Cuts Begin
+[2026-09-14 16:14:34] [INFO] LLM_HEADLINE DGE.L 35 Why Is Diageo (LSE:DGE) Cutting 305 Jobs In North America?
+[2026-09-14 16:14:34] [INFO] LLM_HEADLINE DGE.L 58 Diageo (LSE:DGE) Could Be 15% Undervalued After Bonus Plan Reset
+[2026-09-14 16:14:34] [INFO] LLM_HEADLINE DGE.L 32 Diageo to cut 300 jobs at North America HQ
+[2026-09-14 16:14:34] [INFO] LLM_HEADLINE DGE.L 35 Diageo pulls ESG measures from long-term exec rewards
+[2026-09-14 16:14:34] [INFO] LLM_HEADLINE DGE.L 30 Guinness owner drops responsible drinking targets from boss’s bonus
+[2026-09-14 16:14:34] [INFO] LLM_HEADLINE DGE.L 42 The World’s Drinks Order Is In. Distillers Were Expecting More.
+[2026-09-14 16:14:34] [INFO]   DGE.L        Consumer Discretionary score= 51.7 RSI=27.1 P/E=28.3   news=42.0 Diageo plc
+[2026-09-14 16:14:35] [INFO] LLM_CALL BWY.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:14:40] [INFO] LLM_SCORE BWY.L overall=26.0 headlines=10
+[2026-09-14 16:14:40] [INFO] LLM_HEADLINE BWY.L 65 Government should cut stamp duty to boost housing market, says Bellway
+[2026-09-14 16:14:40] [INFO] LLM_HEADLINE BWY.L 25 Bellway (LSE:BWY) Stock Sees Fair Value Cut As Analysts Trim Growth And Margin V
+[2026-09-14 16:14:40] [INFO] LLM_HEADLINE BWY.L 20 Housebuilders face £4bn lawsuit over price conduct claims
+[2026-09-14 16:14:40] [INFO] LLM_HEADLINE BWY.L 15 Housebuilders face potential £4.5 billion class action legal case
+[2026-09-14 16:14:40] [INFO] LLM_HEADLINE BWY.L 25 Homebuyer interest dipped after mortgage rates rise, builder Bellway says
+[2026-09-14 16:14:40] [INFO] LLM_HEADLINE BWY.L 40 Why The Bellway (LSE:BWY) Investment Narrative Is Shifting As Analysts Rework Va
+[2026-09-14 16:14:40] [INFO] LLM_HEADLINE BWY.L 55 Is It Time To Consider Buying Bellway p.l.c. (LON:BWY)?
+[2026-09-14 16:14:40] [INFO] LLM_HEADLINE BWY.L 15 Bellway Feels Cracks in the Foundation as Rate Shock Hits Demand
+[2026-09-14 16:14:40] [INFO] LLM_HEADLINE BWY.L 35 Bellway PLC (FRA:41B) (Q1 2026) Earnings Call Highlights: Navigating Market Chal
+[2026-09-14 16:14:40] [INFO] LLM_HEADLINE BWY.L 15 Bellway shares hit as full-year earnings outlook disappoints
+[2026-09-14 16:14:40] [INFO]   BWY.L        Consumer Discretionary score= 49.4 RSI=19.8 P/E=14.7   news=26.0 Bellway p.l.c.
+[2026-09-14 16:14:41] [INFO] LLM_CALL PSN.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:14:45] [INFO] LLM_SCORE PSN.L overall=45.0 headlines=10
+[2026-09-14 16:14:45] [INFO] LLM_HEADLINE PSN.L 50 EasyJet returns to FTSE 100 ahead of private equity takeover
+[2026-09-14 16:14:45] [INFO] LLM_HEADLINE PSN.L 50 Persimmon H1 Earnings Call Highlights
+[2026-09-14 16:14:45] [INFO] LLM_HEADLINE PSN.L 78 Persimmon improves completion guidance despite ‘challenging’ housing market
+[2026-09-14 16:14:45] [INFO] LLM_HEADLINE PSN.L 65 UK Homebuilders Get a Burnham Bounce
+[2026-09-14 16:14:45] [INFO] LLM_HEADLINE PSN.L 22 Housebuilders face £4bn lawsuit over price conduct claims
+[2026-09-14 16:14:45] [INFO] LLM_HEADLINE PSN.L 20 Housebuilders face potential £4.5 billion class action legal case
+[2026-09-14 16:14:45] [INFO] LLM_HEADLINE PSN.L 35 Persimmon (LSE:PSN) Stock Gets Fair Value Trim After Analyst Target Cuts
+[2026-09-14 16:14:45] [INFO] LLM_HEADLINE PSN.L 50 Comstock Soars 47% in a Year: Should You Buy the Stock?
+[2026-09-14 16:14:45] [INFO] LLM_HEADLINE PSN.L 50 PSMMY vs. NVR: Which Stock Is the Better Value Option?
+[2026-09-14 16:14:45] [INFO] LLM_HEADLINE PSN.L 52 Should Value Investors Buy Persimmon (PSMMY) Stock?
+[2026-09-14 16:14:45] [INFO]   PSN.L        Consumer Discretionary score= 63.5 RSI=29.6 P/E=11.5   news=45.0 Persimmon Plc
+[2026-09-14 16:14:46] [INFO] LLM_CALL BRBY.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:14:51] [INFO] LLM_SCORE BRBY.L overall=55.0 headlines=10
+[2026-09-14 16:14:51] [INFO] LLM_HEADLINE BRBY.L 45 European Indexes Slide as Higher Oil Weighs on Defense Stocks, Banks
+[2026-09-14 16:14:51] [INFO] LLM_HEADLINE BRBY.L 65 3 British Undervalued Stocks Trading Up To 48% Below Fair Value
+[2026-09-14 16:14:51] [INFO] LLM_HEADLINE BRBY.L 58 European Stocks Close Higher in Friday Trading as Investors Parse Fed Chair Rema
+[2026-09-14 16:14:51] [INFO] LLM_HEADLINE BRBY.L 48 Son of Luxottica founder quits after succession row
+[2026-09-14 16:14:51] [INFO] LLM_HEADLINE BRBY.L 76 Europe’s Luxury Giants Discern Green Shoots in Key China Market
+[2026-09-14 16:14:51] [INFO] LLM_HEADLINE BRBY.L 60 Coty Targets Portfolio Growth by 2028, Focuses on Innovation and Brand Investmen
+[2026-09-14 16:14:51] [INFO] LLM_HEADLINE BRBY.L 42 Louis Vuitton to Exit Guizhou as Luxury Retail Landscape Shifts
+[2026-09-14 16:14:51] [INFO] LLM_HEADLINE BRBY.L 57 American Luxury Brands Have a Secret Weapon: $12 Tennis Socks
+[2026-09-14 16:14:51] [INFO] LLM_HEADLINE BRBY.L 35 Iconic luxury brand confirms more store closures through 2027
+[2026-09-14 16:14:51] [INFO] LLM_HEADLINE BRBY.L 52 Mike Ashley’s Frasers Group Launches a Summer Offensive in Europe
+[2026-09-14 16:14:51] [INFO]   BRBY.L       Consumer Discretionary score= 47.5 RSI=29.0 P/E=166.2  news=55.0 Burberry Group plc
+[2026-09-14 16:14:52] [INFO] LLM_CALL ULVR.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:14:56] [INFO] LLM_SCORE ULVR.L overall=54.0 headlines=10
+[2026-09-14 16:14:56] [INFO] LLM_HEADLINE ULVR.L 50 Procter & Gamble Stock Looks Pricey: What's the Best Move Now?
+[2026-09-14 16:14:56] [INFO] LLM_HEADLINE ULVR.L 48 NotCo sells Brazil assets in wake of Argentina, Uruguay disposals
+[2026-09-14 16:14:56] [INFO] LLM_HEADLINE ULVR.L 42 Food giants face Poland ‘shrinkflation’ scrutiny
+[2026-09-14 16:14:56] [INFO] LLM_HEADLINE ULVR.L 53 European Equities Traded in the US as American Depositary Receipts Edge Higher i
+[2026-09-14 16:14:56] [INFO] LLM_HEADLINE ULVR.L 47 Pepsi and Coca-Cola Products Found in Alleged India Relabeling Scheme
+[2026-09-14 16:14:56] [INFO] LLM_HEADLINE ULVR.L 53 European Equities Traded in the US as American Depositary Receipts Edge Higher i
+[2026-09-14 16:14:56] [INFO] LLM_HEADLINE ULVR.L 56 Reckitt Benckiser shares rise over 4% as JP Morgan upgrades to 'overweight'
+[2026-09-14 16:14:56] [INFO] LLM_HEADLINE ULVR.L 50 Unilever (LSE:ULVR) Faces A Fair Value Debate, Is The Stock Fully Priced?
+[2026-09-14 16:14:56] [INFO] LLM_HEADLINE ULVR.L 56 Unilever (LSE:ULVR) Stock Looks Cheap On Cash Flow Yet Fair On Earnings
+[2026-09-14 16:14:56] [INFO] LLM_HEADLINE ULVR.L 50 Why Dr. Squatch is investing in experiences — not ads — with IShowSpeed
+[2026-09-14 16:14:56] [INFO]   ULVR.L       Consumer Staples score= 49.3 RSI=41.1 P/E=21.4   news=54.0 Unilever PLC
+[2026-09-14 16:14:57] [INFO] LLM_CALL RKT.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:15:01] [INFO] LLM_SCORE RKT.L overall=67.0 headlines=10
+[2026-09-14 16:15:01] [INFO] LLM_HEADLINE RKT.L 72 Reckitt Gets a Baby Formula Break
+[2026-09-14 16:15:01] [INFO] LLM_HEADLINE RKT.L 88 Reckitt Benckiser shares rise over 4% as JP Morgan upgrades to 'overweight'
+[2026-09-14 16:15:01] [INFO] LLM_HEADLINE RKT.L 55 Reckitt Benckiser Group PLC's Dividend Analysis
+[2026-09-14 16:15:01] [INFO] LLM_HEADLINE RKT.L 82 Reckitt Benckiser Group PLC (RBGLY) (H1 2026) Earnings Call Highlights: Strong Q
+[2026-09-14 16:15:01] [INFO] LLM_HEADLINE RKT.L 48 Lysol Maker Reckitt to Hike Prices Due to Iran War
+[2026-09-14 16:15:01] [INFO] LLM_HEADLINE RKT.L 70 Reckitt Benckiser Group H1 Earnings Call Highlights
+[2026-09-14 16:15:01] [INFO] LLM_HEADLINE RKT.L 55 Reckitt raising prices to offset cost pressures amid Iran war
+[2026-09-14 16:15:01] [INFO] LLM_HEADLINE RKT.L 50 FTSE 100 Live: London index hits new intraday high, but US in selling mode pre-F
+[2026-09-14 16:15:01] [INFO] LLM_HEADLINE RKT.L 62 Dettol-maker sells Russia business four years after EU sanctions
+[2026-09-14 16:15:01] [INFO] LLM_HEADLINE RKT.L 65 Lysol Maker Reckitt to Offload Sanctions-Hit Russian Hygiene Business
+[2026-09-14 16:15:01] [INFO]   RKT.L        Consumer Staples score= 51.9 RSI=46.0 P/E=11.5   news=67.0 Reckitt Benckiser Group plc
+[2026-09-14 16:15:02] [INFO] LLM_CALL TSCO.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:15:06] [INFO] LLM_SCORE TSCO.L overall=48.0 headlines=10
+[2026-09-14 16:15:06] [INFO] LLM_HEADLINE TSCO.L 50 Tooru CEO sees growth accelerating as OAF and Pulsin gain retail traction
+[2026-09-14 16:15:06] [INFO] LLM_HEADLINE TSCO.L 65 Tesco banned additives rise to more than 100 in ultra-processed food drive
+[2026-09-14 16:15:06] [INFO] LLM_HEADLINE TSCO.L 50 John Lewis turnaround cracks under cost of living reality
+[2026-09-14 16:15:06] [INFO] LLM_HEADLINE TSCO.L 50 Retailers to offer work experience to 100,000 young benefits claimants
+[2026-09-14 16:15:06] [INFO] LLM_HEADLINE TSCO.L 50 Hilton Food Group PLC (HLTFF) (H1 2026) Earnings Call Highlights: Strong Core Pe
+[2026-09-14 16:15:06] [INFO] LLM_HEADLINE TSCO.L 42 M&S and Tesco warn Burnham against high street tax raid
+[2026-09-14 16:15:06] [INFO] LLM_HEADLINE TSCO.L 50 Guinness owner drops responsible drinking targets from boss’s bonus
+[2026-09-14 16:15:06] [INFO] LLM_HEADLINE TSCO.L 58 Aldi resorts to ‘whinging’ as rivals steal a march
+[2026-09-14 16:15:06] [INFO] LLM_HEADLINE TSCO.L 45 Morrisons commits to price pledge against top supermarket rivals
+[2026-09-14 16:15:06] [INFO] LLM_HEADLINE TSCO.L 50 How Britain’s favourite fund manager lost his way – and billions of pounds
+[2026-09-14 16:15:06] [INFO]   TSCO.L       Consumer Staples score= 53.3 RSI=64.1 P/E=17.8   news=48.0 Tesco PLC
+[2026-09-14 16:15:07] [INFO] LLM_CALL SBRY.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:15:11] [INFO] LLM_SCORE SBRY.L overall=52.0 headlines=10
+[2026-09-14 16:15:11] [INFO] LLM_HEADLINE SBRY.L 50 Is Cracker Barrel Old Country Store (CBRL) Outperforming Other Retail-Wholesale 
+[2026-09-14 16:15:11] [INFO] LLM_HEADLINE SBRY.L 78 All You Need to Know About J. Sainsbury (JSAIY) Rating Upgrade to Buy
+[2026-09-14 16:15:11] [INFO] LLM_HEADLINE SBRY.L 52 M&S and Tesco warn Burnham against high street tax raid
+[2026-09-14 16:15:11] [INFO] LLM_HEADLINE SBRY.L 58 JSAIY vs. WMT: Which Stock Is the Better Value Option?
+[2026-09-14 16:15:11] [INFO] LLM_HEADLINE SBRY.L 42 Ex-Sainsbury’s CFO joins AG Barr as chair
+[2026-09-14 16:15:11] [INFO] LLM_HEADLINE SBRY.L 60 Is J. Sainsbury (JSAIY) a Great Value Stock Right Now?
+[2026-09-14 16:15:11] [INFO] LLM_HEADLINE SBRY.L 47 Aldi resorts to ‘whinging’ as rivals steal a march
+[2026-09-14 16:15:11] [INFO] LLM_HEADLINE SBRY.L 45 Morrisons commits to price pledge against top supermarket rivals
+[2026-09-14 16:15:11] [INFO] LLM_HEADLINE SBRY.L 58 JSAIY vs. WMT: Which Stock Should Value Investors Buy Now?
+[2026-09-14 16:15:11] [INFO] LLM_HEADLINE SBRY.L 58 Should Value Investors Buy J. Sainsbury (JSAIY) Stock?
+[2026-09-14 16:15:11] [INFO]   SBRY.L       Consumer Staples score= 49.9 RSI=56.2 P/E=18.9   news=52.0 J Sainsbury plc
+[2026-09-14 16:15:12] [INFO] LLM_CALL ABF.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:15:16] [INFO] LLM_SCORE ABF.L overall=40.0 headlines=10
+[2026-09-14 16:15:16] [INFO] LLM_HEADLINE ABF.L 65 Primark Embraces Home Delivery in UK After Years of Questioning the Economics
+[2026-09-14 16:15:16] [INFO] LLM_HEADLINE ABF.L 68 Primark to offer home delivery in Great Britain for first time
+[2026-09-14 16:15:16] [INFO] LLM_HEADLINE ABF.L 25 Primark Goes Online While ABF Goes Down
+[2026-09-14 16:15:16] [INFO] LLM_HEADLINE ABF.L 10 AB Foods Shares Slump After Group Cautions on Outlook for Sugar, Grocery Units
+[2026-09-14 16:15:16] [INFO] LLM_HEADLINE ABF.L 68 Primark to launch home delivery in Great Britain
+[2026-09-14 16:15:16] [INFO] LLM_HEADLINE ABF.L 68 Primark to offer home deliveries for the first time
+[2026-09-14 16:15:16] [INFO] LLM_HEADLINE ABF.L 50 European Stock Indexes Edge Higher, Tech Stocks Fall
+[2026-09-14 16:15:16] [INFO] LLM_HEADLINE ABF.L 42 Primark investors hope summer price cuts lift sales as cost of living bites
+[2026-09-14 16:15:16] [INFO] LLM_HEADLINE ABF.L 50 UK unveils £65 million drought support for farmers
+[2026-09-14 16:15:16] [INFO] LLM_HEADLINE ABF.L 18 Britain’s oldest sugar factory shuts because of sky-high energy costs
+[2026-09-14 16:15:16] [INFO]   ABF.L        Consumer Staples score= 46.6 RSI=20.6 P/E=14.0   news=40.0 Associated British Foods plc
+[2026-09-14 16:15:17] [INFO] LLM_CALL BME.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:15:21] [INFO] LLM_SCORE BME.L overall=54.0 headlines=10
+[2026-09-14 16:15:21] [INFO] LLM_HEADLINE BME.L 55 BMRRY vs. SN: Which Stock Is the Better Value Option?
+[2026-09-14 16:15:21] [INFO] LLM_HEADLINE BME.L 64 Are Investors Undervaluing B&M European Value Retail (BMRRY) Right Now?
+[2026-09-14 16:15:21] [INFO] LLM_HEADLINE BME.L 25 B&M falls 4% after Q1 UK sales miss as weak garden demand weighs
+[2026-09-14 16:15:21] [INFO] LLM_HEADLINE BME.L 55 Should Value Investors Buy B&M European Value Retail (BMRRY) Stock?
+[2026-09-14 16:15:21] [INFO] LLM_HEADLINE BME.L 50 Is Superior Group of Companies (SGC) Stock Outpacing Its Consumer Discretionary 
+[2026-09-14 16:15:21] [INFO] LLM_HEADLINE BME.L 50 B&M European Value Retail H2 Earnings Call Highlights
+[2026-09-14 16:15:21] [INFO] LLM_HEADLINE BME.L 50 How The B&M European Value Retail (LSE:BME) Narrative Is Shifting After Analyst 
+[2026-09-14 16:15:21] [INFO] LLM_HEADLINE BME.L 70 B&M European Value Retail's (LON:BME) earnings trajectory could turn positive as
+[2026-09-14 16:15:21] [INFO] LLM_HEADLINE BME.L 50 B&M European Value Retail Q3 Earnings Call Highlights
+[2026-09-14 16:15:21] [INFO] LLM_HEADLINE BME.L 64 Is B&M European Value Retail S.A.'s (LON:BME) ROE Of 35% Impressive?
+[2026-09-14 16:15:21] [INFO]   BME.L        Consumer Staples score= 54.1 RSI=40.0 P/E=14.4   news=54.0 B&M European Value Retail pl
+[2026-09-14 16:15:23] [INFO] LLM_CALL GRG.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:15:26] [INFO] LLM_SCORE GRG.L overall=58.0 headlines=10
+[2026-09-14 16:15:26] [INFO] LLM_HEADLINE GRG.L 55 Greggs PLC's Dividend Analysis
+[2026-09-14 16:15:26] [INFO] LLM_HEADLINE GRG.L 56 Retailers to offer work experience to 100,000 young benefits claimants
+[2026-09-14 16:15:26] [INFO] LLM_HEADLINE GRG.L 48 Caffeine in Costa cappuccino more than three times that of Starbucks – study
+[2026-09-14 16:15:26] [INFO] LLM_HEADLINE GRG.L 63 Greggs (LSE:GRG) Stock Fair Value Edges Higher After Mixed Analyst Target Change
+[2026-09-14 16:15:26] [INFO] LLM_HEADLINE GRG.L 59 Greggs, Boots and M&S team up with Met Police to tackle shoplifters
+[2026-09-14 16:15:26] [INFO] LLM_HEADLINE GRG.L 57 Greggs H1 Earnings Call Highlights
+[2026-09-14 16:15:26] [INFO] LLM_HEADLINE GRG.L 65 Iced matcha, salads and picnic sausage rolls help Greggs weather heatwave
+[2026-09-14 16:15:26] [INFO] LLM_HEADLINE GRG.L 52 FTSE 100 Live: London index hits new intraday high, but US in selling mode pre-F
+[2026-09-14 16:15:26] [INFO] LLM_HEADLINE GRG.L 38 Greggs Loses a Finance Veteran as Growth Gets Stickier
+[2026-09-14 16:15:26] [INFO] LLM_HEADLINE GRG.L 54 How The Investment Story For Greggs (LSE:GRG) Is Evolving As Expectations Hold S
+[2026-09-14 16:15:26] [INFO]   GRG.L        Consumer Staples score= 61.1 RSI=18.6 P/E=13.4   news=58.0 Greggs plc
+[2026-09-14 16:15:27] [INFO] LLM_CALL HLMA.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:15:31] [INFO] LLM_SCORE HLMA.L overall=52.0 headlines=10
+[2026-09-14 16:15:31] [INFO] LLM_HEADLINE HLMA.L 50 FTSE 100 Live: Stocks flat as Trump says US to be 'guardian of Hormuz strait'
+[2026-09-14 16:15:31] [INFO] LLM_HEADLINE HLMA.L 78 Halma PLC (HLMAF) Full Year 2026 Earnings Call Highlights: Record Profit Growth 
+[2026-09-14 16:15:31] [INFO] LLM_HEADLINE HLMA.L 58 Halma H2 Earnings Call Highlights
+[2026-09-14 16:15:31] [INFO] LLM_HEADLINE HLMA.L 22 British device maker Halma's shares slump on slower annual growth forecast
+[2026-09-14 16:15:31] [INFO] LLM_HEADLINE HLMA.L 52 How The Halma (LSE:HLMA) Investment Story Is Shifting As Analyst Targets Converg
+[2026-09-14 16:15:31] [INFO] LLM_HEADLINE HLMA.L 56 How The Halma (LSE:HLMA) Story Is Shifting With JPMorgan’s Higher Target And Neu
+[2026-09-14 16:15:31] [INFO] LLM_HEADLINE HLMA.L 45 Are Industrial Products Stocks Lagging  Halma (HLMAF) This Year?
+[2026-09-14 16:15:31] [INFO] LLM_HEADLINE HLMA.L 48 How Halma (LSE:HLMA) Is Seeing Its Investment Narrative Repriced With Cautious T
+[2026-09-14 16:15:31] [INFO] LLM_HEADLINE HLMA.L 44 How The Halma (LSE:HLMA) Narrative Is Shifting With New Valuation Assumptions An
+[2026-09-14 16:15:31] [INFO] LLM_HEADLINE HLMA.L 72 What Makes Halma (HLMAF) a New Buy Stock
+[2026-09-14 16:15:31] [INFO]   HLMA.L       Consumer Staples score= 51.3 RSI=43.0 P/E=35.0   news=52.0 Halma plc
+[2026-09-14 16:15:32] [INFO] LLM_CALL OCDO.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:15:35] [INFO] LLM_SCORE OCDO.L overall=65.0 headlines=10
+[2026-09-14 16:15:35] [INFO] LLM_HEADLINE OCDO.L 82 Ocado rebounds after striking deal to build new robotic warehouse
+[2026-09-14 16:15:35] [INFO] LLM_HEADLINE OCDO.L 78 Ocado Group PLC (OCDDY) (H1 2026) Earnings Call Highlights: Strong International
+[2026-09-14 16:15:35] [INFO] LLM_HEADLINE OCDO.L 60 Ocado Group H1 Earnings Call Highlights
+[2026-09-14 16:15:35] [INFO] LLM_HEADLINE OCDO.L 38 Ocado investors hoping for positive signs amid reported leadership clash
+[2026-09-14 16:15:35] [INFO] LLM_HEADLINE OCDO.L 45 Ocado’s Founder Era Finally Gets an Expiry Date
+[2026-09-14 16:15:35] [INFO] LLM_HEADLINE OCDO.L 48 Ocado ‘regularly engaging with potential candidates’ to succeed boss
+[2026-09-14 16:15:35] [INFO] LLM_HEADLINE OCDO.L 75 UK grocery retailer Asda partners with Ocado as sales decline narrows
+[2026-09-14 16:15:35] [INFO] LLM_HEADLINE OCDO.L 78 Ocado Group PLC (OCDDY) Full Year 2025 Earnings Call Highlights: Strong Revenue 
+[2026-09-14 16:15:35] [INFO] LLM_HEADLINE OCDO.L 62 Ocado to cut 1,000 jobs and merge technology units amid stronger results
+[2026-09-14 16:15:35] [INFO] LLM_HEADLINE OCDO.L 60 Ocado Group H2 Earnings Call Highlights
+[2026-09-14 16:15:35] [INFO]   OCDO.L       Consumer Staples score= 48.9 RSI=33.3 P/E=N/A    news=65.0 Ocado Group plc
+[2026-09-14 16:15:36] [INFO] LLM_CALL AZN.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:15:39] [INFO] LLM_SCORE AZN.L overall=46.0 headlines=10
+[2026-09-14 16:15:39] [INFO] LLM_HEADLINE AZN.L 50 Can Pfizer Overcome Its COVID and Patent Cliff Headwinds?
+[2026-09-14 16:15:39] [INFO] LLM_HEADLINE AZN.L 50 Health Care Roundup: Market Talk
+[2026-09-14 16:15:39] [INFO] LLM_HEADLINE AZN.L 55 Sector Update: Healthcare Stocks Rise Premarket Monday
+[2026-09-14 16:15:39] [INFO] LLM_HEADLINE AZN.L 65 Why Is AstraZeneca Stock Trading Higher Today?
+[2026-09-14 16:15:39] [INFO] LLM_HEADLINE AZN.L 45 Olema Pharmaceuticals Shares Fall 15.1% Following AstraZeneca SERENA-4 Trial Res
+[2026-09-14 16:15:39] [INFO] LLM_HEADLINE AZN.L 35 AstraZeneca breast cancer drug fails trial but Citi keeps 'buy' rating
+[2026-09-14 16:15:39] [INFO] LLM_HEADLINE AZN.L 50 Big Pharma Is Pouring Billions Into China’s Biotechs
+[2026-09-14 16:15:39] [INFO] LLM_HEADLINE AZN.L 30 AstraZeneca Breast-Cancer Drug Misses Goal in Late-Stage Trial
+[2026-09-14 16:15:39] [INFO] LLM_HEADLINE AZN.L 80 AstraZeneca COPD Drug Cuts Exacerbations as FDA Priority Review Nears
+[2026-09-14 16:15:39] [INFO] LLM_HEADLINE AZN.L 25 AZN Stock Slips After-Hours Following Latest Late-Stage Oncology Trial Miss — Ex
+[2026-09-14 16:15:39] [INFO]   AZN.L        Health Care      score= 55.8 RSI=49.7 P/E=24.5   news=46.0 AstraZeneca PLC
+[2026-09-14 16:15:40] [INFO] LLM_CALL GSK.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:15:43] [INFO] LLM_SCORE GSK.L overall=68.0 headlines=10
+[2026-09-14 16:15:43] [INFO] LLM_HEADLINE GSK.L 55 Big Pharma Is Pouring Billions Into China’s Biotechs
+[2026-09-14 16:15:43] [INFO] LLM_HEADLINE GSK.L 62 GSK Targets £1.9B Savings to Fuel Pipeline, Navigate HIV Patent Cliff
+[2026-09-14 16:15:43] [INFO] LLM_HEADLINE GSK.L 68 GSK’s mRNA Flu Vaccine Shows Promise, But Can It Deliver Late-Stage?
+[2026-09-14 16:15:43] [INFO] LLM_HEADLINE GSK.L 70 GSK's Specialty Medicines Drive Growth Amid Looming HIV Patent Cliff
+[2026-09-14 16:15:43] [INFO] LLM_HEADLINE GSK.L 42 The Shingles Vaccine Is $0 at the Pharmacy. Get the Same Shot at Your Doctor’s O
+[2026-09-14 16:15:43] [INFO] LLM_HEADLINE GSK.L 72 Can GSK’s Hepatitis B Breakthrough Become a £2 Billion Opportunity?
+[2026-09-14 16:15:43] [INFO] LLM_HEADLINE GSK.L 60 Healthcare Stocks Pick Up Steam as Investors Play Offense and Defense
+[2026-09-14 16:15:43] [INFO] LLM_HEADLINE GSK.L 72 GSK's mRNA flu vaccine data closely tracks Moderna's, Deutsche Bank says
+[2026-09-14 16:15:43] [INFO] LLM_HEADLINE GSK.L 74 Does Moderna's mRNA Flu Shot Face a New Challenge From GSK?
+[2026-09-14 16:15:43] [INFO] LLM_HEADLINE GSK.L 66 Panmure and Cavendish reiterate buy on Hutchmed after GSK deal
+[2026-09-14 16:15:43] [INFO]   GSK.L        Health Care      score= 55.8 RSI=43.2 P/E=15.7   news=68.0 GSK plc
+[2026-09-14 16:15:44] [INFO] LLM_CALL SN.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:15:49] [INFO] LLM_SCORE SN.L overall=64.0 headlines=10
+[2026-09-14 16:15:49] [INFO] LLM_HEADLINE SN.L 55 Zimmer proposes to cut 580 jobs in Switzerland
+[2026-09-14 16:15:49] [INFO] LLM_HEADLINE SN.L 42 Baxter hires CFO from Smith & Nephew
+[2026-09-14 16:15:49] [INFO] LLM_HEADLINE SN.L 76 SNN Advances Surgical Robotics Through Imperial College Partnership
+[2026-09-14 16:15:49] [INFO] LLM_HEADLINE SN.L 50 FTSE 100 Live: Blue-chips open higher as miners gain, UK inflation ticks up
+[2026-09-14 16:15:49] [INFO] LLM_HEADLINE SN.L 80 Smith+Nephew Launches FLOW FLEXTEND COBLATION Wand for Hip Surgery
+[2026-09-14 16:15:49] [INFO] LLM_HEADLINE SN.L 50 Spectral AI, Inc. Q2 2026 Earnings Call Summary
+[2026-09-14 16:15:49] [INFO] LLM_HEADLINE SN.L 65 Smith & Nephew SNATS Q2 Earnings Call Highlights
+[2026-09-14 16:15:49] [INFO] LLM_HEADLINE SN.L 50 Smith & Nephew (SNN) Q2 2026 Earnings Call Transcript
+[2026-09-14 16:15:49] [INFO] LLM_HEADLINE SN.L 50 Nano Dimension and 4 More Stocks See Action From Activist Investors
+[2026-09-14 16:15:49] [INFO] LLM_HEADLINE SN.L 77 Smith+Nephew Expands ASC Platform to Support Value-Based Care
+[2026-09-14 16:15:49] [INFO]   SN.L         Health Care      score= 61.9 RSI=38.7 P/E=19.4   news=64.0 Smith & Nephew plc
+[2026-09-14 16:15:50] [INFO] LLM_CALL HIK.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:15:53] [INFO] LLM_SCORE HIK.L overall=82.0 headlines=10
+[2026-09-14 16:15:53] [INFO] LLM_HEADLINE HIK.L 84 Hikma Pharmaceuticals (LSE:HIK) Stock Fair Value Edges Higher After Bullish Anal
+[2026-09-14 16:15:53] [INFO] LLM_HEADLINE HIK.L 87 Jefferies lifts Hikma target as CMO deal underpins growth story
+[2026-09-14 16:15:53] [INFO] LLM_HEADLINE HIK.L 88 Citi sees Hikma discount as unwarranted after upgrade to forecasts
+[2026-09-14 16:15:53] [INFO] LLM_HEADLINE HIK.L 85 Hikma boost as broker raises price target
+[2026-09-14 16:15:53] [INFO] LLM_HEADLINE HIK.L 65 Hikma Pharmaceuticals H1 Earnings Call Highlights
+[2026-09-14 16:15:53] [INFO] LLM_HEADLINE HIK.L 94 Hikma jumps 10% as brokers point to profit beat and undemanding rating
+[2026-09-14 16:15:53] [INFO] LLM_HEADLINE HIK.L 82 Hikma and Fresenius best positioned from Trump's generic drug tariffs, says Citi
+[2026-09-14 16:15:53] [INFO] LLM_HEADLINE HIK.L 84 Hikma recovery story still has further to run after recent rally, says Panmure
+[2026-09-14 16:15:53] [INFO] LLM_HEADLINE HIK.L 25 Shares in Generic-Drug Makers Fall After Trump’s Tariff Plan
+[2026-09-14 16:15:53] [INFO] LLM_HEADLINE HIK.L 89 Citi starts Hikma at 'buy' with strategy reset offering compelling entry point
+[2026-09-14 16:15:53] [INFO]   HIK.L        Health Care      score= 61.7 RSI=29.7 P/E=11.9   news=82.0 Hikma Pharmaceuticals PLC
+[2026-09-14 16:15:54] [INFO] LLM_CALL DPLM.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:15:57] [INFO] LLM_SCORE DPLM.L overall=88.0 headlines=10
+[2026-09-14 16:15:57] [INFO] LLM_HEADLINE DPLM.L 75 Diploma (LSE:DPLM) Stock Sees Modest Fair Value Lift After Analyst Target Increa
+[2026-09-14 16:15:57] [INFO] LLM_HEADLINE DPLM.L 77 Diploma (LSE:DPLM) Stock Gets Fair Value Bump As Analysts Lift Targets
+[2026-09-14 16:15:57] [INFO] LLM_HEADLINE DPLM.L 55 Diploma Q3 Earnings Call Highlights
+[2026-09-14 16:15:57] [INFO] LLM_HEADLINE DPLM.L 68 How The Diploma (LSE:DPLM) Story Is Shifting As Analyst Targets Converge Around 
+[2026-09-14 16:15:57] [INFO] LLM_HEADLINE DPLM.L 86 Diploma PLC (DPLMF) (Half Year 2026) Earnings Call Highlights: Strong Growth and
+[2026-09-14 16:15:57] [INFO] LLM_HEADLINE DPLM.L 79 Earnings Update: Here's Why Analysts Just Lifted Their Diploma PLC (LON:DPLM) Pr
+[2026-09-14 16:15:57] [INFO] LLM_HEADLINE DPLM.L 62 Diploma H1 Earnings Call Highlights
+[2026-09-14 16:15:57] [INFO] LLM_HEADLINE DPLM.L 67 How The Diploma (LSE:DPLM) Story Is Shifting With New Targets And Updated Growth
+[2026-09-14 16:15:57] [INFO] LLM_HEADLINE DPLM.L 96 Diploma Upgrades FY Outlook After “Very Strong” H1, Lifts Organic Growth to 6%–9
+[2026-09-14 16:15:57] [INFO] LLM_HEADLINE DPLM.L 84 Diploma’s Upgrade Shows Why Boring Industrial Stocks Still Win
+[2026-09-14 16:15:57] [INFO]   DPLM.L       Health Care      score= 53.7 RSI=41.7 P/E=50.0   news=88.0 Diploma PLC
+[2026-09-14 16:15:58] [INFO] LLM_CALL SPX.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:16:03] [INFO] LLM_SCORE SPX.L overall=58.0 headlines=10
+[2026-09-14 16:16:03] [INFO] LLM_HEADLINE SPX.L 68 SPIRAX GRP PLC (SPXSY) Could Find a Support Soon, Here's Why You Should Buy the 
+[2026-09-14 16:16:03] [INFO] LLM_HEADLINE SPX.L 35 Spirax Gets Punished for Being Merely Good
+[2026-09-14 16:16:03] [INFO] LLM_HEADLINE SPX.L 55 Spirax-Sarco Engineering H1 Earnings Call Highlights
+[2026-09-14 16:16:03] [INFO] LLM_HEADLINE SPX.L 65 SPIRAX GRP PLC (SPXSY) Forms 'Hammer Chart Pattern': Time for Bottom Fishing?
+[2026-09-14 16:16:03] [INFO] LLM_HEADLINE SPX.L 58 Why Spirax Group plc (LON:SPX) Could Be Worth Watching
+[2026-09-14 16:16:03] [INFO] LLM_HEADLINE SPX.L 68 SPIRAX GRP PLC (SPXSY) May Find a Bottom Soon, Here's Why You Should Buy the Sto
+[2026-09-14 16:16:03] [INFO] LLM_HEADLINE SPX.L 72 Spirax Group PLC (SPXSY) Full Year 2025 Earnings Call Highlights: Strong Sales G
+[2026-09-14 16:16:03] [INFO] LLM_HEADLINE SPX.L 55 Spirax-Sarco Engineering H2 Earnings Call Highlights
+[2026-09-14 16:16:03] [INFO] LLM_HEADLINE SPX.L 28 The past three years for Spirax Group (LON:SPX) investors has not been profitabl
+[2026-09-14 16:16:03] [INFO] LLM_HEADLINE SPX.L 52 How The Revised Price Target Is Shaping The Spirax Group (LSE:SPX) Investment St
+[2026-09-14 16:16:03] [INFO]   SPX.L        Health Care      score= 57.7 RSI=35.8 P/E=24.9   news=58.0 Spirax Group plc
+[2026-09-14 16:16:04] [INFO] LLM_CALL HSBA.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:16:08] [INFO] LLM_SCORE HSBA.L overall=43.0 headlines=10
+[2026-09-14 16:16:08] [INFO] LLM_HEADLINE HSBA.L 56 HSBC Holdings (HSBC) Reshapes European Operations with German Exit
+[2026-09-14 16:16:08] [INFO] LLM_HEADLINE HSBA.L 50 HSBC Raises 2026 S&P 500 Target to 8,100 on Earnings Outlook
+[2026-09-14 16:16:08] [INFO] LLM_HEADLINE HSBA.L 50 Burnham faces UK economic test as budget day approaches
+[2026-09-14 16:16:08] [INFO] LLM_HEADLINE HSBA.L 65 Can HSBC's Germany Pullback Support Profitability and Efficiency?
+[2026-09-14 16:16:08] [INFO] LLM_HEADLINE HSBA.L 50 CFOs On the Move: Week ending Sept. 11
+[2026-09-14 16:16:08] [INFO] LLM_HEADLINE HSBA.L 38 Tight Supply Worries Lift Oil As Middle East Conflict Heats Up
+[2026-09-14 16:16:08] [INFO] LLM_HEADLINE HSBA.L 25 ‘There Is No Reason for Criminal Gangs to Compete’: The €50 Billion Fraud That O
+[2026-09-14 16:16:08] [INFO] LLM_HEADLINE HSBA.L 42 HSBC Raises 2026 Brent Forecast to $90 as Hormuz Crisis Drags On
+[2026-09-14 16:16:08] [INFO] LLM_HEADLINE HSBA.L 30 HSBC CFO Pam Kaur to step down
+[2026-09-14 16:16:08] [INFO] LLM_HEADLINE HSBA.L 35 HSBC Begins Search for New Finance Chief as Pam Kaur Departs
+[2026-09-14 16:16:08] [INFO]   HSBA.L       Financials       score= 72.0 RSI=50.9 P/E=14.7   news=43.0 HSBC Holdings plc
+[2026-09-14 16:16:09] [INFO] LLM_CALL BARC.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:16:14] [INFO] LLM_SCORE BARC.L overall=67.0 headlines=10
+[2026-09-14 16:16:14] [INFO] LLM_HEADLINE BARC.L 45 UAL, AAL, DAL Stocks Suffer Weekly Loss: Barclays Cuts Price Targets But Sees A 
+[2026-09-14 16:16:14] [INFO] LLM_HEADLINE BARC.L 76 Barclays Raises 2026 S&P 500 Target to 7,950 After Second-Quarter Earnings
+[2026-09-14 16:16:14] [INFO] LLM_HEADLINE BARC.L 50 Burnham faces UK economic test as budget day approaches
+[2026-09-14 16:16:14] [INFO] LLM_HEADLINE BARC.L 55 Why Rising Bond Yields Aren’t Throttling The Economy, For Now
+[2026-09-14 16:16:14] [INFO] LLM_HEADLINE BARC.L 79 Barclays Hikes S&P 500 Target to 7,950 on Strong Earnings
+[2026-09-14 16:16:14] [INFO] LLM_HEADLINE BARC.L 43 Inflation Woes Weigh on Stocks During Earnings Season Lull
+[2026-09-14 16:16:14] [INFO] LLM_HEADLINE BARC.L 58 Barclays Tweaks S&P 500 Target for Rest of 2026
+[2026-09-14 16:16:14] [INFO] LLM_HEADLINE BARC.L 73 Barclays Sees 4% Upside for the S&P 500 on Tech Earnings Strength
+[2026-09-14 16:16:14] [INFO] LLM_HEADLINE BARC.L 65 Barclays Sees S&P 500 at 7,950 in 2026: What Do Prediction Markets Say?
+[2026-09-14 16:16:14] [INFO] LLM_HEADLINE BARC.L 70 Update: Market Chatter: Barclays Leads $2.8 Billion Financing Package for Lone S
+[2026-09-14 16:16:14] [INFO]   BARC.L       Financials       score= 78.4 RSI=38.1 P/E=9.9    news=67.0 Barclays PLC
+[2026-09-14 16:16:15] [INFO] LLM_CALL LLOY.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:16:21] [INFO] LLM_SCORE LLOY.L overall=43.0 headlines=10
+[2026-09-14 16:16:21] [INFO] LLM_HEADLINE LLOY.L 50 RSM UK appoints new partner to support financial services risk practice
+[2026-09-14 16:16:21] [INFO] LLM_HEADLINE LLOY.L 50 Sale of Barclay family’s former retail empire to be shelved
+[2026-09-14 16:16:21] [INFO] LLM_HEADLINE LLOY.L 50 Reform UK infighting complicates Farage’s push to prepare party to govern
+[2026-09-14 16:16:21] [INFO] LLM_HEADLINE LLOY.L 40 British banking giants deliver tax rise warning to new chancellor
+[2026-09-14 16:16:21] [INFO] LLM_HEADLINE LLOY.L 50 Aldermore battle heats up as private equity giant CVC motors into auction
+[2026-09-14 16:16:21] [INFO] LLM_HEADLINE LLOY.L 20 Lloyds, Halifax and Bank of Scotland apps down
+[2026-09-14 16:16:21] [INFO] LLM_HEADLINE LLOY.L 50 AI Is Starting to Define Bank Internships as Much as Long Hours
+[2026-09-14 16:16:21] [INFO] LLM_HEADLINE LLOY.L 40 European Equities Traded in the US as American Depositary Receipts Edge Lower in
+[2026-09-14 16:16:21] [INFO] LLM_HEADLINE LLOY.L 55 Lloyds Banking Group PLC's Dividend Analysis
+[2026-09-14 16:16:21] [INFO] LLM_HEADLINE LLOY.L 42 Lloyds Banking Group (LSE:LLOY) Chief Risk Officer Exit Sets Up 2026 Leadership 
+[2026-09-14 16:16:21] [INFO]   LLOY.L       Financials       score= 69.7 RSI=40.7 P/E=13.6   news=43.0 Lloyds Banking Group plc
+[2026-09-14 16:16:22] [INFO] LLM_CALL NWG.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:16:27] [INFO] LLM_SCORE NWG.L overall=68.0 headlines=10
+[2026-09-14 16:16:27] [INFO] LLM_HEADLINE NWG.L 50 Amazon Is Selling Its First Sterling Bonds in Four-Part Deal
+[2026-09-14 16:16:27] [INFO] LLM_HEADLINE NWG.L 62 NatWest (NWG) Looks to America for Growth as UK Banking Competition Intensifies
+[2026-09-14 16:16:27] [INFO] LLM_HEADLINE NWG.L 50 Reform UK infighting complicates Farage’s push to prepare party to govern
+[2026-09-14 16:16:27] [INFO] LLM_HEADLINE NWG.L 50 AI Is Starting to Define Bank Internships as Much as Long Hours
+[2026-09-14 16:16:27] [INFO] LLM_HEADLINE NWG.L 48 UK officials fear Burnham’s fiscal flexibility could unsettle bond markets
+[2026-09-14 16:16:27] [INFO] LLM_HEADLINE NWG.L 50 NatWest (NWG) Q2 2026 Earnings Call Transcript
+[2026-09-14 16:16:27] [INFO] LLM_HEADLINE NWG.L 55 NatWest Group Q2 Earnings Call Highlights
+[2026-09-14 16:16:27] [INFO] LLM_HEADLINE NWG.L 88 NatWest Raises Guidance, Brings Forward Buyback Announcement Plans
+[2026-09-14 16:16:27] [INFO] LLM_HEADLINE NWG.L 48 Andy Burnham set to become UK PM as policy agenda remains unclear
+[2026-09-14 16:16:27] [INFO] LLM_HEADLINE NWG.L 65 5 Solid Dividend Stocks to Buy in July
+[2026-09-14 16:16:27] [INFO]   NWG.L        Financials       score= 72.3 RSI=43.7 P/E=9.0    news=68.0 NatWest Group plc
+[2026-09-14 16:16:28] [INFO] LLM_CALL STAN.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:16:32] [INFO] LLM_SCORE STAN.L overall=74.0 headlines=10
+[2026-09-14 16:16:32] [INFO] LLM_HEADLINE STAN.L 50 What Will 10,000 XRP Be Worth in 2030?
+[2026-09-14 16:16:32] [INFO] LLM_HEADLINE STAN.L 50 What Will XRP Be Worth by 2028?
+[2026-09-14 16:16:32] [INFO] LLM_HEADLINE STAN.L 72 Standard Chartered unveils platform to manage, decarbonize supply chain
+[2026-09-14 16:16:32] [INFO] LLM_HEADLINE STAN.L 86 Standard Chartered (SCBFF) Soars 5.8%: Is Further Upside Left in the Stock?
+[2026-09-14 16:16:32] [INFO] LLM_HEADLINE STAN.L 50 XRP’s $28 Target Back in Focus as Key CLARITY Opposition Eased, Senators Eye Nov
+[2026-09-14 16:16:32] [INFO] LLM_HEADLINE STAN.L 78 Standard Chartered (LSE:STAN) Stock Fair Value Edges Higher After Analyst Target
+[2026-09-14 16:16:32] [INFO] LLM_HEADLINE STAN.L 82 Standard Chartered Launches Spot Bitcoin, Ether Trading for UAE Institutions
+[2026-09-14 16:16:32] [INFO] LLM_HEADLINE STAN.L 80 A ‘Too Big to Fail' Bank Is Now Delivering Actual Bitcoin and Ethereum to Instit
+[2026-09-14 16:16:32] [INFO] LLM_HEADLINE STAN.L 82 Standard Chartered launches institutional spot crypto trading in UAE
+[2026-09-14 16:16:32] [INFO] LLM_HEADLINE STAN.L 50 HSBC Eyes Singapore Consolidation: Will Simplification Aid Growth?
+[2026-09-14 16:16:32] [INFO]   STAN.L       Financials       score= 69.5 RSI=64.2 P/E=14.7   news=74.0 Standard Chartered PLC
+[2026-09-14 16:16:33] [INFO] LLM_CALL AV.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:16:38] [INFO] LLM_SCORE AV.L overall=42.0 headlines=10
+[2026-09-14 16:16:38] [INFO] LLM_HEADLINE AV.L 50 St. James’s Place names Justin Onuekwusi CEO of investments
+[2026-09-14 16:16:38] [INFO] LLM_HEADLINE AV.L 48 Amanda Blanc to step down from BP after boardroom chaos
+[2026-09-14 16:16:38] [INFO] LLM_HEADLINE AV.L 62 Halyk Bank Stock And 2 British Dividend Stocks To Own
+[2026-09-14 16:16:38] [INFO] LLM_HEADLINE AV.L 50 Scan.com secures $220m to expand US medical imaging network
+[2026-09-14 16:16:38] [INFO] LLM_HEADLINE AV.L 55 Zacks Industry Outlook Aviva, Reinsurance, Primerica, Voya and Lincoln National
+[2026-09-14 16:16:38] [INFO] LLM_HEADLINE AV.L 60 5 Life Insurance Stocks to Watch Despite Low-Interest Rate Environment
+[2026-09-14 16:16:38] [INFO] LLM_HEADLINE AV.L 50 Bacardi launches RTD cocktail under Teeling
+[2026-09-14 16:16:38] [INFO] LLM_HEADLINE AV.L 50 Financial Services Roundup: Market Talk
+[2026-09-14 16:16:38] [INFO] LLM_HEADLINE AV.L 12 Aviva’s H1 profit falls by 49%
+[2026-09-14 16:16:38] [INFO] LLM_HEADLINE AV.L 44 Aviva boss urges Burnham to rule out pension tax raid
+[2026-09-14 16:16:38] [INFO]   AV.L         Financials       score= 46.5 RSI=34.4 P/E=41.6   news=42.0 Aviva plc
+[2026-09-14 16:16:40] [INFO] LLM_CALL LGEN.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:16:43] [INFO] LLM_SCORE LGEN.L overall=67.0 headlines=10
+[2026-09-14 16:16:43] [INFO] LLM_HEADLINE LGEN.L 50 Financial Services Roundup: Market Talk
+[2026-09-14 16:16:43] [INFO] LLM_HEADLINE LGEN.L 78 Legal & General Group PLC (LGGNF) (H1 2026) Earnings Call Highlights: Strong EPS
+[2026-09-14 16:16:43] [INFO] LLM_HEADLINE LGEN.L 50 Lloyds Banking Group (LSE:LLOY) Chief Risk Officer Exit Sets Up 2026 Leadership 
+[2026-09-14 16:16:43] [INFO] LLM_HEADLINE LGEN.L 72 Legal & General Group H1 Earnings Call Highlights
+[2026-09-14 16:16:43] [INFO] LLM_HEADLINE LGEN.L 62 The Zacks Analyst Blog Highlights Community Healthcare, Legal & General and Anna
+[2026-09-14 16:16:43] [INFO] LLM_HEADLINE LGEN.L 65 Wall Street Loves These 3 High-Yield Stocks Ahead of August
+[2026-09-14 16:16:43] [INFO] LLM_HEADLINE LGEN.L 82 Legal & General Group Touts £5B Returns, Streamlined Strategy at AGM
+[2026-09-14 16:16:43] [INFO] LLM_HEADLINE LGEN.L 50 BP Shareholder Vote Looms As 30% Stock Gain Meets Chairman Opposition
+[2026-09-14 16:16:43] [INFO] LLM_HEADLINE LGEN.L 60 Is Legal & General Group (LSE:LGEN) Share Price Slide Creating A Valuation Oppor
+[2026-09-14 16:16:43] [INFO] LLM_HEADLINE LGEN.L 55 How The Investment Story Is Shifting For Legal & General Group (LSE:LGEN)
+[2026-09-14 16:16:43] [INFO]   LGEN.L       Financials       score= 66.2 RSI=51.8 P/E=26.3   news=67.0 Legal & General Group Plc
+[2026-09-14 16:16:44] [INFO] LLM_CALL PRU.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:16:48] [INFO] LLM_SCORE PRU.L overall=68.0 headlines=10
+[2026-09-14 16:16:48] [INFO] LLM_HEADLINE PRU.L 60 Prudential PLC's Dividend Analysis
+[2026-09-14 16:16:48] [INFO] LLM_HEADLINE PRU.L 85 Prudential PLC (PUK) (H1 2026) Earnings Call Highlights: Strong Growth and Strat
+[2026-09-14 16:16:48] [INFO] LLM_HEADLINE PRU.L 72 Prudential Public H1 Earnings Call Highlights
+[2026-09-14 16:16:48] [INFO] LLM_HEADLINE PRU.L 65 Prudential to sell 2% stake in ICICI Prudential AMC worth about $333 million
+[2026-09-14 16:16:48] [INFO] LLM_HEADLINE PRU.L 75 European Equities Traded in the US as American Depositary Receipts Track Sharply
+[2026-09-14 16:16:48] [INFO] LLM_HEADLINE PRU.L 73 European Equities Traded in the US as American Depositary Receipts Rise in Wedne
+[2026-09-14 16:16:48] [INFO] LLM_HEADLINE PRU.L 78 Prudential’s (PUK) Prudence Foundation Launches Levela App to Improve Financial 
+[2026-09-14 16:16:48] [INFO] LLM_HEADLINE PRU.L 76 AIA, Prudential Chase Asia's Wealth Insurance Boom
+[2026-09-14 16:16:48] [INFO] LLM_HEADLINE PRU.L 35 The Bigger Story Behind Prudential’s (PUK) Lower Price Target
+[2026-09-14 16:16:48] [INFO] LLM_HEADLINE PRU.L 45 Asia-exposed bank stocks slide after report on Hong Kong account suspensions
+[2026-09-14 16:16:48] [INFO]   PRU.L        Financials       score= 59.4 RSI=29.6 P/E=9.3    news=68.0 Prudential plc
+[2026-09-14 16:16:49] [INFO] LLM_CALL ADM.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:16:52] [INFO] LLM_SCORE ADM.L overall=72.0 headlines=10
+[2026-09-14 16:16:52] [INFO] LLM_HEADLINE ADM.L 72 Admiral Group (LSE:ADM) Stock Fair Value Rises After Split Analyst Target Change
+[2026-09-14 16:16:52] [INFO] LLM_HEADLINE ADM.L 50 Financial Services Roundup: Market Talk
+[2026-09-14 16:16:52] [INFO] LLM_HEADLINE ADM.L 73 Admiral Group (LSE:ADM) Stock Gets Fair Value Bump As Analysts Rework Targets
+[2026-09-14 16:16:52] [INFO] LLM_HEADLINE ADM.L 82 Admiral Group PLC (AMIGF) (H1 2026) Earnings Call Highlights: Strong Underwritin
+[2026-09-14 16:16:52] [INFO] LLM_HEADLINE ADM.L 68 Admiral Group H1 Earnings Call Highlights
+[2026-09-14 16:16:52] [INFO] LLM_HEADLINE ADM.L 65 Admiral Group (LSE:ADM) Stock Draws Fresh Price Target Split As Fair Value Edges
+[2026-09-14 16:16:52] [INFO] LLM_HEADLINE ADM.L 60 UK Dividend Stocks Offering Yields Up To 10.3%
+[2026-09-14 16:16:52] [INFO] LLM_HEADLINE ADM.L 58 Top UK Dividend Stocks Yielding Up To 6%
+[2026-09-14 16:16:52] [INFO] LLM_HEADLINE ADM.L 66 Income Investors Should Know That Admiral Group plc (LON:ADM) Goes Ex-Dividend S
+[2026-09-14 16:16:52] [INFO] LLM_HEADLINE ADM.L 57 How The Admiral Group (LSE:ADM) Story Is Shifting As Analysts Rework Valuation A
+[2026-09-14 16:16:52] [INFO]   ADM.L        Financials       score= 53.3 RSI=36.9 P/E=17.6   news=72.0 Admiral Group plc
+[2026-09-14 16:16:54] [INFO] LLM_CALL III.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:16:57] [INFO] LLM_SCORE III.L overall=72.0 headlines=10
+[2026-09-14 16:16:57] [INFO] LLM_HEADLINE III.L 65 UK Dividend Stocks To Watch In June 2026
+[2026-09-14 16:16:57] [INFO] LLM_HEADLINE III.L 60 UK Dividend Stocks: Andrews Sykes Group And 2 More Top Income Picks
+[2026-09-14 16:16:57] [INFO] LLM_HEADLINE III.L 64 3 UK Dividend Stocks Yielding Up To 13.4%
+[2026-09-14 16:16:57] [INFO] LLM_HEADLINE III.L 64 3 UK Dividend Stocks To Watch With Up To 6.1% Yield
+[2026-09-14 16:16:57] [INFO] LLM_HEADLINE III.L 64 3 UK Dividend Stocks Yielding Up To 7.5%
+[2026-09-14 16:16:57] [INFO] LLM_HEADLINE III.L 64 3 UK Dividend Stocks Yielding Up To 9.1%
+[2026-09-14 16:16:57] [INFO] LLM_HEADLINE III.L 64 UK Dividend Stocks Offering Yields Up To 10.3%
+[2026-09-14 16:16:57] [INFO] LLM_HEADLINE III.L 84 Private-equity firm 3i buys majority stake in Laboratoire Nutergia
+[2026-09-14 16:16:57] [INFO] LLM_HEADLINE III.L 65 3 Top UK Dividend Stocks To Consider
+[2026-09-14 16:16:57] [INFO] LLM_HEADLINE III.L 60 UK Dividend Stocks Lloyds Banking Group And 2 Other Income Generators
+[2026-09-14 16:16:57] [INFO]   III.L        Financials       score= 80.4 RSI=21.1 P/E=4.9    news=72.0 3i Group Ord
+[2026-09-14 16:16:58] [INFO] LLM_CALL INVP.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:17:03] [INFO] LLM_SCORE INVP.L overall=62.0 headlines=10
+[2026-09-14 16:17:03] [INFO] LLM_HEADLINE INVP.L 50 Volex (LSE:VLX) Stock Gets Fair Value Boost As Analysts Weigh Kepler Execution
+[2026-09-14 16:17:03] [INFO] LLM_HEADLINE INVP.L 50 NEXT (LSE:NXT) Stock Sees Split Analyst Revisions After Diverging Price Target M
+[2026-09-14 16:17:03] [INFO] LLM_HEADLINE INVP.L 35 Investec merger hampered Rathbones’ consumer protection rules rollout
+[2026-09-14 16:17:03] [INFO] LLM_HEADLINE INVP.L 50 Babcock (LSE:BAB) Stock Faces Mixed Analyst Target Changes After Buy Ratings Shi
+[2026-09-14 16:17:03] [INFO] LLM_HEADLINE INVP.L 70 Investec applies for Ireland banking permit – report
+[2026-09-14 16:17:03] [INFO] LLM_HEADLINE INVP.L 80 Investec PLC (IVTJF) Full Year 2026 Earnings Call Highlights: Strong Growth Amid
+[2026-09-14 16:17:03] [INFO] LLM_HEADLINE INVP.L 50 Spearmint Energy secures $450m for Red Egret BESS project
+[2026-09-14 16:17:03] [INFO] LLM_HEADLINE INVP.L 65 Investec Group H2 Earnings Call Highlights
+[2026-09-14 16:17:03] [INFO] LLM_HEADLINE INVP.L 50 How The Narrative On Howden Joinery Group (LSE:HWDN) Is Shifting With Higher Ana
+[2026-09-14 16:17:03] [INFO] LLM_HEADLINE INVP.L 55 Variable pay dominates – high-net-worth individuals expect non-salary income to 
+[2026-09-14 16:17:03] [INFO]   INVP.L       Financials       score= 70.1 RSI=58.9 P/E=8.7    news=62.0 Investec Group
+[2026-09-14 16:17:04] [INFO] LLM_CALL MNG.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:17:08] [INFO] LLM_SCORE MNG.L overall=68.0 headlines=10
+[2026-09-14 16:17:08] [INFO] LLM_HEADLINE MNG.L 60 M&G PLC's Dividend Analysis
+[2026-09-14 16:17:08] [INFO] LLM_HEADLINE MNG.L 65 M&G H1 Earnings Call Highlights
+[2026-09-14 16:17:08] [INFO] LLM_HEADLINE MNG.L 67 M&G (LSE:MNG) Stock Sees Modest Fair Value Lift As Analysts Fine Tune Targets
+[2026-09-14 16:17:08] [INFO] LLM_HEADLINE MNG.L 68 M&G (LSE:MNG) Stock Gets Fair Value Bump After Analyst Target Revisions
+[2026-09-14 16:17:08] [INFO] LLM_HEADLINE MNG.L 62 Discover Burberry Group And 2 Additional UK Stocks That May Be Trading Below The
+[2026-09-14 16:17:08] [INFO] LLM_HEADLINE MNG.L 64 M&G Shaved 2.4% of Methanex After a Near-Doubling
+[2026-09-14 16:17:08] [INFO] LLM_HEADLINE MNG.L 78 M&G PLC (MGPUF) Full Year 2025 Earnings Call Highlights: Strong Net Inflows and 
+[2026-09-14 16:17:08] [INFO] LLM_HEADLINE MNG.L 65 M&G H2 Earnings Call Highlights
+[2026-09-14 16:17:08] [INFO] LLM_HEADLINE MNG.L 60 UK Stocks Estimated To Be Trading Below Intrinsic Value In February 2026
+[2026-09-14 16:17:08] [INFO] LLM_HEADLINE MNG.L 60 UK Stocks Estimated To Be Trading Below Fair Value In January 2026
+[2026-09-14 16:17:08] [INFO]   MNG.L        Financials       score= 44.4 RSI=35.8 P/E=N/A    news=68.0 M&G plc
+[2026-09-14 16:17:09] [WARN] LLM_SKIP SAGE.L no headlines
+[2026-09-14 16:17:09] [WARN]   NEWS_UNAVAILABLE SAGE.L: headlines unscored, trading blocked
+[2026-09-14 16:17:09] [WARN]   SAGE.L       Information Technology SKIP no news score — not tradeable
+[2026-09-14 16:17:10] [INFO] LLM_CALL KNOS.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:17:13] [INFO] LLM_SCORE KNOS.L overall=65.0 headlines=10
+[2026-09-14 16:17:13] [INFO] LLM_HEADLINE KNOS.L 62 UK Stocks That May Be Trading Below Fair Value In June 2026
+[2026-09-14 16:17:13] [INFO] LLM_HEADLINE KNOS.L 68 3 UK Growth Stocks With Strong Insider Ownership
+[2026-09-14 16:17:13] [INFO] LLM_HEADLINE KNOS.L 67 High Growth Tech Stocks In The UK To Watch
+[2026-09-14 16:17:13] [INFO] LLM_HEADLINE KNOS.L 64 UK Dividend Stocks To Consider In May 2026
+[2026-09-14 16:17:13] [INFO] LLM_HEADLINE KNOS.L 60 Kainos Group H2 Earnings Call Highlights
+[2026-09-14 16:17:13] [INFO] LLM_HEADLINE KNOS.L 63 UK Stocks Estimated To Be Trading Below Intrinsic Value In April 2026
+[2026-09-14 16:17:13] [INFO] LLM_HEADLINE KNOS.L 68 Discover UK Growth Companies With High Insider Ownership
+[2026-09-14 16:17:13] [INFO] LLM_HEADLINE KNOS.L 67 High Growth Tech Stocks in the United Kingdom April 2026
+[2026-09-14 16:17:13] [INFO] LLM_HEADLINE KNOS.L 66 Exploring Kainos Group And 2 High Growth Tech Stocks In The UK
+[2026-09-14 16:17:13] [INFO] LLM_HEADLINE KNOS.L 67 High Growth Tech Stocks To Watch In The UK March 2026
+[2026-09-14 16:17:13] [INFO]   KNOS.L       Information Technology score= 62.6 RSI=34.6 P/E=33.9   news=65.0 Kainos Group plc
+[2026-09-14 16:17:15] [INFO] LLM_CALL FDM.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:17:20] [INFO] LLM_SCORE FDM.L overall=61.0 headlines=10
+[2026-09-14 16:17:20] [INFO] LLM_HEADLINE FDM.L 30 Here's Why We're Wary Of Buying FDM Group (Holdings)'s (LON:FDM) For Its Upcomin
+[2026-09-14 16:17:20] [INFO] LLM_HEADLINE FDM.L 57 High Growth Tech Stocks In The UK To Watch
+[2026-09-14 16:17:20] [INFO] LLM_HEADLINE FDM.L 52 Discover Mha And 2 Other Promising UK Penny Stocks
+[2026-09-14 16:17:20] [INFO] LLM_HEADLINE FDM.L 61 3 UK Stocks Estimated To Be Trading At Discounts Of Up To 39.4%
+[2026-09-14 16:17:20] [INFO] LLM_HEADLINE FDM.L 61 3 UK Stocks That May Be Trading Below Their Estimated Value In April 2026
+[2026-09-14 16:17:20] [INFO] LLM_HEADLINE FDM.L 61 April 2026's UK Stocks That May Be Trading Below Estimated Value
+[2026-09-14 16:17:20] [INFO] LLM_HEADLINE FDM.L 76 CFO & Executive Director of FDM Group (Holdings) Picks Up 8.4% More Stock
+[2026-09-14 16:17:20] [INFO] LLM_HEADLINE FDM.L 57 High Growth Tech Stocks in the United Kingdom April 2026
+[2026-09-14 16:17:20] [INFO] LLM_HEADLINE FDM.L 68 Is FDM Group (Holdings) plc (LON:FDM) Potentially Undervalued?
+[2026-09-14 16:17:20] [INFO] LLM_HEADLINE FDM.L 50 Make jobless grads train as teachers and nurses, says FTSE boss
+[2026-09-14 16:17:20] [INFO]   FDM.L        Information Technology score= 40.1 RSI=30.7 P/E=52.4   news=61.0 FDM Group (Holdings) plc
+[2026-09-14 16:17:21] [INFO] LLM_CALL SGE.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:17:26] [INFO] LLM_SCORE SGE.L overall=62.0 headlines=10
+[2026-09-14 16:17:26] [INFO] LLM_HEADLINE SGE.L 61 Sage Group (LSE:SGE) Stock Fair Value Edges Higher After Mixed Analyst Target Ch
+[2026-09-14 16:17:26] [INFO] LLM_HEADLINE SGE.L 60 Intuit Q4 Revenues Rise: Can Double-Digit Growth Continue?
+[2026-09-14 16:17:26] [INFO] LLM_HEADLINE SGE.L 58 Intuit Consumer Flywheel Gains: Can Cross-Selling Sustain Higher ARPU?
+[2026-09-14 16:17:26] [INFO] LLM_HEADLINE SGE.L 55 The Sage Group Q3 Earnings Call Highlights
+[2026-09-14 16:17:26] [INFO] LLM_HEADLINE SGE.L 39 Sage Group (LSE:SGE) Stock Fair Value Falls As Analysts Debate Growth And Valuat
+[2026-09-14 16:17:26] [INFO] LLM_HEADLINE SGE.L 82 Sage Group (The) PLC (SGGEF) (Q2 2026) Earnings Call Highlights: Strong Revenue 
+[2026-09-14 16:17:26] [INFO] LLM_HEADLINE SGE.L 60 The Sage Group H1 Earnings Call Highlights
+[2026-09-14 16:17:26] [INFO] LLM_HEADLINE SGE.L 65 UK Stocks That May Be Priced Below Their Estimated Value
+[2026-09-14 16:17:26] [INFO] LLM_HEADLINE SGE.L 45 Why The Sage Group (LSE:SGE) Narrative Is Shifting As Analysts Reset Valuation A
+[2026-09-14 16:17:26] [INFO] LLM_HEADLINE SGE.L 84 Sage Group (SGPYY) Upgraded to Buy: Here's Why
+[2026-09-14 16:17:26] [INFO]   SGE.L        Information Technology score= 59.6 RSI=35.6 P/E=25.4   news=62.0 The Sage Group plc
+[2026-09-14 16:17:27] [INFO] LLM_CALL AUTO.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:17:31] [INFO] LLM_SCORE AUTO.L overall=52.0 headlines=10
+[2026-09-14 16:17:31] [INFO] LLM_HEADLINE AUTO.L 42 Auto Trader Group (LSE:AUTO) Stock Gets Fair Value Trim As Analysts Split On Val
+[2026-09-14 16:17:31] [INFO] LLM_HEADLINE AUTO.L 68 AUTOTRADER GRP (ATDRY) Moves to Buy: Rationale Behind the Upgrade
+[2026-09-14 16:17:31] [INFO] LLM_HEADLINE AUTO.L 50 How The Investment Story For Auto Trader Group (LSE:AUTO) Is Being Rewritten By 
+[2026-09-14 16:17:31] [INFO] LLM_HEADLINE AUTO.L 72 AUTOTRADER GRP (ATDRY) May Find a Bottom Soon, Here's Why You Should Buy the Sto
+[2026-09-14 16:17:31] [INFO] LLM_HEADLINE AUTO.L 65 Autotrader Group PLC (ATDRF) Full Year 2026 Earnings Call Highlights: Revenue Gr
+[2026-09-14 16:17:31] [INFO] LLM_HEADLINE AUTO.L 55 Auto Trader Group H2 Earnings Call Highlights
+[2026-09-14 16:17:31] [INFO] LLM_HEADLINE AUTO.L 30 How The Autotrader Group (LSE:AUTO) Story Is Shifting With Lower Targets And Hig
+[2026-09-14 16:17:31] [INFO] LLM_HEADLINE AUTO.L 35 How The Autotrader Group (LSE:AUTO) Investment Story Is Shifting After Analyst T
+[2026-09-14 16:17:31] [INFO] LLM_HEADLINE AUTO.L 32 How The Autotrader Group (LSE:AUTO) Investment Story Is Shifting As Analysts Tur
+[2026-09-14 16:17:31] [INFO] LLM_HEADLINE AUTO.L 70 Is There An Opportunity With Autotrader Group plc's (LON:AUTO) 38% Undervaluatio
+[2026-09-14 16:17:31] [INFO]   AUTO.L       Information Technology score= 65.4 RSI=32.5 P/E=14.7   news=52.0 Autotrader Group plc
+[2026-09-14 16:17:32] [INFO] LLM_CALL VOD.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:17:38] [INFO] LLM_SCORE VOD.L overall=57.0 headlines=10
+[2026-09-14 16:17:38] [INFO] LLM_HEADLINE VOD.L 50 Can AST SpaceMobile's Expanding MNO Base Boost Its Revenue Prospects?
+[2026-09-14 16:17:38] [INFO] LLM_HEADLINE VOD.L 52 Paying for speed: 5G ‘fast lanes’ risk steeper phone bills
+[2026-09-14 16:17:38] [INFO] LLM_HEADLINE VOD.L 50 Techstep ASA (OSL:TECH) Q2 2026 Earnings Call Highlights: Revenue Growth Meets M
+[2026-09-14 16:17:38] [INFO] LLM_HEADLINE VOD.L 45 European Equities Traded in the US as American Depositary Receipts Drop in Thurs
+[2026-09-14 16:17:38] [INFO] LLM_HEADLINE VOD.L 50 ASTS Stock Hits Nearly 3-Week High: AST Seeks More Satellite Tests As European G
+[2026-09-14 16:17:38] [INFO] LLM_HEADLINE VOD.L 72 Why Did DELL, VOD, ZETA Stocks Surge To 52-Week Highs Last Week?
+[2026-09-14 16:17:38] [INFO] LLM_HEADLINE VOD.L 65 Vodafone (LSE:VOD) Stock Gets Fair Value Boost As Analysts Split On Germany And 
+[2026-09-14 16:17:38] [INFO] LLM_HEADLINE VOD.L 52 Dell Afterglow Continues. These Other Stocks Top Buy Points.
+[2026-09-14 16:17:38] [INFO] LLM_HEADLINE VOD.L 55 European Equities Traded in the US as American Depositary Receipts Marginally Hi
+[2026-09-14 16:17:38] [INFO] LLM_HEADLINE VOD.L 55 European Equities Traded in the US as American Depositary Receipts Edge Higher i
+[2026-09-14 16:17:38] [INFO]   VOD.L        Communication Services score= 46.7 RSI=84.6 P/E=N/A    news=57.0 Vodafone Group Public Limite
+[2026-09-14 16:17:39] [INFO] LLM_CALL REL.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:17:42] [INFO] LLM_SCORE REL.L overall=67.0 headlines=10
+[2026-09-14 16:17:42] [INFO] LLM_HEADLINE REL.L 55 PERI vs. RELX: Which Stock Is the Better Value Option?
+[2026-09-14 16:17:42] [INFO] LLM_HEADLINE REL.L 60 Can Thomson Reuters' Recurring Model and AI Expansion Sustain Growth?
+[2026-09-14 16:17:42] [INFO] LLM_HEADLINE REL.L 55 PERI vs. RELX: Which Stock Should Value Investors Buy Now?
+[2026-09-14 16:17:42] [INFO] LLM_HEADLINE REL.L 68 Evaluating RELX PLC’s (RELX) Enterprise Advantages in the AI Era
+[2026-09-14 16:17:42] [INFO] LLM_HEADLINE REL.L 50 Relx H1 Earnings Call Highlights
+[2026-09-14 16:17:42] [INFO] LLM_HEADLINE REL.L 58 Is RELX PLC (RELX) A Good Stock To Buy Now?
+[2026-09-14 16:17:42] [INFO] LLM_HEADLINE REL.L 82 Goldman Sachs Initiates Coverage of RELX PLC (RELX) With a Buy
+[2026-09-14 16:17:42] [INFO] LLM_HEADLINE REL.L 65 Is AI a Source of Opportunity for RELX PLC (RELX)?
+[2026-09-14 16:17:42] [INFO] LLM_HEADLINE REL.L 85 RELX PLC (RELX) Asserts £2.25B Buyback Program as a Profitable Industrial Stock 
+[2026-09-14 16:17:42] [INFO] LLM_HEADLINE REL.L 35 RELX (LSE:REL) Stock Price Slide Raises Questions About Long Term Value
+[2026-09-14 16:17:42] [INFO]   REL.L        Communication Services score= 63.1 RSI=46.0 P/E=20.8   news=67.0 RELX PLC
+[2026-09-14 16:17:43] [INFO] LLM_CALL WPP.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:17:49] [INFO] LLM_SCORE WPP.L overall=43.0 headlines=10
+[2026-09-14 16:17:49] [INFO] LLM_HEADLINE WPP.L 40 WPP Production, APA Lock Horns Over Triple Bids
+[2026-09-14 16:17:49] [INFO] LLM_HEADLINE WPP.L 50 European Equities Traded in the US as American Depositary Receipts Edge Higher i
+[2026-09-14 16:17:49] [INFO] LLM_HEADLINE WPP.L 30 PepsiCo hands global media to Publicis amid transformation at CPG giant
+[2026-09-14 16:17:49] [INFO] LLM_HEADLINE WPP.L 50 OpenAI launches ChatGPT ads in India ahead of 2027 IPO
+[2026-09-14 16:17:49] [INFO] LLM_HEADLINE WPP.L 48 European Equities Traded in the US as American Depositary Receipts Track Slightl
+[2026-09-14 16:17:49] [INFO] LLM_HEADLINE WPP.L 70 WPP (LSE:WPP) Stock Fair Value Rises After Split Analyst Targets And 2026 Guidan
+[2026-09-14 16:17:49] [INFO] LLM_HEADLINE WPP.L 50 Baxter hires new CFO with visa contingency
+[2026-09-14 16:17:49] [INFO] LLM_HEADLINE WPP.L 50 More than a third of pandemic-era borrowers expecting higher mortgage rates at r
+[2026-09-14 16:17:49] [INFO] LLM_HEADLINE WPP.L 47 European Equities Traded in the US as American Depositary Receipts Head Lower in
+[2026-09-14 16:17:49] [INFO] LLM_HEADLINE WPP.L 62 VML UK Selects Davis As First CMO
+[2026-09-14 16:17:49] [INFO]   WPP.L        Communication Services score= 37.5 RSI=40.8 P/E=N/A    news=43.0 WPP plc
+[2026-09-14 16:17:50] [INFO] LLM_CALL ITV.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:17:53] [INFO] LLM_SCORE ITV.L overall=60.0 headlines=10
+[2026-09-14 16:17:53] [INFO] LLM_HEADLINE ITV.L 35 ITV (LSE:ITV) Stock Sees Fair Value Cut After Analyst Caution On Sky Deal
+[2026-09-14 16:17:53] [INFO] LLM_HEADLINE ITV.L 72 ITV PLC (ITVPF) (H1 2026) Earnings Call Highlights: Strategic M&A Sale and Digit
+[2026-09-14 16:17:53] [INFO] LLM_HEADLINE ITV.L 55 ITV Q2 Earnings Call Highlights
+[2026-09-14 16:17:53] [INFO] LLM_HEADLINE ITV.L 82 ITV Calls Sky Deal Transformative as It Plans £950 Million Shareholder Return
+[2026-09-14 16:17:53] [INFO] LLM_HEADLINE ITV.L 52 FTSE 100 today: Stocks edge higher as Ukraine, Iran watched
+[2026-09-14 16:17:53] [INFO] LLM_HEADLINE ITV.L 45 Sky Wants ITV’s Channels Before Streaming Eats the Remote
+[2026-09-14 16:17:53] [INFO] LLM_HEADLINE ITV.L 48 Is It Too Late To Consider Buying ITV plc (LON:ITV)?
+[2026-09-14 16:17:53] [INFO] LLM_HEADLINE ITV.L 65 ITV’s Big Bet Is Becoming Less About TV
+[2026-09-14 16:17:53] [INFO] LLM_HEADLINE ITV.L 73 ITV PLC (ITVPF) Full Year 2025 Earnings Call Highlights: Strong Digital Growth A
+[2026-09-14 16:17:53] [INFO] LLM_HEADLINE ITV.L 55 ITV H2 Earnings Call Highlights
+[2026-09-14 16:17:53] [INFO]   ITV.L        Communication Services score= 60.3 RSI=35.6 P/E=11.6   news=60.0 ITV plc
+[2026-09-14 16:17:54] [INFO] LLM_CALL INF.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:18:00] [INFO] LLM_SCORE INF.L overall=58.0 headlines=10
+[2026-09-14 16:18:00] [INFO] LLM_HEADLINE INF.L 55 Informa PLC's Dividend Analysis
+[2026-09-14 16:18:00] [INFO] LLM_HEADLINE INF.L 62 Informa (LSE:INF) Stock Gets Fair Value Bump As Analysts Draw Fresh Price Target
+[2026-09-14 16:18:00] [INFO] LLM_HEADLINE INF.L 55 Informa H1 Earnings Call Highlights
+[2026-09-14 16:18:00] [INFO] LLM_HEADLINE INF.L 38 Some Investors May Be Willing To Look Past Informa's (LON:INF) Soft Earnings
+[2026-09-14 16:18:00] [INFO] LLM_HEADLINE INF.L 72 Informa PLC (IFJPY) Full Year 2025 Earnings Call Highlights: Strong Growth Amids
+[2026-09-14 16:18:00] [INFO] LLM_HEADLINE INF.L 55 Informa H2 Earnings Call Highlights
+[2026-09-14 16:18:00] [INFO] LLM_HEADLINE INF.L 45 How The Informa (LSE:INF) Narrative Is Shifting With AI Uncertainty And Mixed An
+[2026-09-14 16:18:00] [INFO] LLM_HEADLINE INF.L 58 How The Informa (LSE:INF) Story Is Shifting With New Targets Buybacks And AI Que
+[2026-09-14 16:18:00] [INFO] LLM_HEADLINE INF.L 55 Why The Narrative Around Informa (LSE:INF) Is Shifting After New Analyst Updates
+[2026-09-14 16:18:00] [INFO] LLM_HEADLINE INF.L 58 How The New Price Target Is Shaping Informa's Story And Fair Value
+[2026-09-14 16:18:00] [INFO]   INF.L        Communication Services score= 48.9 RSI=48.6 P/E=52.7   news=58.0 Informa plc
+[2026-09-14 16:18:01] [INFO] LLM_CALL NG.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:18:05] [INFO] LLM_SCORE NG.L overall=72.0 headlines=10
+[2026-09-14 16:18:05] [INFO] LLM_HEADLINE NG.L 58 NGG or ORA: Which Is the Better Value Stock Right Now?
+[2026-09-14 16:18:05] [INFO] LLM_HEADLINE NG.L 62 Private Credit Takes Bigger Role in Financing Energy, AI Infrastructure: Vinson 
+[2026-09-14 16:18:05] [INFO] LLM_HEADLINE NG.L 75 Transmission expansion could spur billions in savings, especially in PJM: study
+[2026-09-14 16:18:05] [INFO] LLM_HEADLINE NG.L 70 GE Vernova secures 400 kV substation contract for UK grid upgrade
+[2026-09-14 16:18:05] [INFO] LLM_HEADLINE NG.L 66 3 Infrastructure Stocks Built Around the Backbone of the Economy
+[2026-09-14 16:18:05] [INFO] LLM_HEADLINE NG.L 55 Vinson & Elkins Makes Major London Push With Energy M&A Heavyweight Michael Burn
+[2026-09-14 16:18:05] [INFO] LLM_HEADLINE NG.L 50 Extreme Heat Is Forcing an Economic Shift in Europe. The Winners and Losers.
+[2026-09-14 16:18:05] [INFO] LLM_HEADLINE NG.L 50 What Does Oklo (OKLO) Leadership Overhaul Mean As Commercialization Nears?
+[2026-09-14 16:18:05] [INFO] LLM_HEADLINE NG.L 68 Six Global Power Themes Shaping the Future—And How to Invest
+[2026-09-14 16:18:05] [INFO] LLM_HEADLINE NG.L 88 National Grid plc (NGG) Targets Soaring US Power Demand with $1.75B Joulent Inve
+[2026-09-14 16:18:05] [INFO]   NG.L         Utilities        score= 62.7 RSI=26.7 P/E=17.1   news=72.0 National Grid plc
+[2026-09-14 16:18:06] [INFO] LLM_CALL SSE.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:18:13] [INFO] LLM_SCORE SSE.L overall=55.0 headlines=10
+[2026-09-14 16:18:13] [INFO] LLM_HEADLINE SSE.L 50 UK PM Burnham uses policy blitz to buy time for tougher decisions
+[2026-09-14 16:18:13] [INFO] LLM_HEADLINE SSE.L 42 SSE (LSE:SSE) Stock Fair Value Edges Lower After Mixed Analyst Target Changes
+[2026-09-14 16:18:13] [INFO] LLM_HEADLINE SSE.L 52 UK, Japan to deepen ties with £18 billion investment agreement
+[2026-09-14 16:18:13] [INFO] LLM_HEADLINE SSE.L 72 Bears are Losing Control Over SSE (SSEZY), Here's Why It's a 'Buy' Now
+[2026-09-14 16:18:13] [INFO] LLM_HEADLINE SSE.L 62 Are heat pumps an underappreciated lever of power demand growth?
+[2026-09-14 16:18:13] [INFO] LLM_HEADLINE SSE.L 55 How A Steady Analyst Stance Is Shaping The Evolving Story For SSE (LSE:SSE)
+[2026-09-14 16:18:13] [INFO] LLM_HEADLINE SSE.L 68 SSE PLC (SSEZF) Full Year 2026 Earnings Call Highlights: Record CapEx and Strate
+[2026-09-14 16:18:13] [INFO] LLM_HEADLINE SSE.L 55 SSE H2 Earnings Call Highlights
+[2026-09-14 16:18:13] [INFO] LLM_HEADLINE SSE.L 48 How The SSE (LSE:SSE) Investment Story Is Shifting As Analysts Split On Valuatio
+[2026-09-14 16:18:13] [INFO] LLM_HEADLINE SSE.L 45 How The SSE (LSE:SSE) Investment Narrative Is Shifting With Mixed Analyst Target
+[2026-09-14 16:18:13] [INFO]   SSE.L        Utilities        score= 59.4 RSI=41.5 P/E=22.0   news=55.0 SSE plc
+[2026-09-14 16:18:14] [INFO] LLM_CALL SVT.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:18:19] [INFO] LLM_SCORE SVT.L overall=38.0 headlines=10
+[2026-09-14 16:18:19] [INFO] LLM_HEADLINE SVT.L 50 Diversified Energy, Galliford Try, Sunda Energy, Rockfire Resources, Solvonis Th
+[2026-09-14 16:18:19] [INFO] LLM_HEADLINE SVT.L 35 Five water companies to further increase bills with biggest rise for Southern Wa
+[2026-09-14 16:18:19] [INFO] LLM_HEADLINE SVT.L 25 Burnham attacks water companies over bill increases
+[2026-09-14 16:18:19] [INFO] LLM_HEADLINE SVT.L 58 Severn Trent (LSE:SVT) Stock Sees Modest Fair Value Lift As Analysts Debate Regu
+[2026-09-14 16:18:19] [INFO] LLM_HEADLINE SVT.L 12 Severn Trent Water admits ‘serious and unacceptable’ sewage failings
+[2026-09-14 16:18:19] [INFO] LLM_HEADLINE SVT.L 38 Severn Trent (LSE:SVT) Stock Fair Value Edges Lower As Analysts Split On Targets
+[2026-09-14 16:18:19] [INFO] LLM_HEADLINE SVT.L 50 What Could Shift The Investment Story For Severn Trent (LSE:SVT) Next
+[2026-09-14 16:18:19] [INFO] LLM_HEADLINE SVT.L 52 FTSE 100 Live: Stocks trim losses on report of new US-Iran ceasefire deal
+[2026-09-14 16:18:19] [INFO] LLM_HEADLINE SVT.L 50 Severn Trent H2 Earnings Call Highlights
+[2026-09-14 16:18:19] [INFO] LLM_HEADLINE SVT.L 52 FTSE 100 Live: London stocks break deadlock, as M&S and defence stocks gain
+[2026-09-14 16:18:19] [INFO]   SVT.L        Utilities        score= 59.9 RSI=24.9 P/E=23.8   news=38.0 Severn Trent PLC
+[2026-09-14 16:18:20] [INFO] LLM_CALL UU.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:18:24] [INFO] LLM_SCORE UU.L overall=47.0 headlines=10
+[2026-09-14 16:18:24] [INFO] LLM_HEADLINE UU.L 58 United Utilities Group (LSE:UU.) Stock Gets Fair Value Bump As Analyst Targets S
+[2026-09-14 16:18:24] [INFO] LLM_HEADLINE UU.L 48 Majority of United Utilities shareholders approve pay plans despite backlash
+[2026-09-14 16:18:24] [INFO] LLM_HEADLINE UU.L 25 United Utilities under fire over plans to hand top bosses share ‘allowances’
+[2026-09-14 16:18:24] [INFO] LLM_HEADLINE UU.L 42 United Utilities Group (LSE:UU.) Stock Fair Value Edges Lower After Mixed Analys
+[2026-09-14 16:18:24] [INFO] LLM_HEADLINE UU.L 50 How The Evolving Story For United Utilities Group (LSE:UU.) Could Reshape Invest
+[2026-09-14 16:18:24] [INFO] LLM_HEADLINE UU.L 70 United Utilities Group PLC (UUGRY) Q4 2026 Earnings Call Highlights: Strong Fina
+[2026-09-14 16:18:24] [INFO] LLM_HEADLINE UU.L 49 How The United Utilities Group (LSE:UU.) Story Is Shifting As Analyst Views Dive
+[2026-09-14 16:18:24] [INFO] LLM_HEADLINE UU.L 45 United Utilities unveils £800m share sale amid plans to bolster water network
+[2026-09-14 16:18:24] [INFO] LLM_HEADLINE UU.L 47 How The Investment Story For United Utilities Group (LSE:UU.) Is Shifting With M
+[2026-09-14 16:18:24] [INFO] LLM_HEADLINE UU.L 50 How The Investment Story For United Utilities Group (LSE:UU.) Is Quietly Shiftin
+[2026-09-14 16:18:24] [INFO]   UU.L         Utilities        score= 67.5 RSI=18.6 P/E=15.4   news=47.0 United Utilities Group PLC
+[2026-09-14 16:18:25] [INFO] LLM_CALL PNN.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:18:29] [INFO] LLM_SCORE PNN.L overall=42.0 headlines=10
+[2026-09-14 16:18:29] [INFO] LLM_HEADLINE PNN.L 38 Pennon Group (LSE:PNN) Stock Sees Modest Fair Value Cut As Analysts Turn Cautiou
+[2026-09-14 16:18:29] [INFO] LLM_HEADLINE PNN.L 25 Pennon faces balance sheet pressure ahead of September strategy update
+[2026-09-14 16:18:29] [INFO] LLM_HEADLINE PNN.L 35 Pennon Group (LSE:PNN) Stock Gets Fair Value Trim After Analyst Target Cuts
+[2026-09-14 16:18:29] [INFO] LLM_HEADLINE PNN.L 68 Pennon Group PLC (PEGRF) Full Year 2026 Earnings Call Highlights: Robust Profit 
+[2026-09-14 16:18:29] [INFO] LLM_HEADLINE PNN.L 55 Pennon Group H2 Earnings Call Highlights
+[2026-09-14 16:18:29] [INFO] LLM_HEADLINE PNN.L 72 Pennon returns to profit after water bill hikes
+[2026-09-14 16:18:29] [INFO] LLM_HEADLINE PNN.L 50 How The Pennon Group (LSE:PNN) Narrative Is Evolving Around £6 Analyst Targets
+[2026-09-14 16:18:29] [INFO] LLM_HEADLINE PNN.L 20 UK utility investors face prolonged uncertainty after worst sell-off since priva
+[2026-09-14 16:18:29] [INFO] LLM_HEADLINE PNN.L 45 How The Pennon Group (LSE:PNN) Story Is Shifting With Tighter Analyst Targets Ar
+[2026-09-14 16:18:29] [INFO] LLM_HEADLINE PNN.L 48 How The Pennon Group (LSE:PNN) Investment Story Is Shifting As Analyst Targets C
+[2026-09-14 16:18:29] [INFO]   PNN.L        Utilities        score= 49.9 RSI=36.7 P/E=23.5   news=42.0 Pennon Group Plc
+[2026-09-14 16:18:30] [INFO] LLM_CALL CNA.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:18:35] [INFO] LLM_SCORE CNA.L overall=36.0 headlines=10
+[2026-09-14 16:18:35] [INFO] LLM_HEADLINE CNA.L 25 Britain’s gas cliff-edge is drawing dangerously close
+[2026-09-14 16:18:35] [INFO] LLM_HEADLINE CNA.L 30 British Gas boss warns UK risks winter fuel shortage
+[2026-09-14 16:18:35] [INFO] LLM_HEADLINE CNA.L 50 X-Energy (XE) Ties Xe-100 Reactor Push To Rising AI Power Demand
+[2026-09-14 16:18:35] [INFO] LLM_HEADLINE CNA.L 50 Ceres Power spins out RFC Power in £10 million funding round
+[2026-09-14 16:18:35] [INFO] LLM_HEADLINE CNA.L 50 Can X-Energy's Xe-100 Capture the Growing Demand for Reliable AI Power?
+[2026-09-14 16:18:35] [INFO] LLM_HEADLINE CNA.L 30 Centrica (LSE:CNA) Stock Fair Value Edges Lower After Analyst Target Revisions
+[2026-09-14 16:18:35] [INFO] LLM_HEADLINE CNA.L 45 UK PM Burnham uses policy blitz to buy time for tougher decisions
+[2026-09-14 16:18:35] [INFO] LLM_HEADLINE CNA.L 50 Energy & Utilities Roundup: Market Talk
+[2026-09-14 16:18:35] [INFO] LLM_HEADLINE CNA.L 30 Centrica (LSE:CNA) Stock Gets Fair Value Trim As Analysts Rework Revenue Outlook
+[2026-09-14 16:18:35] [INFO] LLM_HEADLINE CNA.L 55 Centrica PLC (CPYYF) (Q2 2026) Earnings Call Highlights: Navigating Challenges a
+[2026-09-14 16:18:35] [INFO]   CNA.L        Utilities        score= 60.2 RSI=32.3 P/E=9.9    news=36.0 Centrica plc
+[2026-09-14 16:18:36] [INFO] LLM_CALL DRX.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:18:40] [INFO] LLM_SCORE DRX.L overall=64.0 headlines=10
+[2026-09-14 16:18:40] [INFO] LLM_HEADLINE DRX.L 50 Drax Group (LSE:DRX) Stock Draws Fresh Price Target Split As Analysts Rework Fai
+[2026-09-14 16:18:40] [INFO] LLM_HEADLINE DRX.L 75 Drax Group PLC (DRXGF) (H1 2026) Earnings Call Highlights: Strong Balance Sheet 
+[2026-09-14 16:18:40] [INFO] LLM_HEADLINE DRX.L 55 Drax Group H1 Earnings Call Highlights
+[2026-09-14 16:18:40] [INFO] LLM_HEADLINE DRX.L 68 Drax agrees $755m all-cash acquisition of BSIF
+[2026-09-14 16:18:40] [INFO] LLM_HEADLINE DRX.L 60 Drax Group Pauses Buyback as £561M Bluefield Solar Deal Boosts UK Renewables
+[2026-09-14 16:18:40] [INFO] LLM_HEADLINE DRX.L 45 Why The Narrative Around Drax Group (LSE:DRX) Is Shifting Toward Neutral Valuati
+[2026-09-14 16:18:40] [INFO] LLM_HEADLINE DRX.L 58 Some May Be Optimistic About Drax Group's (LON:DRX) Earnings
+[2026-09-14 16:18:40] [INFO] LLM_HEADLINE DRX.L 50 Global Power Solutions Appoints Pete Medved as President and CEO
+[2026-09-14 16:18:40] [INFO] LLM_HEADLINE DRX.L 47 How The Drax Group (LSE:DRX) Investment Story Is Shifting With New Targets And N
+[2026-09-14 16:18:40] [INFO] LLM_HEADLINE DRX.L 78 Drax Group PLC (DRXGF) Full Year 2025 Earnings Call Highlights: Record Renewable
+[2026-09-14 16:18:40] [INFO]   DRX.L        Utilities        score= 34.8 RSI=70.6 P/E=89.0   news=64.0 Drax Group plc
+[2026-09-14 16:18:41] [INFO] LLM_CALL LAND.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:18:47] [INFO] LLM_SCORE LAND.L overall=50.0 headlines=10
+[2026-09-14 16:18:47] [INFO] LLM_HEADLINE LAND.L 55 Inditex’s Lefties makes UK debut with Liverpool store
+[2026-09-14 16:18:47] [INFO] LLM_HEADLINE LAND.L 62 Skanska wins £282m contract for 55 Old Broad Street project in London
+[2026-09-14 16:18:47] [INFO] LLM_HEADLINE LAND.L 45 Landsec (LSE:LAND) Stock Faces Mixed Analyst Target Changes After Earnings Outlo
+[2026-09-14 16:18:47] [INFO] LLM_HEADLINE LAND.L 50 Barclays upgrades British Land to “overweight,” sees 20% upside
+[2026-09-14 16:18:47] [INFO] LLM_HEADLINE LAND.L 50 Land Securities Group H2 Earnings Call Highlights
+[2026-09-14 16:18:47] [INFO] LLM_HEADLINE LAND.L 49 How The Investment Story For Land Securities Group (LSE:LAND) Is Shifting On Mix
+[2026-09-14 16:18:47] [INFO] LLM_HEADLINE LAND.L 50 How The Investment Story Is Shifting For Land Securities Group (LSE:LAND)
+[2026-09-14 16:18:47] [INFO] LLM_HEADLINE LAND.L 38 How The Story On Landsec (LSE:LAND) Is Shifting As Analysts Turn More Cautious
+[2026-09-14 16:18:47] [INFO] LLM_HEADLINE LAND.L 68 BP moves back to central London as it chooses Bankside development for new globa
+[2026-09-14 16:18:47] [INFO] LLM_HEADLINE LAND.L 35 Why Analysts Are Rewriting The Story For Land Securities Group (LSE:LAND) After 
+[2026-09-14 16:18:47] [INFO]   LAND.L       Real Estate      score= 58.5 RSI=16.3 P/E=13.5   news=50.0 Land Securities Group Plc
+[2026-09-14 16:18:48] [INFO] LLM_CALL BLND.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:18:52] [INFO] LLM_SCORE BLND.L overall=78.0 headlines=10
+[2026-09-14 16:18:52] [INFO] LLM_HEADLINE BLND.L 30 Ex-WH Smith stores owner in clash with landlords over ‘aggressive’ cuts
+[2026-09-14 16:18:52] [INFO] LLM_HEADLINE BLND.L 55 Should You Be Adding British Land (LON:BLND) To Your Watchlist Today?
+[2026-09-14 16:18:52] [INFO] LLM_HEADLINE BLND.L 65 British Land hires Joanne McNamara as next chief executive
+[2026-09-14 16:18:52] [INFO] LLM_HEADLINE BLND.L 88 Barclays upgrades British Land to “overweight,” sees 20% upside
+[2026-09-14 16:18:52] [INFO] LLM_HEADLINE BLND.L 84 British Land Co PLC (BRLAF) Full Year 2026 Earnings Call Highlights: Strong Leas
+[2026-09-14 16:18:52] [INFO] LLM_HEADLINE BLND.L 62 British Land H2 Earnings Call Highlights
+[2026-09-14 16:18:52] [INFO] LLM_HEADLINE BLND.L 90 AI-boosted office demand drives British Land to stronger profits
+[2026-09-14 16:18:52] [INFO] LLM_HEADLINE BLND.L 50 FTSE 100 Live: London stocks break deadlock, as M&S and defence stocks gain
+[2026-09-14 16:18:52] [INFO] LLM_HEADLINE BLND.L 89 AI Demand Drives London Office Leasing Surge as 158,000 Sq Ft Deal Signed
+[2026-09-14 16:18:52] [INFO] LLM_HEADLINE BLND.L 93 Landlord British Land hikes guidance amid strong demand from AI firms
+[2026-09-14 16:18:52] [INFO]   BLND.L       Real Estate      score= 63.7 RSI=14.8 P/E=8.6    news=78.0 British Land Company PLC
+[2026-09-14 16:18:53] [INFO] LLM_CALL SGRO.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:18:57] [INFO] LLM_SCORE SGRO.L overall=78.0 headlines=10
+[2026-09-14 16:18:57] [INFO] LLM_HEADLINE SGRO.L 60 How Prologis Conquered The World
+[2026-09-14 16:18:57] [INFO] LLM_HEADLINE SGRO.L 82 Prologis agrees $18.8bn acquisition of Segro
+[2026-09-14 16:18:57] [INFO] LLM_HEADLINE SGRO.L 50 Stocks to Watch: Palantir, SpaceX, HSBC
+[2026-09-14 16:18:57] [INFO] LLM_HEADLINE SGRO.L 80 Prologis says $18.8B takeover of Segro moving forward
+[2026-09-14 16:18:57] [INFO] LLM_HEADLINE SGRO.L 84 Segro agrees £14 billion takeover from US firm Prologis
+[2026-09-14 16:18:57] [INFO] LLM_HEADLINE SGRO.L 83 Prologis Strikes Deal to Acquire Segro in £14.3 Billion Logistics Property Merge
+[2026-09-14 16:18:57] [INFO] LLM_HEADLINE SGRO.L 82 Prologis to Buy U.K.’s Segro for $18.8 Billion
+[2026-09-14 16:18:57] [INFO] LLM_HEADLINE SGRO.L 30 The great betrayal of the London stock market
+[2026-09-14 16:18:57] [INFO] LLM_HEADLINE SGRO.L 55 SEGRO Q2 Earnings Call Highlights
+[2026-09-14 16:18:57] [INFO] LLM_HEADLINE SGRO.L 81 Prologis Moves to Acquire Segro in $18.7B Mega Merger
+[2026-09-14 16:18:57] [INFO]   SGRO.L       Real Estate      score= 54.9 RSI=30.2 P/E=22.7   news=78.0 SEGRO Plc
+[2026-09-14 16:18:58] [INFO] LLM_CALL UTG.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:19:01] [INFO] LLM_SCORE UTG.L overall=45.0 headlines=10
+[2026-09-14 16:19:01] [INFO] LLM_HEADLINE UTG.L 48 UNITE Group PLC (STU:U1B) (Q2 2026) Earnings Call Highlights: Strategic Moves Am
+[2026-09-14 16:19:01] [INFO] LLM_HEADLINE UTG.L 50 Unite Group H1 Earnings Call Highlights
+[2026-09-14 16:19:01] [INFO] LLM_HEADLINE UTG.L 50 Unite Group Q2 Earnings Call Highlights
+[2026-09-14 16:19:01] [INFO] LLM_HEADLINE UTG.L 50 Unite Group Q1 Earnings Call Highlights
+[2026-09-14 16:19:01] [INFO] LLM_HEADLINE UTG.L 30 The student loans crisis hollowing out Britain’s university towns
+[2026-09-14 16:19:01] [INFO] LLM_HEADLINE UTG.L 42 UNITE Group PLC (UTGPF) Full Year 2025 Earnings Call Highlights: Navigating Chal
+[2026-09-14 16:19:01] [INFO] LLM_HEADLINE UTG.L 50 Unite Group H2 Earnings Call Highlights
+[2026-09-14 16:19:01] [INFO] LLM_HEADLINE UTG.L 40 Students more selective about university picks as they seek value for money
+[2026-09-14 16:19:01] [INFO] LLM_HEADLINE UTG.L 50 Unite Group Q4 Earnings Call Highlights
+[2026-09-14 16:19:01] [INFO] LLM_HEADLINE UTG.L 50 FTSE 100 reshuffle 2025: Burberry, Games Workshop and British Land join as WPP, 
+[2026-09-14 16:19:01] [INFO]   UTG.L        Real Estate      score= 46.0 RSI=11.5 P/E=N/A    news=45.0 Unite Group PLC
+[2026-09-14 16:19:02] [INFO] LLM_CALL HMSO.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:19:05] [INFO] LLM_SCORE HMSO.L overall=75.0 headlines=10
+[2026-09-14 16:19:05] [INFO] LLM_HEADLINE HMSO.L 78 Hammerson (LSE:HMSO) Stock Gets Fair Value Bump As Analysts Lift Targets
+[2026-09-14 16:19:05] [INFO] LLM_HEADLINE HMSO.L 88 Hammerson PLC (HMSNF) (Q2 2026) Earnings Call Highlights: Strong NRI Growth and 
+[2026-09-14 16:19:05] [INFO] LLM_HEADLINE HMSO.L 65 Hammerson H1 Earnings Call Highlights
+[2026-09-14 16:19:05] [INFO] LLM_HEADLINE HMSO.L 52 Hammerson (LSE:HMSO) Stock Faces Mixed Analyst Target Changes As Valuation Model
+[2026-09-14 16:19:05] [INFO] LLM_HEADLINE HMSO.L 55 How The Hammerson (LSE:HMSO) Story Is Shifting With New Targets And CFO Transiti
+[2026-09-14 16:19:05] [INFO] LLM_HEADLINE HMSO.L 76 How The Hammerson (LSE:HMSO) Narrative Is Shifting With New Targets And An Overw
+[2026-09-14 16:19:05] [INFO] LLM_HEADLINE HMSO.L 60 How The Hammerson (LSE:HMSO) Investment Narrative Is Shifting With New Targets A
+[2026-09-14 16:19:05] [INFO] LLM_HEADLINE HMSO.L 82 How The Hammerson (LSE:HMSO) Narrative Is Shifting With Upgrades And New Dividen
+[2026-09-14 16:19:05] [INFO] LLM_HEADLINE HMSO.L 58 How The Investment Story Is Quietly Shifting For Hammerson (LSE:HMSO)
+[2026-09-14 16:19:05] [INFO] LLM_HEADLINE HMSO.L 84 Hammerson PLC (HMSNF) Full Year 2025 Earnings Call Highlights: Strong Growth in 
+[2026-09-14 16:19:05] [INFO]   HMSO.L       Real Estate      score= 67.3 RSI=16.7 P/E=8.5    news=75.0 Hammerson Plc
+[2026-09-14 16:19:06] [INFO] LLM_CALL GPE.L model=gpt-5.6-luna headlines=3 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 16:19:08] [INFO] LLM_SCORE GPE.L overall=78.0 headlines=3
+[2026-09-14 16:19:08] [INFO] LLM_HEADLINE GPE.L 82 Great Portland Estates PLC (GPEAF) Full Year 2026 Earnings Call Highlights: Reco
+[2026-09-14 16:19:08] [INFO] LLM_HEADLINE GPE.L 65 Great Portland Estates H2 Earnings Call Highlights
+[2026-09-14 16:19:08] [INFO] LLM_HEADLINE GPE.L 80 Great Portland Estates PLC (GPEAF) (H1 2026) Earnings Call Highlights: Strong Gr
+[2026-09-14 16:19:08] [INFO]   GPE.L        Real Estate      score= 61.2 RSI=12.8 P/E=7.9    news=78.0 Great Portland Estates Plc
+[2026-09-14 16:19:09] [INFO] BROKER using demo (https://demo.trading212.com/api/v0)
+[2026-09-14 16:19:09] [INFO] BROKER snapshot env cash=£50,045.97 bot cash=£10,000.00 (cap £10,000) positions=0
+[2026-09-14 16:19:09] [INFO] ============================================================
+[2026-09-14 16:19:09] [INFO] FTSE Trading Agent — 2026-09-14 16:19
+[2026-09-14 16:19:09] [INFO] Cash: £10,000.00 | Positions: 0
+[2026-09-14 16:19:09] [INFO] Portfolio total: £10,000.00
+[2026-09-14 16:19:09] [INFO] --- Sell evaluation ---
+[2026-09-14 16:19:09] [INFO] --- Buy fill (10 slots, £10,000.00 cash) ---
+[2026-09-14 16:19:11] [INFO]   BROKER_BUY III.L as IIIl_EQ qty=34
+[2026-09-14 16:19:11] [INFO]   BUY  34x III.L (3i Group Ord) @ £26.37 = £896.58 | Score 80.4 | News 72/100 | P/E 4.9 | RSI 21 oversold
+[2026-09-14 16:19:14] [INFO]   BROKER_BUY BARC.L as BARCl_EQ qty=189
+[2026-09-14 16:19:14] [INFO]   BUY  189x BARC.L (Barclays PLC) @ £4.74 = £896.33 | Score 78.4 | News 67/100 | P/E 9.9 | RevGrow +16% | RSI 38 oversold
+[2026-09-14 16:19:17] [INFO]   BROKER_BUY FRES.L as FRESl_EQ qty=31
+[2026-09-14 16:19:17] [INFO]   BUY  31x FRES.L (Fresnillo plc) @ £29.01 = £899.31 | Score 72.5 | News 61/100 | P/E 12.7 | RevGrow +75% | RSI 31 oversold
+[2026-09-14 16:19:21] [INFO]   BROKER_BUY NWG.L as RBSl_EQ qty=132
+[2026-09-14 16:19:21] [INFO]   BUY  132x NWG.L (NatWest Group plc) @ £6.77 = £893.90 | Score 72.3 | News 68/100 | P/E 9.0 | RevGrow +14%
+[2026-09-14 16:19:24] [INFO]   BROKER_BUY HSBA.L as HSBAl_EQ qty=58
+[2026-09-14 16:19:24] [INFO]   BUY  58x HSBA.L (HSBC Holdings plc) @ £15.33 = £889.02 | Score 72.0 | News 43/100 | P/E 14.7 | RevGrow +25%
+[2026-09-14 16:19:27] [INFO]   BROKER_BUY INVP.L as INVPl_EQ qty=137
+[2026-09-14 16:19:27] [INFO]   BUY  137x INVP.L (Investec Group) @ £6.54 = £895.98 | Score 70.1 | News 62/100 | P/E 8.7 | RevGrow +9%
+[2026-09-14 16:19:31] [INFO]   BROKER_BUY LLOY.L as LLOYl_EQ qty=828
+[2026-09-14 16:19:31] [INFO]   BUY  828x LLOY.L (Lloyds Banking Group plc) @ £1.09 = £899.62 | Score 69.7 | News 43/100 | P/E 13.6 | RevGrow +12% | RSI 41 oversold
+[2026-09-14 16:19:34] [INFO]   BROKER_BUY STAN.L as STANl_EQ qty=39
+[2026-09-14 16:19:34] [INFO]   BUY  39x STAN.L (Standard Chartered PLC) @ £22.97 = £895.83 | Score 69.5 | News 74/100 | P/E 14.7
+[2026-09-14 16:19:37] [INFO]   BROKER_BUY RIO.L as RIOl_EQ qty=12
+[2026-09-14 16:19:37] [INFO]   BUY  12x RIO.L (Rio Tinto Group) @ £71.80 = £861.60 | Score 67.7 | News 56/100 | P/E 13.2 | RevGrow +16% | RSI 24 oversold
+[2026-09-14 16:19:41] [INFO]   BROKER_BUY UU.L as UUl_EQ qty=67
+[2026-09-14 16:19:41] [INFO]   BUY  67x UU.L (United Utilities Group PLC) @ £13.27 = £889.09 | Score 67.5 | News 47/100 | P/E 15.4 | RevGrow +23% | RSI 19 oversold
+[2026-09-14 16:19:45] [INFO] ============================================================
+[2026-09-14 16:19:45] [INFO] Done | Total: £9,995.45 | Return: -0.05% | Trades: 10
+[2026-09-14 16:19:45] [INFO] BROKER snapshot env cash=£41,068.29 bot cash=£0.00 (cap £10,000) positions=10
+[2026-09-14 16:19:45] [INFO] Dashboard saved → dashboard.html

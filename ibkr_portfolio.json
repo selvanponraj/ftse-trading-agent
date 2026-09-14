@@ -1,8 +1,691 @@
 {
-  "cash": 10000.0,
-  "holdings": {},
-  "trades": [],
-  "daily_snapshots": [],
+  "cash": 978.35,
+  "holdings": {
+    "III.L": {
+      "shares": 34,
+      "avg_cost": 26.6001,
+      "first_bought": "2026-09-14",
+      "score_at_buy": 80.4,
+      "name": "3i Group Ord",
+      "sector": "Financials",
+      "broker_ticker": "III"
+    },
+    "BARC.L": {
+      "shares": 189,
+      "avg_cost": 4.8132,
+      "first_bought": "2026-09-14",
+      "score_at_buy": 78.4,
+      "name": "Barclays PLC",
+      "sector": "Financials",
+      "broker_ticker": "BARC"
+    },
+    "FRES.L": {
+      "shares": 31,
+      "avg_cost": 29.1614,
+      "first_bought": "2026-09-14",
+      "score_at_buy": 72.5,
+      "name": "Fresnillo plc",
+      "sector": "Materials",
+      "broker_ticker": "FRES"
+    },
+    "NWG.L": {
+      "shares": 132,
+      "avg_cost": 6.8628,
+      "first_bought": "2026-09-14",
+      "score_at_buy": 72.3,
+      "name": "NatWest Group plc",
+      "sector": "Financials",
+      "broker_ticker": "NWG"
+    },
+    "HSBA.L": {
+      "shares": 58,
+      "avg_cost": 15.4865,
+      "first_bought": "2026-09-14",
+      "score_at_buy": 72.0,
+      "name": "HSBC Holdings plc",
+      "sector": "Financials",
+      "broker_ticker": "HSBA"
+    },
+    "INVP.L": {
+      "shares": 137,
+      "avg_cost": 6.5996,
+      "first_bought": "2026-09-14",
+      "score_at_buy": 70.1,
+      "name": "Investec Group",
+      "sector": "Financials",
+      "broker_ticker": "INVP"
+    },
+    "LLOY.L": {
+      "shares": 828,
+      "avg_cost": 1.0991,
+      "first_bought": "2026-09-14",
+      "score_at_buy": 69.7,
+      "name": "Lloyds Banking Group plc",
+      "sector": "Financials",
+      "broker_ticker": "LLOY"
+    },
+    "STAN.L": {
+      "shares": 39,
+      "avg_cost": 23.2321,
+      "first_bought": "2026-09-14",
+      "score_at_buy": 69.5,
+      "name": "Standard Chartered PLC",
+      "sector": "Financials",
+      "broker_ticker": "STAN"
+    },
+    "RIO.L": {
+      "shares": 12,
+      "avg_cost": 72.4693,
+      "first_bought": "2026-09-14",
+      "score_at_buy": 67.7,
+      "name": "Rio Tinto Group",
+      "sector": "Materials",
+      "broker_ticker": "RIO"
+    },
+    "HMSO.L": {
+      "shares": 265,
+      "avg_cost": 3.4323,
+      "first_bought": "2026-09-14",
+      "score_at_buy": 67.3,
+      "name": "Hammerson Plc",
+      "sector": "Real Estate",
+      "broker_ticker": "HMSO"
+    }
+  },
+  "trades": [
+    {
+      "date": "2026-09-14",
+      "ticker": "III.L",
+      "name": "3i Group Ord",
+      "action": "BUY",
+      "shares": 34,
+      "price": 26.37,
+      "total": 896.58,
+      "score": 80.4,
+      "reason": "Score 80.4 | News 72/100 | P/E 4.9 | RSI 21 oversold",
+      "news_headlines": [
+        {
+          "title": "UK Dividend Stocks To Watch In June 2026",
+          "score": 65
+        },
+        {
+          "title": "UK Dividend Stocks: Andrews Sykes Group And 2 More Top Income Picks",
+          "score": 60
+        },
+        {
+          "title": "3 UK Dividend Stocks Yielding Up To 13.4%",
+          "score": 64
+        },
+        {
+          "title": "3 UK Dividend Stocks To Watch With Up To 6.1% Yield",
+          "score": 64
+        },
+        {
+          "title": "3 UK Dividend Stocks Yielding Up To 7.5%",
+          "score": 64
+        },
+        {
+          "title": "3 UK Dividend Stocks Yielding Up To 9.1%",
+          "score": 64
+        },
+        {
+          "title": "UK Dividend Stocks Offering Yields Up To 10.3%",
+          "score": 64
+        },
+        {
+          "title": "Private-equity firm 3i buys majority stake in Laboratoire Nutergia",
+          "score": 84
+        },
+        {
+          "title": "3 Top UK Dividend Stocks To Consider",
+          "score": 65
+        },
+        {
+          "title": "UK Dividend Stocks Lloyds Banking Group And 2 Other Income Generators",
+          "score": 60
+        }
+      ],
+      "broker_order": {
+        "id": 48,
+        "ticker": "III",
+        "quantity": 34
+      }
+    },
+    {
+      "date": "2026-09-14",
+      "ticker": "BARC.L",
+      "name": "Barclays PLC",
+      "action": "BUY",
+      "shares": 189,
+      "price": 4.7425,
+      "total": 896.33,
+      "score": 78.4,
+      "reason": "Score 78.4 | News 67/100 | P/E 9.9 | RevGrow +16% | RSI 38 oversold",
+      "news_headlines": [
+        {
+          "title": "UAL, AAL, DAL Stocks Suffer Weekly Loss: Barclays Cuts Price Targets But Sees A Silver Lining",
+          "score": 45
+        },
+        {
+          "title": "Barclays Raises 2026 S&P 500 Target to 7,950 After Second-Quarter Earnings",
+          "score": 76
+        },
+        {
+          "title": "Burnham faces UK economic test as budget day approaches",
+          "score": 50
+        },
+        {
+          "title": "Why Rising Bond Yields Aren\u2019t Throttling The Economy, For Now",
+          "score": 55
+        },
+        {
+          "title": "Barclays Hikes S&P 500 Target to 7,950 on Strong Earnings",
+          "score": 79
+        },
+        {
+          "title": "Inflation Woes Weigh on Stocks During Earnings Season Lull",
+          "score": 43
+        },
+        {
+          "title": "Barclays Tweaks S&P 500 Target for Rest of 2026",
+          "score": 58
+        },
+        {
+          "title": "Barclays Sees 4% Upside for the S&P 500 on Tech Earnings Strength",
+          "score": 73
+        },
+        {
+          "title": "Barclays Sees S&P 500 at 7,950 in 2026: What Do Prediction Markets Say?",
+          "score": 65
+        },
+        {
+          "title": "Update: Market Chatter: Barclays Leads $2.8 Billion Financing Package for Lone Star's ContiTech Acquisition",
+          "score": 70
+        }
+      ],
+      "broker_order": {
+        "id": 51,
+        "ticker": "BARC",
+        "quantity": 189
+      }
+    },
+    {
+      "date": "2026-09-14",
+      "ticker": "FRES.L",
+      "name": "Fresnillo plc",
+      "action": "BUY",
+      "shares": 31,
+      "price": 29.01,
+      "total": 899.31,
+      "score": 72.5,
+      "reason": "Score 72.5 | News 61/100 | P/E 12.7 | RevGrow +75% | RSI 31 oversold",
+      "news_headlines": [
+        {
+          "title": "Will La Colorada Mine Strengthen PAAS' Long-Term Growth?",
+          "score": 50
+        },
+        {
+          "title": "Basic Materials Roundup: Market Talk",
+          "score": 50
+        },
+        {
+          "title": "European Indexes Largely Higher at Open",
+          "score": 55
+        },
+        {
+          "title": "European Indexes Mixed as Tech Stocks Rise, Miners Fall",
+          "score": 40
+        },
+        {
+          "title": "European Indexes Mostly Higher; London\u2019s FTSE 100 Hit by Antofagasta Guidance Cut",
+          "score": 43
+        },
+        {
+          "title": "Fresnillo (LSE:FRES) Stock Sees Fair Value Lift As Analysts Split On Earnings Outlook",
+          "score": 65
+        },
+        {
+          "title": "FTSE 100 Live: UK stocks head lower led by mining sector sell-off",
+          "score": 35
+        },
+        {
+          "title": "European Stocks Extend Record Highs",
+          "score": 55
+        },
+        {
+          "title": "Fresnillo PLC (FNLPF) (Q2 2026) Earnings Call Highlights: Record Financial Performance and ...",
+          "score": 85
+        },
+        {
+          "title": "Fresnillo H1 Earnings Call Highlights",
+          "score": 65
+        }
+      ],
+      "broker_order": {
+        "id": 54,
+        "ticker": "FRES",
+        "quantity": 31
+      }
+    },
+    {
+      "date": "2026-09-14",
+      "ticker": "NWG.L",
+      "name": "NatWest Group plc",
+      "action": "BUY",
+      "shares": 132,
+      "price": 6.772,
+      "total": 893.9,
+      "score": 72.3,
+      "reason": "Score 72.3 | News 68/100 | P/E 9.0 | RevGrow +14%",
+      "news_headlines": [
+        {
+          "title": "Amazon Is Selling Its First Sterling Bonds in Four-Part Deal",
+          "score": 50
+        },
+        {
+          "title": "NatWest (NWG) Looks to America for Growth as UK Banking Competition Intensifies",
+          "score": 62
+        },
+        {
+          "title": "Reform UK infighting complicates Farage\u2019s push to prepare party to govern",
+          "score": 50
+        },
+        {
+          "title": "AI Is Starting to Define Bank Internships as Much as Long Hours",
+          "score": 50
+        },
+        {
+          "title": "UK officials fear Burnham\u2019s fiscal flexibility could unsettle bond markets",
+          "score": 48
+        },
+        {
+          "title": "NatWest (NWG) Q2 2026 Earnings Call Transcript",
+          "score": 50
+        },
+        {
+          "title": "NatWest Group Q2 Earnings Call Highlights",
+          "score": 55
+        },
+        {
+          "title": "NatWest Raises Guidance, Brings Forward Buyback Announcement Plans",
+          "score": 88
+        },
+        {
+          "title": "Andy Burnham set to become UK PM as policy agenda remains unclear",
+          "score": 48
+        },
+        {
+          "title": "5 Solid Dividend Stocks to Buy in July",
+          "score": 65
+        }
+      ],
+      "broker_order": {
+        "id": 57,
+        "ticker": "NWG",
+        "quantity": 132
+      }
+    },
+    {
+      "date": "2026-09-14",
+      "ticker": "HSBA.L",
+      "name": "HSBC Holdings plc",
+      "action": "BUY",
+      "shares": 58,
+      "price": 15.328,
+      "total": 889.02,
+      "score": 72.0,
+      "reason": "Score 72.0 | News 43/100 | P/E 14.7 | RevGrow +25%",
+      "news_headlines": [
+        {
+          "title": "HSBC Holdings (HSBC) Reshapes European Operations with German Exit",
+          "score": 56
+        },
+        {
+          "title": "HSBC Raises 2026 S&P 500 Target to 8,100 on Earnings Outlook",
+          "score": 50
+        },
+        {
+          "title": "Burnham faces UK economic test as budget day approaches",
+          "score": 50
+        },
+        {
+          "title": "Can HSBC's Germany Pullback Support Profitability and Efficiency?",
+          "score": 65
+        },
+        {
+          "title": "CFOs On the Move: Week ending Sept. 11",
+          "score": 50
+        },
+        {
+          "title": "Tight Supply Worries Lift Oil As Middle East Conflict Heats Up",
+          "score": 38
+        },
+        {
+          "title": "\u2018There Is No Reason for Criminal Gangs to Compete\u2019: The \u20ac50 Billion Fraud That Out-Earns HSBC",
+          "score": 25
+        },
+        {
+          "title": "HSBC Raises 2026 Brent Forecast to $90 as Hormuz Crisis Drags On",
+          "score": 42
+        },
+        {
+          "title": "HSBC CFO Pam Kaur to step down",
+          "score": 30
+        },
+        {
+          "title": "HSBC Begins Search for New Finance Chief as Pam Kaur Departs",
+          "score": 35
+        }
+      ],
+      "broker_order": {
+        "id": 60,
+        "ticker": "HSBA",
+        "quantity": 58
+      }
+    },
+    {
+      "date": "2026-09-14",
+      "ticker": "INVP.L",
+      "name": "Investec Group",
+      "action": "BUY",
+      "shares": 137,
+      "price": 6.54,
+      "total": 895.98,
+      "score": 70.1,
+      "reason": "Score 70.1 | News 62/100 | P/E 8.7 | RevGrow +9%",
+      "news_headlines": [
+        {
+          "title": "Volex (LSE:VLX) Stock Gets Fair Value Boost As Analysts Weigh Kepler Execution",
+          "score": 50
+        },
+        {
+          "title": "NEXT (LSE:NXT) Stock Sees Split Analyst Revisions After Diverging Price Target Moves",
+          "score": 50
+        },
+        {
+          "title": "Investec merger hampered Rathbones\u2019 consumer protection rules rollout",
+          "score": 35
+        },
+        {
+          "title": "Babcock (LSE:BAB) Stock Faces Mixed Analyst Target Changes After Buy Ratings Shift",
+          "score": 50
+        },
+        {
+          "title": "Investec applies for Ireland banking permit \u2013 report",
+          "score": 70
+        },
+        {
+          "title": "Investec PLC (IVTJF) Full Year 2026 Earnings Call Highlights: Strong Growth Amidst Volatile Markets",
+          "score": 80
+        },
+        {
+          "title": "Spearmint Energy secures $450m for Red Egret BESS project",
+          "score": 50
+        },
+        {
+          "title": "Investec Group H2 Earnings Call Highlights",
+          "score": 65
+        },
+        {
+          "title": "How The Narrative On Howden Joinery Group (LSE:HWDN) Is Shifting With Higher Analyst Targets",
+          "score": 50
+        },
+        {
+          "title": "Variable pay dominates \u2013 high-net-worth individuals expect non-salary income to play a bigger role: Investec",
+          "score": 55
+        }
+      ],
+      "broker_order": {
+        "id": 63,
+        "ticker": "INVP",
+        "quantity": 137
+      }
+    },
+    {
+      "date": "2026-09-14",
+      "ticker": "LLOY.L",
+      "name": "Lloyds Banking Group plc",
+      "action": "BUY",
+      "shares": 828,
+      "price": 1.0865,
+      "total": 899.62,
+      "score": 69.7,
+      "reason": "Score 69.7 | News 43/100 | P/E 13.6 | RevGrow +12% | RSI 41 oversold",
+      "news_headlines": [
+        {
+          "title": "RSM UK appoints new partner to support financial services risk practice",
+          "score": 50
+        },
+        {
+          "title": "Sale of Barclay family\u2019s former retail empire to be shelved",
+          "score": 50
+        },
+        {
+          "title": "Reform UK infighting complicates Farage\u2019s push to prepare party to govern",
+          "score": 50
+        },
+        {
+          "title": "British banking giants deliver tax rise warning to new chancellor",
+          "score": 40
+        },
+        {
+          "title": "Aldermore battle heats up as private equity giant CVC motors into auction",
+          "score": 50
+        },
+        {
+          "title": "Lloyds, Halifax and Bank of Scotland apps down",
+          "score": 20
+        },
+        {
+          "title": "AI Is Starting to Define Bank Internships as Much as Long Hours",
+          "score": 50
+        },
+        {
+          "title": "European Equities Traded in the US as American Depositary Receipts Edge Lower in Wednesday Trading",
+          "score": 40
+        },
+        {
+          "title": "Lloyds Banking Group PLC's Dividend Analysis",
+          "score": 55
+        },
+        {
+          "title": "Lloyds Banking Group (LSE:LLOY) Chief Risk Officer Exit Sets Up 2026 Leadership Shift",
+          "score": 42
+        }
+      ],
+      "broker_order": {
+        "id": 66,
+        "ticker": "LLOY",
+        "quantity": 828
+      }
+    },
+    {
+      "date": "2026-09-14",
+      "ticker": "STAN.L",
+      "name": "Standard Chartered PLC",
+      "action": "BUY",
+      "shares": 39,
+      "price": 22.97,
+      "total": 895.83,
+      "score": 69.5,
+      "reason": "Score 69.5 | News 74/100 | P/E 14.7",
+      "news_headlines": [
+        {
+          "title": "What Will 10,000 XRP Be Worth in 2030?",
+          "score": 50
+        },
+        {
+          "title": "What Will XRP Be Worth by 2028?",
+          "score": 50
+        },
+        {
+          "title": "Standard Chartered unveils platform to manage, decarbonize supply chain",
+          "score": 72
+        },
+        {
+          "title": "Standard Chartered (SCBFF) Soars 5.8%: Is Further Upside Left in the Stock?",
+          "score": 86
+        },
+        {
+          "title": "XRP\u2019s $28 Target Back in Focus as Key CLARITY Opposition Eased, Senators Eye November Passage",
+          "score": 50
+        },
+        {
+          "title": "Standard Chartered (LSE:STAN) Stock Fair Value Edges Higher After Analyst Target Lifts",
+          "score": 78
+        },
+        {
+          "title": "Standard Chartered Launches Spot Bitcoin, Ether Trading for UAE Institutions",
+          "score": 82
+        },
+        {
+          "title": "A \u2018Too Big to Fail' Bank Is Now Delivering Actual Bitcoin and Ethereum to Institutions",
+          "score": 80
+        },
+        {
+          "title": "Standard Chartered launches institutional spot crypto trading in UAE",
+          "score": 82
+        },
+        {
+          "title": "HSBC Eyes Singapore Consolidation: Will Simplification Aid Growth?",
+          "score": 50
+        }
+      ],
+      "broker_order": {
+        "id": 69,
+        "ticker": "STAN",
+        "quantity": 39
+      }
+    },
+    {
+      "date": "2026-09-14",
+      "ticker": "RIO.L",
+      "name": "Rio Tinto Group",
+      "action": "BUY",
+      "shares": 12,
+      "price": 71.8,
+      "total": 861.6,
+      "score": 67.7,
+      "reason": "Score 67.7 | News 56/100 | P/E 13.2 | RevGrow +16% | RSI 24 oversold",
+      "news_headlines": [
+        {
+          "title": "Will Heavy Expansion Costs Slow USAR's Growth Momentum?",
+          "score": 45
+        },
+        {
+          "title": "Domestic Metals starts 9,000m Smart Creek drill program \u2013 ICYMI",
+          "score": 58
+        },
+        {
+          "title": "Aurukun Deal Gives Rio Tinto (RIO) More Bauxite Upside, But Risks Remain",
+          "score": 62
+        },
+        {
+          "title": "U.S.-Listed Copper Mining Stocks Fall as Copper Retreats From Record High",
+          "score": 35
+        },
+        {
+          "title": "Domestic Metals launches 9,000-metre drill program at Rio Tinto-backed Smart Creek project",
+          "score": 58
+        },
+        {
+          "title": "Graphene Manufacturing Group's fast-charging battery cells show no performance loss",
+          "score": 50
+        },
+        {
+          "title": "Rio Tinto to take over Queensland\u2019s Aurukun Bauxite Project",
+          "score": 68
+        },
+        {
+          "title": "Domestic Metals commences drilling at Rio Tinto joint venture Smart Creek project",
+          "score": 58
+        },
+        {
+          "title": "Rio Tinto (LSE:RIO) Stock Looks Rich On Cash Flow Yet Cheap On Earnings",
+          "score": 60
+        },
+        {
+          "title": "Rio Tinto Group (LSE:RIO) Looks Fully Valued On Its Critical Minerals Narrative",
+          "score": 48
+        }
+      ],
+      "broker_order": {
+        "id": 72,
+        "ticker": "RIO",
+        "quantity": 12
+      }
+    },
+    {
+      "date": "2026-09-14",
+      "ticker": "HMSO.L",
+      "name": "Hammerson Plc",
+      "action": "BUY",
+      "shares": 265,
+      "price": 3.394,
+      "total": 899.41,
+      "score": 67.3,
+      "reason": "Score 67.3 | News 75/100 | P/E 8.5 | RevGrow +40% | RSI 17 oversold",
+      "news_headlines": [
+        {
+          "title": "Hammerson (LSE:HMSO) Stock Gets Fair Value Bump As Analysts Lift Targets",
+          "score": 78
+        },
+        {
+          "title": "Hammerson PLC (HMSNF) (Q2 2026) Earnings Call Highlights: Strong NRI Growth and Raised Guidance ...",
+          "score": 88
+        },
+        {
+          "title": "Hammerson H1 Earnings Call Highlights",
+          "score": 65
+        },
+        {
+          "title": "Hammerson (LSE:HMSO) Stock Faces Mixed Analyst Target Changes As Valuation Models Shift",
+          "score": 52
+        },
+        {
+          "title": "How The Hammerson (LSE:HMSO) Story Is Shifting With New Targets And CFO Transition",
+          "score": 55
+        },
+        {
+          "title": "How The Hammerson (LSE:HMSO) Narrative Is Shifting With New Targets And An Overweight Call",
+          "score": 76
+        },
+        {
+          "title": "How The Hammerson (LSE:HMSO) Investment Narrative Is Shifting With New Targets And Assumptions",
+          "score": 60
+        },
+        {
+          "title": "How The Hammerson (LSE:HMSO) Narrative Is Shifting With Upgrades And New Dividend Guidance",
+          "score": 82
+        },
+        {
+          "title": "How The Investment Story Is Quietly Shifting For Hammerson (LSE:HMSO)",
+          "score": 58
+        },
+        {
+          "title": "Hammerson PLC (HMSNF) Full Year 2025 Earnings Call Highlights: Strong Growth in Rental Income ...",
+          "score": 84
+        }
+      ],
+      "broker_order": {
+        "id": 76,
+        "ticker": "HMSO",
+        "quantity": 265
+      }
+    }
+  ],
+  "daily_snapshots": [
+    {
+      "date": "2026-09-14",
+      "timestamp": "2026-09-14 16:19",
+      "cash": 1072.42,
+      "equity_value": 8920.29,
+      "total_value": 9992.71,
+      "return_pct": -0.07,
+      "positions": 10,
+      "trades_today": 10
+    }
+  ],
   "created": "2026-09-14",
   "starting_value": 10000.0,
   "version": "1.0"
