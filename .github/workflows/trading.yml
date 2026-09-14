@@ -1,8 +1,8 @@
 name: FTSE 250 Trading Agent
 
 on:
-  schedule:
-    - cron: '30 16 * * 1-5'
+  # schedule:
+  #   - cron: '30 16 * * 1-5'
   workflow_dispatch:
 
 permissions:
