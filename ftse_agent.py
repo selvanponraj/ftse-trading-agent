@@ -7,6 +7,7 @@ Runs on GitHub Actions — Mon-Fri after market close
 """
 
 import json
+import os
 import time
 from datetime import datetime, date
 from pathlib import Path
@@ -15,11 +16,34 @@ import yfinance as yf
 import pandas as pd
 import numpy as np
 
+from broker import broker_from_env, t212_to_yahoo, yahoo_to_t212
+from llm_news import score_headlines
+from sentiment import fetch_headlines
+
 # ── Config ───────────────────────────────────────────────────────────────────────
 # All paths relative to repo root (works in GitHub Actions)
 PORTFOLIO_FILE = Path("portfolio.json")
 DASHBOARD_FILE = Path("dashboard.html")
 LOG_FILE       = Path("trading_log.txt")
+LOG_SINKS: list[Path] = []
+
+LEG_PATHS = {
+    "T212": {
+        "portfolio": Path("portfolio.json"),
+        "dashboard": Path("dashboard.html"),
+        "log": Path("trading_log.txt"),
+    },
+    "IBKR": {
+        "portfolio": Path("ibkr_portfolio.json"),
+        "dashboard": Path("ibkr_dashboard.html"),
+        "log": Path("ibkr_trading_log.txt"),
+    },
+}
+
+# T212 | IBKR | ALL — which order legs run (not read from .env)
+BROKER = "ALL"
+# Must not collide with another IBKR API client on the same Gateway
+IBKR_CLIENT_ID = 7
 
 STARTING_BUDGET   = 10_000.0
 MAX_POSITIONS     = 10
@@ -33,58 +57,160 @@ TRAILING_CUT_PCT  = -8.0
 
 # ── FTSE 250 Universe ─────────────────────────────────────────────────────────────
 
-FTSE_UNIVERSE = [
-    # Financials & Asset Management
-    "ABDN.L", "INVP.L", "LRE.L",  "QLT.L",  "EMG.L",  "ITRK.L", "OSB.L", "TPK.L",
+# FTSE_UNIVERSE = [
+#     # Financials & Asset Management
+#     "ABDN.L", "INVP.L", "LRE.L",  "QLT.L",  "EMG.L",  "ITRK.L", "OSB.L", "TPK.L",
     
-    # Consumer & Retail
-    "JDW.L",  "HFD.L",  "CARD.L", "SMWH.L", "WOSG.L", "MKS.L",  "TATE.L", "SBRY.L", "BME.L",
+#     # Consumer & Retail
+#     "JDW.L",  "HFD.L",  "CARD.L", "SMWH.L", "WOSG.L", "MKS.L",  "TATE.L", "SBRY.L", "BME.L",
     
-    # Industrials & Engineering
-    "IMI.L",  "MGAM.L", "VSVS.L", "VCT.L",  "MSLH.L", "SHI.L",  "4IM.L",  "CHG.L",
+#     # Industrials & Engineering
+#     "IMI.L",  "MGAM.L", "VSVS.L", "VCT.L",  "MSLH.L", "SHI.L",  "4IM.L",  "CHG.L",
     
-    # Technology & Software
-    "ALFA.L", "BYIT.L", "CTEC.L", "AUTO.L", "KIE.L",  "SGE.L",
+#     # Technology & Software
+#     "ALFA.L", "BYIT.L", "CTEC.L", "AUTO.L", "KIE.L",  "SGE.L",
     
-    # Energy, Utilities & Mining
-    "UKW.L",  "NESF.L", "BOY.L",  "HBR.L",  "ENOG.L",
+#     # Energy, Utilities & Mining
+#     "UKW.L",  "NESF.L", "BOY.L",  "HBR.L",  "ENOG.L",
     
-    # Real Estate & REITs
-    "SAFE.L", "UTG.L",  "WKP.L",  "PHP.L", "BBOX.L", "DLN.L",
+#     # Real Estate & REITs
+#     "SAFE.L", "UTG.L",  "WKP.L",  "PHP.L", "BBOX.L", "DLN.L",
     
-    # Healthcare & Life Sciences
-    "OXB.L",  "ELM.L",  "GNS.L",
+#     # Healthcare & Life Sciences
+#     "OXB.L",  "ELM.L",  "GNS.L",
     
-    # Travel, Leisure & Media
-    "MAB.L",  "RCH.L",  "ITV.L",  "JET2.L", "WTB.L",
+#     # Travel, Leisure & Media
+#     "MAB.L",  "RCH.L",  "ITV.L",  "JET2.L", "WTB.L",
     
-    # Housebuilders & Construction
-    "CRST.L", "BTRW.L", "PSN.L",  "BKG.L",  "BWY.L",
+#     # Housebuilders & Construction
+#     "CRST.L", "BTRW.L", "PSN.L",  "BKG.L",  "BWY.L",
     
-    # Diversified & Growth
-    "TEP.L",  "INCH.L", "IPO.L",  "RHIM.L", "GAW.L",
-    "TBCG.L", "NXT.L",  "DPLM.L", "ESNT.L", "HTWS.L",
-]
+#     # Diversified & Growth
+#     "TEP.L",  "INCH.L", "IPO.L",  "RHIM.L", "GAW.L",
+#     "TBCG.L", "NXT.L",  "DPLM.L", "ESNT.L", "HTWS.L",
+# ]
+
+# Mapping of Yahoo Finance ticker → GICS sector
+# Liquid FTSE 350 Yahoo symbols across GICS sectors (delisted names omitted).
+
+# Keys are Yahoo symbols (yfinance prices/fundamentals/news).
+# Trading 212 tickers are resolved at order time via broker.resolve_t212_ticker.
+FTSE_UNIVERSE: dict[str, str] = {
+    # --- Energy ---
+    "BP.L": "Energy",
+    # "SHEL.L": "Energy",
+    # "CNE.L": "Energy",
+    # "HTG.L": "Energy",
+    # "ENQ.L": "Energy",
+    # "TLW.L": "Energy",
+    # # --- Materials ---
+    # "AAL.L": "Materials",
+    # "ANTO.L": "Materials",
+    # "RIO.L": "Materials",
+    # "GLEN.L": "Materials",
+    # "FRES.L": "Materials",
+    # "MNDI.L": "Materials",
+    # "CRDA.L": "Materials",
+    # # --- Industrials ---
+    # "RR.L": "Industrials",
+    # "BA.L": "Industrials",
+    # "EXPN.L": "Industrials",
+    # "RS1.L": "Industrials",
+    # "BNZL.L": "Industrials",
+    # "RMV.L": "Industrials",
+    # "SMIN.L": "Industrials",
+    # "IMI.L": "Industrials",
+    # "WEIR.L": "Industrials",
+    # "SDR.L": "Industrials",
+    # # --- Consumer Discretionary ---
+    # "NXT.L": "Consumer Discretionary",
+    # "IHG.L": "Consumer Discretionary",
+    # "WTB.L": "Consumer Discretionary",
+    # "JD.L": "Consumer Discretionary",
+    # "FRAS.L": "Consumer Discretionary",
+    # "ENT.L": "Consumer Discretionary",
+    # "TW.L": "Consumer Discretionary",
+    # "DGE.L": "Consumer Discretionary",
+    # "BWY.L": "Consumer Discretionary",
+    # "PSN.L": "Consumer Discretionary",
+    # "BRBY.L": "Consumer Discretionary",
+    # # --- Consumer Staples ---
+    # "ULVR.L": "Consumer Staples",
+    # "RKT.L": "Consumer Staples",
+    # "TSCO.L": "Consumer Staples",
+    # "SBRY.L": "Consumer Staples",
+    # "ABF.L": "Consumer Staples",
+    # "BME.L": "Consumer Staples",
+    # "GRG.L": "Consumer Staples",
+    # "HLMA.L": "Consumer Staples",
+    # "OCDO.L": "Consumer Staples",
+    # # --- Health Care ---
+    # "AZN.L": "Health Care",
+    # "GSK.L": "Health Care",
+    # "SN.L": "Health Care",
+    # "HIK.L": "Health Care",
+    # "DPLM.L": "Health Care",
+    # "SPX.L": "Health Care",
+    # # --- Financials ---
+    # "HSBA.L": "Financials",
+    "BARC.L": "Financials",
+    # "LLOY.L": "Financials",
+    # "NWG.L": "Financials",
+    # "STAN.L": "Financials",
+    # "AV.L": "Financials",
+    # "LGEN.L": "Financials",
+    # "PRU.L": "Financials",
+    # "ADM.L": "Financials",
+    # "III.L": "Financials",
+    # "INVP.L": "Financials",
+    # "MNG.L": "Financials",
+    # # --- Information Technology ---
+    # "SAGE.L": "Information Technology",
+    # "KNOS.L": "Information Technology",
+    # "FDM.L": "Information Technology",
+    # "SGE.L": "Information Technology",
+    # "AUTO.L": "Information Technology",
+    # # --- Communication Services ---
+    # "VOD.L": "Communication Services",
+    # "REL.L": "Communication Services",
+    # "WPP.L": "Communication Services",
+    # "ITV.L": "Communication Services",
+    # "INF.L": "Communication Services",
+    # # --- Utilities ---
+    # "NG.L": "Utilities",
+    # "SSE.L": "Utilities",
+    # "SVT.L": "Utilities",
+    # "UU.L": "Utilities",
+    # "PNN.L": "Utilities",
+    # "CNA.L": "Utilities",
+    # "DRX.L": "Utilities",
+    # # --- Real Estate ---
+    # "LAND.L": "Real Estate",
+    # "BLND.L": "Real Estate",
+    # "SGRO.L": "Real Estate",
+    # "UTG.L": "Real Estate",
+    # "HMSO.L": "Real Estate",
+    # "GPE.L": "Real Estate",
+}
 
 
 
-# ── News Sentiment Words ──────────────────────────────────────────────────────────
-POSITIVE_WORDS = [
-    "profit", "growth", "beat", "strong", "upgrade", "record", "increased",
-    "raised", "positive", "outperform", "buy", "bullish", "exceed", "boost",
-    "gain", "rally", "surge", "robust", "confident", "dividend", "acquisition",
-    "partnership", "innovation", "expansion", "revenue up", "earnings beat",
-    "ahead of", "better than", "breakthrough", "win", "contract", "upgraded",
-    "recovery", "rebound", "optimistic", "momentum", "new high", "raises guidance",
-]
-NEGATIVE_WORDS = [
-    "loss", "decline", "miss", "warning", "cut", "reduced", "negative",
-    "downgrade", "sell", "bearish", "fall", "drop", "weak", "disappoint",
-    "concern", "risk", "debt", "layoff", "restructure", "below expectations",
-    "shortfall", "challenging", "headwind", "investigation", "fine", "penalty",
-    "profit warning", "disappoints", "lowers guidance", "misses", "defaults",
-    "insolvency", "lawsuit", "recall", "scandal", "departure", "struggles",
-]
+
+def parse_broker_choice(raw: str | None) -> list[str] | None:
+    value = (raw or "T212").strip().upper() or "T212"
+    if value == "ALL":
+        return ["T212", "IBKR"]
+    if value in ("T212", "IBKR"):
+        return [value]
+    return None
+
+
+def set_leg_paths(name: str) -> None:
+    global PORTFOLIO_FILE, DASHBOARD_FILE, LOG_FILE
+    paths = LEG_PATHS[name]
+    PORTFOLIO_FILE = paths["portfolio"]
+    DASHBOARD_FILE = paths["dashboard"]
+    LOG_FILE = paths["log"]
 
 
 # ── Logging ───────────────────────────────────────────────────────────────────────
@@ -92,8 +218,9 @@ def log(msg: str, level: str = "INFO"):
     ts   = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     line = f"[{ts}] [{level}] {msg}"
     print(line)
-    with open(LOG_FILE, "a") as f:
-        f.write(line + "\n")
+    for path in (LOG_SINKS or [LOG_FILE]):
+        with open(path, "a") as f:
+            f.write(line + "\n")
 
 
 # ── Portfolio I/O ─────────────────────────────────────────────────────────────────
@@ -126,20 +253,6 @@ def gbx_to_gbp(price: float, ticker: str) -> float:
 
 
 # ── Market Data ───────────────────────────────────────────────────────────────────
-def analyse_news(items: list) -> tuple[float, list]:
-    headlines, scores = [], []
-    for item in items:
-        title = (item.get("title") or "").strip()
-        text  = title.lower() + " " + (item.get("summary") or "").lower()
-        pos   = sum(1 for w in POSITIVE_WORDS if w in text)
-        neg   = sum(1 for w in NEGATIVE_WORDS if w in text)
-        score = max(0, min(100, 50 + pos * 9 - neg * 11))
-        scores.append(score)
-        if title:
-            headlines.append({"title": title, "score": score})
-    avg = float(np.mean(scores)) if scores else 50.0
-    return round(avg, 1), headlines[:6]
-
 def get_stock_data(ticker: str) -> dict | None:
     try:
         stock = yf.Ticker(ticker)
@@ -161,16 +274,20 @@ def get_stock_data(ticker: str) -> dict | None:
         if np.isnan(rsi):
             rsi = 50.0
 
-        try:
-            news_items = stock.news or []
-        except Exception:
-            news_items = []
-        ns, headlines = analyse_news(news_items[:12])
+        name = info.get("longName") or info.get("shortName") or ticker
+        fetched = fetch_headlines(ticker, max_headlines=12)
+        ns, headlines = score_headlines(
+            ticker, fetched.get("headlines") or [], name=name, log=log,
+        )
+        if fetched.get("error"):
+            log(f"  NEWS_UNAVAILABLE {ticker}: {fetched['error']}", "WARN")
+        elif ns is None:
+            log(f"  NEWS_UNAVAILABLE {ticker}: headlines unscored, trading blocked", "WARN")
 
         return {
             "ticker":          ticker,
-            "name":            info.get("longName") or info.get("shortName") or ticker,
-            "sector":          info.get("sector", "Unknown"),
+            "name":            name,
+            "sector":          FTSE_UNIVERSE.get(ticker) or info.get("sector", "Unknown"),
             "current_price":   round(price, 4),
             "pe_ratio":        info.get("trailingPE"),
             "forward_pe":      info.get("forwardPE"),
@@ -183,7 +300,7 @@ def get_stock_data(ticker: str) -> dict | None:
             "mom_1mo":         round((price - p1m) / p1m * 100, 2),
             "mom_3mo":         round((price - p3m) / p3m * 100, 2),
             "rsi":             round(rsi, 1),
-            "news_sentiment":  ns,
+            "news_sentiment":  None if ns is None else round(float(ns), 1),
             "news_headlines":  headlines,
         }
     except Exception as e:
@@ -257,9 +374,89 @@ def score_stock(d: dict) -> float:
     add(68 if -3 < mom < 8 else 62 if -12 < mom <= -3 else
         42 if mom >= 8 else 22, 0.8)
 
-    add(d.get("news_sentiment", 50), 2.8)
+    add(d.get("news_sentiment"), 2.8)
 
     return round(sum(a * b for a, b in zip(s, w)) / sum(w), 1) if s else 0.0
+
+
+def has_tradeable_news(d: dict) -> bool:
+    """News drives this strategy, so an unscored headline set must not produce a trade."""
+    return d.get("news_sentiment") is not None
+
+
+def _broker_ticker(broker, yahoo: str, stored: str | None = None) -> str | None:
+    if stored:
+        return stored
+    resolver = getattr(broker, "resolve_t212_ticker", None)
+    if callable(resolver):
+        return resolver(yahoo)
+    return yahoo_to_t212(yahoo)
+
+
+def holdings_cost(portfolio: dict) -> float:
+    return sum(
+        float(h.get("avg_cost") or 0) * float(h.get("shares") or 0)
+        for h in (portfolio.get("holdings") or {}).values()
+    )
+
+
+def cap_bot_cash(portfolio: dict, broker_free: float) -> None:
+    """Use at most STARTING_BUDGET of the T212 account for this bot."""
+    remaining = STARTING_BUDGET - holdings_cost(portfolio)
+    portfolio["cash"] = round(max(0.0, min(float(broker_free), remaining)), 2)
+
+
+def _refresh_cash(portfolio: dict, _broker, fallback_delta: float = 0.0) -> None:
+    cap_bot_cash(portfolio, max(0.0, portfolio.get("cash", 0.0) + fallback_delta))
+
+
+def apply_broker_snapshot(portfolio: dict, broker) -> bool:
+    """Refresh cash from the broker. T212 replaces holdings; IBKR keeps this bot's book."""
+    cash_info = broker.get_account_cash()
+    if not isinstance(cash_info, dict) or cash_info.get("free") is None:
+        log("BROKER_FAIL could not read account cash", "WARN")
+        return False
+    broker_free = float(cash_info["free"])
+    positions = broker.get_open_positions()
+    if not isinstance(positions, list):
+        log("BROKER_FAIL could not read open positions", "WARN")
+        return False
+    previous = portfolio.get("holdings") or {}
+    incoming = {}
+    mapper = getattr(broker, "broker_to_yahoo", None)
+    for pos in positions:
+        broker_ticker = str(pos.get("ticker") or "")
+        yahoo = mapper(broker_ticker) if callable(mapper) else t212_to_yahoo(broker_ticker)
+        shares = int(float(pos.get("quantity") or 0))
+        if shares < 1:
+            continue
+        prev = previous.get(yahoo) or {}
+        avg = pos.get("averagePrice")
+        incoming[yahoo] = {
+            "shares":       shares,
+            "avg_cost":     round(float(avg if avg is not None else prev.get("avg_cost") or 0), 4),
+            "first_bought": prev.get("first_bought", str(date.today())),
+            "score_at_buy": prev.get("score_at_buy", ""),
+            "name":         prev.get("name", yahoo),
+            "sector":       prev.get("sector", FTSE_UNIVERSE.get(yahoo, "Unknown")),
+            "broker_ticker": broker_ticker,
+        }
+    import_untracked = getattr(type(broker), "import_untracked_positions", True)
+    if import_untracked:
+        holdings = incoming
+    else:
+        holdings = dict(previous)
+        for yahoo, row in incoming.items():
+            if yahoo in previous:
+                holdings[yahoo] = row
+    portfolio["holdings"] = holdings
+    cap_bot_cash(portfolio, broker_free)
+    log(
+        f"BROKER snapshot env cash=£{broker_free:,.2f} "
+        f"bot cash=£{portfolio['cash']:,.2f} (cap £{STARTING_BUDGET:,.0f}) "
+        f"positions={len(holdings)}"
+    )
+    return True
 
 
 # ── Portfolio Valuation ───────────────────────────────────────────────────────────
@@ -275,6 +472,23 @@ def get_live_prices(tickers: list) -> dict:
         time.sleep(0.1)
     return prices
 
+def bot_snapshot_nav(snapshot: dict) -> float:
+    """NAV used for charts/drawdown. Ignore pre-cap dumps of full T212 cash."""
+    total = float(snapshot.get("total_value") or 0)
+    equity = float(snapshot.get("equity_value") or 0)
+    if total > STARTING_BUDGET * 1.25 and equity < STARTING_BUDGET * 0.05:
+        return STARTING_BUDGET
+    return total
+
+
+def peak_and_drawdown(total_val: float, snapshots: list) -> tuple[float, float]:
+    peak = STARTING_BUDGET
+    for snap in snapshots:
+        peak = max(peak, bot_snapshot_nav(snap))
+    drawdown = (total_val - peak) / peak * 100 if peak > 0 else 0.0
+    return peak, drawdown
+
+
 def portfolio_total(p: dict, prices: dict | None = None) -> float:
     total = p["cash"]
     for t, h in p["holdings"].items():
@@ -283,9 +497,35 @@ def portfolio_total(p: dict, prices: dict | None = None) -> float:
 
 
 # ── Trading Session ───────────────────────────────────────────────────────────────
-def run_session(portfolio: dict) -> tuple[dict, list, dict]:
+def rank_universe() -> list[tuple[float, dict]]:
+    log("--- Rank scan (Yahoo + news, no broker) ---")
+    scored = []
+    for ticker, sector in FTSE_UNIVERSE.items():
+        data = get_stock_data(ticker)
+        if data and not has_tradeable_news(data):
+            log(f"  {ticker:12s} {sector:16s} SKIP no news score — not tradeable", "WARN")
+        elif data:
+            sc = score_stock(data)
+            scored.append((sc, data))
+            pe = data.get("pe_ratio")
+            try:
+                pe_text = f"{float(str(pe).replace(',', '').strip()):.1f}" if pe else "N/A"
+            except (TypeError, ValueError):
+                pe_text = "N/A"
+            log(f"  {ticker:12s} {sector:16s} score={sc:5.1f} RSI={data['rsi']:4.1f} "
+                f"P/E={pe_text:6s} "
+                f"news={data['news_sentiment']:4.1f} {data['name'][:28]}")
+        time.sleep(0.25)
+    scored.sort(key=lambda x: x[0], reverse=True)
+    return scored
+
+
+def apply_session(
+    portfolio: dict, broker, ranked: list[tuple[float, dict]]
+) -> tuple[dict, list, dict]:
     today, now_ts = str(date.today()), datetime.now().strftime("%Y-%m-%d %H:%M")
     trades = []
+    ranked_by_ticker = {d["ticker"]: (sc, d) for sc, d in ranked}
 
     log(f"{'='*60}")
     log(f"FTSE Trading Agent — {now_ts}")
@@ -312,51 +552,47 @@ def run_session(portfolio: dict) -> tuple[dict, list, dict]:
         elif days >= 14 and pnl_pct <= TRAILING_CUT_PCT:
             sell, reason = True, f"Trailing cut {pnl_pct:+.1f}% after {days}d"
         else:
-            data = get_stock_data(ticker)
-            if data:
-                sc = score_stock(data)
+            cached = ranked_by_ticker.get(ticker)
+            data = cached[1] if cached else get_stock_data(ticker)
+            sc = cached[0] if cached else (score_stock(data) if data else None)
+            if data and not has_tradeable_news(data):
+                log(f"  HOLD {ticker} pnl={pnl_pct:+.1f}% no news score {days}d", "WARN")
+            elif data and sc is not None:
                 if sc < SELL_SCORE_THRESH and days >= 7:
                     sell, reason = True, f"Score {sc} after {days}d"
                 else:
                     log(f"  HOLD {ticker} pnl={pnl_pct:+.1f}% score={sc} {days}d")
 
         if sell:
+            t212 = _broker_ticker(broker, ticker, h.get("broker_ticker"))
+            if not t212:
+                log(f"  BROKER_FAIL SELL {ticker} — no Trading 212 ticker", "WARN")
+                continue
+            order = broker.close_position(t212, int(h["shares"]))
+            if not order:
+                log(f"  BROKER_FAIL SELL {ticker} as {t212} — holding unchanged", "WARN")
+                continue
+            log(f"  BROKER_SELL {ticker} as {t212} qty={h['shares']}")
             proceeds = price * h["shares"]
-            portfolio["cash"] += proceeds
+            _refresh_cash(portfolio, broker, fallback_delta=proceeds)
             trade = {
                 "date": today, "ticker": ticker, "name": h.get("name", ticker),
                 "action": "SELL", "shares": h["shares"], "price": round(price, 4),
                 "total": round(proceeds, 2), "pnl_pct": round(pnl_pct, 2), "reason": reason,
+                "broker_order": order if isinstance(order, dict) else {"ok": True},
             }
             portfolio["trades"].append(trade)
             trades.append(trade)
             del portfolio["holdings"][ticker]
             log(f"  SELL {h['shares']}x {ticker} @ £{price:.2f} | {reason}")
+            time.sleep(2)
 
     # ── BUY PASS ──────────────────────────────────────────────────────────────────
     slots = MAX_POSITIONS - len(portfolio["holdings"])
     if slots > 0 and portfolio["cash"] > 500:
         total_value = portfolio_total(portfolio, live_prices)
-        log(f"--- Buy scan ({slots} slots, £{portfolio['cash']:,.2f} cash) ---")
-        scored = []
-        for ticker in FTSE_UNIVERSE:
-            if ticker in portfolio["holdings"]:
-                continue
-            data = get_stock_data(ticker)
-            if data:
-                sc = score_stock(data)
-                scored.append((sc, data))
-                pe = data.get("pe_ratio")
-                try:
-                    pe_text = f"{float(str(pe).replace(',', '').strip()):.1f}" if pe else "N/A"
-                except (TypeError, ValueError):
-                    pe_text = "N/A"
-                log(f"  {ticker:12s} score={sc:5.1f} RSI={data['rsi']:4.1f} "
-                    f"P/E={pe_text:6s} "
-                    f"news={data['news_sentiment']:4.1f} {data['name'][:28]}")
-            time.sleep(0.25)
-
-        scored.sort(key=lambda x: x[0], reverse=True)
+        log(f"--- Buy fill ({slots} slots, £{portfolio['cash']:,.2f} cash) ---")
+        scored = [(sc, data) for sc, data in ranked if data["ticker"] not in portfolio["holdings"]]
         buys = 0
         for sc, data in scored:
             if buys >= slots or sc < BUY_THRESHOLD:
@@ -377,22 +613,31 @@ def run_session(portfolio: dict) -> tuple[dict, list, dict]:
             if cost < 50 or portfolio["cash"] < cost:
                 continue
 
-            portfolio["cash"] -= cost
+            t212 = _broker_ticker(broker, ticker)
+            if not t212:
+                log(f"  BROKER_FAIL BUY {ticker} — ticker not on Trading 212", "WARN")
+                continue
+            order = broker.place_market_order(t212, shares)
+            if not order:
+                log(f"  BROKER_FAIL BUY {ticker} as {t212} qty={shares} — not booked", "WARN")
+                continue
+            log(f"  BROKER_BUY {ticker} as {t212} qty={shares}")
+            _refresh_cash(portfolio, broker, fallback_delta=-cost)
             portfolio["holdings"][ticker] = {
                 "shares":       shares,
                 "avg_cost":     round(price, 4),
                 "first_bought": today,
                 "score_at_buy": sc,
                 "name":         data["name"],
+                "sector":       data.get("sector", FTSE_UNIVERSE.get(ticker, "Unknown")),
+                "broker_ticker": t212,
             }
 
-            parts = [f"Score {sc}"]
+            parts = [f"Score {sc}", f"News {data['news_sentiment']:.0f}/100"]
             if data.get("pe_ratio") and 0 < data["pe_ratio"] < 20:
                 parts.append(f"P/E {data['pe_ratio']:.1f}")
             if data.get("revenue_growth") and data["revenue_growth"] > 0.05:
                 parts.append(f"RevGrow +{data['revenue_growth']*100:.0f}%")
-            if data.get("news_sentiment", 50) > 62:
-                parts.append(f"News {data['news_sentiment']:.0f}/100")
             if data.get("rsi", 50) < 42:
                 parts.append(f"RSI {data['rsi']:.0f} oversold")
 
@@ -401,12 +646,14 @@ def run_session(portfolio: dict) -> tuple[dict, list, dict]:
                 "action": "BUY", "shares": shares, "price": round(price, 4),
                 "total": round(cost, 2), "score": sc, "reason": " | ".join(parts),
                 "news_headlines": data.get("news_headlines", []),
+                "broker_order": order if isinstance(order, dict) else {"ok": True},
             }
             portfolio["trades"].append(trade)
             trades.append(trade)
             buys += 1
             log(f"  BUY  {shares}x {ticker} ({data['name'][:28]}) @ £{price:.2f} "
                 f"= £{cost:,.2f} | {' | '.join(parts)}")
+            time.sleep(2)
     else:
         log("No buy slots or insufficient cash.")
 
@@ -431,6 +678,10 @@ def run_session(portfolio: dict) -> tuple[dict, list, dict]:
     return portfolio, trades, fresh
 
 
+def run_session(portfolio: dict, broker) -> tuple[dict, list, dict]:
+    return apply_session(portfolio, broker, rank_universe())
+
+
 # ── HTML Dashboard ────────────────────────────────────────────────────────────────
 def generate_dashboard(portfolio: dict, live_prices: dict):
     today     = str(date.today())
@@ -449,9 +700,7 @@ def generate_dashboard(portfolio: dict, live_prices: dict):
     win_rate  = len(wins) / len(all_sells) * 100 if all_sells else 0
     avg_win   = float(np.mean([t["pnl_pct"] for t in wins]))   if wins   else 0
     avg_loss  = float(np.mean([t["pnl_pct"] for t in losses])) if losses else 0
-    peak_snap = max(snapshots, key=lambda s: s["total_value"]) if snapshots else None
-    peak_val  = peak_snap["total_value"] if peak_snap else STARTING_BUDGET
-    drawdown  = (total_val - peak_val) / peak_val * 100 if peak_val > 0 else 0
+    peak_val, drawdown = peak_and_drawdown(total_val, snapshots)
 
     rows_h = ""
     for tk, h in holdings.items():
@@ -488,8 +737,11 @@ def generate_dashboard(portfolio: dict, live_prices: dict):
                    f'<td style="color:#6b7280;font-size:.8rem">{t.get("reason","")[:60]}</td></tr>')
 
     chart_labels  = json.dumps([s["date"] for s in snapshots])
-    chart_values  = json.dumps([s["total_value"] for s in snapshots])
-    chart_returns = json.dumps([s["return_pct"] for s in snapshots])
+    chart_values  = json.dumps([bot_snapshot_nav(s) for s in snapshots])
+    chart_returns = json.dumps([
+        round((bot_snapshot_nav(s) - STARTING_BUDGET) / STARTING_BUDGET * 100, 2)
+        for s in snapshots
+    ])
 
     s_ret   = "+" if ret_pct >= 0 else ""
     ret_cls = "pos" if ret_pct >= 0 else "neg"
@@ -592,11 +844,82 @@ new Chart(rC,{{type:'bar',data:{{labels:L,datasets:[{{data:R,
     log(f"Dashboard saved → {DASHBOARD_FILE}")
 
 
-# ── Entry Point ───────────────────────────────────────────────────────────────────
-if __name__ == "__main__":
-    log("Starting FTSE 250 Paper Trading Agent (Cloud)")
-    portfolio = load_portfolio()
-    portfolio, trades, fresh_prices = run_session(portfolio)
+def persist_after_session(
+    portfolio: dict,
+    broker,
+    fresh_prices: dict,
+    skip_log: str = "BROKER_429 snapshot skipped",
+) -> None:
+    if not apply_broker_snapshot(portfolio, broker):
+        log(skip_log, "WARN")
     save_portfolio(portfolio)
     generate_dashboard(portfolio, fresh_prices)
+
+
+def _build_legs(names: list[str]) -> list[tuple[str, object]]:
+    legs = []
+    for name in names:
+        if name == "T212":
+            broker = broker_from_env()
+            if broker is None:
+                log(
+                    "BROKER_FAIL T212 set TRADING212_API_KEY, TRADING212_API_SECRET, "
+                    "and TRADING212_ENVIRONMENT=demo|live",
+                    "WARN",
+                )
+                continue
+            legs.append((name, broker))
+            continue
+        from ibkr_broker import ibkr_from_env
+        broker = ibkr_from_env(FTSE_UNIVERSE, log=log, client_id=IBKR_CLIENT_ID)
+        if broker is None:
+            continue
+        legs.append((name, broker))
+    return legs
+
+
+def main() -> None:
+    global LOG_SINKS
+    names = parse_broker_choice(BROKER)
+    if names is None:
+        log("BROKER_FAIL set BROKER = T212|IBKR|ALL in ftse_agent.py", "WARN")
+        raise SystemExit(1)
+    legs = _build_legs(names)
+    if not legs:
+        log("BROKER_FAIL no usable broker legs", "WARN")
+        raise SystemExit(1)
+
+    LOG_SINKS = [LEG_PATHS[name]["log"] for name, _ in legs]
+    log("Starting FTSE Trading Agent")
+    ranked = rank_universe()
+    finished = 0
+    for name, broker in legs:
+        LOG_SINKS = []
+        set_leg_paths(name)
+        log(f"BROKER using {broker.environment} ({broker.base_url})")
+        portfolio = load_portfolio()
+        if not apply_broker_snapshot(portfolio, broker):
+            log("BROKER_FAIL abort — will not trade against a dummy book", "WARN")
+            disconnect = getattr(broker, "disconnect", None)
+            if callable(disconnect):
+                disconnect()
+            continue
+        portfolio, trades, fresh_prices = apply_session(portfolio, broker, ranked)
+        skip_log = (
+            "BROKER_FAIL snapshot skipped"
+            if name == "IBKR"
+            else "BROKER_429 snapshot skipped"
+        )
+        persist_after_session(portfolio, broker, fresh_prices, skip_log=skip_log)
+        disconnect = getattr(broker, "disconnect", None)
+        if callable(disconnect):
+            disconnect()
+        finished += 1
+    if finished == 0:
+        raise SystemExit(1)
     log("Complete.")
+
+
+# ── Entry Point ───────────────────────────────────────────────────────────────────
+if __name__ == "__main__":
+    main()

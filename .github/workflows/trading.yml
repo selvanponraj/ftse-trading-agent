@@ -1,8 +1,8 @@
 name: FTSE 250 Trading Agent
 
 on:
-  schedule:
-    - cron: '30 16 * * 1-5'
+  # schedule:
+  #   - cron: '30 16 * * 1-5'
   workflow_dispatch:
 
 permissions:
@@ -16,6 +16,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+      
+      - name: Symlink or Copy .env from Host
+        run: |
+          cp /etc/actions-runner/env/.env .env
 
       - name: Set up Python 3.11
         uses: actions/setup-python@v5
@@ -41,6 +45,6 @@ jobs:
         run: |
           git config user.name  "FTSE Trading Agent"
           git config user.email "trading-agent@github-actions.bot"
-          git add portfolio.json dashboard.html trading_log.txt
+          git add portfolio.json dashboard.html trading_log.txt ibkr_portfolio.json ibkr_dashboard.html
           git diff --staged --quiet || git commit -m "Trading session: $(date -u '+%Y-%m-%d %H:%M UTC')"
           git push
