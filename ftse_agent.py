@@ -701,6 +701,9 @@ def generate_dashboard(portfolio: dict, live_prices: dict):
     avg_win   = float(np.mean([t["pnl_pct"] for t in wins]))   if wins   else 0
     avg_loss  = float(np.mean([t["pnl_pct"] for t in losses])) if losses else 0
     peak_val, drawdown = peak_and_drawdown(total_val, snapshots)
+    is_ibkr = DASHBOARD_FILE.name.startswith("ibkr")
+    other_href = "dashboard.html" if is_ibkr else "ibkr-dashboard.html"
+    other_label = "← T212 dashboard" if is_ibkr else "IBKR dashboard →"
 
     rows_h = ""
     for tk, h in holdings.items():
@@ -775,7 +778,10 @@ def generate_dashboard(portfolio: dict, live_prices: dict):
 *{{box-sizing:border-box;margin:0;padding:0}}
 body{{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0f172a;color:#e2e8f0;min-height:100vh}}
 .hdr{{background:linear-gradient(135deg,#1e3a5f,#1e293b);padding:24px 32px;border-bottom:1px solid #334155}}
+.hdr-top{{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}}
 .hdr h1{{font-size:1.6rem;font-weight:700;color:#f1f5f9}}.hdr p{{color:#94a3b8;font-size:.9rem;margin-top:4px}}
+.nav-link{{display:inline-block;padding:8px 14px;border-radius:8px;border:1px solid #334155;background:#0f172a;color:#93c5fd;text-decoration:none;font-size:.85rem;font-weight:600;white-space:nowrap}}
+.nav-link:hover{{background:#1e3a5f;border-color:#60a5fa}}
 .main{{padding:24px 32px}}
 .grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:16px;margin-bottom:28px}}
 .kpi{{background:#1e293b;border:1px solid #334155;border-radius:12px;padding:20px;position:relative;overflow:hidden}}
@@ -796,8 +802,13 @@ tr:hover td{{background:#263348}}.num{{text-align:right;font-variant-numeric:tab
 </head>
 <body>
 <div class="hdr">
-  <h1>🏦 FTSE 250 Trading Agent</h1>
-  <p>Paper trading · Started {started} · Updated {today} · Strategy: News + Fundamentals · Runs on GitHub Actions</p>
+  <div class="hdr-top">
+    <div>
+      <h1>🏦 FTSE 250 Trading Agent</h1>
+      <p>Paper trading · Started {started} · Updated {today} · Strategy: News + Fundamentals · Runs on GitHub Actions</p>
+    </div>
+    <a class="nav-link" href="{other_href}">{other_label}</a>
+  </div>
 </div>
 <div class="main">
 <div class="grid">
