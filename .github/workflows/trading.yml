@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   trade:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, oracle-vm-ib]
     timeout-minutes: 30
 
     steps:
