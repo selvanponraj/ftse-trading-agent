@@ -1,8 +1,155 @@
 {
-  "cash": 10000.0,
-  "holdings": {},
-  "trades": [],
-  "daily_snapshots": [],
+  "cash": 8191.99,
+  "holdings": {
+    "BARC.L": {
+      "shares": 186,
+      "avg_cost": 4.8678,
+      "first_bought": "2026-09-14",
+      "score_at_buy": 76.7,
+      "name": "Barclays PLC",
+      "sector": "Financials",
+      "broker_ticker": "BARC"
+    },
+    "BP.L": {
+      "shares": 156,
+      "avg_cost": 5.7859,
+      "first_bought": "2026-09-14",
+      "score_at_buy": 64.5,
+      "name": "BP p.l.c.",
+      "sector": "Energy",
+      "broker_ticker": "BP."
+    }
+  },
+  "trades": [
+    {
+      "date": "2026-09-14",
+      "ticker": "BARC.L",
+      "name": "Barclays PLC",
+      "action": "BUY",
+      "shares": 186,
+      "price": 4.832,
+      "total": 898.75,
+      "score": 76.7,
+      "reason": "Score 76.7 | News 72/100 | P/E 10.1 | RevGrow +16%",
+      "news_headlines": [
+        {
+          "title": "UAL, AAL, DAL Stocks Suffer Weekly Loss: Barclays Cuts Price Targets But Sees A Silver Lining",
+          "score": 45
+        },
+        {
+          "title": "Barclays Raises 2026 S&P 500 Target to 7,950 After Second-Quarter Earnings",
+          "score": 82
+        },
+        {
+          "title": "Burnham faces UK economic test as budget day approaches",
+          "score": 50
+        },
+        {
+          "title": "Why Rising Bond Yields Aren\u2019t Throttling The Economy, For Now",
+          "score": 55
+        },
+        {
+          "title": "Barclays Hikes S&P 500 Target to 7,950 on Strong Earnings",
+          "score": 85
+        },
+        {
+          "title": "Inflation Woes Weigh on Stocks During Earnings Season Lull",
+          "score": 35
+        },
+        {
+          "title": "Barclays Tweaks S&P 500 Target for Rest of 2026",
+          "score": 60
+        },
+        {
+          "title": "Barclays Sees 4% Upside for the S&P 500 on Tech Earnings Strength",
+          "score": 78
+        },
+        {
+          "title": "Barclays Sees S&P 500 at 7,950 in 2026: What Do Prediction Markets Say?",
+          "score": 75
+        },
+        {
+          "title": "Update: Market Chatter: Barclays Leads $2.8 Billion Financing Package for Lone Star's ContiTech Acquisition",
+          "score": 80
+        }
+      ],
+      "broker_order": {
+        "id": 39,
+        "ticker": "BARC",
+        "quantity": 186
+      }
+    },
+    {
+      "date": "2026-09-14",
+      "ticker": "BP.L",
+      "name": "BP p.l.c.",
+      "action": "BUY",
+      "shares": 156,
+      "price": 5.741,
+      "total": 895.6,
+      "score": 64.5,
+      "reason": "Score 64.5 | News 68/100 | RevGrow +48%",
+      "news_headlines": [
+        {
+          "title": "Oil gains on Mideast supply fears, AI warnings rattle tech firms",
+          "score": 72
+        },
+        {
+          "title": "Best Growth Stocks to Buy for September 14th",
+          "score": 60
+        },
+        {
+          "title": "Energy & Utilities Roundup: Market Talk",
+          "score": 55
+        },
+        {
+          "title": "The Zacks Analyst Blog Highlights ExxonMobil, BP and Chevron",
+          "score": 65
+        },
+        {
+          "title": "ExxonMobil Stock at a Premium: Opportunity or Reason to Stay Cautious?",
+          "score": 50
+        },
+        {
+          "title": "Why BP Is One of the Best Oil Stocks to Buy Right Now",
+          "score": 90
+        },
+        {
+          "title": "Could Shell (SHEL)\u2019s Superior Cash Flow Make It a Better Bet Than BP (BP)?",
+          "score": 35
+        },
+        {
+          "title": "Top Analyst Reports for Eli Lilly, Palo Alto Networks & Texas Instruments",
+          "score": 50
+        },
+        {
+          "title": "Sector Update: Energy Stocks Gain Late Afternoon",
+          "score": 70
+        },
+        {
+          "title": "ExxonMobil Is Up 40% in 2026: Can Rising Oil Prices and Strong Earnings Boost XOM Stock to $200?",
+          "score": 65
+        }
+      ],
+      "broker_order": {
+        "id": 42,
+        "ticker": "BP.",
+        "quantity": 156
+      }
+    }
+  ],
+  "daily_snapshots": [
+    {
+      "date": "2026-09-14",
+      "timestamp": "2026-09-14 12:42",
+      "cash": 8205.65,
+      "equity_value": 1794.1,
+      "total_value": 9999.75,
+      "return_pct": -0.0,
+      "positions": 2,
+      "trades_today": 2
+    }
+  ],
   "created": "2026-08-31",
   "starting_value": 10000.0,
   "version": "1.0"

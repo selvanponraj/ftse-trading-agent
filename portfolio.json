@@ -1,8 +1,82 @@
 {
   "cash": 10000.0,
   "holdings": {},
-  "trades": [],
-  "daily_snapshots": [],
+  "trades": [
+    {
+      "date": "2026-09-14",
+      "ticker": "BARC.L",
+      "name": "BARC.L",
+      "action": "SELL",
+      "shares": 184,
+      "price": 4.831,
+      "total": 888.9,
+      "pnl_pct": -99.01,
+      "reason": "Stop-loss -99.0%",
+      "broker_order": {
+        "id": 54900235639,
+        "strategy": "QUANTITY",
+        "type": "MARKET",
+        "ticker": "BARCl_EQ",
+        "quantity": -184,
+        "filledQuantity": 0,
+        "status": "FILLED",
+        "currency": "GBP",
+        "extendedHours": false,
+        "initiatedFrom": "API",
+        "side": "SELL",
+        "createdAt": "2026-09-14T14:42:48.741+03:00",
+        "instrument": {
+          "ticker": "BARCl_EQ",
+          "name": "Barclays",
+          "isin": "GB0031348658",
+          "currency": "GBX"
+        }
+      }
+    },
+    {
+      "date": "2026-09-14",
+      "ticker": "BP.L",
+      "name": "BP.L",
+      "action": "SELL",
+      "shares": 157,
+      "price": 5.7415,
+      "total": 901.42,
+      "pnl_pct": -99.0,
+      "reason": "Stop-loss -99.0%",
+      "broker_order": {
+        "id": 54900235643,
+        "strategy": "QUANTITY",
+        "type": "MARKET",
+        "ticker": "BPl_EQ",
+        "quantity": -157,
+        "filledQuantity": 0,
+        "status": "FILLED",
+        "currency": "GBP",
+        "extendedHours": false,
+        "initiatedFrom": "API",
+        "side": "SELL",
+        "createdAt": "2026-09-14T14:42:51.870+03:00",
+        "instrument": {
+          "ticker": "BPl_EQ",
+          "name": "BP",
+          "isin": "GB0007980591",
+          "currency": "GBX"
+        }
+      }
+    }
+  ],
+  "daily_snapshots": [
+    {
+      "date": "2026-09-14",
+      "timestamp": "2026-09-14 12:42",
+      "cash": 0.0,
+      "equity_value": 0.0,
+      "total_value": 0.0,
+      "return_pct": -100.0,
+      "positions": 0,
+      "trades_today": 2
+    }
+  ],
   "created": "2026-08-31",
   "starting_value": 10000.0,
   "version": "1.0"
