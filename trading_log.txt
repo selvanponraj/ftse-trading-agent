@@ -42,3 +42,5 @@
 [2026-09-14 12:42:54] [INFO] Done | Total: £0.00 | Return: -100.00% | Trades: 2
 [2026-09-14 12:42:55] [INFO] BROKER snapshot env cash=£50,045.97 bot cash=£10,000.00 (cap £10,000) positions=0
 [2026-09-14 12:42:55] [INFO] Dashboard saved → dashboard.html
+[2026-09-14 14:09:32] [INFO] Dashboard saved → dashboard.html
+[2026-09-14 14:09:32] [INFO] Dashboard saved → ibkr-dashboard.html

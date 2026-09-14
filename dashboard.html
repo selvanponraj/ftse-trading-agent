@@ -36,7 +36,7 @@ tr:hover td{background:#263348}.num{text-align:right;font-variant-numeric:tabula
   <div class="hdr-top">
     <div>
       <h1>🏦 FTSE 250 Trading Agent</h1>
-      <p>Paper trading · Started 2026-08-31 · Updated 2026-09-14 · Strategy: News + Fundamentals · Runs on GitHub Actions</p>
+      <p>Paper trading · Started 2026-09-14 · Updated 2026-09-14 · Strategy: News + Fundamentals · Runs on GitHub Actions</p>
     </div>
     <a class="nav-link" href="ibkr-dashboard.html">IBKR dashboard →</a>
   </div>
@@ -47,9 +47,9 @@ tr:hover td{background:#263348}.num{text-align:right;font-variant-numeric:tabula
   <div class="kpi" style="--a:#4ade80"><label>Total Return</label><div class="v pos">+0.00%</div><div class="s">▲ £0.00</div></div>
   <div class="kpi" style="--a:#a78bfa"><label>Cash</label><div class="v">£10,000.00</div><div class="s">100.0% of portfolio</div></div>
   <div class="kpi" style="--a:#f59e0b"><label>Invested</label><div class="v">£0.00</div><div class="s">0 positions</div></div>
-  <div class="kpi" style="--a:#22d3ee"><label>Win Rate</label><div class="v">0%</div><div class="s">0W / 2L closed</div></div>
-  <div class="kpi" style="--a:#fb923c"><label>Avg Win</label><div class="v">+0.0%</div><div class="s">Avg loss: -99.0%</div></div>
-  <div class="kpi" style="--a:#e879f9"><label>Total Trades</label><div class="v">2</div><div class="s">0 buys / 2 sells</div></div>
+  <div class="kpi" style="--a:#22d3ee"><label>Win Rate</label><div class="v">0%</div><div class="s">0W / 0L closed</div></div>
+  <div class="kpi" style="--a:#fb923c"><label>Avg Win</label><div class="v">+0.0%</div><div class="s">Avg loss: +0.0%</div></div>
+  <div class="kpi" style="--a:#e879f9"><label>Total Trades</label><div class="v">0</div><div class="s">0 buys / 0 sells</div></div>
   <div class="kpi" style="--a:#f43f5e"><label>Drawdown</label><div class="v ">0.0%</div><div class="s">Peak £10,000.00</div></div>
 </div>
 <div class="cr">
@@ -57,10 +57,10 @@ tr:hover td{background:#263348}.num{text-align:right;font-variant-numeric:tabula
   <div class="sec"><h2>📊 Daily Return %</h2><canvas id="rc" height="220"></canvas></div>
 </div>
 <div class="sec"><h2>💼 Current Holdings (0 positions)</h2><div class="empty">No open positions yet</div></div>
-<div class="sec"><h2>🔄 Recent Trades</h2><table><thead><tr><th>Date</th><th>Action</th><th>Ticker</th><th class="num">Shares</th><th class="num">Price</th><th class="num">Total</th><th class="num">P&amp;L</th><th>Reason</th></tr></thead><tbody><tr><td>2026-09-14</td><td><span style="background:#9333ea;color:#fff;padding:2px 8px;border-radius:9999px;font-size:.75rem">SELL</span></td><td><strong>BP.L</strong></td><td class="num">157</td><td class="num">£5.74</td><td class="num">£901.42</td><td class="num"><span style="color:#dc2626">-99.0%</span></td><td style="color:#6b7280;font-size:.8rem">Stop-loss -99.0%</td></tr><tr><td>2026-09-14</td><td><span style="background:#9333ea;color:#fff;padding:2px 8px;border-radius:9999px;font-size:.75rem">SELL</span></td><td><strong>BARC.L</strong></td><td class="num">184</td><td class="num">£4.83</td><td class="num">£888.90</td><td class="num"><span style="color:#dc2626">-99.0%</span></td><td style="color:#6b7280;font-size:.8rem">Stop-loss -99.0%</td></tr></tbody></table></div>
+<div class="sec"><h2>🔄 Recent Trades</h2><div class="empty">No trades yet</div></div>
 </div>
 <script>
-const L=["2026-09-14"],V=[0.0],R=[-100.0];
+const L=[],V=[],R=[];
 const so={responsive:true,plugins:{legend:{display:false},tooltip:{mode:'index'}},
   scales:{x:{grid:{color:'#1e293b'},ticks:{color:'#64748b',maxTicksLimit:8}},
            y:{grid:{color:'#1e293b'},ticks:{color:'#64748b'}}}};
