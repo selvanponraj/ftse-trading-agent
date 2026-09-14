@@ -1,25 +1,48 @@
 {
-  "cash": 10000.0,
-  "holdings": {},
+  "cash": 0.0,
+  "holdings": {
+    "BARC.L": {
+      "shares": 184,
+      "avg_cost": 486.75,
+      "first_bought": "2026-09-14",
+      "score_at_buy": 75.1,
+      "name": "Barclays PLC",
+      "sector": "Financials",
+      "broker_ticker": "BARCl_EQ"
+    },
+    "BP.L": {
+      "shares": 157,
+      "avg_cost": 573.5,
+      "first_bought": "2026-09-14",
+      "score_at_buy": 63.5,
+      "name": "BP p.l.c.",
+      "sector": "Energy",
+      "broker_ticker": "BPl_EQ"
+    }
+  },
   "trades": [
     {
-      "date": "2026-09-13",
+      "date": "2026-09-14",
       "ticker": "BARC.L",
       "name": "Barclays PLC",
       "action": "BUY",
-      "shares": 182,
-      "price": 4.9375,
-      "total": 898.62,
-      "score": 76.7,
-      "reason": "Score 76.7 | News 72/100 | P/E 10.3 | RevGrow +16%",
+      "shares": 183,
+      "price": 4.892,
+      "total": 895.24,
+      "score": 75.9,
+      "reason": "Score 75.9 | News 67/100 | P/E 10.2 | RevGrow +16%",
       "news_headlines": [
         {
+          "title": "UAL, AAL, DAL Stocks Suffer Weekly Loss: Barclays Cuts Price Targets But Sees A Silver Lining",
+          "score": 52
+        },
+        {
           "title": "Barclays Raises 2026 S&P 500 Target to 7,950 After Second-Quarter Earnings",
-          "score": 80
+          "score": 76
         },
         {
           "title": "Burnham faces UK economic test as budget day approaches",
-          "score": 45
+          "score": 50
         },
         {
           "title": "Why Rising Bond Yields Aren\u2019t Throttling The Economy, For Now",
@@ -27,749 +50,19 @@
         },
         {
           "title": "Barclays Hikes S&P 500 Target to 7,950 on Strong Earnings",
-          "score": 82
+          "score": 78
         },
         {
           "title": "Inflation Woes Weigh on Stocks During Earnings Season Lull",
-          "score": 35
-        },
-        {
-          "title": "Barclays Tweaks S&P 500 Target for Rest of 2026",
-          "score": 60
-        },
-        {
-          "title": "Barclays Sees 4% Upside for the S&P 500 on Tech Earnings Strength",
-          "score": 75
-        },
-        {
-          "title": "Barclays Sees S&P 500 at 7,950 in 2026: What Do Prediction Markets Say?",
-          "score": 68
-        },
-        {
-          "title": "Update: Market Chatter: Barclays Leads $2.8 Billion Financing Package for Lone Star's ContiTech Acquisition",
-          "score": 76
-        },
-        {
-          "title": "Market Chatter: Barclays Leads 2.4 Billion Euro Financing Package for Lone Star's ContiTech Acquisition",
-          "score": 76
-        }
-      ],
-      "broker_order": {
-        "id": 54850131898,
-        "strategy": "QUANTITY",
-        "type": "MARKET",
-        "ticker": "BARCl_EQ",
-        "quantity": 182,
-        "filledQuantity": 0,
-        "status": "NEW",
-        "currency": "GBP",
-        "extendedHours": false,
-        "initiatedFrom": "API",
-        "side": "BUY",
-        "createdAt": "2026-09-14T00:24:17.619+03:00",
-        "instrument": {
-          "ticker": "BARCl_EQ",
-          "name": "Barclays",
-          "isin": "GB0031348658",
-          "currency": "GBX"
-        }
-      }
-    },
-    {
-      "date": "2026-09-13",
-      "ticker": "FRES.L",
-      "name": "Fresnillo plc",
-      "action": "BUY",
-      "shares": 29,
-      "price": 30.14,
-      "total": 874.06,
-      "score": 72.5,
-      "reason": "Score 72.5 | News 61/100 | P/E 13.2 | RevGrow +75% | RSI 35 oversold",
-      "news_headlines": [
-        {
-          "title": "Will La Colorada Mine Strengthen PAAS' Long-Term Growth?",
-          "score": 50
-        },
-        {
-          "title": "Basic Materials Roundup: Market Talk",
-          "score": 50
-        },
-        {
-          "title": "European Indexes Largely Higher at Open",
-          "score": 55
-        },
-        {
-          "title": "European Indexes Mixed as Tech Stocks Rise, Miners Fall",
-          "score": 45
-        },
-        {
-          "title": "European Indexes Mostly Higher; London\u2019s FTSE 100 Hit by Antofagasta Guidance Cut",
           "score": 43
         },
         {
-          "title": "Fresnillo (LSE:FRES) Stock Sees Fair Value Lift As Analysts Split On Earnings Outlook",
-          "score": 63
-        },
-        {
-          "title": "FTSE 100 Live: UK stocks head lower led by mining sector sell-off",
-          "score": 40
-        },
-        {
-          "title": "European Stocks Extend Record Highs",
-          "score": 55
-        },
-        {
-          "title": "Fresnillo PLC (FNLPF) (Q2 2026) Earnings Call Highlights: Record Financial Performance and ...",
-          "score": 86
-        },
-        {
-          "title": "Fresnillo H1 Earnings Call Highlights",
-          "score": 60
-        }
-      ],
-      "broker_order": {
-        "id": 54850131900,
-        "strategy": "QUANTITY",
-        "type": "MARKET",
-        "ticker": "FRESl_EQ",
-        "quantity": 29,
-        "filledQuantity": 0,
-        "status": "NEW",
-        "currency": "GBP",
-        "extendedHours": false,
-        "initiatedFrom": "API",
-        "side": "BUY",
-        "createdAt": "2026-09-14T00:24:19.879+03:00",
-        "instrument": {
-          "ticker": "FRESl_EQ",
-          "name": "Fresnillo",
-          "isin": "GB00B2QPKJ12",
-          "currency": "GBX"
-        }
-      }
-    },
-    {
-      "date": "2026-09-13",
-      "ticker": "NWG.L",
-      "name": "NatWest Group plc",
-      "action": "BUY",
-      "shares": 128,
-      "price": 6.978,
-      "total": 893.18,
-      "score": 71.7,
-      "reason": "Score 71.7 | News 68/100 | P/E 9.3 | RevGrow +14%",
-      "news_headlines": [
-        {
-          "title": "Amazon Is Selling Its First Sterling Bonds in Four-Part Deal",
-          "score": 50
-        },
-        {
-          "title": "NatWest (NWG) Looks to America for Growth as UK Banking Competition Intensifies",
-          "score": 58
-        },
-        {
-          "title": "Reform UK infighting complicates Farage\u2019s push to prepare party to govern",
-          "score": 50
-        },
-        {
-          "title": "AI Is Starting to Define Bank Internships as Much as Long Hours",
-          "score": 50
-        },
-        {
-          "title": "UK officials fear Burnham\u2019s fiscal flexibility could unsettle bond markets",
-          "score": 45
-        },
-        {
-          "title": "NatWest (NWG) Q2 2026 Earnings Call Transcript",
-          "score": 50
-        },
-        {
-          "title": "NatWest Group Q2 Earnings Call Highlights",
-          "score": 55
-        },
-        {
-          "title": "NatWest Raises Guidance, Brings Forward Buyback Announcement Plans",
-          "score": 88
-        },
-        {
-          "title": "Andy Burnham set to become UK PM as policy agenda remains unclear",
-          "score": 48
-        },
-        {
-          "title": "5 Solid Dividend Stocks to Buy in July",
-          "score": 62
-        }
-      ],
-      "broker_order": {
-        "id": 54850131902,
-        "strategy": "QUANTITY",
-        "type": "MARKET",
-        "ticker": "RBSl_EQ",
-        "quantity": 128,
-        "filledQuantity": 0,
-        "status": "NEW",
-        "currency": "GBP",
-        "extendedHours": false,
-        "initiatedFrom": "API",
-        "side": "BUY",
-        "createdAt": "2026-09-14T00:24:22.114+03:00",
-        "instrument": {
-          "ticker": "RBSl_EQ",
-          "name": "NatWest",
-          "isin": "GB00BM8PJY71",
-          "currency": "GBX"
-        }
-      }
-    },
-    {
-      "date": "2026-09-13",
-      "ticker": "HSBA.L",
-      "name": "HSBC Holdings plc",
-      "action": "BUY",
-      "shares": 57,
-      "price": 15.526,
-      "total": 884.98,
-      "score": 71.4,
-      "reason": "Score 71.4 | News 45/100 | P/E 14.9 | RevGrow +25%",
-      "news_headlines": [
-        {
-          "title": "HSBC Raises 2026 S&P 500 Target to 8,100 on Earnings Outlook",
-          "score": 52
-        },
-        {
-          "title": "Burnham faces UK economic test as budget day approaches",
-          "score": 50
-        },
-        {
-          "title": "Can HSBC's Germany Pullback Support Profitability and Efficiency?",
-          "score": 58
-        },
-        {
-          "title": "CFOs On the Move: Week ending Sept. 11",
-          "score": 50
-        },
-        {
-          "title": "Tight Supply Worries Lift Oil As Middle East Conflict Heats Up",
-          "score": 50
-        },
-        {
-          "title": "\u2018There Is No Reason for Criminal Gangs to Compete\u2019: The \u20ac50 Billion Fraud That Out-Earns HSBC",
-          "score": 40
-        },
-        {
-          "title": "HSBC Raises 2026 Brent Forecast to $90 as Hormuz Crisis Drags On",
-          "score": 50
-        },
-        {
-          "title": "HSBC CFO Pam Kaur to step down",
-          "score": 35
-        },
-        {
-          "title": "HSBC Begins Search for New Finance Chief as Pam Kaur Departs",
-          "score": 38
-        },
-        {
-          "title": "HSBC lifts Novartis, downgrades Amgen in biopharma catalyst review",
-          "score": 50
-        }
-      ],
-      "broker_order": {
-        "id": 54850131904,
-        "strategy": "QUANTITY",
-        "type": "MARKET",
-        "ticker": "HSBAl_EQ",
-        "quantity": 57,
-        "filledQuantity": 0,
-        "status": "NEW",
-        "currency": "GBP",
-        "extendedHours": false,
-        "initiatedFrom": "API",
-        "side": "BUY",
-        "createdAt": "2026-09-14T00:24:24.334+03:00",
-        "instrument": {
-          "ticker": "HSBAl_EQ",
-          "name": "HSBC",
-          "isin": "GB0005405286",
-          "currency": "GBX"
-        }
-      }
-    },
-    {
-      "date": "2026-09-13",
-      "ticker": "INVP.L",
-      "name": "Investec Group",
-      "action": "BUY",
-      "shares": 136,
-      "price": 6.605,
-      "total": 898.28,
-      "score": 71.1,
-      "reason": "Score 71.1 | News 66/100 | P/E 8.8 | RevGrow +9%",
-      "news_headlines": [
-        {
-          "title": "Volex (LSE:VLX) Stock Gets Fair Value Boost As Analysts Weigh Kepler Execution",
-          "score": 50
-        },
-        {
-          "title": "NEXT (LSE:NXT) Stock Sees Split Analyst Revisions After Diverging Price Target Moves",
-          "score": 50
-        },
-        {
-          "title": "Investec merger hampered Rathbones\u2019 consumer protection rules rollout",
-          "score": 35
-        },
-        {
-          "title": "Babcock (LSE:BAB) Stock Faces Mixed Analyst Target Changes After Buy Ratings Shift",
-          "score": 50
-        },
-        {
-          "title": "Investec applies for Ireland banking permit \u2013 report",
-          "score": 68
-        },
-        {
-          "title": "Investec PLC (IVTJF) Full Year 2026 Earnings Call Highlights: Strong Growth Amidst Volatile Markets",
-          "score": 82
-        },
-        {
-          "title": "Spearmint Energy secures $450m for Red Egret BESS project",
-          "score": 50
-        },
-        {
-          "title": "Investec Group H2 Earnings Call Highlights",
-          "score": 65
-        },
-        {
-          "title": "How The Narrative On Howden Joinery Group (LSE:HWDN) Is Shifting With Higher Analyst Targets",
-          "score": 50
-        },
-        {
-          "title": "Variable pay dominates \u2013 high-net-worth individuals expect non-salary income to play a bigger role: Investec",
-          "score": 58
-        }
-      ],
-      "broker_order": {
-        "id": 54850131906,
-        "strategy": "QUANTITY",
-        "type": "MARKET",
-        "ticker": "INVPl_EQ",
-        "quantity": 136,
-        "filledQuantity": 0,
-        "status": "NEW",
-        "currency": "GBP",
-        "extendedHours": false,
-        "initiatedFrom": "API",
-        "side": "BUY",
-        "createdAt": "2026-09-14T00:24:26.702+03:00",
-        "instrument": {
-          "ticker": "INVPl_EQ",
-          "name": "Investec",
-          "isin": "GB00B17BBQ50",
-          "currency": "GBX"
-        }
-      }
-    },
-    {
-      "date": "2026-09-13",
-      "ticker": "LLOY.L",
-      "name": "Lloyds Banking Group plc",
-      "action": "BUY",
-      "shares": 809,
-      "price": 1.1115,
-      "total": 899.2,
-      "score": 69.7,
-      "reason": "Score 69.7 | News 43/100 | P/E 13.9 | RevGrow +12%",
-      "news_headlines": [
-        {
-          "title": "RSM UK appoints new partner to support financial services risk practice",
-          "score": 50
-        },
-        {
-          "title": "Sale of Barclay family\u2019s former retail empire to be shelved",
-          "score": 50
-        },
-        {
-          "title": "Reform UK infighting complicates Farage\u2019s push to prepare party to govern",
-          "score": 50
-        },
-        {
-          "title": "British banking giants deliver tax rise warning to new chancellor",
-          "score": 38
-        },
-        {
-          "title": "Aldermore battle heats up as private equity giant CVC motors into auction",
-          "score": 50
-        },
-        {
-          "title": "Lloyds, Halifax and Bank of Scotland apps down",
-          "score": 20
-        },
-        {
-          "title": "AI Is Starting to Define Bank Internships as Much as Long Hours",
-          "score": 50
-        },
-        {
-          "title": "European Equities Traded in the US as American Depositary Receipts Edge Lower in Wednesday Trading",
-          "score": 45
-        },
-        {
-          "title": "Lloyds Banking Group PLC's Dividend Analysis",
-          "score": 52
-        },
-        {
-          "title": "Lloyds Banking Group (LSE:LLOY) Chief Risk Officer Exit Sets Up 2026 Leadership Shift",
-          "score": 35
-        }
-      ],
-      "broker_order": {
-        "id": 54850131908,
-        "strategy": "QUANTITY",
-        "type": "MARKET",
-        "ticker": "LLOYl_EQ",
-        "quantity": 809,
-        "filledQuantity": 0,
-        "status": "NEW",
-        "currency": "GBP",
-        "extendedHours": false,
-        "initiatedFrom": "API",
-        "side": "BUY",
-        "createdAt": "2026-09-14T00:24:29.040+03:00",
-        "instrument": {
-          "ticker": "LLOYl_EQ",
-          "name": "Lloyds Banking Group",
-          "isin": "GB0008706128",
-          "currency": "GBX"
-        }
-      }
-    },
-    {
-      "date": "2026-09-13",
-      "ticker": "STAN.L",
-      "name": "Standard Chartered PLC",
-      "action": "BUY",
-      "shares": 39,
-      "price": 22.98,
-      "total": 896.22,
-      "score": 68.3,
-      "reason": "Score 68.3 | News 72/100 | P/E 14.7",
-      "news_headlines": [
-        {
-          "title": "What Will 10,000 XRP Be Worth in 2030?",
-          "score": 50
-        },
-        {
-          "title": "What Will XRP Be Worth by 2028?",
-          "score": 50
-        },
-        {
-          "title": "Standard Chartered unveils platform to manage, decarbonize supply chain",
-          "score": 68
-        },
-        {
-          "title": "Standard Chartered (SCBFF) Soars 5.8%: Is Further Upside Left in the Stock?",
-          "score": 80
-        },
-        {
-          "title": "XRP\u2019s $28 Target Back in Focus as Key CLARITY Opposition Eased, Senators Eye November Passage",
-          "score": 50
-        },
-        {
-          "title": "Standard Chartered (LSE:STAN) Stock Fair Value Edges Higher After Analyst Target Lifts",
-          "score": 75
-        },
-        {
-          "title": "Standard Chartered Launches Spot Bitcoin, Ether Trading for UAE Institutions",
-          "score": 74
-        },
-        {
-          "title": "A \u2018Too Big to Fail' Bank Is Now Delivering Actual Bitcoin and Ethereum to Institutions",
-          "score": 77
-        },
-        {
-          "title": "Standard Chartered launches institutional spot crypto trading in UAE",
-          "score": 74
-        },
-        {
-          "title": "HSBC Eyes Singapore Consolidation: Will Simplification Aid Growth?",
-          "score": 50
-        }
-      ],
-      "broker_order": {
-        "id": 54850131910,
-        "strategy": "QUANTITY",
-        "type": "MARKET",
-        "ticker": "STANl_EQ",
-        "quantity": 39,
-        "filledQuantity": 0,
-        "status": "NEW",
-        "currency": "GBP",
-        "extendedHours": false,
-        "initiatedFrom": "API",
-        "side": "BUY",
-        "createdAt": "2026-09-14T00:24:31.273+03:00",
-        "instrument": {
-          "ticker": "STANl_EQ",
-          "name": "Standard Chartered",
-          "isin": "GB0004082847",
-          "currency": "GBX"
-        }
-      }
-    },
-    {
-      "date": "2026-09-13",
-      "ticker": "SHEL.L",
-      "name": "Shell plc",
-      "action": "BUY",
-      "shares": 25,
-      "price": 35.51,
-      "total": 887.75,
-      "score": 67.9,
-      "reason": "Score 67.9 | News 63/100 | P/E 10.6 | RevGrow +45%",
-      "news_headlines": [
-        {
-          "title": "Shell Just Sold a $715 Million Stake in a Major New England Asset to Constellation Energy. Here's What Investors Need to Know.",
-          "score": 67
-        },
-        {
-          "title": "Shell's Troubled Project Faces Another Major Blow",
-          "score": 25
-        },
-        {
-          "title": "Can CEG's Expanding Generation Portfolio Drive Long-Term Growth?",
-          "score": 52
-        },
-        {
-          "title": "Update: Equinor, Shell Adura JV Awaits UK Decision on Jackdaw, Rosebank Projects",
-          "score": 45
-        },
-        {
-          "title": "Sector Update: Energy Stocks Decline Premarket Friday",
-          "score": 38
-        },
-        {
-          "title": "Shell Expands PJM Power Exposure With Hunlock Deal, Sells RISEC",
-          "score": 70
-        },
-        {
-          "title": "Shell signs deals to acquire Hunlock Creek and sell RISEC",
-          "score": 68
-        },
-        {
-          "title": "Why Did HP, SHEL, ET Stocks Hit 52-Week Highs Today?",
-          "score": 78
-        },
-        {
-          "title": "Shell Sells U.S. Gas Plant for $715 Million in Power Portfolio Shake-Up",
-          "score": 66
-        },
-        {
-          "title": "CEG, SHEL Stocks Rise Overnight: Constellation Energy To Acquire Rhode Island State Energy Center From Shell For $715M",
-          "score": 74
-        }
-      ],
-      "broker_order": {
-        "id": 54850131912,
-        "strategy": "QUANTITY",
-        "type": "MARKET",
-        "ticker": "SHELl_EQ",
-        "quantity": 25,
-        "filledQuantity": 0,
-        "status": "NEW",
-        "currency": "GBP",
-        "extendedHours": false,
-        "initiatedFrom": "API",
-        "side": "BUY",
-        "createdAt": "2026-09-14T00:24:33.514+03:00",
-        "instrument": {
-          "ticker": "SHELl_EQ",
-          "name": "Shell",
-          "isin": "GB00BP6MXD84",
-          "currency": "GBX"
-        }
-      }
-    },
-    {
-      "date": "2026-09-13",
-      "ticker": "UU.L",
-      "name": "United Utilities Group PLC",
-      "action": "BUY",
-      "shares": 67,
-      "price": 13.24,
-      "total": 887.08,
-      "score": 67.2,
-      "reason": "Score 67.2 | News 45/100 | P/E 15.4 | RevGrow +23% | RSI 18 oversold",
-      "news_headlines": [
-        {
-          "title": "United Utilities Group (LSE:UU.) Stock Gets Fair Value Bump As Analyst Targets Split",
-          "score": 62
-        },
-        {
-          "title": "Majority of United Utilities shareholders approve pay plans despite backlash",
-          "score": 55
-        },
-        {
-          "title": "United Utilities under fire over plans to hand top bosses share \u2018allowances\u2019",
-          "score": 24
-        },
-        {
-          "title": "United Utilities Group (LSE:UU.) Stock Fair Value Edges Lower After Mixed Analyst Revisions",
-          "score": 40
-        },
-        {
-          "title": "How The Evolving Story For United Utilities Group (LSE:UU.) Could Reshape Investor Expectations",
-          "score": 50
-        },
-        {
-          "title": "United Utilities Group PLC (UUGRY) Q4 2026 Earnings Call Highlights: Strong Financial ...",
-          "score": 74
-        },
-        {
-          "title": "How The United Utilities Group (LSE:UU.) Story Is Shifting As Analyst Views Diverge",
-          "score": 48
-        },
-        {
-          "title": "United Utilities unveils \u00a3800m share sale amid plans to bolster water network",
-          "score": 44
-        },
-        {
-          "title": "How The Investment Story For United Utilities Group (LSE:UU.) Is Shifting With Mixed Analyst Views",
-          "score": 47
-        },
-        {
-          "title": "How The Investment Story For United Utilities Group (LSE:UU.) Is Quietly Shifting Now",
-          "score": 50
-        }
-      ],
-      "broker_order": {
-        "id": 54850131914,
-        "strategy": "QUANTITY",
-        "type": "MARKET",
-        "ticker": "UUl_EQ",
-        "quantity": 67,
-        "filledQuantity": 0,
-        "status": "NEW",
-        "currency": "GBP",
-        "extendedHours": false,
-        "initiatedFrom": "API",
-        "side": "BUY",
-        "createdAt": "2026-09-14T00:24:35.738+03:00",
-        "instrument": {
-          "ticker": "UUl_EQ",
-          "name": "United Utilities",
-          "isin": "GB00B39J2M42",
-          "currency": "GBX"
-        }
-      }
-    },
-    {
-      "date": "2026-09-13",
-      "ticker": "SDR.L",
-      "name": "Schroders plc",
-      "action": "BUY",
-      "shares": 153,
-      "price": 5.85,
-      "total": 895.05,
-      "score": 67.0,
-      "reason": "Score 67.0 | News 67/100 | P/E 13.3 | RevGrow +16%",
-      "news_headlines": [
-        {
-          "title": "Wall Street jumps, oil lower ahead of Fed vote next week",
-          "score": 50
-        },
-        {
-          "title": "After a wave of delistings, can London\u2019s stock market reverse the decline?",
-          "score": 45
-        },
-        {
-          "title": "Schroders and ttb wealth securities to build HNW offering in Thailand",
-          "score": 78
-        },
-        {
-          "title": "London-listed Molten Ventures joins race to run Burnham-backed \u00a31bn tech fund",
-          "score": 50
-        },
-        {
-          "title": "British fund management giants vie to run \u00a31bn Scale-Up Fund",
-          "score": 52
-        },
-        {
-          "title": "Analysis-US corporate AI debt surge tests investor limits as fatigue emerges",
-          "score": 50
-        },
-        {
-          "title": "VP Bank Singapore names Vincent Koo as chief risk officer",
-          "score": 50
-        },
-        {
-          "title": "Many Retirees Have More Credit Card Debt Than Savings. Financial Advisors\u2019 Best Tips.",
-          "score": 50
-        },
-        {
-          "title": "JPMorgan Chase (JPM) Wins First Approved Tokenised Money Market Fund Mandate",
-          "score": 50
-        },
-        {
-          "title": "Schroders gets Irish nod for tokenised money market fund",
-          "score": 82
-        }
-      ],
-      "broker_order": {
-        "id": 54850131916,
-        "strategy": "QUANTITY",
-        "type": "MARKET",
-        "ticker": "SDRl_EQ",
-        "quantity": 153,
-        "filledQuantity": 0,
-        "status": "NEW",
-        "currency": "GBP",
-        "extendedHours": false,
-        "initiatedFrom": "API",
-        "side": "BUY",
-        "createdAt": "2026-09-14T00:24:37.958+03:00",
-        "instrument": {
-          "ticker": "SDRl_EQ",
-          "name": "Schroders",
-          "isin": "GB00BP9LHF23",
-          "currency": "GBX"
-        }
-      }
-    },
-    {
-      "date": "2026-09-13",
-      "ticker": "BARC.L",
-      "name": "Barclays PLC",
-      "action": "BUY",
-      "shares": 182,
-      "price": 4.9375,
-      "total": 898.62,
-      "score": 76.7,
-      "reason": "Score 76.7 | News 72/100 | P/E 10.3 | RevGrow +16%",
-      "news_headlines": [
-        {
-          "title": "Barclays Raises 2026 S&P 500 Target to 7,950 After Second-Quarter Earnings",
-          "score": 76
-        },
-        {
-          "title": "Burnham faces UK economic test as budget day approaches",
-          "score": 50
-        },
-        {
-          "title": "Why Rising Bond Yields Aren\u2019t Throttling The Economy, For Now",
-          "score": 55
-        },
-        {
-          "title": "Barclays Hikes S&P 500 Target to 7,950 on Strong Earnings",
-          "score": 78
-        },
-        {
-          "title": "Inflation Woes Weigh on Stocks During Earnings Season Lull",
-          "score": 38
-        },
-        {
           "title": "Barclays Tweaks S&P 500 Target for Rest of 2026",
-          "score": 60
+          "score": 58
         },
         {
           "title": "Barclays Sees 4% Upside for the S&P 500 on Tech Earnings Strength",
-          "score": 73
+          "score": 74
         },
         {
           "title": "Barclays Sees S&P 500 at 7,950 in 2026: What Do Prediction Markets Say?",
@@ -777,26 +70,22 @@
         },
         {
           "title": "Update: Market Chatter: Barclays Leads $2.8 Billion Financing Package for Lone Star's ContiTech Acquisition",
-          "score": 82
-        },
-        {
-          "title": "Market Chatter: Barclays Leads 2.4 Billion Euro Financing Package for Lone Star's ContiTech Acquisition",
-          "score": 82
+          "score": 73
         }
       ],
       "broker_order": {
-        "id": 54850132070,
+        "id": 54900231208,
         "strategy": "QUANTITY",
         "type": "MARKET",
         "ticker": "BARCl_EQ",
-        "quantity": 182,
+        "quantity": 183,
         "filledQuantity": 0,
-        "status": "NEW",
+        "status": "FILLED",
         "currency": "GBP",
         "extendedHours": false,
         "initiatedFrom": "API",
         "side": "BUY",
-        "createdAt": "2026-09-14T01:02:36.937+03:00",
+        "createdAt": "2026-09-14T11:26:31.265+03:00",
         "instrument": {
           "ticker": "BARCl_EQ",
           "name": "Barclays",
@@ -806,15 +95,15 @@
       }
     },
     {
-      "date": "2026-09-13",
+      "date": "2026-09-14",
       "ticker": "BP.L",
       "name": "BP p.l.c.",
       "action": "BUY",
-      "shares": 159,
-      "price": 5.646,
-      "total": 897.71,
-      "score": 66.5,
-      "reason": "Score 66.5 | News 68/100 | RevGrow +48%",
+      "shares": 157,
+      "price": 5.7302,
+      "total": 899.64,
+      "score": 63.9,
+      "reason": "Score 63.9 | News 64/100 | RevGrow +48%",
       "news_headlines": [
         {
           "title": "Energy & Utilities Roundup: Market Talk",
@@ -822,11 +111,11 @@
         },
         {
           "title": "The Zacks Analyst Blog Highlights ExxonMobil, BP and Chevron",
-          "score": 55
+          "score": 60
         },
         {
           "title": "ExxonMobil Stock at a Premium: Opportunity or Reason to Stay Cautious?",
-          "score": 45
+          "score": 50
         },
         {
           "title": "Why BP Is One of the Best Oil Stocks to Buy Right Now",
@@ -834,7 +123,7 @@
         },
         {
           "title": "Could Shell (SHEL)\u2019s Superior Cash Flow Make It a Better Bet Than BP (BP)?",
-          "score": 40
+          "score": 30
         },
         {
           "title": "Top Analyst Reports for Eli Lilly, Palo Alto Networks & Texas Instruments",
@@ -842,11 +131,11 @@
         },
         {
           "title": "Sector Update: Energy Stocks Gain Late Afternoon",
-          "score": 70
+          "score": 68
         },
         {
           "title": "ExxonMobil Is Up 40% in 2026: Can Rising Oil Prices and Strong Earnings Boost XOM Stock to $200?",
-          "score": 60
+          "score": 50
         },
         {
           "title": "BP (BP) is a Great Momentum Stock: Should You Buy?",
@@ -854,22 +143,22 @@
         },
         {
           "title": "European Stocks Tumble in Wednesday Trading as Intensified Middle East Conflict Drives Up Oil Prices",
-          "score": 45
+          "score": 55
         }
       ],
       "broker_order": {
-        "id": 54850132072,
+        "id": 54900231213,
         "strategy": "QUANTITY",
         "type": "MARKET",
         "ticker": "BPl_EQ",
-        "quantity": 159,
+        "quantity": 157,
         "filledQuantity": 0,
-        "status": "NEW",
+        "status": "FILLED",
         "currency": "GBP",
         "extendedHours": false,
         "initiatedFrom": "API",
         "side": "BUY",
-        "createdAt": "2026-09-14T01:02:39.174+03:00",
+        "createdAt": "2026-09-14T11:26:35.309+03:00",
         "instrument": {
           "ticker": "BPl_EQ",
           "name": "BP",
@@ -879,19 +168,23 @@
       }
     },
     {
-      "date": "2026-09-13",
+      "date": "2026-09-14",
       "ticker": "BARC.L",
       "name": "Barclays PLC",
       "action": "BUY",
-      "shares": 182,
-      "price": 4.9375,
-      "total": 898.62,
-      "score": 76.7,
-      "reason": "Score 76.7 | News 72/100 | P/E 10.3 | RevGrow +16%",
+      "shares": 184,
+      "price": 4.884,
+      "total": 898.66,
+      "score": 75.1,
+      "reason": "Score 75.1 | News 62/100 | P/E 10.2 | RevGrow +16%",
       "news_headlines": [
         {
+          "title": "UAL, AAL, DAL Stocks Suffer Weekly Loss: Barclays Cuts Price Targets But Sees A Silver Lining",
+          "score": 48
+        },
+        {
           "title": "Barclays Raises 2026 S&P 500 Target to 7,950 After Second-Quarter Earnings",
-          "score": 78
+          "score": 66
         },
         {
           "title": "Burnham faces UK economic test as budget day approaches",
@@ -903,46 +196,42 @@
         },
         {
           "title": "Barclays Hikes S&P 500 Target to 7,950 on Strong Earnings",
-          "score": 78
-        },
-        {
-          "title": "Inflation Woes Weigh on Stocks During Earnings Season Lull",
-          "score": 42
-        },
-        {
-          "title": "Barclays Tweaks S&P 500 Target for Rest of 2026",
-          "score": 58
-        },
-        {
-          "title": "Barclays Sees 4% Upside for the S&P 500 on Tech Earnings Strength",
-          "score": 72
-        },
-        {
-          "title": "Barclays Sees S&P 500 at 7,950 in 2026: What Do Prediction Markets Say?",
           "score": 68
         },
         {
-          "title": "Update: Market Chatter: Barclays Leads $2.8 Billion Financing Package for Lone Star's ContiTech Acquisition",
-          "score": 70
+          "title": "Inflation Woes Weigh on Stocks During Earnings Season Lull",
+          "score": 44
         },
         {
-          "title": "Market Chatter: Barclays Leads 2.4 Billion Euro Financing Package for Lone Star's ContiTech Acquisition",
-          "score": 70
+          "title": "Barclays Tweaks S&P 500 Target for Rest of 2026",
+          "score": 54
+        },
+        {
+          "title": "Barclays Sees 4% Upside for the S&P 500 on Tech Earnings Strength",
+          "score": 65
+        },
+        {
+          "title": "Barclays Sees S&P 500 at 7,950 in 2026: What Do Prediction Markets Say?",
+          "score": 58
+        },
+        {
+          "title": "Update: Market Chatter: Barclays Leads $2.8 Billion Financing Package for Lone Star's ContiTech Acquisition",
+          "score": 66
         }
       ],
       "broker_order": {
-        "id": 54850132098,
+        "id": 54900231294,
         "strategy": "QUANTITY",
         "type": "MARKET",
         "ticker": "BARCl_EQ",
-        "quantity": 182,
+        "quantity": 184,
         "filledQuantity": 0,
-        "status": "NEW",
+        "status": "FILLED",
         "currency": "GBP",
         "extendedHours": false,
         "initiatedFrom": "API",
         "side": "BUY",
-        "createdAt": "2026-09-14T01:10:03.382+03:00",
+        "createdAt": "2026-09-14T11:29:12.764+03:00",
         "instrument": {
           "ticker": "BARCl_EQ",
           "name": "Barclays",
@@ -952,15 +241,15 @@
       }
     },
     {
-      "date": "2026-09-13",
+      "date": "2026-09-14",
       "ticker": "BP.L",
       "name": "BP p.l.c.",
       "action": "BUY",
-      "shares": 159,
-      "price": 5.646,
-      "total": 897.71,
-      "score": 65.9,
-      "reason": "Score 65.9 | News 64/100 | RevGrow +48%",
+      "shares": 157,
+      "price": 5.726,
+      "total": 898.98,
+      "score": 63.5,
+      "reason": "Score 63.5 | News 62/100 | RevGrow +48%",
       "news_headlines": [
         {
           "title": "Energy & Utilities Roundup: Market Talk",
@@ -968,7 +257,7 @@
         },
         {
           "title": "The Zacks Analyst Blog Highlights ExxonMobil, BP and Chevron",
-          "score": 55
+          "score": 60
         },
         {
           "title": "ExxonMobil Stock at a Premium: Opportunity or Reason to Stay Cautious?",
@@ -988,7 +277,7 @@
         },
         {
           "title": "Sector Update: Energy Stocks Gain Late Afternoon",
-          "score": 68
+          "score": 70
         },
         {
           "title": "ExxonMobil Is Up 40% in 2026: Can Rising Oil Prices and Strong Earnings Boost XOM Stock to $200?",
@@ -996,26 +285,26 @@
         },
         {
           "title": "BP (BP) is a Great Momentum Stock: Should You Buy?",
-          "score": 82
+          "score": 80
         },
         {
           "title": "European Stocks Tumble in Wednesday Trading as Intensified Middle East Conflict Drives Up Oil Prices",
-          "score": 48
+          "score": 45
         }
       ],
       "broker_order": {
-        "id": 54850132100,
+        "id": 54900231301,
         "strategy": "QUANTITY",
         "type": "MARKET",
         "ticker": "BPl_EQ",
-        "quantity": 159,
+        "quantity": 157,
         "filledQuantity": 0,
-        "status": "NEW",
+        "status": "FILLED",
         "currency": "GBP",
         "extendedHours": false,
         "initiatedFrom": "API",
         "side": "BUY",
-        "createdAt": "2026-09-14T01:10:05.657+03:00",
+        "createdAt": "2026-09-14T11:29:16.128+03:00",
         "instrument": {
           "ticker": "BPl_EQ",
           "name": "BP",
@@ -1027,44 +316,24 @@
   ],
   "daily_snapshots": [
     {
-      "date": "2026-09-13",
-      "timestamp": "2026-09-13 22:17",
-      "cash": 1085.58,
-      "equity_value": 8914.43,
-      "total_value": 10000.01,
-      "return_pct": 0.0,
-      "positions": 10,
-      "trades_today": 10
-    },
-    {
-      "date": "2026-09-13",
-      "timestamp": "2026-09-13 23:02",
-      "cash": 8203.67,
-      "equity_value": 1796.34,
-      "total_value": 10000.01,
-      "return_pct": 0.0,
+      "date": "2026-09-14",
+      "timestamp": "2026-09-14 09:26",
+      "cash": 8205.12,
+      "equity_value": 1794.55,
+      "total_value": 9999.67,
+      "return_pct": -0.0,
       "positions": 2,
       "trades_today": 2
     },
     {
-      "date": "2026-09-13",
-      "timestamp": "2026-09-13 23:10",
-      "cash": 8203.67,
-      "equity_value": 1796.34,
-      "total_value": 10000.01,
+      "date": "2026-09-14",
+      "timestamp": "2026-09-14 09:29",
+      "cash": 8202.36,
+      "equity_value": 1797.71,
+      "total_value": 10000.07,
       "return_pct": 0.0,
       "positions": 2,
       "trades_today": 2
-    },
-    {
-      "date": "2026-09-13",
-      "timestamp": "2026-09-13 23:31",
-      "cash": 10000.0,
-      "equity_value": 0.0,
-      "total_value": 10000.0,
-      "return_pct": 0.0,
-      "positions": 0,
-      "trades_today": 0
     }
   ],
   "created": "2026-08-31",

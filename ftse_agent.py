@@ -40,6 +40,11 @@ LEG_PATHS = {
     },
 }
 
+# T212 | IBKR | ALL — which order legs run (not read from .env)
+BROKER = "ALL"
+# Must not collide with another IBKR API client on the same Gateway
+IBKR_CLIENT_ID = 7
+
 STARTING_BUDGET   = 10_000.0
 MAX_POSITIONS     = 10
 POSITION_SIZE_PCT = 0.09
@@ -866,7 +871,7 @@ def _build_legs(names: list[str]) -> list[tuple[str, object]]:
             legs.append((name, broker))
             continue
         from ibkr_broker import ibkr_from_env
-        broker = ibkr_from_env(FTSE_UNIVERSE, log=log)
+        broker = ibkr_from_env(FTSE_UNIVERSE, log=log, client_id=IBKR_CLIENT_ID)
         if broker is None:
             continue
         legs.append((name, broker))
@@ -875,9 +880,9 @@ def _build_legs(names: list[str]) -> list[tuple[str, object]]:
 
 def main() -> None:
     global LOG_SINKS
-    names = parse_broker_choice(os.getenv("BROKER"))
+    names = parse_broker_choice(BROKER)
     if names is None:
-        log("BROKER_FAIL set BROKER=T212|IBKR|ALL", "WARN")
+        log("BROKER_FAIL set BROKER = T212|IBKR|ALL in ftse_agent.py", "WARN")
         raise SystemExit(1)
     legs = _build_legs(names)
     if not legs:

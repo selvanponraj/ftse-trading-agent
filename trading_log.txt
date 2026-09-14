@@ -2469,3 +2469,161 @@
 [2026-09-13 23:32:35] [INFO] BROKER snapshot env cash=£50,082.36 bot cash=£10,000.00 (cap £10,000) positions=0
 [2026-09-13 23:32:35] [INFO] Dashboard saved → dashboard.html
 [2026-09-13 23:32:35] [INFO] Complete.
+[2026-09-14 09:10:19] [INFO] BROKER snapshot env cash=£50,082.36 bot cash=£10,000.00 (cap £10,000) positions=0
+[2026-09-14 09:10:19] [WARN] BROKER_FAIL could not read open positions
+[2026-09-14 09:10:19] [INFO] BROKER snapshot env cash=£50,000.00 bot cash=£10,000.00 (cap £10,000) positions=0
+[2026-09-14 09:10:19] [INFO] BROKER snapshot env cash=£50,000.00 bot cash=£9,100.92 (cap £10,000) positions=1
+[2026-09-14 09:10:19] [INFO] BROKER snapshot env cash=£50,000.00 bot cash=£9,100.92 (cap £10,000) positions=1
+[2026-09-14 09:10:19] [INFO] BROKER snapshot env cash=£10,000.00 bot cash=£9,955.00 (cap £10,000) positions=1
+[2026-09-14 09:11:15] [INFO] Starting FTSE Trading Agent
+[2026-09-14 09:11:15] [INFO] --- Rank scan (Yahoo + news, no broker) ---
+[2026-09-14 09:11:16] [INFO] LLM_CALL BP.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 09:11:21] [INFO] LLM_SCORE BP.L overall=63.0 headlines=10
+[2026-09-14 09:11:21] [INFO] LLM_HEADLINE BP.L 50 Energy & Utilities Roundup: Market Talk
+[2026-09-14 09:11:21] [INFO] LLM_HEADLINE BP.L 60 The Zacks Analyst Blog Highlights ExxonMobil, BP and Chevron
+[2026-09-14 09:11:21] [INFO] LLM_HEADLINE BP.L 50 ExxonMobil Stock at a Premium: Opportunity or Reason to Stay Cautious?
+[2026-09-14 09:11:21] [INFO] LLM_HEADLINE BP.L 85 Why BP Is One of the Best Oil Stocks to Buy Right Now
+[2026-09-14 09:11:21] [INFO] LLM_HEADLINE BP.L 35 Could Shell (SHEL)’s Superior Cash Flow Make It a Better Bet Than BP (BP)?
+[2026-09-14 09:11:21] [INFO] LLM_HEADLINE BP.L 50 Top Analyst Reports for Eli Lilly, Palo Alto Networks & Texas Instruments
+[2026-09-14 09:11:21] [INFO] LLM_HEADLINE BP.L 70 Sector Update: Energy Stocks Gain Late Afternoon
+[2026-09-14 09:11:21] [INFO] LLM_HEADLINE BP.L 55 ExxonMobil Is Up 40% in 2026: Can Rising Oil Prices and Strong Earnings Boost XO
+[2026-09-14 09:11:21] [INFO] LLM_HEADLINE BP.L 80 BP (BP) is a Great Momentum Stock: Should You Buy?
+[2026-09-14 09:11:21] [INFO] LLM_HEADLINE BP.L 55 European Stocks Tumble in Wednesday Trading as Intensified Middle East Conflict 
+[2026-09-14 09:11:21] [INFO]   BP.L         Energy           score= 63.7 RSI=73.1 P/E=22.0   news=63.0 BP p.l.c.
+[2026-09-14 09:11:22] [INFO] LLM_CALL BARC.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 09:11:26] [INFO] LLM_SCORE BARC.L overall=62.0 headlines=10
+[2026-09-14 09:11:26] [INFO] LLM_HEADLINE BARC.L 46 UAL, AAL, DAL Stocks Suffer Weekly Loss: Barclays Cuts Price Targets But Sees A 
+[2026-09-14 09:11:26] [INFO] LLM_HEADLINE BARC.L 72 Barclays Raises 2026 S&P 500 Target to 7,950 After Second-Quarter Earnings
+[2026-09-14 09:11:26] [INFO] LLM_HEADLINE BARC.L 50 Burnham faces UK economic test as budget day approaches
+[2026-09-14 09:11:26] [INFO] LLM_HEADLINE BARC.L 56 Why Rising Bond Yields Aren’t Throttling The Economy, For Now
+[2026-09-14 09:11:26] [INFO] LLM_HEADLINE BARC.L 74 Barclays Hikes S&P 500 Target to 7,950 on Strong Earnings
+[2026-09-14 09:11:26] [INFO] LLM_HEADLINE BARC.L 43 Inflation Woes Weigh on Stocks During Earnings Season Lull
+[2026-09-14 09:11:26] [INFO] LLM_HEADLINE BARC.L 58 Barclays Tweaks S&P 500 Target for Rest of 2026
+[2026-09-14 09:11:26] [INFO] LLM_HEADLINE BARC.L 70 Barclays Sees 4% Upside for the S&P 500 on Tech Earnings Strength
+[2026-09-14 09:11:26] [INFO] LLM_HEADLINE BARC.L 65 Barclays Sees S&P 500 at 7,950 in 2026: What Do Prediction Markets Say?
+[2026-09-14 09:11:26] [INFO] LLM_HEADLINE BARC.L 68 Update: Market Chatter: Barclays Leads $2.8 Billion Financing Package for Lone S
+[2026-09-14 09:11:26] [INFO]   BARC.L       Financials       score= 75.1 RSI=45.5 P/E=10.2   news=62.0 Barclays PLC
+[2026-09-14 09:11:27] [INFO] BROKER using demo (https://demo.trading212.com/api/v0)
+[2026-09-14 09:11:28] [INFO] BROKER snapshot env cash=£50,082.36 bot cash=£10,000.00 (cap £10,000) positions=0
+[2026-09-14 09:11:28] [INFO] ============================================================
+[2026-09-14 09:11:28] [INFO] FTSE Trading Agent — 2026-09-14 09:11
+[2026-09-14 09:11:28] [INFO] Cash: £10,000.00 | Positions: 0
+[2026-09-14 09:11:28] [INFO] Portfolio total: £10,000.00
+[2026-09-14 09:11:28] [INFO] --- Sell evaluation ---
+[2026-09-14 09:11:28] [INFO] --- Buy fill (10 slots, £10,000.00 cash) ---
+[2026-09-14 09:11:53] [WARN]   BROKER_FAIL BUY BARC.L as BARCl_EQ qty=184 — not booked
+[2026-09-14 09:12:17] [WARN]   BROKER_FAIL BUY BP.L as BPl_EQ qty=157 — not booked
+[2026-09-14 09:12:17] [INFO] ============================================================
+[2026-09-14 09:12:17] [INFO] Done | Total: £10,000.00 | Return: +0.00% | Trades: 0
+[2026-09-14 09:12:17] [INFO] BROKER snapshot env cash=£48,273.87 bot cash=£0.00 (cap £10,000) positions=2
+[2026-09-14 09:12:17] [INFO] Dashboard saved → dashboard.html
+[2026-09-14 09:17:17] [INFO] BROKER snapshot env cash=£50,082.36 bot cash=£10,000.00 (cap £10,000) positions=0
+[2026-09-14 09:17:17] [WARN] BROKER_FAIL could not read open positions
+[2026-09-14 09:17:17] [INFO] BROKER snapshot env cash=£50,000.00 bot cash=£10,000.00 (cap £10,000) positions=0
+[2026-09-14 09:17:17] [INFO] BROKER snapshot env cash=£50,000.00 bot cash=£9,100.92 (cap £10,000) positions=1
+[2026-09-14 09:17:17] [INFO] BROKER snapshot env cash=£50,000.00 bot cash=£9,100.92 (cap £10,000) positions=1
+[2026-09-14 09:17:17] [INFO] BROKER snapshot env cash=£10,000.00 bot cash=£9,955.00 (cap £10,000) positions=1
+[2026-09-14 09:26:16] [INFO] Starting FTSE Trading Agent
+[2026-09-14 09:26:16] [INFO] --- Rank scan (Yahoo + news, no broker) ---
+[2026-09-14 09:26:17] [INFO] LLM_CALL BP.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 09:26:24] [INFO] LLM_SCORE BP.L overall=64.0 headlines=10
+[2026-09-14 09:26:24] [INFO] LLM_HEADLINE BP.L 50 Energy & Utilities Roundup: Market Talk
+[2026-09-14 09:26:24] [INFO] LLM_HEADLINE BP.L 60 The Zacks Analyst Blog Highlights ExxonMobil, BP and Chevron
+[2026-09-14 09:26:24] [INFO] LLM_HEADLINE BP.L 50 ExxonMobil Stock at a Premium: Opportunity or Reason to Stay Cautious?
+[2026-09-14 09:26:24] [INFO] LLM_HEADLINE BP.L 85 Why BP Is One of the Best Oil Stocks to Buy Right Now
+[2026-09-14 09:26:24] [INFO] LLM_HEADLINE BP.L 30 Could Shell (SHEL)’s Superior Cash Flow Make It a Better Bet Than BP (BP)?
+[2026-09-14 09:26:24] [INFO] LLM_HEADLINE BP.L 50 Top Analyst Reports for Eli Lilly, Palo Alto Networks & Texas Instruments
+[2026-09-14 09:26:24] [INFO] LLM_HEADLINE BP.L 68 Sector Update: Energy Stocks Gain Late Afternoon
+[2026-09-14 09:26:24] [INFO] LLM_HEADLINE BP.L 50 ExxonMobil Is Up 40% in 2026: Can Rising Oil Prices and Strong Earnings Boost XO
+[2026-09-14 09:26:24] [INFO] LLM_HEADLINE BP.L 82 BP (BP) is a Great Momentum Stock: Should You Buy?
+[2026-09-14 09:26:24] [INFO] LLM_HEADLINE BP.L 55 European Stocks Tumble in Wednesday Trading as Intensified Middle East Conflict 
+[2026-09-14 09:26:24] [INFO]   BP.L         Energy           score= 63.9 RSI=73.3 P/E=22.0   news=64.0 BP p.l.c.
+[2026-09-14 09:26:25] [INFO] LLM_CALL BARC.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 09:26:29] [INFO] LLM_SCORE BARC.L overall=67.0 headlines=10
+[2026-09-14 09:26:29] [INFO] LLM_HEADLINE BARC.L 52 UAL, AAL, DAL Stocks Suffer Weekly Loss: Barclays Cuts Price Targets But Sees A 
+[2026-09-14 09:26:29] [INFO] LLM_HEADLINE BARC.L 76 Barclays Raises 2026 S&P 500 Target to 7,950 After Second-Quarter Earnings
+[2026-09-14 09:26:29] [INFO] LLM_HEADLINE BARC.L 50 Burnham faces UK economic test as budget day approaches
+[2026-09-14 09:26:29] [INFO] LLM_HEADLINE BARC.L 55 Why Rising Bond Yields Aren’t Throttling The Economy, For Now
+[2026-09-14 09:26:29] [INFO] LLM_HEADLINE BARC.L 78 Barclays Hikes S&P 500 Target to 7,950 on Strong Earnings
+[2026-09-14 09:26:29] [INFO] LLM_HEADLINE BARC.L 43 Inflation Woes Weigh on Stocks During Earnings Season Lull
+[2026-09-14 09:26:29] [INFO] LLM_HEADLINE BARC.L 58 Barclays Tweaks S&P 500 Target for Rest of 2026
+[2026-09-14 09:26:29] [INFO] LLM_HEADLINE BARC.L 74 Barclays Sees 4% Upside for the S&P 500 on Tech Earnings Strength
+[2026-09-14 09:26:29] [INFO] LLM_HEADLINE BARC.L 68 Barclays Sees S&P 500 at 7,950 in 2026: What Do Prediction Markets Say?
+[2026-09-14 09:26:29] [INFO] LLM_HEADLINE BARC.L 73 Update: Market Chatter: Barclays Leads $2.8 Billion Financing Package for Lone S
+[2026-09-14 09:26:29] [INFO]   BARC.L       Financials       score= 75.9 RSI=45.8 P/E=10.2   news=67.0 Barclays PLC
+[2026-09-14 09:26:29] [INFO] BROKER using demo (https://demo.trading212.com/api/v0)
+[2026-09-14 09:26:29] [INFO] BROKER snapshot env cash=£50,072.03 bot cash=£10,000.00 (cap £10,000) positions=0
+[2026-09-14 09:26:29] [INFO] ============================================================
+[2026-09-14 09:26:29] [INFO] FTSE Trading Agent — 2026-09-14 09:26
+[2026-09-14 09:26:29] [INFO] Cash: £10,000.00 | Positions: 0
+[2026-09-14 09:26:29] [INFO] Portfolio total: £10,000.00
+[2026-09-14 09:26:29] [INFO] --- Sell evaluation ---
+[2026-09-14 09:26:29] [INFO] --- Buy fill (10 slots, £10,000.00 cash) ---
+[2026-09-14 09:26:32] [INFO]   BROKER_BUY BARC.L as BARCl_EQ qty=183
+[2026-09-14 09:26:32] [INFO]   BUY  183x BARC.L (Barclays PLC) @ £4.89 = £895.24 | Score 75.9 | News 67/100 | P/E 10.2 | RevGrow +16%
+[2026-09-14 09:26:41] [INFO]   BROKER_BUY BP.L as BPl_EQ qty=157
+[2026-09-14 09:26:41] [INFO]   BUY  157x BP.L (BP p.l.c.) @ £5.73 = £899.64 | Score 63.9 | News 64/100 | RevGrow +48%
+[2026-09-14 09:26:43] [INFO] ============================================================
+[2026-09-14 09:26:43] [INFO] Done | Total: £9,999.67 | Return: -0.00% | Trades: 2
+[2026-09-14 09:26:43] [INFO] BROKER snapshot env cash=£48,271.07 bot cash=£0.00 (cap £10,000) positions=2
+[2026-09-14 09:26:43] [INFO] Dashboard saved → dashboard.html
+[2026-09-14 09:26:43] [INFO] Complete.
+[2026-09-14 09:28:43] [INFO] BROKER snapshot env cash=£50,082.36 bot cash=£10,000.00 (cap £10,000) positions=0
+[2026-09-14 09:28:43] [WARN] BROKER_FAIL could not read open positions
+[2026-09-14 09:28:43] [INFO] BROKER snapshot env cash=£50,000.00 bot cash=£10,000.00 (cap £10,000) positions=0
+[2026-09-14 09:28:43] [INFO] BROKER snapshot env cash=£50,000.00 bot cash=£9,100.92 (cap £10,000) positions=1
+[2026-09-14 09:28:43] [INFO] BROKER snapshot env cash=£50,000.00 bot cash=£9,100.92 (cap £10,000) positions=1
+[2026-09-14 09:28:43] [INFO] BROKER snapshot env cash=£10,000.00 bot cash=£9,955.00 (cap £10,000) positions=1
+[2026-09-14 09:29:00] [INFO] Starting FTSE Trading Agent
+[2026-09-14 09:29:00] [INFO] --- Rank scan (Yahoo + news, no broker) ---
+[2026-09-14 09:29:01] [INFO] LLM_CALL BP.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 09:29:05] [INFO] LLM_SCORE BP.L overall=62.0 headlines=10
+[2026-09-14 09:29:05] [INFO] LLM_HEADLINE BP.L 50 Energy & Utilities Roundup: Market Talk
+[2026-09-14 09:29:05] [INFO] LLM_HEADLINE BP.L 60 The Zacks Analyst Blog Highlights ExxonMobil, BP and Chevron
+[2026-09-14 09:29:05] [INFO] LLM_HEADLINE BP.L 50 ExxonMobil Stock at a Premium: Opportunity or Reason to Stay Cautious?
+[2026-09-14 09:29:05] [INFO] LLM_HEADLINE BP.L 85 Why BP Is One of the Best Oil Stocks to Buy Right Now
+[2026-09-14 09:29:05] [INFO] LLM_HEADLINE BP.L 35 Could Shell (SHEL)’s Superior Cash Flow Make It a Better Bet Than BP (BP)?
+[2026-09-14 09:29:05] [INFO] LLM_HEADLINE BP.L 50 Top Analyst Reports for Eli Lilly, Palo Alto Networks & Texas Instruments
+[2026-09-14 09:29:05] [INFO] LLM_HEADLINE BP.L 70 Sector Update: Energy Stocks Gain Late Afternoon
+[2026-09-14 09:29:05] [INFO] LLM_HEADLINE BP.L 55 ExxonMobil Is Up 40% in 2026: Can Rising Oil Prices and Strong Earnings Boost XO
+[2026-09-14 09:29:05] [INFO] LLM_HEADLINE BP.L 80 BP (BP) is a Great Momentum Stock: Should You Buy?
+[2026-09-14 09:29:05] [INFO] LLM_HEADLINE BP.L 45 European Stocks Tumble in Wednesday Trading as Intensified Middle East Conflict 
+[2026-09-14 09:29:05] [INFO]   BP.L         Energy           score= 63.5 RSI=73.2 P/E=22.0   news=62.0 BP p.l.c.
+[2026-09-14 09:29:06] [INFO] LLM_CALL BARC.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-14 09:29:10] [INFO] LLM_SCORE BARC.L overall=62.0 headlines=10
+[2026-09-14 09:29:10] [INFO] LLM_HEADLINE BARC.L 48 UAL, AAL, DAL Stocks Suffer Weekly Loss: Barclays Cuts Price Targets But Sees A 
+[2026-09-14 09:29:10] [INFO] LLM_HEADLINE BARC.L 66 Barclays Raises 2026 S&P 500 Target to 7,950 After Second-Quarter Earnings
+[2026-09-14 09:29:10] [INFO] LLM_HEADLINE BARC.L 50 Burnham faces UK economic test as budget day approaches
+[2026-09-14 09:29:10] [INFO] LLM_HEADLINE BARC.L 52 Why Rising Bond Yields Aren’t Throttling The Economy, For Now
+[2026-09-14 09:29:10] [INFO] LLM_HEADLINE BARC.L 68 Barclays Hikes S&P 500 Target to 7,950 on Strong Earnings
+[2026-09-14 09:29:10] [INFO] LLM_HEADLINE BARC.L 44 Inflation Woes Weigh on Stocks During Earnings Season Lull
+[2026-09-14 09:29:10] [INFO] LLM_HEADLINE BARC.L 54 Barclays Tweaks S&P 500 Target for Rest of 2026
+[2026-09-14 09:29:10] [INFO] LLM_HEADLINE BARC.L 65 Barclays Sees 4% Upside for the S&P 500 on Tech Earnings Strength
+[2026-09-14 09:29:10] [INFO] LLM_HEADLINE BARC.L 58 Barclays Sees S&P 500 at 7,950 in 2026: What Do Prediction Markets Say?
+[2026-09-14 09:29:10] [INFO] LLM_HEADLINE BARC.L 66 Update: Market Chatter: Barclays Leads $2.8 Billion Financing Package for Lone S
+[2026-09-14 09:29:10] [INFO]   BARC.L       Financials       score= 75.1 RSI=45.3 P/E=10.2   news=62.0 Barclays PLC
+[2026-09-14 09:29:10] [INFO] BROKER using demo (https://demo.trading212.com/api/v0)
+[2026-09-14 09:29:11] [INFO] BROKER snapshot env cash=£50,062.18 bot cash=£10,000.00 (cap £10,000) positions=0
+[2026-09-14 09:29:11] [INFO] ============================================================
+[2026-09-14 09:29:11] [INFO] FTSE Trading Agent — 2026-09-14 09:29
+[2026-09-14 09:29:11] [INFO] Cash: £10,000.00 | Positions: 0
+[2026-09-14 09:29:11] [INFO] Portfolio total: £10,000.00
+[2026-09-14 09:29:11] [INFO] --- Sell evaluation ---
+[2026-09-14 09:29:11] [INFO] --- Buy fill (10 slots, £10,000.00 cash) ---
+[2026-09-14 09:29:13] [INFO]   BROKER_BUY BARC.L as BARCl_EQ qty=184
+[2026-09-14 09:29:13] [INFO]   BUY  184x BARC.L (Barclays PLC) @ £4.88 = £898.66 | Score 75.1 | News 62/100 | P/E 10.2 | RevGrow +16%
+[2026-09-14 09:29:16] [INFO]   BROKER_BUY BP.L as BPl_EQ qty=157
+[2026-09-14 09:29:16] [INFO]   BUY  157x BP.L (BP p.l.c.) @ £5.73 = £898.98 | Score 63.5 | News 62/100 | RevGrow +48%
+[2026-09-14 09:29:18] [INFO] ============================================================
+[2026-09-14 09:29:18] [INFO] Done | Total: £10,000.07 | Return: +0.00% | Trades: 2
+[2026-09-14 09:29:19] [INFO] BROKER snapshot env cash=£48,257.18 bot cash=£0.00 (cap £10,000) positions=2
+[2026-09-14 09:29:19] [INFO] Dashboard saved → dashboard.html
+[2026-09-14 09:29:19] [INFO] Complete.
+[2026-09-14 09:48:17] [WARN] BROKER_FAIL no usable broker legs
+[2026-09-14 09:48:45] [INFO] BROKER snapshot env cash=£50,082.36 bot cash=£10,000.00 (cap £10,000) positions=0
+[2026-09-14 09:48:45] [WARN] BROKER_FAIL could not read open positions
+[2026-09-14 09:48:45] [INFO] BROKER snapshot env cash=£50,000.00 bot cash=£10,000.00 (cap £10,000) positions=0
+[2026-09-14 09:48:45] [INFO] BROKER snapshot env cash=£50,000.00 bot cash=£9,100.92 (cap £10,000) positions=1
+[2026-09-14 09:48:45] [INFO] BROKER snapshot env cash=£50,000.00 bot cash=£9,100.92 (cap £10,000) positions=1
+[2026-09-14 09:48:45] [WARN] BROKER_FAIL no usable broker legs
+[2026-09-14 09:48:45] [INFO] BROKER snapshot env cash=£10,000.00 bot cash=£9,955.00 (cap £10,000) positions=1

@@ -194,13 +194,20 @@ class FromEnvTests(unittest.TestCase):
             with patch.dict("os.environ", {
                 "IBKR_HOST": "127.0.0.1",
                 "IBKR_PORT": "4002",
-                "IBKR_CLIENT_ID": "7",
             }, clear=False):
                 broker = ibkr_from_env({}, log=lambda m, level="INFO": msgs.append(m))
         self.assertIsNone(broker)
         joined = " ".join(msgs)
         self.assertIn("127.0.0.1:4002", joined)
         self.assertIn("refused", joined)
+
+    def test_client_id_comes_from_config_not_env(self):
+        ib = MagicMock()
+        with patch("ibkr_broker._import_ib", return_value=lambda: ib):
+            with patch.dict("os.environ", {"IBKR_CLIENT_ID": "99"}, clear=False):
+                broker = ibkr_from_env({})
+        self.assertIsNotNone(broker)
+        self.assertEqual(ib.connect.call_args.kwargs["clientId"], 7)
 
 
 class ResolveTests(unittest.TestCase):
@@ -248,6 +255,27 @@ class ResolveTests(unittest.TestCase):
             primaryExchange="LSE",
             currency="GBP",
         )
+
+
+class TimezoneTests(unittest.TestCase):
+    def test_met_stamp_rewrites_to_london(self):
+        from ibkr_broker import londonize_ib_datetime
+
+        self.assertEqual(
+            londonize_ib_datetime("20260914 10:05:33 MET"),
+            "20260914 10:05:33 Europe/London",
+        )
+
+    def test_parse_met_fill_time_does_not_raise(self):
+        from zoneinfo import ZoneInfo
+
+        from ibkr_broker import patch_ib_timezones
+
+        patch_ib_timezones()
+        from ib_insync.util import parseIBDatetime
+
+        parsed = parseIBDatetime("20260914 10:05:33 MET")
+        self.assertEqual(str(parsed.tzinfo), str(ZoneInfo("Europe/London")))
 
 
 if __name__ == "__main__":

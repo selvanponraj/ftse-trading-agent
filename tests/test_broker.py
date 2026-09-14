@@ -159,6 +159,54 @@ class FillWaitTests(unittest.TestCase):
         methods = [c[0][0] for c in broker._request.call_args_list]
         self.assertNotIn("DELETE", methods)
 
+    def test_order_404_after_submit_is_treated_as_fill(self):
+        broker = Trading212Broker("k", "s", fill_timeout=15)
+        posted = {"id": 54900230968, "status": "NEW", "ticker": "BARCl_EQ", "quantity": 184}
+        broker._request = MagicMock(side_effect=[posted, Trading212Broker.NOT_FOUND])
+        with patch("broker.time.sleep"):
+            result = broker.place_market_order("BARCl_EQ", 184)
+        self.assertIsNotNone(result)
+        self.assertEqual(str(result["id"]), "54900230968")
+        methods = [c[0][0] for c in broker._request.call_args_list]
+        self.assertNotIn("DELETE", methods)
+
+    def test_order_404_does_not_retry_as_429(self):
+        broker = Trading212Broker("k", "s")
+        with patch("broker.time.sleep") as sleeper:
+            with patch("broker.httpx.request") as mock_request:
+                mock_request.return_value = _httpx_response(
+                    404, text='{"detail":"Order not found"}'
+                )
+                result = broker._request(
+                    "GET", "/equity/orders/1", missing_ok=True
+                )
+        self.assertIs(result, Trading212Broker.NOT_FOUND)
+        mock_request.assert_called_once()
+        sleeper.assert_not_called()
+
+    def test_order_429_after_submit_is_treated_as_fill(self):
+        broker = Trading212Broker("k", "s", fill_timeout=15)
+        posted = {"id": 54900231213, "status": "NEW", "ticker": "BARCl_EQ", "quantity": 183}
+        broker._request = MagicMock(side_effect=[posted, Trading212Broker.RATE_LIMITED])
+        with patch("broker.time.sleep"):
+            result = broker.place_market_order("BARCl_EQ", 183)
+        self.assertIsNotNone(result)
+        self.assertEqual(str(result["id"]), "54900231213")
+        methods = [c[0][0] for c in broker._request.call_args_list]
+        self.assertNotIn("DELETE", methods)
+
+    def test_order_status_429_does_not_sleep_or_retry(self):
+        broker = Trading212Broker("k", "s")
+        with patch("broker.time.sleep") as sleeper:
+            with patch("broker.httpx.request") as mock_request:
+                mock_request.return_value = _httpx_response(429, text="too many requests")
+                result = broker._request(
+                    "GET", "/equity/orders/54900231213", missing_ok=True
+                )
+        self.assertIs(result, Trading212Broker.RATE_LIMITED)
+        mock_request.assert_called_once()
+        sleeper.assert_not_called()
+
 
 def _httpx_response(status: int, json_data=None, text="too many requests"):
     request = httpx.Request("GET", "https://demo.trading212.com/api/v0/equity/account/cash")

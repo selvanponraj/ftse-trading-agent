@@ -4,6 +4,48 @@ import time
 
 logger = logging.getLogger(__name__)
 
+# IBKR execDetails send POSIX abbreviations (MET) that zoneinfo does not have.
+_IBKR_TZ_ALIASES = {
+    "MET": "Europe/London",
+    "CET": "Europe/London",
+    "CEST": "Europe/London",
+    "WET": "Europe/London",
+    "WEST": "Europe/London",
+    "BST": "Europe/London",
+    "GMT": "Europe/London",
+}
+
+
+def londonize_ib_datetime(stamp: str) -> str:
+    """Rewrite IBKR fill stamps like `20260914 10:05:33 MET` to Europe/London."""
+    if not isinstance(stamp, str) or stamp.count(" ") < 2 or "  " in stamp:
+        return stamp
+    date_part, time_part, zone = stamp.split(" ", 2)
+    mapped = _IBKR_TZ_ALIASES.get(zone.strip(), zone.strip())
+    return f"{date_part} {time_part} {mapped}"
+
+
+def patch_ib_timezones() -> None:
+    try:
+        from ib_insync import util as ib_util
+    except ImportError:
+        return
+    current = ib_util.parseIBDatetime
+    if getattr(current, "_ftse_london", False):
+        return
+    original = current
+
+    def parseIBDatetime(stamp):
+        if isinstance(stamp, str):
+            stamp = londonize_ib_datetime(stamp)
+        return original(stamp)
+
+    parseIBDatetime._ftse_london = True  # type: ignore[attr-defined]
+    ib_util.parseIBDatetime = parseIBDatetime
+
+
+patch_ib_timezones()
+
 _DEAD_STATUSES = {"Cancelled", "Inactive", "ApiCancelled"}
 
 try:
@@ -226,7 +268,10 @@ def _import_ib():
     return IB
 
 
-def ibkr_from_env(universe: dict, log=None) -> IbkrBroker | None:
+IBKR_CLIENT_ID = 7
+
+
+def ibkr_from_env(universe: dict, log=None, client_id: int | None = None) -> IbkrBroker | None:
     def report(msg: str) -> None:
         logger.error(msg)
         if callable(log):
@@ -235,7 +280,7 @@ def ibkr_from_env(universe: dict, log=None) -> IbkrBroker | None:
     host = (os.getenv("IBKR_HOST") or "127.0.0.1").strip() or "127.0.0.1"
     try:
         port = int((os.getenv("IBKR_PORT") or "4002").strip() or "4002")
-        client_id = int((os.getenv("IBKR_CLIENT_ID") or "7").strip() or "7")
+        cid = IBKR_CLIENT_ID if client_id is None else int(client_id)
     except ValueError:
         report("BROKER_FAIL IBKR invalid IBKR_PORT or IBKR_CLIENT_ID")
         return None
@@ -243,12 +288,13 @@ def ibkr_from_env(universe: dict, log=None) -> IbkrBroker | None:
     if ib_class is None:
         report("BROKER_FAIL IBKR ib_insync not installed — pip install ib_insync")
         return None
+    patch_ib_timezones()
     ib = ib_class()
     try:
-        ib.connect(host, port, clientId=client_id)
+        ib.connect(host, port, clientId=cid)
     except Exception as e:
         report(
-            f"BROKER_FAIL IBKR connect {host}:{port} clientId={client_id} "
+            f"BROKER_FAIL IBKR connect {host}:{port} clientId={cid} "
             f"— {type(e).__name__}: {e}"
         )
         return None

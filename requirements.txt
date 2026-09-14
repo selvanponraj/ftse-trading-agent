@@ -24,3 +24,4 @@ websockets==17.1
 yfinance==1.7.0
 httpx==0.28.1
 ib_insync
+tzdata

@@ -15,6 +15,16 @@ class ParseBrokerTests(unittest.TestCase):
     def test_invalid_is_none(self):
         self.assertIsNone(ftse_agent.parse_broker_choice("FOO"))
 
+    def test_main_uses_module_broker_not_env(self):
+        with patch.dict("os.environ", {"BROKER": "IBKR"}):
+            with patch.object(
+                ftse_agent, "parse_broker_choice", wraps=ftse_agent.parse_broker_choice
+            ) as parsed:
+                with patch.object(ftse_agent, "_build_legs", return_value=[]):
+                    with self.assertRaises(SystemExit):
+                        ftse_agent.main()
+        parsed.assert_called_with(ftse_agent.BROKER)
+
 
 class LegPathTests(unittest.TestCase):
     def tearDown(self):

@@ -50,6 +50,8 @@ def broker_from_env() -> "Trading212Broker | None":
 
 
 class Trading212Broker:
+    NOT_FOUND = object()
+    RATE_LIMITED = object()
     _FILLED = frozenset({"FILLED"})
     _DEAD = frozenset({"CANCELLED", "CANCELED", "REJECTED"})
 
@@ -72,7 +74,7 @@ class Trading212Broker:
         }
         self._instruments: list[dict] | None = None
 
-    def _request(self, method: str, path: str, **kwargs) -> dict | list | None:
+    def _request(self, method: str, path: str, missing_ok: bool = False, **kwargs) -> dict | list | None | object:
         network_attempts = 0
         retried_429 = False
         while True:
@@ -85,6 +87,10 @@ class Trading212Broker:
                     return {}
                 return response.json()
             except httpx.HTTPStatusError as e:
+                if e.response.status_code == 404 and missing_ok:
+                    return self.NOT_FOUND
+                if e.response.status_code == 429 and missing_ok:
+                    return self.RATE_LIMITED
                 if e.response.status_code == 429 and not retried_429:
                     logger.warning("BROKER_429 %s %s", method, path)
                     retried_429 = True
@@ -176,14 +182,24 @@ class Trading212Broker:
         deadline = time.monotonic() + self.fill_timeout
         last = seed
         while time.monotonic() < deadline:
-            last = self._request("GET", f"/equity/orders/{order_id}")
+            last = self._request("GET", f"/equity/orders/{order_id}", missing_ok=True)
+            if last is self.NOT_FOUND or last is self.RATE_LIMITED:
+                # 404: filled market order already left the pending book.
+                # 429: status lookup is throttled; POST already accepted the market order.
+                filled = dict(seed or {"id": order_id})
+                filled["status"] = "FILLED"
+                return filled
             status = self._status(last)
             if status in self._FILLED:
                 return last if isinstance(last, dict) else None
             if status in self._DEAD:
                 return None
             time.sleep(0.5)
-        last = self._request("GET", f"/equity/orders/{order_id}")
+        last = self._request("GET", f"/equity/orders/{order_id}", missing_ok=True)
+        if last is self.NOT_FOUND or last is self.RATE_LIMITED:
+            filled = dict(seed or {"id": order_id})
+            filled["status"] = "FILLED"
+            return filled
         if self._status(last) in self._FILLED and isinstance(last, dict):
             return last
         return None
