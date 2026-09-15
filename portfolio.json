@@ -9,87 +9,6 @@
       "name": "RBS.L",
       "sector": "Unknown",
       "broker_ticker": "RBSl_EQ"
-    },
-    "INVP.L": {
-      "shares": 137,
-      "avg_cost": 654.5,
-      "first_bought": "2026-09-14",
-      "score_at_buy": 70.1,
-      "name": "Investec Group",
-      "sector": "Financials",
-      "broker_ticker": "INVPl_EQ"
-    },
-    "STAN.L": {
-      "shares": 39,
-      "avg_cost": 2304.0,
-      "first_bought": "2026-09-14",
-      "score_at_buy": 69.5,
-      "name": "Standard Chartered PLC",
-      "sector": "Financials",
-      "broker_ticker": "STANl_EQ"
-    },
-    "III.L": {
-      "shares": 34,
-      "avg_cost": 2636.0,
-      "first_bought": "2026-09-14",
-      "score_at_buy": 80.4,
-      "name": "3i Group Ord",
-      "sector": "Financials",
-      "broker_ticker": "IIIl_EQ"
-    },
-    "UU.L": {
-      "shares": 67,
-      "avg_cost": 1328.0,
-      "first_bought": "2026-09-14",
-      "score_at_buy": 67.5,
-      "name": "United Utilities Group PLC",
-      "sector": "Utilities",
-      "broker_ticker": "UUl_EQ"
-    },
-    "HSBA.L": {
-      "shares": 58,
-      "avg_cost": 1535.6,
-      "first_bought": "2026-09-14",
-      "score_at_buy": 72.0,
-      "name": "HSBC Holdings plc",
-      "sector": "Financials",
-      "broker_ticker": "HSBAl_EQ"
-    },
-    "LLOY.L": {
-      "shares": 828,
-      "avg_cost": 109.0,
-      "first_bought": "2026-09-14",
-      "score_at_buy": 69.7,
-      "name": "Lloyds Banking Group plc",
-      "sector": "Financials",
-      "broker_ticker": "LLOYl_EQ"
-    },
-    "RIO.L": {
-      "shares": 12,
-      "avg_cost": 7184.0,
-      "first_bought": "2026-09-14",
-      "score_at_buy": 67.7,
-      "name": "Rio Tinto Group",
-      "sector": "Materials",
-      "broker_ticker": "RIOl_EQ"
-    },
-    "BARC.L": {
-      "shares": 189,
-      "avg_cost": 477.55,
-      "first_bought": "2026-09-14",
-      "score_at_buy": 78.4,
-      "name": "Barclays PLC",
-      "sector": "Financials",
-      "broker_ticker": "BARCl_EQ"
-    },
-    "FRES.L": {
-      "shares": 31,
-      "avg_cost": 2889.0,
-      "first_bought": "2026-09-14",
-      "score_at_buy": 72.5,
-      "name": "Fresnillo plc",
-      "sector": "Materials",
-      "broker_ticker": "FRESl_EQ"
     }
   },
   "trades": [
@@ -822,6 +741,285 @@
           "currency": "GBX"
         }
       }
+    },
+    {
+      "date": "2026-09-15",
+      "ticker": "INVP.L",
+      "name": "Investec Group",
+      "action": "SELL",
+      "shares": 137,
+      "price": 6.525,
+      "total": 893.93,
+      "pnl_pct": -99.0,
+      "reason": "Stop-loss -99.0%",
+      "broker_order": {
+        "id": 55050178176,
+        "strategy": "QUANTITY",
+        "type": "MARKET",
+        "ticker": "INVPl_EQ",
+        "quantity": -137,
+        "filledQuantity": 0,
+        "status": "FILLED",
+        "currency": "GBP",
+        "extendedHours": false,
+        "initiatedFrom": "API",
+        "side": "SELL",
+        "createdAt": "2026-09-15T18:19:27.783+03:00",
+        "instrument": {
+          "ticker": "INVPl_EQ",
+          "name": "Investec",
+          "isin": "GB00B17BBQ50",
+          "currency": "GBX"
+        }
+      }
+    },
+    {
+      "date": "2026-09-15",
+      "ticker": "STAN.L",
+      "name": "Standard Chartered PLC",
+      "action": "SELL",
+      "shares": 39,
+      "price": 22.76,
+      "total": 887.64,
+      "pnl_pct": -99.01,
+      "reason": "Stop-loss -99.0%",
+      "broker_order": {
+        "id": 55050178178,
+        "strategy": "QUANTITY",
+        "type": "MARKET",
+        "ticker": "STANl_EQ",
+        "quantity": -39,
+        "filledQuantity": 0,
+        "status": "FILLED",
+        "currency": "GBP",
+        "extendedHours": false,
+        "initiatedFrom": "API",
+        "side": "SELL",
+        "createdAt": "2026-09-15T18:19:30.707+03:00",
+        "instrument": {
+          "ticker": "STANl_EQ",
+          "name": "Standard Chartered",
+          "isin": "GB0004082847",
+          "currency": "GBX"
+        }
+      }
+    },
+    {
+      "date": "2026-09-15",
+      "ticker": "III.L",
+      "name": "3i Group Ord",
+      "action": "SELL",
+      "shares": 34,
+      "price": 25.91,
+      "total": 880.94,
+      "pnl_pct": -99.02,
+      "reason": "Stop-loss -99.0%",
+      "broker_order": {
+        "id": 55050178191,
+        "strategy": "QUANTITY",
+        "type": "MARKET",
+        "ticker": "IIIl_EQ",
+        "quantity": -34,
+        "filledQuantity": 0,
+        "status": "FILLED",
+        "currency": "GBP",
+        "extendedHours": false,
+        "initiatedFrom": "API",
+        "side": "SELL",
+        "createdAt": "2026-09-15T18:19:33.655+03:00",
+        "instrument": {
+          "ticker": "IIIl_EQ",
+          "name": "3i Group",
+          "isin": "GB00B1YW4409",
+          "currency": "GBX"
+        }
+      }
+    },
+    {
+      "date": "2026-09-15",
+      "ticker": "UU.L",
+      "name": "United Utilities Group PLC",
+      "action": "SELL",
+      "shares": 67,
+      "price": 13.33,
+      "total": 893.11,
+      "pnl_pct": -99.0,
+      "reason": "Stop-loss -99.0%",
+      "broker_order": {
+        "id": 55050178193,
+        "strategy": "QUANTITY",
+        "type": "MARKET",
+        "ticker": "UUl_EQ",
+        "quantity": -67,
+        "filledQuantity": 0,
+        "status": "FILLED",
+        "currency": "GBP",
+        "extendedHours": false,
+        "initiatedFrom": "API",
+        "side": "SELL",
+        "createdAt": "2026-09-15T18:19:36.634+03:00",
+        "instrument": {
+          "ticker": "UUl_EQ",
+          "name": "United Utilities",
+          "isin": "GB00B39J2M42",
+          "currency": "GBX"
+        }
+      }
+    },
+    {
+      "date": "2026-09-15",
+      "ticker": "HSBA.L",
+      "name": "HSBC Holdings plc",
+      "action": "SELL",
+      "shares": 58,
+      "price": 15.1,
+      "total": 875.8,
+      "pnl_pct": -99.02,
+      "reason": "Stop-loss -99.0%",
+      "broker_order": {
+        "id": 55050178197,
+        "strategy": "QUANTITY",
+        "type": "MARKET",
+        "ticker": "HSBAl_EQ",
+        "quantity": -58,
+        "filledQuantity": 0,
+        "status": "FILLED",
+        "currency": "GBP",
+        "extendedHours": false,
+        "initiatedFrom": "API",
+        "side": "SELL",
+        "createdAt": "2026-09-15T18:19:39.561+03:00",
+        "instrument": {
+          "ticker": "HSBAl_EQ",
+          "name": "HSBC",
+          "isin": "GB0005405286",
+          "currency": "GBX"
+        }
+      }
+    },
+    {
+      "date": "2026-09-15",
+      "ticker": "LLOY.L",
+      "name": "Lloyds Banking Group plc",
+      "action": "SELL",
+      "shares": 828,
+      "price": 1.0885,
+      "total": 901.28,
+      "pnl_pct": -99.0,
+      "reason": "Stop-loss -99.0%",
+      "broker_order": {
+        "id": 55050178207,
+        "strategy": "QUANTITY",
+        "type": "MARKET",
+        "ticker": "LLOYl_EQ",
+        "quantity": -828,
+        "filledQuantity": 0,
+        "status": "FILLED",
+        "currency": "GBP",
+        "extendedHours": false,
+        "initiatedFrom": "API",
+        "side": "SELL",
+        "createdAt": "2026-09-15T18:19:42.490+03:00",
+        "instrument": {
+          "ticker": "LLOYl_EQ",
+          "name": "Lloyds Banking Group",
+          "isin": "GB0008706128",
+          "currency": "GBX"
+        }
+      }
+    },
+    {
+      "date": "2026-09-15",
+      "ticker": "RIO.L",
+      "name": "Rio Tinto Group",
+      "action": "SELL",
+      "shares": 12,
+      "price": 71.405,
+      "total": 856.86,
+      "pnl_pct": -99.01,
+      "reason": "Stop-loss -99.0%",
+      "broker_order": {
+        "id": 55050178216,
+        "strategy": "QUANTITY",
+        "type": "MARKET",
+        "ticker": "RIOl_EQ",
+        "quantity": -12,
+        "filledQuantity": 0,
+        "status": "FILLED",
+        "currency": "GBP",
+        "extendedHours": false,
+        "initiatedFrom": "API",
+        "side": "SELL",
+        "createdAt": "2026-09-15T18:19:45.471+03:00",
+        "instrument": {
+          "ticker": "RIOl_EQ",
+          "name": "Rio Tinto",
+          "isin": "GB0007188757",
+          "currency": "GBX"
+        }
+      }
+    },
+    {
+      "date": "2026-09-15",
+      "ticker": "BARC.L",
+      "name": "Barclays PLC",
+      "action": "SELL",
+      "shares": 189,
+      "price": 4.701,
+      "total": 888.49,
+      "pnl_pct": -99.02,
+      "reason": "Stop-loss -99.0%",
+      "broker_order": {
+        "id": 55050178220,
+        "strategy": "QUANTITY",
+        "type": "MARKET",
+        "ticker": "BARCl_EQ",
+        "quantity": -189,
+        "filledQuantity": 0,
+        "status": "FILLED",
+        "currency": "GBP",
+        "extendedHours": false,
+        "initiatedFrom": "API",
+        "side": "SELL",
+        "createdAt": "2026-09-15T18:19:48.452+03:00",
+        "instrument": {
+          "ticker": "BARCl_EQ",
+          "name": "Barclays",
+          "isin": "GB0031348658",
+          "currency": "GBX"
+        }
+      }
+    },
+    {
+      "date": "2026-09-15",
+      "ticker": "FRES.L",
+      "name": "Fresnillo plc",
+      "action": "SELL",
+      "shares": 31,
+      "price": 28.78,
+      "total": 892.18,
+      "pnl_pct": -99.0,
+      "reason": "Stop-loss -99.0%",
+      "broker_order": {
+        "id": 55050178224,
+        "strategy": "QUANTITY",
+        "type": "MARKET",
+        "ticker": "FRESl_EQ",
+        "quantity": -31,
+        "filledQuantity": 0,
+        "status": "FILLED",
+        "currency": "GBP",
+        "extendedHours": false,
+        "initiatedFrom": "API",
+        "side": "SELL",
+        "createdAt": "2026-09-15T18:19:51.372+03:00",
+        "instrument": {
+          "ticker": "FRESl_EQ",
+          "name": "Fresnillo",
+          "isin": "GB00B2QPKJ12",
+          "currency": "GBX"
+        }
+      }
     }
   ],
   "daily_snapshots": [
@@ -834,6 +1032,16 @@
       "return_pct": -0.05,
       "positions": 10,
       "trades_today": 10
+    },
+    {
+      "date": "2026-09-15",
+      "timestamp": "2026-09-15 16:19",
+      "cash": 0.0,
+      "equity_value": 89839.2,
+      "total_value": 89839.2,
+      "return_pct": 798.39,
+      "positions": 1,
+      "trades_today": 9
     }
   ],
   "created": "2026-09-14",

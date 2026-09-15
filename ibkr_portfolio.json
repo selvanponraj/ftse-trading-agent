@@ -30,7 +30,7 @@
     },
     "NWG.L": {
       "shares": 132,
-      "avg_cost": 6.8628,
+      "avg_cost": 6.8627,
       "first_bought": "2026-09-14",
       "score_at_buy": 72.3,
       "name": "NatWest Group plc",
@@ -39,7 +39,7 @@
     },
     "HSBA.L": {
       "shares": 58,
-      "avg_cost": 15.4865,
+      "avg_cost": 15.4864,
       "first_bought": "2026-09-14",
       "score_at_buy": 72.0,
       "name": "HSBC Holdings plc",
@@ -48,7 +48,7 @@
     },
     "INVP.L": {
       "shares": 137,
-      "avg_cost": 6.5996,
+      "avg_cost": 6.5997,
       "first_bought": "2026-09-14",
       "score_at_buy": 70.1,
       "name": "Investec Group",
@@ -684,6 +684,16 @@
       "return_pct": -0.07,
       "positions": 10,
       "trades_today": 10
+    },
+    {
+      "date": "2026-09-15",
+      "timestamp": "2026-09-15 16:19",
+      "cash": 978.35,
+      "equity_value": 8869.17,
+      "total_value": 9847.52,
+      "return_pct": -1.52,
+      "positions": 10,
+      "trades_today": 0
     }
   ],
   "created": "2026-09-14",
