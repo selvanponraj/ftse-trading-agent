@@ -9,6 +9,15 @@
       "name": "RBS.L",
       "sector": "Unknown",
       "broker_ticker": "RBSl_EQ"
+    },
+    "MTSI": {
+      "shares": 15,
+      "avg_cost": 281.81,
+      "first_bought": "2026-09-22",
+      "score_at_buy": "",
+      "name": "MTSI",
+      "sector": "Unknown",
+      "broker_ticker": "MTSI_US_EQ"
     }
   },
   "trades": [
@@ -1081,6 +1090,16 @@
       "total_value": 89839.2,
       "return_pct": 798.39,
       "positions": 1,
+      "trades_today": 0
+    },
+    {
+      "date": "2026-09-22",
+      "timestamp": "2026-09-22 16:18",
+      "cash": 0.0,
+      "equity_value": 93998.32,
+      "total_value": 93998.32,
+      "return_pct": 839.98,
+      "positions": 2,
       "trades_today": 0
     }
   ],
