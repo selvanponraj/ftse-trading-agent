@@ -7316,3 +7316,356 @@
 [2026-09-23 16:17:48] [INFO] Done | Total: £94,843.71 | Return: +848.44% | Trades: 0
 [2026-09-23 16:17:48] [INFO] BROKER snapshot env cash=£45,124.52 bot cash=£0.00 (cap £10,000) positions=2
 [2026-09-23 16:17:48] [INFO] Dashboard saved → dashboard.html
+[2026-09-24 16:11:49] [INFO] Starting FTSE Trading Agent
+[2026-09-24 16:11:49] [INFO] --- Rank scan (Yahoo + news, no broker) ---
+[2026-09-24 16:11:50] [INFO] LLM_CALL BP.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:11:56] [WARN] LLM_FAIL BP.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:11:56] [WARN]   NEWS_UNAVAILABLE BP.L: headlines unscored, trading blocked
+[2026-09-24 16:11:56] [WARN]   BP.L         Energy           SKIP no news score — not tradeable
+[2026-09-24 16:11:57] [INFO] LLM_CALL SHEL.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:12:00] [WARN] LLM_FAIL SHEL.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:12:00] [WARN]   NEWS_UNAVAILABLE SHEL.L: headlines unscored, trading blocked
+[2026-09-24 16:12:00] [WARN]   SHEL.L       Energy           SKIP no news score — not tradeable
+[2026-09-24 16:12:01] [INFO] LLM_CALL CNE.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:12:02] [WARN] LLM_FAIL CNE.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:12:02] [WARN]   NEWS_UNAVAILABLE CNE.L: headlines unscored, trading blocked
+[2026-09-24 16:12:02] [WARN]   CNE.L        Energy           SKIP no news score — not tradeable
+[2026-09-24 16:12:03] [INFO] LLM_CALL HTG.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:12:07] [WARN] LLM_FAIL HTG.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:12:07] [WARN]   NEWS_UNAVAILABLE HTG.L: headlines unscored, trading blocked
+[2026-09-24 16:12:07] [WARN]   HTG.L        Energy           SKIP no news score — not tradeable
+[2026-09-24 16:12:08] [INFO] LLM_CALL ENQ.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:12:10] [WARN] LLM_FAIL ENQ.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:12:10] [WARN]   NEWS_UNAVAILABLE ENQ.L: headlines unscored, trading blocked
+[2026-09-24 16:12:10] [WARN]   ENQ.L        Energy           SKIP no news score — not tradeable
+[2026-09-24 16:12:11] [INFO] LLM_CALL TLW.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:12:14] [WARN] LLM_FAIL TLW.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:12:14] [WARN]   NEWS_UNAVAILABLE TLW.L: headlines unscored, trading blocked
+[2026-09-24 16:12:14] [WARN]   TLW.L        Energy           SKIP no news score — not tradeable
+[2026-09-24 16:12:14] [INFO] LLM_CALL AAL.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:12:18] [WARN] LLM_FAIL AAL.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:12:18] [WARN]   NEWS_UNAVAILABLE AAL.L: headlines unscored, trading blocked
+[2026-09-24 16:12:18] [WARN]   AAL.L        Materials        SKIP no news score — not tradeable
+[2026-09-24 16:12:19] [INFO] LLM_CALL ANTO.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:12:22] [WARN] LLM_FAIL ANTO.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:12:22] [WARN]   NEWS_UNAVAILABLE ANTO.L: headlines unscored, trading blocked
+[2026-09-24 16:12:22] [WARN]   ANTO.L       Materials        SKIP no news score — not tradeable
+[2026-09-24 16:12:23] [INFO] LLM_CALL RIO.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:12:28] [WARN] LLM_FAIL RIO.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:12:28] [WARN]   NEWS_UNAVAILABLE RIO.L: headlines unscored, trading blocked
+[2026-09-24 16:12:28] [WARN]   RIO.L        Materials        SKIP no news score — not tradeable
+[2026-09-24 16:12:29] [INFO] LLM_CALL GLEN.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:12:33] [WARN] LLM_FAIL GLEN.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:12:33] [WARN]   NEWS_UNAVAILABLE GLEN.L: headlines unscored, trading blocked
+[2026-09-24 16:12:33] [WARN]   GLEN.L       Materials        SKIP no news score — not tradeable
+[2026-09-24 16:12:34] [INFO] LLM_CALL FRES.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:12:37] [WARN] LLM_FAIL FRES.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:12:37] [WARN]   NEWS_UNAVAILABLE FRES.L: headlines unscored, trading blocked
+[2026-09-24 16:12:37] [WARN]   FRES.L       Materials        SKIP no news score — not tradeable
+[2026-09-24 16:12:38] [INFO] LLM_CALL MNDI.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:12:41] [WARN] LLM_FAIL MNDI.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:12:41] [WARN]   NEWS_UNAVAILABLE MNDI.L: headlines unscored, trading blocked
+[2026-09-24 16:12:41] [WARN]   MNDI.L       Materials        SKIP no news score — not tradeable
+[2026-09-24 16:12:41] [INFO] LLM_CALL CRDA.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:12:43] [WARN] LLM_FAIL CRDA.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:12:43] [WARN]   NEWS_UNAVAILABLE CRDA.L: headlines unscored, trading blocked
+[2026-09-24 16:12:43] [WARN]   CRDA.L       Materials        SKIP no news score — not tradeable
+[2026-09-24 16:12:44] [INFO] LLM_CALL RR.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:12:48] [WARN] LLM_FAIL RR.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:12:48] [WARN]   NEWS_UNAVAILABLE RR.L: headlines unscored, trading blocked
+[2026-09-24 16:12:48] [WARN]   RR.L         Industrials      SKIP no news score — not tradeable
+[2026-09-24 16:12:49] [INFO] LLM_CALL BA.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:12:53] [WARN] LLM_FAIL BA.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:12:54] [WARN]   NEWS_UNAVAILABLE BA.L: headlines unscored, trading blocked
+[2026-09-24 16:12:54] [WARN]   BA.L         Industrials      SKIP no news score — not tradeable
+[2026-09-24 16:12:55] [INFO] LLM_CALL EXPN.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:12:57] [WARN] LLM_FAIL EXPN.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:12:57] [WARN]   NEWS_UNAVAILABLE EXPN.L: headlines unscored, trading blocked
+[2026-09-24 16:12:57] [WARN]   EXPN.L       Industrials      SKIP no news score — not tradeable
+[2026-09-24 16:12:58] [INFO] LLM_CALL RS1.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:13:00] [WARN] LLM_FAIL RS1.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:13:00] [WARN]   NEWS_UNAVAILABLE RS1.L: headlines unscored, trading blocked
+[2026-09-24 16:13:00] [WARN]   RS1.L        Industrials      SKIP no news score — not tradeable
+[2026-09-24 16:13:01] [INFO] LLM_CALL BNZL.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:13:02] [WARN] LLM_FAIL BNZL.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:13:02] [WARN]   NEWS_UNAVAILABLE BNZL.L: headlines unscored, trading blocked
+[2026-09-24 16:13:02] [WARN]   BNZL.L       Industrials      SKIP no news score — not tradeable
+[2026-09-24 16:13:03] [INFO] LLM_CALL RMV.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:13:06] [WARN] LLM_FAIL RMV.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:13:06] [WARN]   NEWS_UNAVAILABLE RMV.L: headlines unscored, trading blocked
+[2026-09-24 16:13:06] [WARN]   RMV.L        Industrials      SKIP no news score — not tradeable
+[2026-09-24 16:13:07] [INFO] LLM_CALL SMIN.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:13:10] [WARN] LLM_FAIL SMIN.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:13:10] [WARN]   NEWS_UNAVAILABLE SMIN.L: headlines unscored, trading blocked
+[2026-09-24 16:13:10] [WARN]   SMIN.L       Industrials      SKIP no news score — not tradeable
+[2026-09-24 16:13:11] [INFO] LLM_CALL IMI.L model=gpt-5.6-luna headlines=9 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:13:15] [WARN] LLM_FAIL IMI.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:13:15] [WARN]   NEWS_UNAVAILABLE IMI.L: headlines unscored, trading blocked
+[2026-09-24 16:13:15] [WARN]   IMI.L        Industrials      SKIP no news score — not tradeable
+[2026-09-24 16:13:16] [INFO] LLM_CALL WEIR.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:13:20] [WARN] LLM_FAIL WEIR.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:13:20] [WARN]   NEWS_UNAVAILABLE WEIR.L: headlines unscored, trading blocked
+[2026-09-24 16:13:20] [WARN]   WEIR.L       Industrials      SKIP no news score — not tradeable
+[2026-09-24 16:13:20] [INFO] LLM_CALL SDR.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:13:25] [WARN] LLM_FAIL SDR.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:13:25] [WARN]   NEWS_UNAVAILABLE SDR.L: headlines unscored, trading blocked
+[2026-09-24 16:13:25] [WARN]   SDR.L        Industrials      SKIP no news score — not tradeable
+[2026-09-24 16:13:26] [INFO] LLM_CALL NXT.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:13:29] [WARN] LLM_FAIL NXT.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:13:29] [WARN]   NEWS_UNAVAILABLE NXT.L: headlines unscored, trading blocked
+[2026-09-24 16:13:29] [WARN]   NXT.L        Consumer Discretionary SKIP no news score — not tradeable
+[2026-09-24 16:13:30] [INFO] LLM_CALL IHG.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:13:32] [WARN] LLM_FAIL IHG.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:13:32] [WARN]   NEWS_UNAVAILABLE IHG.L: headlines unscored, trading blocked
+[2026-09-24 16:13:32] [WARN]   IHG.L        Consumer Discretionary SKIP no news score — not tradeable
+[2026-09-24 16:13:33] [INFO] LLM_CALL WTB.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:13:36] [WARN] LLM_FAIL WTB.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:13:36] [WARN]   NEWS_UNAVAILABLE WTB.L: headlines unscored, trading blocked
+[2026-09-24 16:13:36] [WARN]   WTB.L        Consumer Discretionary SKIP no news score — not tradeable
+[2026-09-24 16:13:37] [INFO] LLM_CALL JD.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:13:42] [WARN] LLM_FAIL JD.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:13:42] [WARN]   NEWS_UNAVAILABLE JD.L: headlines unscored, trading blocked
+[2026-09-24 16:13:42] [WARN]   JD.L         Consumer Discretionary SKIP no news score — not tradeable
+[2026-09-24 16:13:43] [INFO] LLM_CALL FRAS.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:13:45] [WARN] LLM_FAIL FRAS.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:13:45] [WARN]   NEWS_UNAVAILABLE FRAS.L: headlines unscored, trading blocked
+[2026-09-24 16:13:45] [WARN]   FRAS.L       Consumer Discretionary SKIP no news score — not tradeable
+[2026-09-24 16:13:46] [INFO] LLM_CALL ENT.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:13:47] [WARN] LLM_FAIL ENT.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:13:47] [WARN]   NEWS_UNAVAILABLE ENT.L: headlines unscored, trading blocked
+[2026-09-24 16:13:47] [WARN]   ENT.L        Consumer Discretionary SKIP no news score — not tradeable
+[2026-09-24 16:13:48] [INFO] LLM_CALL TW.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:13:50] [WARN] LLM_FAIL TW.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:13:50] [WARN]   NEWS_UNAVAILABLE TW.L: headlines unscored, trading blocked
+[2026-09-24 16:13:50] [WARN]   TW.L         Consumer Discretionary SKIP no news score — not tradeable
+[2026-09-24 16:13:51] [INFO] LLM_CALL DGE.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:13:53] [WARN] LLM_FAIL DGE.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:13:53] [WARN]   NEWS_UNAVAILABLE DGE.L: headlines unscored, trading blocked
+[2026-09-24 16:13:53] [WARN]   DGE.L        Consumer Discretionary SKIP no news score — not tradeable
+[2026-09-24 16:13:54] [INFO] LLM_CALL BWY.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:13:57] [WARN] LLM_FAIL BWY.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:13:57] [WARN]   NEWS_UNAVAILABLE BWY.L: headlines unscored, trading blocked
+[2026-09-24 16:13:57] [WARN]   BWY.L        Consumer Discretionary SKIP no news score — not tradeable
+[2026-09-24 16:13:58] [INFO] LLM_CALL PSN.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:14:02] [WARN] LLM_FAIL PSN.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:14:02] [WARN]   NEWS_UNAVAILABLE PSN.L: headlines unscored, trading blocked
+[2026-09-24 16:14:02] [WARN]   PSN.L        Consumer Discretionary SKIP no news score — not tradeable
+[2026-09-24 16:14:03] [INFO] LLM_CALL BRBY.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:14:07] [WARN] LLM_FAIL BRBY.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:14:07] [WARN]   NEWS_UNAVAILABLE BRBY.L: headlines unscored, trading blocked
+[2026-09-24 16:14:07] [WARN]   BRBY.L       Consumer Discretionary SKIP no news score — not tradeable
+[2026-09-24 16:14:08] [INFO] LLM_CALL ULVR.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:14:10] [WARN] LLM_FAIL ULVR.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:14:10] [WARN]   NEWS_UNAVAILABLE ULVR.L: headlines unscored, trading blocked
+[2026-09-24 16:14:10] [WARN]   ULVR.L       Consumer Staples SKIP no news score — not tradeable
+[2026-09-24 16:14:11] [INFO] LLM_CALL RKT.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:14:14] [WARN] LLM_FAIL RKT.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:14:14] [WARN]   NEWS_UNAVAILABLE RKT.L: headlines unscored, trading blocked
+[2026-09-24 16:14:14] [WARN]   RKT.L        Consumer Staples SKIP no news score — not tradeable
+[2026-09-24 16:14:15] [INFO] LLM_CALL TSCO.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:14:20] [WARN] LLM_FAIL TSCO.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:14:20] [WARN]   NEWS_UNAVAILABLE TSCO.L: headlines unscored, trading blocked
+[2026-09-24 16:14:20] [WARN]   TSCO.L       Consumer Staples SKIP no news score — not tradeable
+[2026-09-24 16:14:21] [INFO] LLM_CALL SBRY.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:14:26] [WARN] LLM_FAIL SBRY.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:14:26] [WARN]   NEWS_UNAVAILABLE SBRY.L: headlines unscored, trading blocked
+[2026-09-24 16:14:26] [WARN]   SBRY.L       Consumer Staples SKIP no news score — not tradeable
+[2026-09-24 16:14:26] [INFO] LLM_CALL ABF.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:14:29] [WARN] LLM_FAIL ABF.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:14:29] [WARN]   NEWS_UNAVAILABLE ABF.L: headlines unscored, trading blocked
+[2026-09-24 16:14:29] [WARN]   ABF.L        Consumer Staples SKIP no news score — not tradeable
+[2026-09-24 16:14:30] [INFO] LLM_CALL BME.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:14:33] [WARN] LLM_FAIL BME.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:14:33] [WARN]   NEWS_UNAVAILABLE BME.L: headlines unscored, trading blocked
+[2026-09-24 16:14:33] [WARN]   BME.L        Consumer Staples SKIP no news score — not tradeable
+[2026-09-24 16:14:34] [INFO] LLM_CALL GRG.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:14:38] [WARN] LLM_FAIL GRG.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:14:38] [WARN]   NEWS_UNAVAILABLE GRG.L: headlines unscored, trading blocked
+[2026-09-24 16:14:38] [WARN]   GRG.L        Consumer Staples SKIP no news score — not tradeable
+[2026-09-24 16:14:39] [INFO] LLM_CALL HLMA.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:14:43] [WARN] LLM_FAIL HLMA.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:14:43] [WARN]   NEWS_UNAVAILABLE HLMA.L: headlines unscored, trading blocked
+[2026-09-24 16:14:43] [WARN]   HLMA.L       Consumer Staples SKIP no news score — not tradeable
+[2026-09-24 16:14:44] [INFO] LLM_CALL OCDO.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:14:47] [WARN] LLM_FAIL OCDO.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:14:47] [WARN]   NEWS_UNAVAILABLE OCDO.L: headlines unscored, trading blocked
+[2026-09-24 16:14:47] [WARN]   OCDO.L       Consumer Staples SKIP no news score — not tradeable
+[2026-09-24 16:14:48] [INFO] LLM_CALL AZN.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:14:50] [WARN] LLM_FAIL AZN.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:14:50] [WARN]   NEWS_UNAVAILABLE AZN.L: headlines unscored, trading blocked
+[2026-09-24 16:14:50] [WARN]   AZN.L        Health Care      SKIP no news score — not tradeable
+[2026-09-24 16:14:51] [INFO] LLM_CALL GSK.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:14:56] [WARN] LLM_FAIL GSK.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:14:56] [WARN]   NEWS_UNAVAILABLE GSK.L: headlines unscored, trading blocked
+[2026-09-24 16:14:56] [WARN]   GSK.L        Health Care      SKIP no news score — not tradeable
+[2026-09-24 16:14:57] [INFO] LLM_CALL SN.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:15:00] [WARN] LLM_FAIL SN.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:15:00] [WARN]   NEWS_UNAVAILABLE SN.L: headlines unscored, trading blocked
+[2026-09-24 16:15:00] [WARN]   SN.L         Health Care      SKIP no news score — not tradeable
+[2026-09-24 16:15:01] [INFO] LLM_CALL HIK.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:15:04] [WARN] LLM_FAIL HIK.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:15:04] [WARN]   NEWS_UNAVAILABLE HIK.L: headlines unscored, trading blocked
+[2026-09-24 16:15:04] [WARN]   HIK.L        Health Care      SKIP no news score — not tradeable
+[2026-09-24 16:15:05] [INFO] LLM_CALL DPLM.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:15:09] [WARN] LLM_FAIL DPLM.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:15:09] [WARN]   NEWS_UNAVAILABLE DPLM.L: headlines unscored, trading blocked
+[2026-09-24 16:15:09] [WARN]   DPLM.L       Health Care      SKIP no news score — not tradeable
+[2026-09-24 16:15:10] [INFO] LLM_CALL SPX.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:15:13] [WARN] LLM_FAIL SPX.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:15:13] [WARN]   NEWS_UNAVAILABLE SPX.L: headlines unscored, trading blocked
+[2026-09-24 16:15:13] [WARN]   SPX.L        Health Care      SKIP no news score — not tradeable
+[2026-09-24 16:15:14] [INFO] LLM_CALL HSBA.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:15:20] [WARN] LLM_FAIL HSBA.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:15:20] [WARN]   NEWS_UNAVAILABLE HSBA.L: headlines unscored, trading blocked
+[2026-09-24 16:15:20] [WARN]   HSBA.L       Financials       SKIP no news score — not tradeable
+[2026-09-24 16:15:20] [INFO] LLM_CALL BARC.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:15:24] [WARN] LLM_FAIL BARC.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:15:24] [WARN]   NEWS_UNAVAILABLE BARC.L: headlines unscored, trading blocked
+[2026-09-24 16:15:24] [WARN]   BARC.L       Financials       SKIP no news score — not tradeable
+[2026-09-24 16:15:25] [INFO] LLM_CALL LLOY.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:15:31] [WARN] LLM_FAIL LLOY.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:15:31] [WARN]   NEWS_UNAVAILABLE LLOY.L: headlines unscored, trading blocked
+[2026-09-24 16:15:31] [WARN]   LLOY.L       Financials       SKIP no news score — not tradeable
+[2026-09-24 16:15:32] [INFO] LLM_CALL NWG.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:15:36] [WARN] LLM_FAIL NWG.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:15:36] [WARN]   NEWS_UNAVAILABLE NWG.L: headlines unscored, trading blocked
+[2026-09-24 16:15:36] [WARN]   NWG.L        Financials       SKIP no news score — not tradeable
+[2026-09-24 16:15:37] [INFO] LLM_CALL STAN.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:15:41] [WARN] LLM_FAIL STAN.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:15:41] [WARN]   NEWS_UNAVAILABLE STAN.L: headlines unscored, trading blocked
+[2026-09-24 16:15:41] [WARN]   STAN.L       Financials       SKIP no news score — not tradeable
+[2026-09-24 16:15:41] [INFO] LLM_CALL AV.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:15:45] [WARN] LLM_FAIL AV.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:15:45] [WARN]   NEWS_UNAVAILABLE AV.L: headlines unscored, trading blocked
+[2026-09-24 16:15:45] [WARN]   AV.L         Financials       SKIP no news score — not tradeable
+[2026-09-24 16:15:46] [INFO] LLM_CALL LGEN.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:15:51] [WARN] LLM_FAIL LGEN.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:15:51] [WARN]   NEWS_UNAVAILABLE LGEN.L: headlines unscored, trading blocked
+[2026-09-24 16:15:51] [WARN]   LGEN.L       Financials       SKIP no news score — not tradeable
+[2026-09-24 16:15:52] [INFO] LLM_CALL PRU.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:15:56] [WARN] LLM_FAIL PRU.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:15:56] [WARN]   NEWS_UNAVAILABLE PRU.L: headlines unscored, trading blocked
+[2026-09-24 16:15:56] [WARN]   PRU.L        Financials       SKIP no news score — not tradeable
+[2026-09-24 16:15:56] [INFO] LLM_CALL ADM.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:15:59] [WARN] LLM_FAIL ADM.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:15:59] [WARN]   NEWS_UNAVAILABLE ADM.L: headlines unscored, trading blocked
+[2026-09-24 16:15:59] [WARN]   ADM.L        Financials       SKIP no news score — not tradeable
+[2026-09-24 16:15:59] [INFO] LLM_CALL III.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:16:03] [WARN] LLM_FAIL III.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:16:03] [WARN]   NEWS_UNAVAILABLE III.L: headlines unscored, trading blocked
+[2026-09-24 16:16:03] [WARN]   III.L        Financials       SKIP no news score — not tradeable
+[2026-09-24 16:16:04] [INFO] LLM_CALL INVP.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:16:09] [WARN] LLM_FAIL INVP.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:16:09] [WARN]   NEWS_UNAVAILABLE INVP.L: headlines unscored, trading blocked
+[2026-09-24 16:16:09] [WARN]   INVP.L       Financials       SKIP no news score — not tradeable
+[2026-09-24 16:16:10] [INFO] LLM_CALL MNG.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:16:11] [WARN] LLM_FAIL MNG.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:16:11] [WARN]   NEWS_UNAVAILABLE MNG.L: headlines unscored, trading blocked
+[2026-09-24 16:16:11] [WARN]   MNG.L        Financials       SKIP no news score — not tradeable
+[2026-09-24 16:16:12] [WARN] LLM_SKIP SAGE.L no headlines
+[2026-09-24 16:16:12] [WARN]   NEWS_UNAVAILABLE SAGE.L: headlines unscored, trading blocked
+[2026-09-24 16:16:12] [WARN]   SAGE.L       Information Technology SKIP no news score — not tradeable
+[2026-09-24 16:16:13] [INFO] LLM_CALL KNOS.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:16:15] [WARN] LLM_FAIL KNOS.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:16:15] [WARN]   NEWS_UNAVAILABLE KNOS.L: headlines unscored, trading blocked
+[2026-09-24 16:16:15] [WARN]   KNOS.L       Information Technology SKIP no news score — not tradeable
+[2026-09-24 16:16:15] [INFO] LLM_CALL FDM.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:16:19] [WARN] LLM_FAIL FDM.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:16:19] [WARN]   NEWS_UNAVAILABLE FDM.L: headlines unscored, trading blocked
+[2026-09-24 16:16:19] [WARN]   FDM.L        Information Technology SKIP no news score — not tradeable
+[2026-09-24 16:16:20] [INFO] LLM_CALL SGE.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:16:24] [WARN] LLM_FAIL SGE.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:16:24] [WARN]   NEWS_UNAVAILABLE SGE.L: headlines unscored, trading blocked
+[2026-09-24 16:16:24] [WARN]   SGE.L        Information Technology SKIP no news score — not tradeable
+[2026-09-24 16:16:25] [INFO] LLM_CALL AUTO.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:16:29] [WARN] LLM_FAIL AUTO.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:16:29] [WARN]   NEWS_UNAVAILABLE AUTO.L: headlines unscored, trading blocked
+[2026-09-24 16:16:29] [WARN]   AUTO.L       Information Technology SKIP no news score — not tradeable
+[2026-09-24 16:16:29] [INFO] LLM_CALL VOD.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:16:34] [WARN] LLM_FAIL VOD.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:16:34] [WARN]   NEWS_UNAVAILABLE VOD.L: headlines unscored, trading blocked
+[2026-09-24 16:16:34] [WARN]   VOD.L        Communication Services SKIP no news score — not tradeable
+[2026-09-24 16:16:35] [INFO] LLM_CALL REL.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:16:39] [WARN] LLM_FAIL REL.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:16:39] [WARN]   NEWS_UNAVAILABLE REL.L: headlines unscored, trading blocked
+[2026-09-24 16:16:39] [WARN]   REL.L        Communication Services SKIP no news score — not tradeable
+[2026-09-24 16:16:39] [INFO] LLM_CALL WPP.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:16:44] [WARN] LLM_FAIL WPP.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:16:44] [WARN]   NEWS_UNAVAILABLE WPP.L: headlines unscored, trading blocked
+[2026-09-24 16:16:44] [WARN]   WPP.L        Communication Services SKIP no news score — not tradeable
+[2026-09-24 16:16:45] [INFO] LLM_CALL ITV.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:16:47] [WARN] LLM_FAIL ITV.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:16:47] [WARN]   NEWS_UNAVAILABLE ITV.L: headlines unscored, trading blocked
+[2026-09-24 16:16:47] [WARN]   ITV.L        Communication Services SKIP no news score — not tradeable
+[2026-09-24 16:16:48] [INFO] LLM_CALL INF.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:16:53] [WARN] LLM_FAIL INF.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:16:53] [WARN]   NEWS_UNAVAILABLE INF.L: headlines unscored, trading blocked
+[2026-09-24 16:16:53] [WARN]   INF.L        Communication Services SKIP no news score — not tradeable
+[2026-09-24 16:16:53] [INFO] LLM_CALL NG.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:17:00] [WARN] LLM_FAIL NG.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:17:00] [WARN]   NEWS_UNAVAILABLE NG.L: headlines unscored, trading blocked
+[2026-09-24 16:17:00] [WARN]   NG.L         Utilities        SKIP no news score — not tradeable
+[2026-09-24 16:17:01] [INFO] LLM_CALL SSE.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:17:04] [WARN] LLM_FAIL SSE.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:17:04] [WARN]   NEWS_UNAVAILABLE SSE.L: headlines unscored, trading blocked
+[2026-09-24 16:17:04] [WARN]   SSE.L        Utilities        SKIP no news score — not tradeable
+[2026-09-24 16:17:05] [INFO] LLM_CALL SVT.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:17:07] [WARN] LLM_FAIL SVT.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:17:07] [WARN]   NEWS_UNAVAILABLE SVT.L: headlines unscored, trading blocked
+[2026-09-24 16:17:07] [WARN]   SVT.L        Utilities        SKIP no news score — not tradeable
+[2026-09-24 16:17:07] [INFO] LLM_CALL UU.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:17:10] [WARN] LLM_FAIL UU.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:17:10] [WARN]   NEWS_UNAVAILABLE UU.L: headlines unscored, trading blocked
+[2026-09-24 16:17:10] [WARN]   UU.L         Utilities        SKIP no news score — not tradeable
+[2026-09-24 16:17:11] [INFO] LLM_CALL PNN.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:17:13] [WARN] LLM_FAIL PNN.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:17:13] [WARN]   NEWS_UNAVAILABLE PNN.L: headlines unscored, trading blocked
+[2026-09-24 16:17:13] [WARN]   PNN.L        Utilities        SKIP no news score — not tradeable
+[2026-09-24 16:17:14] [INFO] LLM_CALL CNA.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:17:18] [WARN] LLM_FAIL CNA.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:17:18] [WARN]   NEWS_UNAVAILABLE CNA.L: headlines unscored, trading blocked
+[2026-09-24 16:17:18] [WARN]   CNA.L        Utilities        SKIP no news score — not tradeable
+[2026-09-24 16:17:19] [INFO] LLM_CALL DRX.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:17:22] [WARN] LLM_FAIL DRX.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:17:22] [WARN]   NEWS_UNAVAILABLE DRX.L: headlines unscored, trading blocked
+[2026-09-24 16:17:22] [WARN]   DRX.L        Utilities        SKIP no news score — not tradeable
+[2026-09-24 16:17:23] [INFO] LLM_CALL LAND.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:17:26] [WARN] LLM_FAIL LAND.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:17:26] [WARN]   NEWS_UNAVAILABLE LAND.L: headlines unscored, trading blocked
+[2026-09-24 16:17:26] [WARN]   LAND.L       Real Estate      SKIP no news score — not tradeable
+[2026-09-24 16:17:27] [INFO] LLM_CALL BLND.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:17:29] [WARN] LLM_FAIL BLND.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:17:29] [WARN]   NEWS_UNAVAILABLE BLND.L: headlines unscored, trading blocked
+[2026-09-24 16:17:29] [WARN]   BLND.L       Real Estate      SKIP no news score — not tradeable
+[2026-09-24 16:17:30] [INFO] LLM_CALL SGRO.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:17:36] [WARN] LLM_FAIL SGRO.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:17:36] [WARN]   NEWS_UNAVAILABLE SGRO.L: headlines unscored, trading blocked
+[2026-09-24 16:17:36] [WARN]   SGRO.L       Real Estate      SKIP no news score — not tradeable
+[2026-09-24 16:17:37] [INFO] LLM_CALL UTG.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:17:41] [WARN] LLM_FAIL UTG.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:17:41] [WARN]   NEWS_UNAVAILABLE UTG.L: headlines unscored, trading blocked
+[2026-09-24 16:17:41] [WARN]   UTG.L        Real Estate      SKIP no news score — not tradeable
+[2026-09-24 16:17:42] [INFO] LLM_CALL HMSO.L model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:17:43] [WARN] LLM_FAIL HMSO.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:17:43] [WARN]   NEWS_UNAVAILABLE HMSO.L: headlines unscored, trading blocked
+[2026-09-24 16:17:43] [WARN]   HMSO.L       Real Estate      SKIP no news score — not tradeable
+[2026-09-24 16:17:47] [INFO] LLM_CALL GPE.L model=gpt-5.6-luna headlines=3 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:17:53] [WARN] LLM_FAIL GPE.L HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:17:53] [WARN]   NEWS_UNAVAILABLE GPE.L: headlines unscored, trading blocked
+[2026-09-24 16:17:53] [WARN]   GPE.L        Real Estate      SKIP no news score — not tradeable
+[2026-09-24 16:17:53] [INFO] BROKER using demo (https://demo.trading212.com/api/v0)
+[2026-09-24 16:17:54] [INFO] BROKER snapshot env cash=£45,094.98 bot cash=£0.00 (cap £10,000) positions=2
+[2026-09-24 16:17:54] [INFO] ============================================================
+[2026-09-24 16:17:54] [INFO] FTSE Trading Agent — 2026-09-24 16:17
+[2026-09-24 16:17:54] [INFO] Cash: £0.00 | Positions: 2
+[2026-09-24 16:17:55] [INFO] Portfolio total: £94,521.70
+[2026-09-24 16:17:55] [INFO] --- Sell evaluation ---
+[2026-09-24 16:17:55] [INFO] LLM_CALL QLYS model=gpt-5.6-luna headlines=10 POST https://my-litellm-box.duckdns.org/v1/chat/completions
+[2026-09-24 16:18:00] [WARN] LLM_FAIL QLYS HTTP 503 {"error":{"message":"Service Unavailable, the authentication database is temporarily unreachable. Please retry shortly.","type":"no_db_connection","param":"None","code":"503"}}
+[2026-09-24 16:18:00] [WARN]   NEWS_UNAVAILABLE QLYS: headlines unscored, trading blocked
+[2026-09-24 16:18:00] [WARN]   HOLD QLYS pnl=+0.2% no news score 0d
+[2026-09-24 16:18:00] [INFO] No buy slots or insufficient cash.
+[2026-09-24 16:18:00] [INFO] ============================================================
+[2026-09-24 16:18:00] [INFO] Done | Total: £94,521.70 | Return: +845.22% | Trades: 0
+[2026-09-24 16:18:01] [INFO] BROKER snapshot env cash=£45,094.98 bot cash=£0.00 (cap £10,000) positions=2
+[2026-09-24 16:18:01] [INFO] Dashboard saved → dashboard.html
