@@ -9,15 +9,6 @@
       "name": "RBS.L",
       "sector": "Unknown",
       "broker_ticker": "RBSl_EQ"
-    },
-    "QLYS": {
-      "shares": 25,
-      "avg_cost": 187.0,
-      "first_bought": "2026-09-24",
-      "score_at_buy": "",
-      "name": "QLYS",
-      "sector": "Unknown",
-      "broker_ticker": "QLYS_US_EQ"
     }
   },
   "trades": [
@@ -1120,6 +1111,16 @@
       "total_value": 94521.7,
       "return_pct": 845.22,
       "positions": 2,
+      "trades_today": 0
+    },
+    {
+      "date": "2026-09-25",
+      "timestamp": "2026-09-25 16:18",
+      "cash": 0.0,
+      "equity_value": 89839.2,
+      "total_value": 89839.2,
+      "return_pct": 798.39,
+      "positions": 1,
       "trades_today": 0
     }
   ],
