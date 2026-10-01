@@ -1,5 +1,5 @@
 {
-  "cash": 978.35,
+  "cash": 1106.49,
   "holdings": {
     "III.L": {
       "shares": 34,
@@ -9,15 +9,6 @@
       "name": "3i Group Ord",
       "sector": "Financials",
       "broker_ticker": "III"
-    },
-    "BARC.L": {
-      "shares": 189,
-      "avg_cost": 4.8132,
-      "first_bought": "2026-09-14",
-      "score_at_buy": 78.4,
-      "name": "Barclays PLC",
-      "sector": "Financials",
-      "broker_ticker": "BARC"
     },
     "FRES.L": {
       "shares": 31,
@@ -90,6 +81,15 @@
       "name": "Hammerson Plc",
       "sector": "Real Estate",
       "broker_ticker": "HMSO"
+    },
+    "CNE.L": {
+      "shares": 181,
+      "avg_cost": 4.318,
+      "first_bought": "2026-10-01",
+      "score_at_buy": 77.3,
+      "name": "Capricorn Energy PLC",
+      "sector": "Energy",
+      "broker_ticker": "CNE"
     }
   },
   "trades": [
@@ -672,6 +672,80 @@
         "ticker": "HMSO",
         "quantity": 265
       }
+    },
+    {
+      "date": "2026-10-01",
+      "ticker": "BARC.L",
+      "name": "Barclays PLC",
+      "action": "SELL",
+      "shares": 189,
+      "price": 4.3854,
+      "total": 828.84,
+      "pnl_pct": -8.89,
+      "reason": "Trailing cut -8.9% after 17d",
+      "broker_order": {
+        "id": 81,
+        "ticker": "BARC",
+        "quantity": 189
+      }
+    },
+    {
+      "date": "2026-10-01",
+      "ticker": "CNE.L",
+      "name": "Capricorn Energy PLC",
+      "action": "BUY",
+      "shares": 181,
+      "price": 4.27,
+      "total": 772.87,
+      "score": 77.3,
+      "reason": "Score 77.3 | News 91/100 | P/E 8.5 | RevGrow +68%",
+      "news_headlines": [
+        {
+          "title": "Genel outbids DNO with increased $436m offer for Capricorn Energy",
+          "score": 95
+        },
+        {
+          "title": "Genel Energy Raises Capricorn Bid to $436 Million in Takeover Battle",
+          "score": 94
+        },
+        {
+          "title": "Capricorn Energy soars to 15-year high as Genel outbids DNO in takeover battle",
+          "score": 99
+        },
+        {
+          "title": "Genel Energy agrees higher recommended takeover price for Capricorn",
+          "score": 96
+        },
+        {
+          "title": "Capricorn Energy Raises 2026 Output Expectations on Egypt Gains",
+          "score": 88
+        },
+        {
+          "title": "DNO raises Capricorn takeover offer to $396m cash deal",
+          "score": 93
+        },
+        {
+          "title": "DNO improves cash terms for Capricorn takeover bid",
+          "score": 92
+        },
+        {
+          "title": "Capricorn Board Picks DNO Offer over Genel",
+          "score": 86
+        },
+        {
+          "title": "DNO (OB:DNO) Targets Capricorn Energy, Is The Stock Still Cheap?",
+          "score": 72
+        },
+        {
+          "title": "DNO (OB:DNO) Lands $396 Million Deal That Opens The Door To Egypt",
+          "score": 85
+        }
+      ],
+      "broker_order": {
+        "id": 84,
+        "ticker": "CNE",
+        "quantity": 181
+      }
     }
   ],
   "daily_snapshots": [
@@ -804,6 +878,16 @@
       "return_pct": -2.29,
       "positions": 10,
       "trades_today": 0
+    },
+    {
+      "date": "2026-10-01",
+      "timestamp": "2026-10-01 16:19",
+      "cash": 205.48,
+      "equity_value": 8402.3,
+      "total_value": 8607.78,
+      "return_pct": -13.92,
+      "positions": 10,
+      "trades_today": 2
     }
   ],
   "created": "2026-09-14",
