@@ -1,5 +1,5 @@
 {
-  "cash": 1106.49,
+  "cash": 2010.65,
   "holdings": {
     "III.L": {
       "shares": 34,
@@ -36,15 +36,6 @@
       "name": "HSBC Holdings plc",
       "sector": "Financials",
       "broker_ticker": "HSBA"
-    },
-    "INVP.L": {
-      "shares": 137,
-      "avg_cost": 6.5997,
-      "first_bought": "2026-09-14",
-      "score_at_buy": 70.1,
-      "name": "Investec Group",
-      "sector": "Financials",
-      "broker_ticker": "INVP"
     },
     "LLOY.L": {
       "shares": 828,
@@ -746,6 +737,22 @@
         "ticker": "CNE",
         "quantity": 181
       }
+    },
+    {
+      "date": "2026-10-02",
+      "ticker": "INVP.L",
+      "name": "Investec Group",
+      "action": "SELL",
+      "shares": 137,
+      "price": 6.07,
+      "total": 831.59,
+      "pnl_pct": -8.03,
+      "reason": "Trailing cut -8.0% after 18d",
+      "broker_order": {
+        "id": 89,
+        "ticker": "INVP",
+        "quantity": 137
+      }
     }
   ],
   "daily_snapshots": [
@@ -888,6 +895,16 @@
       "return_pct": -13.92,
       "positions": 10,
       "trades_today": 2
+    },
+    {
+      "date": "2026-10-02",
+      "timestamp": "2026-10-02 16:13",
+      "cash": 1106.49,
+      "equity_value": 7648.22,
+      "total_value": 8754.71,
+      "return_pct": -12.45,
+      "positions": 9,
+      "trades_today": 1
     }
   ],
   "created": "2026-09-14",
