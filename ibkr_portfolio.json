@@ -1,15 +1,6 @@
 {
-  "cash": 2010.65,
+  "cash": 2915.05,
   "holdings": {
-    "III.L": {
-      "shares": 34,
-      "avg_cost": 26.6001,
-      "first_bought": "2026-09-14",
-      "score_at_buy": 80.4,
-      "name": "3i Group Ord",
-      "sector": "Financials",
-      "broker_ticker": "III"
-    },
     "FRES.L": {
       "shares": 31,
       "avg_cost": 29.1614,
@@ -753,6 +744,22 @@
         "ticker": "INVP",
         "quantity": 137
       }
+    },
+    {
+      "date": "2026-10-05",
+      "ticker": "III.L",
+      "name": "3i Group Ord",
+      "action": "SELL",
+      "shares": 34,
+      "price": 24.09,
+      "total": 819.06,
+      "pnl_pct": -9.44,
+      "reason": "Trailing cut -9.4% after 21d",
+      "broker_order": {
+        "id": 5,
+        "ticker": "III",
+        "quantity": 34
+      }
     }
   ],
   "daily_snapshots": [
@@ -904,6 +911,16 @@
       "total_value": 8754.71,
       "return_pct": -12.45,
       "positions": 9,
+      "trades_today": 1
+    },
+    {
+      "date": "2026-10-05",
+      "timestamp": "2026-10-05 16:13",
+      "cash": 2010.65,
+      "equity_value": 6821.46,
+      "total_value": 8832.11,
+      "return_pct": -11.68,
+      "positions": 8,
       "trades_today": 1
     }
   ],

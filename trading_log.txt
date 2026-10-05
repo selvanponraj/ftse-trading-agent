@@ -11073,3 +11073,269 @@
 [2026-10-02 16:12:59] [INFO] Done | Total: £89,839.20 | Return: +798.39% | Trades: 0
 [2026-10-02 16:13:05] [INFO] BROKER snapshot env cash=£48,492.40 bot cash=£0.00 (cap £10,000) positions=1
 [2026-10-02 16:13:05] [INFO] Dashboard saved → dashboard.html
+[2026-10-05 16:12:13] [INFO] Starting FTSE Trading Agent
+[2026-10-05 16:12:13] [INFO] --- Rank scan (Yahoo + news, no broker) ---
+[2026-10-05 16:12:13] [WARN] LLM_SKIP BP.L no headlines
+[2026-10-05 16:12:13] [WARN]   NEWS_UNAVAILABLE BP.L: headlines unscored, trading blocked
+[2026-10-05 16:12:13] [WARN]   BP.L         Energy           SKIP no news score — not tradeable
+[2026-10-05 16:12:14] [WARN] LLM_SKIP SHEL.L no headlines
+[2026-10-05 16:12:14] [WARN]   NEWS_UNAVAILABLE SHEL.L: headlines unscored, trading blocked
+[2026-10-05 16:12:14] [WARN]   SHEL.L       Energy           SKIP no news score — not tradeable
+[2026-10-05 16:12:15] [WARN] LLM_SKIP CNE.L no headlines
+[2026-10-05 16:12:15] [WARN]   NEWS_UNAVAILABLE CNE.L: headlines unscored, trading blocked
+[2026-10-05 16:12:15] [WARN]   CNE.L        Energy           SKIP no news score — not tradeable
+[2026-10-05 16:12:16] [WARN] LLM_SKIP HTG.L no headlines
+[2026-10-05 16:12:16] [WARN]   NEWS_UNAVAILABLE HTG.L: headlines unscored, trading blocked
+[2026-10-05 16:12:16] [WARN]   HTG.L        Energy           SKIP no news score — not tradeable
+[2026-10-05 16:12:17] [WARN] LLM_SKIP ENQ.L no headlines
+[2026-10-05 16:12:17] [WARN]   NEWS_UNAVAILABLE ENQ.L: headlines unscored, trading blocked
+[2026-10-05 16:12:17] [WARN]   ENQ.L        Energy           SKIP no news score — not tradeable
+[2026-10-05 16:12:17] [WARN] LLM_SKIP TLW.L no headlines
+[2026-10-05 16:12:17] [WARN]   NEWS_UNAVAILABLE TLW.L: headlines unscored, trading blocked
+[2026-10-05 16:12:17] [WARN]   TLW.L        Energy           SKIP no news score — not tradeable
+[2026-10-05 16:12:18] [WARN] LLM_SKIP AAL.L no headlines
+[2026-10-05 16:12:18] [WARN]   NEWS_UNAVAILABLE AAL.L: headlines unscored, trading blocked
+[2026-10-05 16:12:18] [WARN]   AAL.L        Materials        SKIP no news score — not tradeable
+[2026-10-05 16:12:19] [WARN] LLM_SKIP ANTO.L no headlines
+[2026-10-05 16:12:19] [WARN]   NEWS_UNAVAILABLE ANTO.L: headlines unscored, trading blocked
+[2026-10-05 16:12:19] [WARN]   ANTO.L       Materials        SKIP no news score — not tradeable
+[2026-10-05 16:12:19] [WARN] LLM_SKIP RIO.L no headlines
+[2026-10-05 16:12:19] [WARN]   NEWS_UNAVAILABLE RIO.L: headlines unscored, trading blocked
+[2026-10-05 16:12:19] [WARN]   RIO.L        Materials        SKIP no news score — not tradeable
+[2026-10-05 16:12:20] [WARN] LLM_SKIP GLEN.L no headlines
+[2026-10-05 16:12:20] [WARN]   NEWS_UNAVAILABLE GLEN.L: headlines unscored, trading blocked
+[2026-10-05 16:12:20] [WARN]   GLEN.L       Materials        SKIP no news score — not tradeable
+[2026-10-05 16:12:21] [WARN] LLM_SKIP FRES.L no headlines
+[2026-10-05 16:12:21] [WARN]   NEWS_UNAVAILABLE FRES.L: headlines unscored, trading blocked
+[2026-10-05 16:12:21] [WARN]   FRES.L       Materials        SKIP no news score — not tradeable
+[2026-10-05 16:12:22] [WARN] LLM_SKIP MNDI.L no headlines
+[2026-10-05 16:12:22] [WARN]   NEWS_UNAVAILABLE MNDI.L: headlines unscored, trading blocked
+[2026-10-05 16:12:22] [WARN]   MNDI.L       Materials        SKIP no news score — not tradeable
+[2026-10-05 16:12:22] [WARN] LLM_SKIP CRDA.L no headlines
+[2026-10-05 16:12:22] [WARN]   NEWS_UNAVAILABLE CRDA.L: headlines unscored, trading blocked
+[2026-10-05 16:12:22] [WARN]   CRDA.L       Materials        SKIP no news score — not tradeable
+[2026-10-05 16:12:23] [WARN] LLM_SKIP RR.L no headlines
+[2026-10-05 16:12:23] [WARN]   NEWS_UNAVAILABLE RR.L: headlines unscored, trading blocked
+[2026-10-05 16:12:23] [WARN]   RR.L         Industrials      SKIP no news score — not tradeable
+[2026-10-05 16:12:24] [WARN] LLM_SKIP BA.L no headlines
+[2026-10-05 16:12:24] [WARN]   NEWS_UNAVAILABLE BA.L: headlines unscored, trading blocked
+[2026-10-05 16:12:24] [WARN]   BA.L         Industrials      SKIP no news score — not tradeable
+[2026-10-05 16:12:25] [WARN] LLM_SKIP EXPN.L no headlines
+[2026-10-05 16:12:25] [WARN]   NEWS_UNAVAILABLE EXPN.L: headlines unscored, trading blocked
+[2026-10-05 16:12:25] [WARN]   EXPN.L       Industrials      SKIP no news score — not tradeable
+[2026-10-05 16:12:26] [WARN] LLM_SKIP RS1.L no headlines
+[2026-10-05 16:12:26] [WARN]   NEWS_UNAVAILABLE RS1.L: headlines unscored, trading blocked
+[2026-10-05 16:12:26] [WARN]   RS1.L        Industrials      SKIP no news score — not tradeable
+[2026-10-05 16:12:27] [WARN] LLM_SKIP BNZL.L no headlines
+[2026-10-05 16:12:27] [WARN]   NEWS_UNAVAILABLE BNZL.L: headlines unscored, trading blocked
+[2026-10-05 16:12:27] [WARN]   BNZL.L       Industrials      SKIP no news score — not tradeable
+[2026-10-05 16:12:28] [WARN] LLM_SKIP RMV.L no headlines
+[2026-10-05 16:12:28] [WARN]   NEWS_UNAVAILABLE RMV.L: headlines unscored, trading blocked
+[2026-10-05 16:12:28] [WARN]   RMV.L        Industrials      SKIP no news score — not tradeable
+[2026-10-05 16:12:29] [WARN] LLM_SKIP SMIN.L no headlines
+[2026-10-05 16:12:29] [WARN]   NEWS_UNAVAILABLE SMIN.L: headlines unscored, trading blocked
+[2026-10-05 16:12:29] [WARN]   SMIN.L       Industrials      SKIP no news score — not tradeable
+[2026-10-05 16:12:30] [WARN] LLM_SKIP IMI.L no headlines
+[2026-10-05 16:12:30] [WARN]   NEWS_UNAVAILABLE IMI.L: headlines unscored, trading blocked
+[2026-10-05 16:12:30] [WARN]   IMI.L        Industrials      SKIP no news score — not tradeable
+[2026-10-05 16:12:31] [WARN] LLM_SKIP WEIR.L no headlines
+[2026-10-05 16:12:31] [WARN]   NEWS_UNAVAILABLE WEIR.L: headlines unscored, trading blocked
+[2026-10-05 16:12:31] [WARN]   WEIR.L       Industrials      SKIP no news score — not tradeable
+[2026-10-05 16:12:31] [WARN] LLM_SKIP SDR.L no headlines
+[2026-10-05 16:12:31] [WARN]   NEWS_UNAVAILABLE SDR.L: headlines unscored, trading blocked
+[2026-10-05 16:12:31] [WARN]   SDR.L        Industrials      SKIP no news score — not tradeable
+[2026-10-05 16:12:32] [WARN] LLM_SKIP NXT.L no headlines
+[2026-10-05 16:12:32] [WARN]   NEWS_UNAVAILABLE NXT.L: headlines unscored, trading blocked
+[2026-10-05 16:12:32] [WARN]   NXT.L        Consumer Discretionary SKIP no news score — not tradeable
+[2026-10-05 16:12:33] [WARN] LLM_SKIP IHG.L no headlines
+[2026-10-05 16:12:33] [WARN]   NEWS_UNAVAILABLE IHG.L: headlines unscored, trading blocked
+[2026-10-05 16:12:33] [WARN]   IHG.L        Consumer Discretionary SKIP no news score — not tradeable
+[2026-10-05 16:12:34] [WARN] LLM_SKIP WTB.L no headlines
+[2026-10-05 16:12:34] [WARN]   NEWS_UNAVAILABLE WTB.L: headlines unscored, trading blocked
+[2026-10-05 16:12:34] [WARN]   WTB.L        Consumer Discretionary SKIP no news score — not tradeable
+[2026-10-05 16:12:35] [WARN] LLM_SKIP JD.L no headlines
+[2026-10-05 16:12:35] [WARN]   NEWS_UNAVAILABLE JD.L: headlines unscored, trading blocked
+[2026-10-05 16:12:35] [WARN]   JD.L         Consumer Discretionary SKIP no news score — not tradeable
+[2026-10-05 16:12:35] [WARN] LLM_SKIP FRAS.L no headlines
+[2026-10-05 16:12:35] [WARN]   NEWS_UNAVAILABLE FRAS.L: headlines unscored, trading blocked
+[2026-10-05 16:12:35] [WARN]   FRAS.L       Consumer Discretionary SKIP no news score — not tradeable
+[2026-10-05 16:12:36] [WARN] LLM_SKIP ENT.L no headlines
+[2026-10-05 16:12:36] [WARN]   NEWS_UNAVAILABLE ENT.L: headlines unscored, trading blocked
+[2026-10-05 16:12:36] [WARN]   ENT.L        Consumer Discretionary SKIP no news score — not tradeable
+[2026-10-05 16:12:37] [WARN] LLM_SKIP TW.L no headlines
+[2026-10-05 16:12:37] [WARN]   NEWS_UNAVAILABLE TW.L: headlines unscored, trading blocked
+[2026-10-05 16:12:37] [WARN]   TW.L         Consumer Discretionary SKIP no news score — not tradeable
+[2026-10-05 16:12:38] [WARN] LLM_SKIP DGE.L no headlines
+[2026-10-05 16:12:38] [WARN]   NEWS_UNAVAILABLE DGE.L: headlines unscored, trading blocked
+[2026-10-05 16:12:38] [WARN]   DGE.L        Consumer Discretionary SKIP no news score — not tradeable
+[2026-10-05 16:12:39] [WARN] LLM_SKIP BWY.L no headlines
+[2026-10-05 16:12:39] [WARN]   NEWS_UNAVAILABLE BWY.L: headlines unscored, trading blocked
+[2026-10-05 16:12:39] [WARN]   BWY.L        Consumer Discretionary SKIP no news score — not tradeable
+[2026-10-05 16:12:39] [WARN] LLM_SKIP PSN.L no headlines
+[2026-10-05 16:12:39] [WARN]   NEWS_UNAVAILABLE PSN.L: headlines unscored, trading blocked
+[2026-10-05 16:12:39] [WARN]   PSN.L        Consumer Discretionary SKIP no news score — not tradeable
+[2026-10-05 16:12:40] [WARN] LLM_SKIP BRBY.L no headlines
+[2026-10-05 16:12:40] [WARN]   NEWS_UNAVAILABLE BRBY.L: headlines unscored, trading blocked
+[2026-10-05 16:12:40] [WARN]   BRBY.L       Consumer Discretionary SKIP no news score — not tradeable
+[2026-10-05 16:12:41] [WARN] LLM_SKIP ULVR.L no headlines
+[2026-10-05 16:12:41] [WARN]   NEWS_UNAVAILABLE ULVR.L: headlines unscored, trading blocked
+[2026-10-05 16:12:41] [WARN]   ULVR.L       Consumer Staples SKIP no news score — not tradeable
+[2026-10-05 16:12:42] [WARN] LLM_SKIP RKT.L no headlines
+[2026-10-05 16:12:42] [WARN]   NEWS_UNAVAILABLE RKT.L: headlines unscored, trading blocked
+[2026-10-05 16:12:42] [WARN]   RKT.L        Consumer Staples SKIP no news score — not tradeable
+[2026-10-05 16:12:43] [WARN] LLM_SKIP TSCO.L no headlines
+[2026-10-05 16:12:43] [WARN]   NEWS_UNAVAILABLE TSCO.L: headlines unscored, trading blocked
+[2026-10-05 16:12:43] [WARN]   TSCO.L       Consumer Staples SKIP no news score — not tradeable
+[2026-10-05 16:12:43] [WARN] LLM_SKIP SBRY.L no headlines
+[2026-10-05 16:12:43] [WARN]   NEWS_UNAVAILABLE SBRY.L: headlines unscored, trading blocked
+[2026-10-05 16:12:43] [WARN]   SBRY.L       Consumer Staples SKIP no news score — not tradeable
+[2026-10-05 16:12:44] [WARN] LLM_SKIP ABF.L no headlines
+[2026-10-05 16:12:44] [WARN]   NEWS_UNAVAILABLE ABF.L: headlines unscored, trading blocked
+[2026-10-05 16:12:44] [WARN]   ABF.L        Consumer Staples SKIP no news score — not tradeable
+[2026-10-05 16:12:45] [WARN] LLM_SKIP BME.L no headlines
+[2026-10-05 16:12:45] [WARN]   NEWS_UNAVAILABLE BME.L: headlines unscored, trading blocked
+[2026-10-05 16:12:45] [WARN]   BME.L        Consumer Staples SKIP no news score — not tradeable
+[2026-10-05 16:12:46] [WARN] LLM_SKIP GRG.L no headlines
+[2026-10-05 16:12:46] [WARN]   NEWS_UNAVAILABLE GRG.L: headlines unscored, trading blocked
+[2026-10-05 16:12:46] [WARN]   GRG.L        Consumer Staples SKIP no news score — not tradeable
+[2026-10-05 16:12:47] [WARN] LLM_SKIP HLMA.L no headlines
+[2026-10-05 16:12:47] [WARN]   NEWS_UNAVAILABLE HLMA.L: headlines unscored, trading blocked
+[2026-10-05 16:12:47] [WARN]   HLMA.L       Consumer Staples SKIP no news score — not tradeable
+[2026-10-05 16:12:48] [WARN] LLM_SKIP OCDO.L no headlines
+[2026-10-05 16:12:48] [WARN]   NEWS_UNAVAILABLE OCDO.L: headlines unscored, trading blocked
+[2026-10-05 16:12:48] [WARN]   OCDO.L       Consumer Staples SKIP no news score — not tradeable
+[2026-10-05 16:12:48] [WARN] LLM_SKIP AZN.L no headlines
+[2026-10-05 16:12:48] [WARN]   NEWS_UNAVAILABLE AZN.L: headlines unscored, trading blocked
+[2026-10-05 16:12:48] [WARN]   AZN.L        Health Care      SKIP no news score — not tradeable
+[2026-10-05 16:12:49] [WARN] LLM_SKIP GSK.L no headlines
+[2026-10-05 16:12:49] [WARN]   NEWS_UNAVAILABLE GSK.L: headlines unscored, trading blocked
+[2026-10-05 16:12:49] [WARN]   GSK.L        Health Care      SKIP no news score — not tradeable
+[2026-10-05 16:12:50] [WARN] LLM_SKIP SN.L no headlines
+[2026-10-05 16:12:50] [WARN]   NEWS_UNAVAILABLE SN.L: headlines unscored, trading blocked
+[2026-10-05 16:12:50] [WARN]   SN.L         Health Care      SKIP no news score — not tradeable
+[2026-10-05 16:12:51] [WARN] LLM_SKIP HIK.L no headlines
+[2026-10-05 16:12:51] [WARN]   NEWS_UNAVAILABLE HIK.L: headlines unscored, trading blocked
+[2026-10-05 16:12:51] [WARN]   HIK.L        Health Care      SKIP no news score — not tradeable
+[2026-10-05 16:12:51] [WARN] LLM_SKIP DPLM.L no headlines
+[2026-10-05 16:12:51] [WARN]   NEWS_UNAVAILABLE DPLM.L: headlines unscored, trading blocked
+[2026-10-05 16:12:51] [WARN]   DPLM.L       Health Care      SKIP no news score — not tradeable
+[2026-10-05 16:12:52] [WARN] LLM_SKIP SPX.L no headlines
+[2026-10-05 16:12:52] [WARN]   NEWS_UNAVAILABLE SPX.L: headlines unscored, trading blocked
+[2026-10-05 16:12:52] [WARN]   SPX.L        Health Care      SKIP no news score — not tradeable
+[2026-10-05 16:12:53] [WARN] LLM_SKIP HSBA.L no headlines
+[2026-10-05 16:12:53] [WARN]   NEWS_UNAVAILABLE HSBA.L: headlines unscored, trading blocked
+[2026-10-05 16:12:53] [WARN]   HSBA.L       Financials       SKIP no news score — not tradeable
+[2026-10-05 16:12:54] [WARN] LLM_SKIP BARC.L no headlines
+[2026-10-05 16:12:54] [WARN]   NEWS_UNAVAILABLE BARC.L: headlines unscored, trading blocked
+[2026-10-05 16:12:54] [WARN]   BARC.L       Financials       SKIP no news score — not tradeable
+[2026-10-05 16:12:56] [WARN] LLM_SKIP LLOY.L no headlines
+[2026-10-05 16:12:56] [WARN]   NEWS_UNAVAILABLE LLOY.L: headlines unscored, trading blocked
+[2026-10-05 16:12:56] [WARN]   LLOY.L       Financials       SKIP no news score — not tradeable
+[2026-10-05 16:12:57] [WARN] LLM_SKIP NWG.L no headlines
+[2026-10-05 16:12:57] [WARN]   NEWS_UNAVAILABLE NWG.L: headlines unscored, trading blocked
+[2026-10-05 16:12:57] [WARN]   NWG.L        Financials       SKIP no news score — not tradeable
+[2026-10-05 16:12:58] [WARN] LLM_SKIP STAN.L no headlines
+[2026-10-05 16:12:58] [WARN]   NEWS_UNAVAILABLE STAN.L: headlines unscored, trading blocked
+[2026-10-05 16:12:58] [WARN]   STAN.L       Financials       SKIP no news score — not tradeable
+[2026-10-05 16:12:58] [WARN] LLM_SKIP AV.L no headlines
+[2026-10-05 16:12:58] [WARN]   NEWS_UNAVAILABLE AV.L: headlines unscored, trading blocked
+[2026-10-05 16:12:58] [WARN]   AV.L         Financials       SKIP no news score — not tradeable
+[2026-10-05 16:12:59] [WARN] LLM_SKIP LGEN.L no headlines
+[2026-10-05 16:12:59] [WARN]   NEWS_UNAVAILABLE LGEN.L: headlines unscored, trading blocked
+[2026-10-05 16:12:59] [WARN]   LGEN.L       Financials       SKIP no news score — not tradeable
+[2026-10-05 16:13:00] [WARN] LLM_SKIP PRU.L no headlines
+[2026-10-05 16:13:00] [WARN]   NEWS_UNAVAILABLE PRU.L: headlines unscored, trading blocked
+[2026-10-05 16:13:00] [WARN]   PRU.L        Financials       SKIP no news score — not tradeable
+[2026-10-05 16:13:01] [WARN] LLM_SKIP ADM.L no headlines
+[2026-10-05 16:13:01] [WARN]   NEWS_UNAVAILABLE ADM.L: headlines unscored, trading blocked
+[2026-10-05 16:13:01] [WARN]   ADM.L        Financials       SKIP no news score — not tradeable
+[2026-10-05 16:13:01] [WARN] LLM_SKIP III.L no headlines
+[2026-10-05 16:13:01] [WARN]   NEWS_UNAVAILABLE III.L: headlines unscored, trading blocked
+[2026-10-05 16:13:01] [WARN]   III.L        Financials       SKIP no news score — not tradeable
+[2026-10-05 16:13:02] [WARN] LLM_SKIP INVP.L no headlines
+[2026-10-05 16:13:02] [WARN]   NEWS_UNAVAILABLE INVP.L: headlines unscored, trading blocked
+[2026-10-05 16:13:02] [WARN]   INVP.L       Financials       SKIP no news score — not tradeable
+[2026-10-05 16:13:04] [WARN] LLM_SKIP MNG.L no headlines
+[2026-10-05 16:13:04] [WARN]   NEWS_UNAVAILABLE MNG.L: headlines unscored, trading blocked
+[2026-10-05 16:13:04] [WARN]   MNG.L        Financials       SKIP no news score — not tradeable
+[2026-10-05 16:13:05] [WARN] LLM_SKIP SAGE.L no headlines
+[2026-10-05 16:13:05] [WARN]   NEWS_UNAVAILABLE SAGE.L: headlines unscored, trading blocked
+[2026-10-05 16:13:05] [WARN]   SAGE.L       Information Technology SKIP no news score — not tradeable
+[2026-10-05 16:13:05] [WARN] LLM_SKIP KNOS.L no headlines
+[2026-10-05 16:13:05] [WARN]   NEWS_UNAVAILABLE KNOS.L: headlines unscored, trading blocked
+[2026-10-05 16:13:05] [WARN]   KNOS.L       Information Technology SKIP no news score — not tradeable
+[2026-10-05 16:13:06] [WARN] LLM_SKIP FDM.L no headlines
+[2026-10-05 16:13:06] [WARN]   NEWS_UNAVAILABLE FDM.L: headlines unscored, trading blocked
+[2026-10-05 16:13:06] [WARN]   FDM.L        Information Technology SKIP no news score — not tradeable
+[2026-10-05 16:13:07] [WARN] LLM_SKIP SGE.L no headlines
+[2026-10-05 16:13:07] [WARN]   NEWS_UNAVAILABLE SGE.L: headlines unscored, trading blocked
+[2026-10-05 16:13:07] [WARN]   SGE.L        Information Technology SKIP no news score — not tradeable
+[2026-10-05 16:13:08] [WARN] LLM_SKIP AUTO.L no headlines
+[2026-10-05 16:13:08] [WARN]   NEWS_UNAVAILABLE AUTO.L: headlines unscored, trading blocked
+[2026-10-05 16:13:08] [WARN]   AUTO.L       Information Technology SKIP no news score — not tradeable
+[2026-10-05 16:13:09] [WARN] LLM_SKIP VOD.L no headlines
+[2026-10-05 16:13:09] [WARN]   NEWS_UNAVAILABLE VOD.L: headlines unscored, trading blocked
+[2026-10-05 16:13:09] [WARN]   VOD.L        Communication Services SKIP no news score — not tradeable
+[2026-10-05 16:13:10] [WARN] LLM_SKIP REL.L no headlines
+[2026-10-05 16:13:10] [WARN]   NEWS_UNAVAILABLE REL.L: headlines unscored, trading blocked
+[2026-10-05 16:13:10] [WARN]   REL.L        Communication Services SKIP no news score — not tradeable
+[2026-10-05 16:13:10] [WARN] LLM_SKIP WPP.L no headlines
+[2026-10-05 16:13:10] [WARN]   NEWS_UNAVAILABLE WPP.L: headlines unscored, trading blocked
+[2026-10-05 16:13:10] [WARN]   WPP.L        Communication Services SKIP no news score — not tradeable
+[2026-10-05 16:13:11] [WARN] LLM_SKIP ITV.L no headlines
+[2026-10-05 16:13:11] [WARN]   NEWS_UNAVAILABLE ITV.L: headlines unscored, trading blocked
+[2026-10-05 16:13:11] [WARN]   ITV.L        Communication Services SKIP no news score — not tradeable
+[2026-10-05 16:13:12] [WARN] LLM_SKIP INF.L no headlines
+[2026-10-05 16:13:12] [WARN]   NEWS_UNAVAILABLE INF.L: headlines unscored, trading blocked
+[2026-10-05 16:13:12] [WARN]   INF.L        Communication Services SKIP no news score — not tradeable
+[2026-10-05 16:13:12] [WARN] LLM_SKIP NG.L no headlines
+[2026-10-05 16:13:12] [WARN]   NEWS_UNAVAILABLE NG.L: headlines unscored, trading blocked
+[2026-10-05 16:13:12] [WARN]   NG.L         Utilities        SKIP no news score — not tradeable
+[2026-10-05 16:13:13] [WARN] LLM_SKIP SSE.L no headlines
+[2026-10-05 16:13:13] [WARN]   NEWS_UNAVAILABLE SSE.L: headlines unscored, trading blocked
+[2026-10-05 16:13:13] [WARN]   SSE.L        Utilities        SKIP no news score — not tradeable
+[2026-10-05 16:13:14] [WARN] LLM_SKIP SVT.L no headlines
+[2026-10-05 16:13:14] [WARN]   NEWS_UNAVAILABLE SVT.L: headlines unscored, trading blocked
+[2026-10-05 16:13:14] [WARN]   SVT.L        Utilities        SKIP no news score — not tradeable
+[2026-10-05 16:13:15] [WARN] LLM_SKIP UU.L no headlines
+[2026-10-05 16:13:15] [WARN]   NEWS_UNAVAILABLE UU.L: headlines unscored, trading blocked
+[2026-10-05 16:13:15] [WARN]   UU.L         Utilities        SKIP no news score — not tradeable
+[2026-10-05 16:13:16] [WARN] LLM_SKIP PNN.L no headlines
+[2026-10-05 16:13:16] [WARN]   NEWS_UNAVAILABLE PNN.L: headlines unscored, trading blocked
+[2026-10-05 16:13:16] [WARN]   PNN.L        Utilities        SKIP no news score — not tradeable
+[2026-10-05 16:13:17] [WARN] LLM_SKIP CNA.L no headlines
+[2026-10-05 16:13:17] [WARN]   NEWS_UNAVAILABLE CNA.L: headlines unscored, trading blocked
+[2026-10-05 16:13:17] [WARN]   CNA.L        Utilities        SKIP no news score — not tradeable
+[2026-10-05 16:13:18] [WARN] LLM_SKIP DRX.L no headlines
+[2026-10-05 16:13:18] [WARN]   NEWS_UNAVAILABLE DRX.L: headlines unscored, trading blocked
+[2026-10-05 16:13:18] [WARN]   DRX.L        Utilities        SKIP no news score — not tradeable
+[2026-10-05 16:13:18] [WARN] LLM_SKIP LAND.L no headlines
+[2026-10-05 16:13:18] [WARN]   NEWS_UNAVAILABLE LAND.L: headlines unscored, trading blocked
+[2026-10-05 16:13:18] [WARN]   LAND.L       Real Estate      SKIP no news score — not tradeable
+[2026-10-05 16:13:19] [WARN] LLM_SKIP BLND.L no headlines
+[2026-10-05 16:13:19] [WARN]   NEWS_UNAVAILABLE BLND.L: headlines unscored, trading blocked
+[2026-10-05 16:13:19] [WARN]   BLND.L       Real Estate      SKIP no news score — not tradeable
+[2026-10-05 16:13:20] [WARN] LLM_SKIP SGRO.L no headlines
+[2026-10-05 16:13:20] [WARN]   NEWS_UNAVAILABLE SGRO.L: headlines unscored, trading blocked
+[2026-10-05 16:13:20] [WARN]   SGRO.L       Real Estate      SKIP no news score — not tradeable
+[2026-10-05 16:13:21] [WARN] LLM_SKIP UTG.L no headlines
+[2026-10-05 16:13:21] [WARN]   NEWS_UNAVAILABLE UTG.L: headlines unscored, trading blocked
+[2026-10-05 16:13:21] [WARN]   UTG.L        Real Estate      SKIP no news score — not tradeable
+[2026-10-05 16:13:21] [WARN] LLM_SKIP HMSO.L no headlines
+[2026-10-05 16:13:21] [WARN]   NEWS_UNAVAILABLE HMSO.L: headlines unscored, trading blocked
+[2026-10-05 16:13:21] [WARN]   HMSO.L       Real Estate      SKIP no news score — not tradeable
+[2026-10-05 16:13:22] [WARN] LLM_SKIP GPE.L no headlines
+[2026-10-05 16:13:22] [WARN]   NEWS_UNAVAILABLE GPE.L: headlines unscored, trading blocked
+[2026-10-05 16:13:22] [WARN]   GPE.L        Real Estate      SKIP no news score — not tradeable
+[2026-10-05 16:13:22] [INFO] BROKER using demo (https://demo.trading212.com/api/v0)
+[2026-10-05 16:13:23] [INFO] BROKER snapshot env cash=£48,492.40 bot cash=£0.00 (cap £10,000) positions=1
+[2026-10-05 16:13:23] [INFO] ============================================================
+[2026-10-05 16:13:23] [INFO] FTSE Trading Agent — 2026-10-05 16:13
+[2026-10-05 16:13:23] [INFO] Cash: £0.00 | Positions: 1
+[2026-10-05 16:13:23] [INFO] Portfolio total: £89,839.20
+[2026-10-05 16:13:23] [INFO] --- Sell evaluation ---
+[2026-10-05 16:13:24] [INFO] No buy slots or insufficient cash.
+[2026-10-05 16:13:24] [INFO] ============================================================
+[2026-10-05 16:13:24] [INFO] Done | Total: £89,839.20 | Return: +798.39% | Trades: 0
+[2026-10-05 16:13:29] [INFO] BROKER snapshot env cash=£48,492.40 bot cash=£0.00 (cap £10,000) positions=1
+[2026-10-05 16:13:29] [INFO] Dashboard saved → dashboard.html
