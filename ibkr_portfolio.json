@@ -1,15 +1,6 @@
 {
-  "cash": 2915.05,
+  "cash": 5623.32,
   "holdings": {
-    "FRES.L": {
-      "shares": 31,
-      "avg_cost": 29.1614,
-      "first_bought": "2026-09-14",
-      "score_at_buy": 72.5,
-      "name": "Fresnillo plc",
-      "sector": "Materials",
-      "broker_ticker": "FRES"
-    },
     "NWG.L": {
       "shares": 132,
       "avg_cost": 6.8627,
@@ -19,15 +10,6 @@
       "sector": "Financials",
       "broker_ticker": "NWG"
     },
-    "HSBA.L": {
-      "shares": 58,
-      "avg_cost": 15.4864,
-      "first_bought": "2026-09-14",
-      "score_at_buy": 72.0,
-      "name": "HSBC Holdings plc",
-      "sector": "Financials",
-      "broker_ticker": "HSBA"
-    },
     "LLOY.L": {
       "shares": 828,
       "avg_cost": 1.0991,
@@ -36,15 +18,6 @@
       "name": "Lloyds Banking Group plc",
       "sector": "Financials",
       "broker_ticker": "LLOY"
-    },
-    "STAN.L": {
-      "shares": 39,
-      "avg_cost": 23.2321,
-      "first_bought": "2026-09-14",
-      "score_at_buy": 69.5,
-      "name": "Standard Chartered PLC",
-      "sector": "Financials",
-      "broker_ticker": "STAN"
     },
     "RIO.L": {
       "shares": 12,
@@ -760,6 +733,54 @@
         "ticker": "III",
         "quantity": 34
       }
+    },
+    {
+      "date": "2026-10-08",
+      "ticker": "FRES.L",
+      "name": "Fresnillo plc",
+      "action": "SELL",
+      "shares": 31,
+      "price": 26.78,
+      "total": 830.18,
+      "pnl_pct": -8.17,
+      "reason": "Trailing cut -8.2% after 24d",
+      "broker_order": {
+        "id": 10,
+        "ticker": "FRES",
+        "quantity": 31
+      }
+    },
+    {
+      "date": "2026-10-08",
+      "ticker": "HSBA.L",
+      "name": "HSBC Holdings plc",
+      "action": "SELL",
+      "shares": 58,
+      "price": 13.866,
+      "total": 804.23,
+      "pnl_pct": -10.46,
+      "reason": "Trailing cut -10.5% after 24d",
+      "broker_order": {
+        "id": 12,
+        "ticker": "HSBA",
+        "quantity": 58
+      }
+    },
+    {
+      "date": "2026-10-08",
+      "ticker": "STAN.L",
+      "name": "Standard Chartered PLC",
+      "action": "SELL",
+      "shares": 39,
+      "price": 21.1,
+      "total": 822.9,
+      "pnl_pct": -9.18,
+      "reason": "Trailing cut -9.2% after 24d",
+      "broker_order": {
+        "id": 14,
+        "ticker": "STAN",
+        "quantity": 39
+      }
     }
   ],
   "daily_snapshots": [
@@ -932,6 +953,16 @@
       "return_pct": -2.53,
       "positions": 8,
       "trades_today": 0
+    },
+    {
+      "date": "2026-10-08",
+      "timestamp": "2026-10-08 16:13",
+      "cash": 4542.18,
+      "equity_value": 4159.28,
+      "total_value": 8701.46,
+      "return_pct": -12.99,
+      "positions": 5,
+      "trades_today": 3
     }
   ],
   "created": "2026-09-14",
